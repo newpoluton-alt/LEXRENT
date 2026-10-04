@@ -8,9 +8,19 @@ A rental housing law research workspace for the Rental Housing Law Navigator cha
 
 One Next.js deployment contains the React frontend, Hono API, deterministic rule engine, source ingestion, Neon Auth, Neon Postgres persistence with pgvector, and Claude extraction and grounded answers. The frontend follows the [original LEXRENT Lovable project](https://lovable.dev/projects/c3e1fb53-d8d2-42f7-a0ef-1775909ab00a): cream, royal blue, yellow, Lexend, rectangular controls and the illustrated city motif.
 
+## Lovable frontend port
+
+The original `lexrent/` TanStack Start export is kept as a reference. Its design is ported to the active Next.js app: the original Lexend palette, header and skyline, address/date hero, Overview/List/Summary tabs, map-and-law panel, evidence dialog, guided fact quiz, bilingual About/Rights pages, and a matching account screen. The active components live in `src/components/lovable/`; the route remains `app/page.tsx`.
+
+The imported prototype's static `laws.ts` verdicts, confidence arithmetic and nationwide claims are not used. Search selects an actual supported property; every evaluation uses the existing Hono rule engine and captured source evidence. Public maps use Photon/OpenStreetMap for visual orientation only and never establish legal jurisdiction. No additional map API key is required. Unmatched addresses get an explicit map fallback rather than a guessed marker. Street-level imagery is offered through an external Google Maps link; the export's embedded Google connector credentials are not copied into this deployment.
+
+`/workspace` retains real Claude/vector research, the source library, law-change cases, private saved properties and verified-admin publication tools. The home exposes Census boundary resolution to verified admins. Authentication returns users to the property or assistant context from which they signed in. The List tab browses the supported 500-property sample rather than inventing client-side verdicts for browsing history. Summary printing and JSON downloads preserve the exact evaluation snapshot and incomplete-coverage status.
+
+The reference folder is excluded from the active TypeScript compilation and Vercel deployment. All `.env` files, including the reference export's browser connector credentials, remain ignored.
+
 ## Run locally
 
-Use Node.js 24 or newer.
+Use Node.js 24 or newer. The supplied development/build scripts use Next.js’s supported Webpack compiler; this avoids the Tailwind/PostCSS worker port restriction in the local sandbox.
 
 ```sh
 npm ci

@@ -13,3 +13,6 @@ test-results/
 AI capabilities/*.py
 AI RAG/*
 !AI RAG/rag_knowledge_base.jsonl
+
+# Lovable source export retained as reference; active frontend lives in app/ and src/.
+lexrent/
