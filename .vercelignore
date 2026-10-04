@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.git/
+.next/
+node_modules/
+architecture/
+artifacts/
+test-results/
+*.pdf
+**/*.pdf
+**/.DS_Store
+AI capabilities/*.py

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1780" viewBox="0 0 2400 1780">
+<title>Rental Housing Law Navigator — proposed architecture</title>
+<desc>Code-rendered architecture, refined from the supplied handwritten sketch and participant guide.</desc>
+<rect width="2400" height="1780" fill="#F7F9FC"/>
+<text x="80" y="63" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="21" font-weight="700" dominant-baseline="text-before-edge">RENTAL HOUSING LAW NAVIGATOR</text>
+<text x="80" y="108" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="52" font-weight="700" dominant-baseline="text-before-edge">From property lookup to change impact</text>
+<text x="80" y="182" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="28" font-weight="400" dominant-baseline="text-before-edge">Backend team: one deterministic evaluator serves both flows. Frontend displays the results and evidence.</text>
+<rect x="2080" y="65" width="240" height="42" rx="12" fill="#E9EFF6"/>
+<text x="2098" y="75.0" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="20" font-weight="600" dominant-baseline="text-before-edge">DIAGRAM 02</text>
+<rect x="80" y="280" width="1080" height="1215" rx="24" fill="#ECF8F5" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1240" y="280" width="1080" height="1215" rx="24" fill="#ECF8F5" stroke="#D9E2EC" stroke-width="2"/>
+<text x="120" y="314" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="25" font-weight="700" dominant-baseline="text-before-edge">ADDRESS LOOKUP</text>
+<text x="1280" y="314" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="25" font-weight="700" dominant-baseline="text-before-edge">CHANGE-IMPACT EVALUATION</text>
+<rect x="120" y="380" width="1000" height="150" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="142" y="405" width="47" height="47" rx="13" fill="#ECF8F5"/>
+<text x="151" y="415" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700" dominant-baseline="text-before-edge">01</text>
+<text x="209" y="409" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="600" dominant-baseline="text-before-edge">Search + query date</text>
+<text x="209" y="462" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Select a matched sample property.</text>
+<text x="209" y="495" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Default as-of date: 2026-10-01.</text>
+<polyline points="620,538 620,588" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="620,588 627.0,573.0 613.0,573.0" fill="#007D76"/>
+<rect x="120" y="600" width="1000" height="150" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="142" y="625" width="47" height="47" rx="13" fill="#ECF8F5"/>
+<text x="151" y="635" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700" dominant-baseline="text-before-edge">02</text>
+<text x="209" y="629" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="600" dominant-baseline="text-before-edge">Resolve jurisdiction + property facts</text>
+<text x="209" y="682" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Normalize address; verify legal state / municipality.</text>
+<text x="209" y="715" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Keep unresolved location and missing facts explicit.</text>
+<polyline points="620,758 620,808" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="620,808 627.0,793.0 613.0,793.0" fill="#007D76"/>
+<rect x="120" y="820" width="1000" height="150" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="142" y="845" width="47" height="47" rx="13" fill="#ECF8F5"/>
+<text x="151" y="855" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700" dominant-baseline="text-before-edge">03</text>
+<text x="209" y="849" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="600" dominant-baseline="text-before-edge">Select rule versions</text>
+<text x="209" y="902" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Use verified rules for the resolved jurisdiction.</text>
+<text x="209" y="935" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Evaluate enacted / effective / pending status as of date.</text>
+<polyline points="620,978 620,1028" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="620,1028 627.0,1013.0 613.0,1013.0" fill="#007D76"/>
+<rect x="120" y="1040" width="1000" height="150" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="142" y="1065" width="47" height="47" rx="13" fill="#ECF8F5"/>
+<text x="151" y="1075" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700" dominant-baseline="text-before-edge">04</text>
+<text x="209" y="1069" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="600" dominant-baseline="text-before-edge">Evaluate applicability</text>
+<text x="209" y="1122" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Test coverage; preserve unknown; apply supported precedence.</text>
+<text x="209" y="1155" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Flag conflicts and explain every decision.</text>
+<polyline points="620,1198 620,1248" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="620,1248 627.0,1233.0 613.0,1233.0" fill="#007D76"/>
+<rect x="120" y="1260" width="1000" height="150" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="142" y="1285" width="47" height="47" rx="13" fill="#ECF8F5"/>
+<text x="151" y="1295" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700" dominant-baseline="text-before-edge">05</text>
+<text x="209" y="1289" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="600" dominant-baseline="text-before-edge">Return a cited answer</text>
+<text x="209" y="1342" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Rule ID + result + explanation + conflict flag.</text>
+<text x="209" y="1375" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Attach exact source text, URL and retrieval date.</text>
+<rect x="1280" y="380" width="1000" height="150" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1302" y="405" width="47" height="47" rx="13" fill="#ECF8F5"/>
+<text x="1311" y="415" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700" dominant-baseline="text-before-edge">01</text>
+<text x="1369" y="409" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="600" dominant-baseline="text-before-edge">Load change case</text>
+<text x="1369" y="462" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">T1–T5: jurisdictions, dates and lifecycle status.</text>
+<text x="1369" y="495" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Pending cases are hypothetical; failed cases stay inactive.</text>
+<polyline points="1780,538 1780,588" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1780,588 1787.0,573.0 1773.0,573.0" fill="#007D76"/>
+<rect x="1280" y="600" width="1000" height="150" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1302" y="625" width="47" height="47" rx="13" fill="#ECF8F5"/>
+<text x="1311" y="635" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700" dominant-baseline="text-before-edge">02</text>
+<text x="1369" y="629" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="600" dominant-baseline="text-before-edge">Build date / scenario snapshots</text>
+<text x="1369" y="682" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Select rule versions for each supplied query date or scenario.</text>
+<text x="1369" y="715" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Use the same verified property and jurisdiction facts.</text>
+<polyline points="1780,758 1780,808" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1780,808 1787.0,793.0 1773.0,793.0" fill="#007D76"/>
+<rect x="1280" y="820" width="1000" height="150" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1302" y="845" width="47" height="47" rx="13" fill="#ECF8F5"/>
+<text x="1311" y="855" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700" dominant-baseline="text-before-edge">03</text>
+<text x="1369" y="849" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="600" dominant-baseline="text-before-edge">Reuse applicability engine</text>
+<text x="1369" y="902" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Evaluate all 500 properties under each scenario.</text>
+<text x="1369" y="935" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Use the identical coverage, precedence and conflict logic.</text>
+<polyline points="1780,978 1780,1028" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1780,1028 1787.0,1013.0 1773.0,1013.0" fill="#007D76"/>
+<rect x="1280" y="1040" width="1000" height="150" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1302" y="1065" width="47" height="47" rx="13" fill="#ECF8F5"/>
+<text x="1311" y="1075" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700" dominant-baseline="text-before-edge">04</text>
+<text x="1369" y="1069" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="600" dominant-baseline="text-before-edge">Identify affected addresses</text>
+<text x="1369" y="1122" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Apply each supplied test&#x27;s affected-set criteria.</text>
+<text x="1369" y="1155" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Keep conflict IDs and unresolved facts visible.</text>
+<polyline points="1780,1198 1780,1248" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1780,1248 1787.0,1233.0 1773.0,1233.0" fill="#007D76"/>
+<rect x="1280" y="1260" width="1000" height="150" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1302" y="1285" width="47" height="47" rx="13" fill="#ECF8F5"/>
+<text x="1311" y="1295" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="700" dominant-baseline="text-before-edge">05</text>
+<text x="1369" y="1289" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="600" dominant-baseline="text-before-edge">Export change results</text>
+<text x="1369" y="1342" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Affected address IDs + conflict address IDs + notes.</text>
+<text x="1369" y="1375" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">T5 retains a failed rule record and an empty affected set.</text>
+<text x="120" y="1455" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="20" font-weight="600" dominant-baseline="text-before-edge">Backend via API to Lovable lookup + evidence view</text>
+<text x="1280" y="1455" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="20" font-weight="600" dominant-baseline="text-before-edge">changes.json via API to Lovable change explorer</text>
+<text x="80" y="1540" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="700" dominant-baseline="text-before-edge">LOOKUP RESULT VALUES</text>
+<rect x="80" y="1580" width="424" height="58" rx="12" fill="#ECF8F5"/>
+<text x="98" y="1596.0" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="600" dominant-baseline="text-before-edge">applies</text>
+<rect x="534" y="1580" width="424" height="58" rx="12" fill="#FFF5DD"/>
+<text x="552" y="1596.0" fill="#946B12" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="600" dominant-baseline="text-before-edge">unknown</text>
+<rect x="988" y="1580" width="424" height="58" rx="12" fill="#EAF0F6"/>
+<text x="1006" y="1596.0" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="600" dominant-baseline="text-before-edge">superseded</text>
+<rect x="1442" y="1580" width="424" height="58" rx="12" fill="#EDF4FD"/>
+<text x="1460" y="1596.0" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="600" dominant-baseline="text-before-edge">not_yet_effective</text>
+<rect x="1896" y="1580" width="424" height="58" rx="12" fill="#F3EEFA"/>
+<text x="1914" y="1596.0" fill="#7450B7" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="600" dominant-baseline="text-before-edge">pending</text>
+<text x="80" y="1670" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="26" font-weight="400" dominant-baseline="text-before-edge">Non-matching rules are omitted. Unknown is a valid result when the required facts are unavailable.</text>
+<text x="80" y="1723" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="400" dominant-baseline="text-before-edge">Every displayed answer retains its query date and source evidence. A failed proposal never activates a current rule.</text>
+</svg>

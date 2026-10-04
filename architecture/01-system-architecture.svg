@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="2000" viewBox="0 0 2400 2000">
+<title>Rental Housing Law Navigator — proposed architecture</title>
+<desc>Code-rendered architecture, refined from the supplied handwritten sketch and participant guide.</desc>
+<rect width="2400" height="2000" fill="#F7F9FC"/>
+<text x="80" y="63" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="21" font-weight="700" dominant-baseline="text-before-edge">RENTAL HOUSING LAW NAVIGATOR</text>
+<text x="80" y="108" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="52" font-weight="700" dominant-baseline="text-before-edge">Architecture by team</text>
+<text x="80" y="182" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="28" font-weight="400" dominant-baseline="text-before-edge">AI extracts distinct requirements; backend evaluates them; frontend presents results and evidence.</text>
+<rect x="2080" y="65" width="240" height="42" rx="12" fill="#E9EFF6"/>
+<text x="2098" y="75.0" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="20" font-weight="600" dominant-baseline="text-before-edge">DIAGRAM 01</text>
+<rect x="80" y="280" width="2240" height="445" rx="24" fill="#EDF4FD" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="109" y="318" width="220" height="44" rx="12" fill="#FFFFFF"/>
+<text x="127" y="329.5" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">AI TEAM</text>
+<text x="110" y="391" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="700" dominant-baseline="text-before-edge">Rules &amp;</text>
+<text x="110" y="433" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="700" dominant-baseline="text-before-edge">evidence</text>
+<text x="110" y="519" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="600" dominant-baseline="text-before-edge">Claude credits</text>
+<rect x="80" y="840" width="2240" height="420" rx="24" fill="#ECF8F5" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="109" y="878" width="220" height="44" rx="12" fill="#FFFFFF"/>
+<text x="127" y="889.5" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">BACKEND TEAM</text>
+<text x="110" y="951" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="700" dominant-baseline="text-before-edge">Matching,</text>
+<text x="110" y="993" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="700" dominant-baseline="text-before-edge">changes &amp; API</text>
+<text x="110" y="1079" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="600" dominant-baseline="text-before-edge">Codex</text>
+<rect x="80" y="1420" width="2240" height="375" rx="24" fill="#F3EEFA" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="109" y="1458" width="220" height="44" rx="12" fill="#FFFFFF"/>
+<text x="127" y="1469.5" fill="#7450B7" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">FRONTEND TEAM</text>
+<text x="110" y="1531" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="700" dominant-baseline="text-before-edge">Experience</text>
+<text x="110" y="1573" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="29" font-weight="700" dominant-baseline="text-before-edge">&amp; navigation</text>
+<text x="110" y="1659" fill="#7450B7" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="600" dominant-baseline="text-before-edge">Lovable</text>
+<polygon points="350,360 730,360 770,400 770,630 350,630" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="730,360 730,400 770,400" fill="#EDF4FD" stroke="#D9E2EC" stroke-width="2" stroke-linejoin="round"/>
+<text x="375" y="383" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">SOURCE DOCUMENTS</text>
+<text x="375" y="422" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="30" font-weight="600" dominant-baseline="text-before-edge">Legal sources</text>
+<text x="375" y="477" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Corpus text + manifest</text>
+<text x="375" y="512" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Acquire permitted linked text</text>
+<text x="375" y="547" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Source status + retrieval dates</text>
+<polyline points="375,572 745,572" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="375" y="591" fill="#2463B3" font-family="Menlo, Consolas, monospace" font-size="20" font-weight="400" dominant-baseline="text-before-edge">captured public sources</text>
+<rect x="825" y="365" width="420" height="270" rx="18" fill="#E8EEF5"/>
+<rect x="825" y="360" width="420" height="270" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="850" y="383" width="5" height="22" rx="2" fill="#2463B3"/>
+<text x="867" y="382" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">AI PROCESSOR</text>
+<text x="850" y="422" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="30" font-weight="600" dominant-baseline="text-before-edge">Claude extraction</text>
+<text x="850" y="477" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Chunk captured source text</text>
+<text x="850" y="512" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Extract distinct requirements</text>
+<text x="850" y="547" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Attach evidence + conditions</text>
+<polyline points="850,572 1220,572" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="850" y="591" fill="#2463B3" font-family="Menlo, Consolas, monospace" font-size="20" font-weight="400" dominant-baseline="text-before-edge">one law / multiple rules</text>
+<rect x="1187" y="386" width="24" height="24" rx="5" fill="#FFFFFF" stroke="#2463B3" stroke-width="2"/>
+<rect x="1194" y="393" width="10" height="10" rx="2" fill="#2463B3"/>
+<polyline points="1192,379 1192,386" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1192,410 1192,417" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1180,391 1187,391" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1211,391 1218,391" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1201,379 1201,386" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1201,410 1201,417" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1180,400 1187,400" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1211,400 1218,400" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1210,379 1210,386" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1210,410 1210,417" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1180,409 1187,409" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1211,409 1218,409" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1443.765625" y="319" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">QUALITY GATE</text>
+<polygon points="1510.0,360 1720,495.0 1510.0,630 1300,495.0" fill="#FFFFFF" stroke="#2463B3" stroke-width="3" stroke-linejoin="round"/>
+<text x="1401.5" y="453.0" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="30" font-weight="600" dominant-baseline="text-before-edge">Evidence valid?</text>
+<text x="1387.25" y="507.0" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Schema + exact quotes</text>
+<ellipse cx="2035.0" cy="657.0" rx="260.0" ry="23.0" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1775" y="373" width="520" height="284" rx="0" fill="#FFFFFF"/>
+<polyline points="1775,373 1775,657" fill="none" stroke="#D9E2EC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="2295,373 2295,657" fill="none" stroke="#D9E2EC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="2035.0" cy="373.0" rx="260.0" ry="23.0" fill="#EDF4FD" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1800" y="414" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">VERSIONED DATA STORE</text>
+<text x="1800" y="455" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="30" font-weight="600" dominant-baseline="text-before-edge">Verified rule bundle</text>
+<text x="1800" y="508" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Independent rule versions</text>
+<text x="1800" y="541" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Conditions + lifecycle dates</text>
+<text x="1800" y="574" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="400" dominant-baseline="text-before-edge">Exact evidence + source lineage</text>
+<text x="1800" y="628" fill="#2463B3" font-family="Menlo, Consolas, monospace" font-size="20" font-weight="400" dominant-baseline="text-before-edge">rules.json + internal records</text>
+<polyline points="777,495 815,495" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="815,495 800.0,488.0 800.0,502.0" fill="#2463B3"/>
+<polyline points="1252,495 1290,495" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1290,495 1275.0,488.0 1275.0,502.0" fill="#2463B3"/>
+<polyline points="1728,495 1765,495" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1765,495 1750.0,488.0 1750.0,502.0" fill="#2463B3"/>
+<text x="1726" y="461" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="600" dominant-baseline="text-before-edge">pass</text>
+<polyline points="1510,630 1510,667" fill="none" stroke="#946B12" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1510,667 1517.0,652.0 1503.0,652.0" fill="#946B12"/>
+<rect x="1388" y="670" width="244" height="43" rx="12" fill="#FFF5DD"/>
+<text x="1406" y="680.0" fill="#946B12" font-family="'Avenir Next', Arial, sans-serif" font-size="21" font-weight="600" dominant-baseline="text-before-edge">Review / retry</text>
+<polyline points="2035,680 2035,775 1510,775 1510,900" fill="none" stroke="#2463B3" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1510,900 1517.0,885.0 1503.0,885.0" fill="#2463B3"/>
+<text x="1470" y="742" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="23" font-weight="600" dominant-baseline="text-before-edge">Validated rules + provenance</text>
+<polygon points="350,900 730,900 770,940 770,1170 350,1170" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="730,900 730,940 770,940" fill="#ECF8F5" stroke="#D9E2EC" stroke-width="2" stroke-linejoin="round"/>
+<text x="375" y="923" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">PROPERTY DATA FILE</text>
+<text x="375" y="962" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="30" font-weight="600" dominant-baseline="text-before-edge">Property inputs</text>
+<text x="375" y="1017" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">500 public sample properties</text>
+<text x="375" y="1052" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Known and missing facts</text>
+<text x="375" y="1087" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Selected query date</text>
+<polyline points="375,1112 745,1112" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="375" y="1131" fill="#007D76" font-family="Menlo, Consolas, monospace" font-size="20" font-weight="400" dominant-baseline="text-before-edge">sample_addresses.csv</text>
+<rect x="825" y="905" width="420" height="270" rx="18" fill="#E8EEF5"/>
+<rect x="825" y="900" width="420" height="270" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="850" y="923" width="5" height="22" rx="2" fill="#007D76"/>
+<text x="867" y="922" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">LOCATION SERVICE</text>
+<text x="850" y="962" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="30" font-weight="600" dominant-baseline="text-before-edge">Legal jurisdiction</text>
+<text x="850" y="1017" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Normalize and verify address</text>
+<text x="850" y="1052" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Resolve legal state / city</text>
+<text x="850" y="1087" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Record match uncertainty</text>
+<polyline points="850,1112 1220,1112" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="850" y="1131" fill="#007D76" font-family="Menlo, Consolas, monospace" font-size="20" font-weight="400" dominant-baseline="text-before-edge">verified municipality match</text>
+<rect x="1180" y="920" width="38" height="10" rx="3" fill="#FFFFFF" stroke="#007D76" stroke-width="2"/>
+<ellipse cx="1187.0" cy="925.0" rx="2.0" ry="2.0" fill="#007D76"/>
+<polyline points="1197,925 1211,925" fill="none" stroke="#007D76" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1180" y="933" width="38" height="10" rx="3" fill="#FFFFFF" stroke="#007D76" stroke-width="2"/>
+<ellipse cx="1187.0" cy="938.0" rx="2.0" ry="2.0" fill="#007D76"/>
+<polyline points="1197,938 1211,938" fill="none" stroke="#007D76" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1180" y="946" width="38" height="10" rx="3" fill="#FFFFFF" stroke="#007D76" stroke-width="2"/>
+<ellipse cx="1187.0" cy="951.0" rx="2.0" ry="2.0" fill="#007D76"/>
+<polyline points="1197,951 1211,951" fill="none" stroke="#007D76" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1300" y="905" width="420" height="270" rx="18" fill="#E8EEF5"/>
+<rect x="1300" y="900" width="420" height="270" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1325" y="923" width="5" height="22" rx="2" fill="#007D76"/>
+<text x="1342" y="922" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">COVERAGE + CHANGES</text>
+<text x="1325" y="962" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="30" font-weight="600" dominant-baseline="text-before-edge">Rule evaluator</text>
+<text x="1325" y="1017" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Date + jurisdiction + facts</text>
+<text x="1325" y="1052" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Unknown + precedence + flags</text>
+<text x="1325" y="1087" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">T1–T5 scenario evaluation</text>
+<polyline points="1325,1112 1695,1112" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1325" y="1131" fill="#007D76" font-family="Menlo, Consolas, monospace" font-size="20" font-weight="400" dominant-baseline="text-before-edge">persist rule-level results</text>
+<rect x="1775" y="905" width="520" height="270" rx="18" fill="#E8EEF5"/>
+<rect x="1775" y="900" width="520" height="270" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1800" y="923" width="5" height="22" rx="2" fill="#007D76"/>
+<text x="1817" y="922" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">BACKEND SERVICE</text>
+<text x="1800" y="962" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="30" font-weight="600" dominant-baseline="text-before-edge">API &amp; exports</text>
+<text x="1800" y="1017" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Search, lookup, changes, evidence</text>
+<text x="1800" y="1052" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Result records + audit trail</text>
+<text x="1800" y="1087" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Export required submission JSON</text>
+<polyline points="1800,1112 2270,1112" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1800" y="1131" fill="#007D76" font-family="Menlo, Consolas, monospace" font-size="20" font-weight="400" dominant-baseline="text-before-edge">lookups.json + changes.json</text>
+<rect x="2230" y="920" width="38" height="10" rx="3" fill="#FFFFFF" stroke="#007D76" stroke-width="2"/>
+<ellipse cx="2237.0" cy="925.0" rx="2.0" ry="2.0" fill="#007D76"/>
+<polyline points="2247,925 2261,925" fill="none" stroke="#007D76" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2230" y="933" width="38" height="10" rx="3" fill="#FFFFFF" stroke="#007D76" stroke-width="2"/>
+<ellipse cx="2237.0" cy="938.0" rx="2.0" ry="2.0" fill="#007D76"/>
+<polyline points="2247,938 2261,938" fill="none" stroke="#007D76" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2230" y="946" width="38" height="10" rx="3" fill="#FFFFFF" stroke="#007D76" stroke-width="2"/>
+<ellipse cx="2237.0" cy="951.0" rx="2.0" ry="2.0" fill="#007D76"/>
+<polyline points="2247,951 2261,951" fill="none" stroke="#007D76" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="777,1035 815,1035" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="815,1035 800.0,1028.0 800.0,1042.0" fill="#007D76"/>
+<polyline points="1252,1035 1290,1035" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1290,1035 1275.0,1028.0 1275.0,1042.0" fill="#007D76"/>
+<polyline points="1727,1035 1765,1035" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1765,1035 1750.0,1028.0 1750.0,1042.0" fill="#007D76"/>
+<text x="350" y="862" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="700" dominant-baseline="text-before-edge">DATE / SCENARIO INPUTS · T1–T5 · ONE SHARED EVALUATOR</text>
+<polyline points="2035,1170 2035,1480" fill="none" stroke="#7450B7" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="2035,1480 2042.0,1465.0 2028.0,1465.0" fill="#7450B7"/>
+<polyline points="2035,1465 2035,1180" fill="none" stroke="#7450B7" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="2035,1180 2028.0,1195.0 2042.0,1195.0" fill="#7450B7"/>
+<text x="1635" y="1335" fill="#7450B7" font-family="'Avenir Next', Arial, sans-serif" font-size="25" font-weight="600" dominant-baseline="text-before-edge">Stable JSON API contract</text>
+<rect x="350" y="1485" width="590" height="250" rx="18" fill="#E8EEF5"/>
+<rect x="350" y="1480" width="590" height="250" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="375" y="1503" width="5" height="22" rx="2" fill="#7450B7"/>
+<text x="392" y="1502" fill="#7450B7" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">ADDRESS-FIRST WORKFLOW</text>
+<text x="375" y="1542" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="30" font-weight="600" dominant-baseline="text-before-edge">User interaction</text>
+<text x="375" y="1597" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Search address + choose date</text>
+<text x="375" y="1632" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Confirm the matched property</text>
+<text x="375" y="1667" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Provide missing facts if known</text>
+<ellipse cx="882.5" cy="1507.5" rx="7.5" ry="7.5" fill="#FFFFFF" stroke="#7450B7" stroke-width="3"/>
+<polyline points="883,1515 883,1531" fill="none" stroke="#7450B7" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="868,1523 898,1523" fill="none" stroke="#7450B7" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="883,1531 871,1542" fill="none" stroke="#7450B7" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="883,1531 895,1542" fill="none" stroke="#7450B7" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="947,1605 1020,1605" fill="none" stroke="#7450B7" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1020,1605 1005.0,1598.0 1005.0,1612.0" fill="#7450B7"/>
+<rect x="1030" y="1480" width="1265" height="270" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1030" y="1480" width="1265" height="48" rx="18" fill="#F3EEFA"/>
+<rect x="1030" y="1508" width="1265" height="20" rx="0" fill="#F3EEFA"/>
+<ellipse cx="1061.0" cy="1503.0" rx="6.0" ry="6.0" fill="#B8A7D6"/>
+<ellipse cx="1085.0" cy="1503.0" rx="6.0" ry="6.0" fill="#CBBFDF"/>
+<ellipse cx="1109.0" cy="1503.0" rx="6.0" ry="6.0" fill="#DDD3EB"/>
+<text x="1152" y="1493" fill="#7450B7" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="700" dominant-baseline="text-before-edge">FRONTEND TEAM · LOVABLE APP</text>
+<text x="1058" y="1553" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="31" font-weight="600" dominant-baseline="text-before-edge">Lookup · Evidence · Changes</text>
+<text x="1058.0" y="1615" fill="#7450B7" font-family="'Avenir Next', Arial, sans-serif" font-size="17" font-weight="700" dominant-baseline="text-before-edge">PROPERTY LOOKUP</text>
+<text x="1058.0" y="1649" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="400" dominant-baseline="text-before-edge">Address + query date</text>
+<text x="1058.0" y="1680" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="400" dominant-baseline="text-before-edge">Coverage + missing facts</text>
+<text x="1465.0" y="1615" fill="#7450B7" font-family="'Avenir Next', Arial, sans-serif" font-size="17" font-weight="700" dominant-baseline="text-before-edge">SOURCE EVIDENCE</text>
+<text x="1465.0" y="1649" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="400" dominant-baseline="text-before-edge">Exact source quotations</text>
+<text x="1465.0" y="1680" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="400" dominant-baseline="text-before-edge">Citations + retrieval dates</text>
+<polyline points="1449.0,1610 1449.0,1695" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1872.0" y="1615" fill="#7450B7" font-family="'Avenir Next', Arial, sans-serif" font-size="17" font-weight="700" dominant-baseline="text-before-edge">CHANGE EXPLORER</text>
+<text x="1872.0" y="1649" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="400" dominant-baseline="text-before-edge">Lifecycle + effective dates</text>
+<text x="1872.0" y="1680" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="400" dominant-baseline="text-before-edge">Affected IDs + conflicts</text>
+<polyline points="1856.0,1610 1856.0,1695" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1058" y="1716" fill="#7450B7" font-family="'Avenir Next', Arial, sans-serif" font-size="20" font-weight="600" dominant-baseline="text-before-edge">Group by law; show a separate result per rule.  |  Not legal advice</text>
+<text x="80" y="1840" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">NOTATION</text>
+<polygon points="240,1840 260,1840 271,1851 271,1875 240,1875" fill="#FFFFFF" stroke="#7B8CA0" stroke-width="2" stroke-linejoin="round"/>
+<text x="285" y="1847" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="21" font-weight="400" dominant-baseline="text-before-edge">Document / input</text>
+<rect x="632" y="1845" width="24" height="24" rx="5" fill="#FFFFFF" stroke="#2463B3" stroke-width="2"/>
+<rect x="639" y="1852" width="10" height="10" rx="2" fill="#2463B3"/>
+<polyline points="637,1838 637,1845" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="637,1869 637,1876" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="625,1850 632,1850" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="656,1850 663,1850" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="646,1838 646,1845" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="646,1869 646,1876" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="625,1859 632,1859" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="656,1859 663,1859" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="655,1838 655,1845" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="655,1869 655,1876" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="625,1868 632,1868" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="656,1868 663,1868" fill="none" stroke="#2463B3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="679" y="1847" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="21" font-weight="400" dominant-baseline="text-before-edge">AI processor</text>
+<polygon points="992,1838 1011,1857 992,1876 973,1857" fill="#FFFFFF" stroke="#2463B3" stroke-width="2" stroke-linejoin="round"/>
+<text x="1028" y="1847" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="21" font-weight="400" dominant-baseline="text-before-edge">Validation decision</text>
+<ellipse cx="1433.0" cy="1863.0" rx="25.0" ry="15.0" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1408" y="1850" width="50" height="13" rx="0" fill="#FFFFFF"/>
+<polyline points="1408,1850 1408,1863" fill="none" stroke="#D9E2EC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1458,1850 1458,1863" fill="none" stroke="#D9E2EC" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="1433.0" cy="1850.0" rx="25.0" ry="15.0" fill="#ECF8F5" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1433.0" y="1875" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="25" font-weight="600" dominant-baseline="text-before-edge"></text>
+<text x="1477" y="1847" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="21" font-weight="400" dominant-baseline="text-before-edge">Database / store</text>
+<rect x="1850" y="1838" width="47" height="38" rx="5" fill="#FFFFFF" stroke="#7450B7" stroke-width="2"/>
+<polyline points="1851,1849 1896,1849" fill="none" stroke="#7450B7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1915" y="1847" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="21" font-weight="400" dominant-baseline="text-before-edge">Browser interface</text>
+<rect x="80" y="1910" width="2240" height="55" rx="14" fill="#EAF0F6"/>
+<text x="108" y="1927" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="18" font-weight="700" dominant-baseline="text-before-edge">TRACE EVERY ANSWER</text>
+<text x="370" y="1926" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="400" dominant-baseline="text-before-edge">Source capture + retrieval date · rule version · property facts · query date · decision rationale</text>
+<text x="80" y="1978" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="17" font-weight="400" dominant-baseline="text-before-edge">Proposed architecture · team ownership is separate from logical data storage</text>
+</svg>

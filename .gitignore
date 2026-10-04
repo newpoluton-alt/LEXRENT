@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.vercel/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+test-results/
+playwright-report/
+artifacts/
+*.pdf
+*.zip
+**/agent_ids.json
+**/credentials.json

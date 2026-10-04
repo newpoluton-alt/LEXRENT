@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="2200" viewBox="0 0 2400 2200">
+<title>Rental Housing Law Navigator — proposed architecture</title>
+<desc>Code-rendered architecture, refined from the supplied handwritten sketch and participant guide.</desc>
+<rect width="2400" height="2200" fill="#F7F9FC"/>
+<text x="80" y="63" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="21" font-weight="700" dominant-baseline="text-before-edge">RENTAL HOUSING LAW NAVIGATOR</text>
+<text x="80" y="108" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="52" font-weight="700" dominant-baseline="text-before-edge">Database &amp; record relationships</text>
+<text x="80" y="182" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="28" font-weight="400" dominant-baseline="text-before-edge">Eight logical entities: independent requirements, immutable evidence, and reproducible evaluations.</text>
+<rect x="2080" y="65" width="240" height="42" rx="12" fill="#E9EFF6"/>
+<text x="2098" y="75.0" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="20" font-weight="600" dominant-baseline="text-before-edge">DIAGRAM 03</text>
+<rect x="80" y="280" width="1080" height="1665" rx="24" fill="#EDF4FD" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1240" y="280" width="1080" height="1665" rx="24" fill="#ECF8F5" stroke="#D9E2EC" stroke-width="2"/>
+<text x="120" y="308" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="700" dominant-baseline="text-before-edge">LEGAL RECORDS · AI TEAM PRODUCES</text>
+<text x="1300" y="308" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="700" dominant-baseline="text-before-edge">OPERATIONAL RECORDS · BACKEND TEAM</text>
+<polyline points="610,670 610,760" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="620.0,683.0 600.0,683.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="610.0,736.0 599.0,758.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="610.0,736.0 610.0,758.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="610.0,736.0 621.0,758.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="636" y="699" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">1 : N</text>
+<polyline points="610,1080 610,1170" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="620.0,1093.0 600.0,1093.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="610.0,1146.0 599.0,1168.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="610.0,1146.0 610.0,1168.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="610.0,1146.0 621.0,1168.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="636" y="1109" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">1 : N</text>
+<polyline points="610,1580 610,1490" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="600.0,1567.0 620.0,1567.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="610.0,1514.0 621.0,1492.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="610.0,1514.0 610.0,1492.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="610.0,1514.0 599.0,1492.0" fill="none" stroke="#2463B3" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="636" y="1519" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">1 : N</text>
+<polyline points="1790,670 1790,760" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1800.0,683.0 1780.0,683.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="1790.0" cy="706.0" rx="6.0" ry="6.0" fill="#F7F9FC" stroke="#007D76" stroke-width="2"/>
+<polyline points="1790.0,736.0 1779.0,758.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1790.0,736.0 1790.0,758.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1790.0,736.0 1801.0,758.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1816" y="699" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">0..1 : N · case is optional on a run</text>
+<polyline points="1790,1080 1790,1170" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1800.0,1093.0 1780.0,1093.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1790.0,1146.0 1779.0,1168.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1790.0,1146.0 1790.0,1168.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1790.0,1146.0 1801.0,1168.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1816" y="1109" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">1 : N</text>
+<polyline points="1790,1580 1790,1490" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1780.0,1567.0 1800.0,1567.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1790.0,1514.0 1801.0,1492.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1790.0,1514.0 1790.0,1492.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1790.0,1514.0 1779.0,1492.0" fill="none" stroke="#007D76" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1816" y="1519" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">1 : N</text>
+<polyline points="1100,960 1197,960 1197,1355 1300,1355" fill="none" stroke="#7B8CA0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1113.0,950.0 1113.0,970.0" fill="none" stroke="#7B8CA0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1276.0,1355.0 1298.0,1366.0" fill="none" stroke="#7B8CA0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1276.0,1355.0 1298.0,1355.0" fill="none" stroke="#7B8CA0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1276.0,1355.0 1298.0,1344.0" fill="none" stroke="#7B8CA0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1126" y="1090" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">1 : N</text>
+<rect x="120" y="350" width="980" height="320" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="120" y="350" width="980" height="62" rx="16" fill="#EDF4FD"/>
+<rect x="120" y="390" width="980" height="22" rx="0" fill="#EDF4FD"/>
+<text x="145" y="368" fill="#2463B3" font-family="Menlo, Consolas, monospace" font-size="28" font-weight="700" dominant-baseline="text-before-edge">LAW</text>
+<text x="145" y="437" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">PK law_id</text>
+<text x="145" y="469" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">title, instrument_identifier, authority_level</text>
+<text x="145" y="501" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">issuing_state, issuing_legal_city</text>
+<polyline points="145,613 1075,613" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="145" y="632" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">Groups distinct obligations; applicability is computed per rule.</text>
+<rect x="120" y="760" width="980" height="320" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="120" y="760" width="980" height="62" rx="16" fill="#EDF4FD"/>
+<rect x="120" y="800" width="980" height="22" rx="0" fill="#EDF4FD"/>
+<text x="145" y="778" fill="#2463B3" font-family="Menlo, Consolas, monospace" font-size="28" font-weight="700" dominant-baseline="text-before-edge">RULE_VERSION</text>
+<text x="145" y="847" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">PK rule_version_id</text>
+<text x="145" y="879" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">FK law_id; team_rule_id, version, category</text>
+<text x="145" y="911" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">title, citation, requirement, key_value</text>
+<text x="145" y="943" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">coverage_ast, exemptions, interactions</text>
+<text x="145" y="975" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">lifecycle_dates, extraction_version</text>
+<text x="145" y="1007" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">source_bundle_hash</text>
+<polyline points="145,1023 1075,1023" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="145" y="1042" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">Unique(team_rule_id, version); one stable ID per requirement.</text>
+<rect x="120" y="1170" width="980" height="320" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="120" y="1170" width="980" height="62" rx="16" fill="#EDF4FD"/>
+<rect x="120" y="1210" width="980" height="22" rx="0" fill="#EDF4FD"/>
+<text x="145" y="1188" fill="#2463B3" font-family="Menlo, Consolas, monospace" font-size="28" font-weight="700" dominant-baseline="text-before-edge">RULE_EVIDENCE</text>
+<text x="145" y="1257" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">PK evidence_id</text>
+<text x="145" y="1289" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">FK rule_version_id, source_id</text>
+<text x="145" y="1321" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">quoted_span, start_offset, end_offset</text>
+<text x="145" y="1353" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">evidence_role, primary_citation</text>
+<polyline points="145,1433 1075,1433" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="145" y="1452" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">Junction: many rule versions can cite many source captures.</text>
+<rect x="120" y="1580" width="980" height="320" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="120" y="1580" width="980" height="62" rx="16" fill="#EDF4FD"/>
+<rect x="120" y="1620" width="980" height="22" rx="0" fill="#EDF4FD"/>
+<text x="145" y="1598" fill="#2463B3" font-family="Menlo, Consolas, monospace" font-size="28" font-weight="700" dominant-baseline="text-before-edge">SOURCE_DOCUMENT</text>
+<text x="145" y="1667" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">PK source_id  (immutable capture)</text>
+<text x="145" y="1699" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">doc_id, source_url, capture_status</text>
+<text x="145" y="1731" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">retrieved_at, content_hash</text>
+<text x="145" y="1763" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">text_location, capture_version</text>
+<polyline points="145,1843 1075,1843" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="145" y="1862" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">Retain captured text; retrieval time is separate from law dates.</text>
+<rect x="1300" y="350" width="980" height="320" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1300" y="350" width="980" height="62" rx="16" fill="#ECF8F5"/>
+<rect x="1300" y="390" width="980" height="22" rx="0" fill="#ECF8F5"/>
+<text x="1325" y="368" fill="#007D76" font-family="Menlo, Consolas, monospace" font-size="28" font-weight="700" dominant-baseline="text-before-edge">CHANGE_CASE</text>
+<text x="1325" y="437" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">PK test_id  (T1–T5)</text>
+<text x="1325" y="469" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">type, query_dates, jurisdiction_filter</text>
+<text x="1325" y="501" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">rule_references, hypothetical_scenario</text>
+<text x="1325" y="533" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">affected_set_criteria</text>
+<polyline points="1325,613 2255,613" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1325" y="632" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">Supports date, boundary, hypothetical and negative cases.</text>
+<rect x="1300" y="760" width="980" height="320" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1300" y="760" width="980" height="62" rx="16" fill="#ECF8F5"/>
+<rect x="1300" y="800" width="980" height="22" rx="0" fill="#ECF8F5"/>
+<text x="1325" y="778" fill="#007D76" font-family="Menlo, Consolas, monospace" font-size="28" font-weight="700" dominant-baseline="text-before-edge">EVALUATION_RUN</text>
+<text x="1325" y="847" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">PK run_id</text>
+<text x="1325" y="879" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">FK test_id  (nullable for ordinary lookups)</text>
+<text x="1325" y="911" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">run_type, requested_as_of, scenarios</text>
+<text x="1325" y="943" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">rule_bundle_hash, property_data_hash</text>
+<text x="1325" y="975" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">input_snapshot_ref, fact_overrides_json</text>
+<text x="1325" y="1007" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">executed_at, change_summary_json</text>
+<polyline points="1325,1023 2255,1023" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1325" y="1042" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">Summary retains affected IDs, conflict IDs and case notes.</text>
+<rect x="1300" y="1170" width="980" height="320" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1300" y="1170" width="980" height="62" rx="16" fill="#ECF8F5"/>
+<rect x="1300" y="1210" width="980" height="22" rx="0" fill="#ECF8F5"/>
+<text x="1325" y="1188" fill="#007D76" font-family="Menlo, Consolas, monospace" font-size="28" font-weight="700" dominant-baseline="text-before-edge">EVALUATION_RESULT</text>
+<text x="1325" y="1257" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">PK result_id</text>
+<text x="1325" y="1289" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">FK run_id, address_id, rule_version_id</text>
+<text x="1325" y="1321" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">as_of, scenario_key, result</text>
+<text x="1325" y="1353" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">explanation, conflict_flag</text>
+<text x="1325" y="1385" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">conflict_rule_ids, missing_facts</text>
+<polyline points="1325,1433 2255,1433" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1325" y="1452" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">One result per run / property / rule version / date / scenario.</text>
+<rect x="1300" y="1580" width="980" height="320" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1300" y="1580" width="980" height="62" rx="16" fill="#ECF8F5"/>
+<rect x="1300" y="1620" width="980" height="22" rx="0" fill="#ECF8F5"/>
+<text x="1325" y="1598" fill="#007D76" font-family="Menlo, Consolas, monospace" font-size="28" font-weight="700" dominant-baseline="text-before-edge">PROPERTY</text>
+<text x="1325" y="1667" fill="#14253B" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">PK address_id</text>
+<text x="1325" y="1699" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">street_address, normalized_address</text>
+<text x="1325" y="1731" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">postal_city, legal_state, legal_city</text>
+<text x="1325" y="1763" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">municipality_id, resolution_status</text>
+<text x="1325" y="1795" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">year_built, units, facts_json</text>
+<text x="1325" y="1827" fill="#516278" font-family="Menlo, Consolas, monospace" font-size="23" font-weight="400" dominant-baseline="text-before-edge">dataset_source, retrieved_at</text>
+<polyline points="1325,1843 2255,1843" fill="none" stroke="#D9E2EC" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1325" y="1862" fill="#007D76" font-family="'Avenir Next', Arial, sans-serif" font-size="19" font-weight="600" dominant-baseline="text-before-edge">Keep missing facts null and explain unresolved jurisdiction.</text>
+<rect x="80" y="1980" width="2240" height="147" rx="18" fill="#EAF0F6"/>
+<text x="110" y="2002" fill="#2463B3" font-family="'Avenir Next', Arial, sans-serif" font-size="20" font-weight="700" dominant-baseline="text-before-edge">ONE LAW / MANY REQUIREMENTS</text>
+<text x="110" y="2041" fill="#14253B" font-family="'Avenir Next', Arial, sans-serif" font-size="24" font-weight="400" dominant-baseline="text-before-edge">Each requirement has its own coverage, dates, evidence and result. Successive versions retain the same rule ID.</text>
+<text x="110" y="2086" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="22" font-weight="400" dominant-baseline="text-before-edge">Logical model: SQL tables or versioned JSON records. Frontend accesses these records through the backend API.</text>
+<text x="80" y="2160" fill="#516278" font-family="'Avenir Next', Arial, sans-serif" font-size="20" font-weight="400" dominant-baseline="text-before-edge">Crow’s feet indicate many. PK = primary key; FK = foreign key. Shared data storage is owned by the backend team.</text>
+</svg>
