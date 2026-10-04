@@ -2,6 +2,8 @@
 
 Public repository: [newpoluton-alt/LEXRENT](https://github.com/newpoluton-alt/LEXRENT).
 
+Live app: [LEXRENT](https://lexrent-zeta.vercel.app). Production is public; Vercel preview deployments remain protected. LEXRENT sign-in is still required for saved work and paid AI, and publication tools require a verified administrator.
+
 A rental housing law research workspace for the Rental Housing Law Navigator challenge. It connects a property to source evidence, separates pending laws from enacted requirements, and explains missing facts rather than guessing coverage.
 
 One Next.js deployment contains the React frontend, Hono API, deterministic rule engine, source ingestion, Neon Auth, Neon Postgres persistence, and Claude extraction and retrieval. The frontend follows the [original LEXRENT Lovable project](https://lovable.dev/projects/c3e1fb53-d8d2-42f7-a0ef-1775909ab00a): cream, royal blue, yellow, Lexend, rectangular controls and the illustrated city motif.
