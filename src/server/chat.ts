@@ -74,7 +74,12 @@ export function retrieveKnowledge(question: string, context: DomainContext = {},
   const queryTerms = [...new Set(queryTokens.map(stem))];
   const states = requestedStates(question);
   const namedDocs = (question.match(/\bD\d{3}\b/gi) ?? []).map(id => id.toUpperCase());
-  const frequencies = allChunks.map(chunk => {
+  const explicitState = states.length === 1 ? states[0] : undefined;
+  const lexicalChunks = explicitState ? allChunks.filter(chunk => {
+    const source = sources.find(source => source.doc_id === chunk.doc_id)!;
+    return namedDocs.includes(chunk.doc_id) || source.jurisdictions === explicitState || source.jurisdictions.endsWith(`, ${explicitState}`);
+  }) : allChunks;
+  const frequencies = lexicalChunks.map(chunk => {
     const terms = bodyTerms(chunk.text), counts = new Map<string, number>();
     for (const term of terms) counts.set(term, (counts.get(term) ?? 0) + 1);
     return { chunk, counts, length: terms.length };
@@ -86,7 +91,7 @@ export function retrieveKnowledge(question: string, context: DomainContext = {},
     let score = queryTerms.reduce((sum, term) => {
       const frequency = counts.get(term) ?? 0;
       if (!frequency) return sum;
-      const inverseFrequency = Math.log(1 + (allChunks.length - (documentFrequency.get(term) ?? 0) + 0.5) / ((documentFrequency.get(term) ?? 0) + 0.5));
+      const inverseFrequency = Math.log(1 + (lexicalChunks.length - (documentFrequency.get(term) ?? 0) + 0.5) / ((documentFrequency.get(term) ?? 0) + 0.5));
       return sum + inverseFrequency * frequency * 2.2 / (frequency + 1.2 * (0.25 + 0.75 * length / Math.max(1, averageLength)));
     }, 0);
     // Metadata affects relevance and authority, never supplies a legal verdict.
@@ -105,7 +110,7 @@ export function retrieveKnowledge(question: string, context: DomainContext = {},
     const chunk = byId.get(hit.id);
     if (!chunk || !Number.isFinite(hit.similarity) || hit.similarity <= 0) return false;
     const source = sources.find(source => source.doc_id === chunk.doc_id);
-    return Boolean(source?.captured && (!scopedState || source.jurisdictions === scopedState || source.jurisdictions.endsWith(`, ${scopedState}`)));
+    return Boolean(source?.captured && (!scopedState || source.jurisdictions === scopedState || source.jurisdictions.endsWith(`, ${scopedState}`) || namedDocs.includes(chunk.doc_id)));
   }).sort((a, b) => b.similarity - a.similarity || a.id.localeCompare(b.id));
   const uniqueVectors = [...new Map(vectorCandidates.map(hit => [hit.id, hit])).values()];
   // Weighted reciprocal rank fusion: lexical authority/relevance 2, vector meaning 1.
@@ -116,7 +121,7 @@ export function retrieveKnowledge(question: string, context: DomainContext = {},
     const item = fused.get(hit.id);
     fused.set(hit.id, { chunk: byId.get(hit.id)!, score: (item?.score ?? 0) + 1 / (60 + index + 1) });
   });
-  const ranked = uniqueVectors.length ? [...fused.values()].sort((a, b) => b.score - a.score || a.chunk.doc_id.localeCompare(b.chunk.doc_id) || a.chunk.chunk_index - b.chunk.chunk_index) : scored;
+  const ranked = uniqueVectors.length ? [...fused.values()].sort((a, b) => Number(namedDocs.includes(b.chunk.doc_id)) - Number(namedDocs.includes(a.chunk.doc_id)) || b.score - a.score || a.chunk.doc_id.localeCompare(b.chunk.doc_id) || a.chunk.chunk_index - b.chunk.chunk_index) : scored;
   const selected = new Map<string, RetrievalChunk>();
   let characters = 0;
   const perDocument = new Map<string, number>();
@@ -168,7 +173,7 @@ export async function answerQuestion(input: ChatQuestion, context: DomainContext
   const retrievalMetadata: ChatRetrievalMetadata = { mode: vector.status === "ready" && retrieval.vector_hit_count > 0 ? "hybrid_vector" : "lexical_fallback", vector_status: vector.status, model: vector.model, indexed_chunk_count: vector.indexed_chunk_count };
   const model = process.env.CLAUDE_MODEL?.trim() || "claude-sonnet-5-5";
   const notices = ["Not legal advice. Research assistance based on captured public sources.", "The assistant cannot change deterministic applicability results or publish legal rules."];
-  if (retrievalMetadata.mode === "lexical_fallback") notices.push(vector.status === "ready" ? "Vector search returned no matching current evidence. This answer uses lexical retrieval of captured sources." : `Vector search is ${vector.status.replaceAll("_", " ")}. This answer uses lexical retrieval of captured sources.`);
+  if (retrievalMetadata.mode === "lexical_fallback") notices.push(vector.status === "ready" ? "Topic search found no matching current passages. This answer uses keyword matches from captured sources." : "Topic search could not contribute to this answer. This answer uses keyword matches from captured sources.");
   if (!(context.rules?.length)) notices.push("No published rule bundle exists. Property-specific applicability has not been evaluated.");
   const base = { retrieval: retrievalMetadata, sources_used: [...new Set(retrieval.chunks.map(chunk => chunk.doc_id))], missing_facts: evaluation?.missing_facts ?? [], as_of: asOf, address_id: addressId ?? null, notices, model, scope: "research_assistance" as const, retrieved_chunk_count: retrieval.chunks.length, link_only_sources: retrieval.linkOnly };
   if (!retrieval.chunks.length) return { ...base, answer: "No matching captured source text was found. Try an address ID, city, statute section, or a topic such as deposits or eviction. Link-only sources require permitted text capture before they can support an answer.", citations: [], usage: { input_tokens: 0, output_tokens: 0 } };
@@ -193,9 +198,10 @@ export async function answerQuestion(input: ChatQuestion, context: DomainContext
   }
   if (!citations.length) throw new AiError("AI_CITATION_REQUIRED", "The answer did not provide supporting source evidence. Try a more specific question.", 422);
   const citedStates = [...new Set(citations.map(citation => retrieval.sources.find(source => source.doc_id === citation.doc_id)?.jurisdictions.split(",").at(-1)?.trim()).filter((state): state is string => ["CA", "NJ", "MA"].includes(state ?? "")))];
-  const propertyState = evaluation?.property.state;
-  const otherStates = propertyState ? citedStates.filter(state => state !== propertyState) : [];
-  if (otherStates.length) notices.push(`Source evidence includes ${otherStates.join(" and ")}; the selected property is in ${propertyState}. Property-specific coverage remains governed by the deterministic evaluator.`);
+  const explicitStates = requestedStates(request.question);
+  const referenceState = evaluation?.property.state ?? (explicitStates.length === 1 ? explicitStates[0] : undefined);
+  const otherStates = referenceState ? citedStates.filter(state => state !== referenceState) : [];
+  if (otherStates.length) notices.push(evaluation ? `Source evidence includes ${otherStates.join(" and ")}; the selected property is in ${referenceState}. Property-specific coverage remains governed by the deterministic evaluator.` : `Source evidence includes ${otherStates.join(" and ")}; the explicitly requested state is ${referenceState}. Interpret each cited source within its own jurisdiction.`);
   else if (citedStates.length > 1) notices.push(`Cited sources span ${citedStates.join(" and ")}. Interpret each source within its own jurisdiction.`);
 
   const prefix = !(context.rules?.length) ? "Property-specific applicability has not been evaluated because no reviewed rule bundle has been published.\n\n" : evaluation?.rules.some(rule => rule.result === "unknown") ? "Some property coverage remains unknown; missing facts must be resolved before applicability can be confirmed.\n\n" : "";

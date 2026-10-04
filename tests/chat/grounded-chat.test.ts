@@ -149,12 +149,35 @@ describe("provided RAG index and citation grounding", () => {
     const result = await answerQuestion({ question });
     expect(result.retrieval?.mode).toBe("lexical_fallback");
     expect(result.retrieval?.vector_status).toBe("unavailable");
-    expect(result.notices.some(notice => notice.includes("lexical retrieval"))).toBe(true);
+    expect(result.notices.some(notice => notice.includes("keyword matches"))).toBe(true);
     expect(JSON.stringify(result)).not.toContain("private database");
     expect(result.citations[0].doc_id).toBe("D069");
     searchVectors.mockResolvedValue({ hits: [], status: "not_indexed", model: "provided-lsa-128", indexed_chunk_count: 0 });
     createMessage.mockResolvedValue(responseForQuestion());
     expect((await answerQuestion({ question })).retrieval).toMatchObject({ mode: "lexical_fallback", vector_status: "not_indexed" });
+  });
+
+  it("restricts an explicitly single-state lexical question while allowing an explicitly named other-state document", () => {
+    const documents = [capturedSource("D901", "A security deposit provision in California."), capturedSource("D902", "A security deposit provision in New Jersey.", "NJ"), capturedSource("D903", "A security deposit provision in Massachusetts.", "MA")];
+    const scoped = retrieveKnowledge("California security deposit", { sources: documents });
+    expect(scoped.chunks.map(chunk => chunk.doc_id)).toEqual(["D901"]);
+    const optedIn = retrieveKnowledge("California security deposit, compare source D902", { sources: documents });
+    expect(optedIn.chunks.map(chunk => chunk.doc_id)).toContain("D902");
+    expect(optedIn.chunks.map(chunk => chunk.doc_id)).not.toContain("D903");
+  });
+  it("keeps explicit document selection ahead of competing lexical and vector matches", () => {
+    const documents = Array.from({ length: 9 }, (_, index) => capturedSource(`D90${index + 1}`, "A security deposit provision in this captured document.", index === 8 ? "NJ" : "CA"));
+    const vectors = documents.slice(0, 8).map((source, index) => ({ id: `${source.doc_id}#live-0`, similarity: .9 - index / 100 }));
+    const retrieved = retrieveKnowledge("California security deposit; inspect D909", { sources: documents }, undefined, [], vectors);
+    expect(retrieved.chunks[0].doc_id).toBe("D909");
+    expect(retrieved.chunks).toHaveLength(8);
+  });
+  it("explains an opted-in other-state citation even without a selected property", async () => {
+    const otherState = capturedSource("D902", "A captured New Jersey source passage about security deposit obligations.", "NJ");
+    createMessage.mockResolvedValue({ content: [{ type: "text", text: JSON.stringify({ answer: "This expressly requested document is New Jersey evidence.", citations: [{ doc_id: "D902", quoted_span: otherState.text }] }) }], stop_reason: "end_turn", usage: { input_tokens: 100, output_tokens: 50 } });
+    const result = await answerQuestion({ question: "California security deposit, inspect D902" }, { sources: [otherState] });
+    expect(result.citations[0].doc_id).toBe("D902");
+    expect(result.notices.some(notice => notice.includes("Source evidence includes NJ") && notice.includes("explicitly requested state is CA"))).toBe(true);
   });
 
 });
