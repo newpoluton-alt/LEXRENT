@@ -11,9 +11,9 @@ import { useLang } from "./lovable/language";
 import { PropertyMap } from "./lovable/property-map";
 import { FactQuiz } from "./lovable/fact-quiz";
 import { CategoryPanel, EvidenceDialog, LawTable, PropertySummary } from "./lovable/results";
+import { getAccountSnapshot, useAccount } from "@/lib/account-state";
 
 type Tab = "overview" | "list" | "summary";
-type Account = { user: { id: string; email: string; name?: string } | null; auth_configured: boolean; is_admin: boolean };
 async function request<T>(url: string, options?: RequestInit): Promise<T> {
   const response = await fetch(url, { ...options, headers: { "Content-Type": "application/json", ...options?.headers } });
   const body = await response.json().catch(() => ({}));
@@ -32,7 +32,7 @@ export default function LexrentApp() {
   const [error, setError] = useState("");
   const [errors, setErrors] = useState({ address: false, date: false });
   const [tab, setTab] = useState<Tab>("overview");
-  const [account, setAccount] = useState<Account | null>(null);
+  const account = useAccount();
   const [dashboard, setDashboard] = useState<Dashboard | null>(null);
   const [savedIds, setSavedIds] = useState<string[]>([]);
   const [resolving, setResolving] = useState(false);
@@ -53,19 +53,16 @@ export default function LexrentApp() {
 
   useEffect(() => {
     let live = true;
-    Promise.allSettled([request<Account>("/api/me"), request<Dashboard>("/api/dashboard")]).then(([me, stats]) => {
-      if (!live) return;
-      if (me.status === "fulfilled") setAccount(me.value);
-      if (stats.status === "fulfilled") setDashboard(stats.value);
-    });
+    request<Dashboard>("/api/dashboard").then(data => { if (live) setDashboard(data); }).catch(() => {});
     return () => { live = false; };
   }, []);
   useEffect(() => {
-    if (!account?.user) return;
+    setSavedIds([]);
+    if (!account.user) return;
     let live = true;
     request<{ saved: { address_id: string }[] }>("/api/saved").then(data => { if (live) setSavedIds(data.saved.map(item => item.address_id)); }).catch(() => { /* Saving will surface a service error if the user requests it. */ });
     return () => { live = false; };
-  }, [account]);
+  }, [account.user?.id]);
 
   const runLookup = useCallback(async (addressId: string, asOf: string, facts: FactRecord = {}, updateUrl = true) => {
     const current = ++generation.current;
@@ -118,10 +115,12 @@ export default function LexrentApp() {
     if (!evaluation || saveLoading) return;
     if (!account?.user) { window.location.assign(`/sign-in?${new URLSearchParams({ next: `/?${new URLSearchParams({ address_id: evaluation.property.address_id, as_of: evaluation.as_of })}` })}`); return; }
     const id = evaluation.property.address_id;
+    const owner = account.user.id;
     const remove = savedIds.includes(id);
     setSaveLoading(true); setNotice("");
     try {
       await request("/api/saved", { ...post({ address_id: id }), method: remove ? "DELETE" : "POST" });
+      if (getAccountSnapshot().user?.id !== owner) return;
       setSavedIds(ids => remove ? ids.filter(saved => saved !== id) : [...ids, id]);
       setNotice(remove ? pick("Property removed from your saved list.", "Propiedad eliminada de su lista.") : pick("Property saved to your private account.", "Propiedad guardada en su cuenta privada."));
     } catch (e) { setError((e as Error).message); }

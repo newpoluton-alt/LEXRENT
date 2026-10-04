@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { SiteHeader } from "@/components/lovable/site-header";
+import { getAccountSnapshot, useAccount } from "@/lib/account-state";
 import { ArrowDownToLine, ArrowRight, ArrowUpRight, Bookmark, BookOpen, Building2, CalendarDays, Check, CheckCircle2, ChevronLeft, ChevronRight, CircleHelp, Clock3, Code2, Copy, ExternalLink, FileCheck2, FileText, Filter, FolderOpen, GitCompareArrows, Home, Layers3, LayoutDashboard, LoaderCircle, LockKeyhole, MapPin, Menu, Plus, Search, ShieldCheck, SlidersHorizontal, Sparkles, UsersRound, X } from "lucide-react";
 
 type View = "dashboard" | "properties" | "changes" | "sources" | "saved" | "assistant" | "admin";
@@ -11,7 +12,6 @@ type Rule = { team_rule_id: string; title: string; category: string; jurisdictio
 type Result = { team_rule_id: string; result: string; explanation: string; conflict_flag?: boolean; missing_facts?: string[]; rule?: Rule; evidence?: { quoted_span?: string; source_doc_id?: string; doc_id?: string; retrieved_at?: string; sha256?: string; start_offset?: number; end_offset?: number; source_url?: string } };
 type Lookup = { property?: Property; address?: Property; as_of: string; rules?: Result[]; results?: Result[]; missing_facts?: string[]; notices?: string[]; notes?: string[]; rule_count?: number; coverage_complete?: boolean; jurisdiction?: { state: string; city?: string | null; candidate_city?: string; verified: boolean; method?: string } };
 type Test = { test_id: string; title: string; type: string; expected_behavior: string; as_of?: string; as_of_before?: string; as_of_after?: string; states?: string[]; rule_ids?: string[] };
-type User = { id: string; email: string; name?: string };
 type Counts = { properties?: number; sources?: number; captured_sources?: number; rules?: number; jurisdictions?: number; cities?: number };
 type Capabilities = { ai?: { configured?: boolean }; auth?: { configured?: boolean }; database?: { configured?: boolean } };
 type ChatCitation = { doc_id: string; url?: string; source_url?: string; quoted_span: string; retrieved_at?: string };
@@ -135,9 +135,10 @@ export default function ResearchWorkspace() {
   const [activeTest, setActiveTest] = useState("T1");
   const [changeResult, setChangeResult] = useState<Record<string, unknown> | null>(null);
   const [changeLoading, setChangeLoading] = useState(false);
-  const [user, setUser] = useState<User | null>(null);
-  const [authConfigured, setAuthConfigured] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(false);
+  const account = useAccount();
+  const user = account.user;
+  const authConfigured = account.auth_configured;
+  const isAdmin = account.is_admin;
   const [capabilities, setCapabilities] = useState<Capabilities>({});
   const [saved, setSaved] = useState<Property[]>([]);
   const [error, setError] = useState("");
@@ -169,14 +170,12 @@ export default function ResearchWorkspace() {
       request<{ counts?: Counts }>("/api/dashboard"),
       request<{ sources?: Source[] } | Source[]>("/api/sources"),
       request<{ tests?: Test[] } | Test[]>("/api/changes"),
-      request<{ user: User | null; auth_configured: boolean; is_admin: boolean }>("/api/me"),
       request<Capabilities>("/api/capabilities"),
-    ]).then(([dashboard, library, changes, account, capability]) => {
+    ]).then(([dashboard, library, changes, capability]) => {
       if (!live) return;
       if (dashboard.status === "fulfilled") setCounts(normalizeCounts(dashboard.value));
       if (library.status === "fulfilled") setSources(Array.isArray(library.value) ? library.value : library.value.sources || []);
       if (changes.status === "fulfilled") setTests(Array.isArray(changes.value) ? changes.value : changes.value.tests || []);
-      if (account.status === "fulfilled") { setUser(account.value.user); setAuthConfigured(account.value.auth_configured); setIsAdmin(account.value.is_admin); }
       if (capability.status === "fulfilled") setCapabilities(capability.value);
       if (dashboard.status === "rejected") setError(dashboard.reason.message);
     });
@@ -201,8 +200,15 @@ export default function ResearchWorkspace() {
 
   const loadSaved = useCallback(async () => {
     if (!user) return;
-    try { const data = await request<{ saved: (Property | { property: Property })[] }>("/api/saved"); setSaved(data.saved.map(item => "property" in item ? item.property : item)); } catch (e) { setError((e as Error).message); }
-  }, [user]);
+    const owner = user.id;
+    try { const data = await request<{ saved: (Property | { property: Property })[] }>("/api/saved"); if (getAccountSnapshot().user?.id === owner) setSaved(data.saved.map(item => "property" in item ? item.property : item)); } catch (e) { if (getAccountSnapshot().user?.id === owner) setError((e as Error).message); }
+  }, [user?.id]);
+  useEffect(() => {
+    setSaved([]);
+    setImportText(""); setExtractWarnings([]);
+    chatGeneration.current += 1;
+    setChatMessages([]); setChatCitation(null); setChatError(""); setChatLoading(false);
+  }, [user?.id]);
   useEffect(() => { void loadSaved(); }, [loadSaved]);
   useEffect(() => { if (!notice) return; const timer = setTimeout(() => setNotice(""), 6000); return () => clearTimeout(timer); }, [notice]);
   useEffect(() => {

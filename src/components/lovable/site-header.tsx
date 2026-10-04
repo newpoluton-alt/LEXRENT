@@ -2,21 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { accountDisplayName, useAccount } from "@/lib/account-state";
 import { useLang } from "./language";
 
 export function SiteHeader() {
   const { lang, setLang, t, pick } = useLang();
   const pathname = usePathname();
-  const [signedIn, setSignedIn] = useState(false);
-  useEffect(() => {
-    const controller = new AbortController();
-    fetch("/api/me", { credentials: "same-origin", cache: "no-store", signal: controller.signal })
-      .then(response => response.ok ? response.json() : null)
-      .then(data => { if (!controller.signal.aborted) setSignedIn(Boolean(data?.user)); })
-      .catch(() => {});
-    return () => controller.abort();
-  }, [pathname]);
+  const account = useAccount(pathname);
   const links = [{ href: "/about", label: t("about") }, { href: "/rights", label: t("rights") }, { href: "/workspace", label: t("workspace") }];
   return <>
     <header className="flex flex-wrap items-stretch border-b-2 border-primary bg-background">
@@ -25,7 +17,7 @@ export function SiteHeader() {
         {links.map(link => <Link key={link.href} href={link.href} prefetch={link.href === "/workspace" ? false : undefined} aria-current={pathname === link.href ? "page" : undefined} className={`hover:underline ${pathname === link.href ? "underline" : ""}`}>{link.label}</Link>)}
       </nav>
       <div className="ml-auto flex items-center gap-4 px-4 text-xs sm:px-6 sm:text-sm">
-        <Link href="/sign-in" className="hover:underline">{signedIn ? t("account") : t("signIn")}</Link>
+        <Link href="/sign-in" prefetch={false} aria-label={account.user ? `${t("account")}: ${accountDisplayName(account.user)}` : t("signIn")} title={account.user ? accountDisplayName(account.user) : undefined} className="max-w-28 truncate hover:underline sm:max-w-48">{account.user ? accountDisplayName(account.user) : account.pending ? pick("Checking…", "Comprobando…") : t("signIn")}</Link>
         <div className="flex items-center gap-1" role="group" aria-label={pick("Language", "Idioma")}>
           <button type="button" onClick={() => setLang("en")} aria-pressed={lang === "en"} aria-label="English" className={`min-h-10 px-1 ${lang === "en" ? "font-bold" : "opacity-70 hover:opacity-100"}`}>EN</button>
           <span aria-hidden="true">/</span>

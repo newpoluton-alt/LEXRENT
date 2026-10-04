@@ -5763,4 +5763,4 @@ body {
 
 }
 
-@media print { .no-print, .leaflet-control-container { display:none !important; } body { background:white; color:#16285e; } .print-section { break-inside:avoid; } }
+@media print { .no-print, .leaflet-control-zoom { display:none !important; } body { background:white; color:#16285e; } .print-section { break-inside:avoid; } }
