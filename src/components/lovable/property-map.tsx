@@ -10,6 +10,7 @@ import { useLang } from "./language";
 export interface PropertyMapProps {
   property: PropertyRecord;
   coordinates?: MapPoint;
+  onLocationChange?: (addressId: string, location: MapLocation) => void;
 }
 type MapState = {
   key: string;
@@ -22,7 +23,7 @@ type MapState = {
 const locationCache = new Map<string, { location: MapLocation | null; at: number }>();
 const CACHE_TTL = 5 * 60_000;
 
-export function PropertyMap({ property, coordinates }: PropertyMapProps) {
+export function PropertyMap({ property, coordinates, onLocationChange }: PropertyMapProps) {
   const { pick } = useLang();
   const element = useRef<HTMLDivElement>(null);
   const resetView = useRef<() => void>(() => {});
@@ -35,6 +36,12 @@ export function PropertyMap({ property, coordinates }: PropertyMapProps) {
   const key = JSON.stringify([addressKey, coordinates?.lat, coordinates?.lon, attempt]);
   const current: MapState = state.key === key ? state : { key, status: "loading", location: fallback, search: "loading" };
   const searchUrl = `https://www.openstreetmap.org/search?query=${encodeURIComponent(address)}`;
+
+  useEffect(() => {
+    onLocationChange?.(property.address_id, current.location);
+    // Share the visual location with the photo view; this does not change legal facts.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [onLocationChange, property.address_id, current.location.lat, current.location.lon, current.location.zoom, current.location.precision, current.location.source]);
 
   useEffect(() => {
     const abort = new AbortController();

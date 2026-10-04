@@ -9,6 +9,8 @@ import { SiteHeader } from "./lovable/site-header";
 import { Skyline } from "./lovable/skyline";
 import { useLang } from "./lovable/language";
 import { PropertyMap } from "./lovable/property-map";
+import { RealLifeView } from "./lovable/real-life-view";
+import { getAreaMapLocation, type MapLocation } from "@/lib/property-map-location";
 import { FactQuiz } from "./lovable/fact-quiz";
 import { CategoryPanel, EvidenceDialog, LawTable, PropertySummary } from "./lovable/results";
 import { getAccountSnapshot, useAccount } from "@/lib/account-state";
@@ -50,6 +52,8 @@ export default function LexrentApp() {
   const [listLoading, setListLoading] = useState(false);
   const [listError, setListError] = useState("");
   const generation = useRef(0);
+  const [mapped, setMapped] = useState<{ addressId: string; location: MapLocation } | null>(null);
+  const handleMapLocation = useCallback((addressId: string, location: MapLocation) => setMapped({ addressId, location }), []);
 
   useEffect(() => {
     let live = true;
@@ -185,10 +189,10 @@ export default function LexrentApp() {
           <div role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`}>
             {tab === "overview" && <>
               <section className="grid border-2 border-primary bg-primary md:grid-cols-[1fr_340px]">
-                <div className="relative min-w-0 bg-card"><PropertyMap property={evaluation.property} /></div>
+                <div className="relative min-w-0 bg-card"><PropertyMap property={evaluation.property} onLocationChange={handleMapLocation} /></div>
                 <CategoryPanel evaluation={evaluation} onEvidence={setEvidence} />
               </section>
-              <details className="no-print mt-3 border-2 border-primary bg-card"><summary className="cursor-pointer bg-primary px-4 py-2 text-lg font-semibold uppercase text-primary-foreground">{pick("See in real life", "Ver en la vida real")}</summary><div className="p-4 text-sm"><p>{pick("Explore the address on the map provider’s website. Street-level imagery, where available, can help you recognize the location.", "Explore la dirección en el sitio del proveedor de mapas. Las imágenes a nivel de calle, cuando estén disponibles, pueden ayudarle a reconocer el lugar.")}</p><a target="_blank" rel="noreferrer" href={`https://www.google.com/maps/search/?${new URLSearchParams({ api: "1", query: `${evaluation.property.street_address}, ${evaluation.property.postal_city}, ${evaluation.property.state} ${evaluation.property.zip}` })}`} className="mt-3 inline-flex underline">{pick("Open Google Maps", "Abrir Google Maps")} ↗</a></div></details>
+              <RealLifeView property={evaluation.property} location={mapped?.addressId === evaluation.property.address_id ? mapped.location : getAreaMapLocation(evaluation.property)} />
               <section className="mt-3 flex flex-wrap items-center gap-2 border-2 border-primary bg-card px-4 py-3 text-sm">
                 <span className="mr-1 text-xs font-semibold uppercase">{pick("Jurisdiction check", "Jurisdicción")}:</span>
                 <span className="bg-primary px-2 py-1 text-primary-foreground">{pick("State", "Estado")}: {evaluation.jurisdiction.state}</span><ChevronRight size={16} />
