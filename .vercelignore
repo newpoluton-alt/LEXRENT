@@ -11,3 +11,5 @@ test-results/
 **/*.pdf
 **/.DS_Store
 AI capabilities/*.py
+AI RAG/*
+!AI RAG/rag_knowledge_base.jsonl

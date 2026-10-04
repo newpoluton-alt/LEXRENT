@@ -5,11 +5,14 @@ import { DEFAULT_AS_OF, type DomainContext, type RetrievalChunk, type SourceDocu
 import { queryDateSchema } from "../domain/validation";
 import { restoreOriginalQuote } from "../domain/quotes";
 import { AiError } from "./ai";
+import { searchVectorChunks } from "./vector-store";
 
 export const chatQuestionSchema = z.object({ question: z.string().trim().min(1).max(2500), address_id: z.string().max(100).optional(), as_of: queryDateSchema.optional(), history: z.array(z.object({ role: z.enum(["user", "assistant"]), content: z.string().max(3000) }).strict()).max(6).optional() }).strict();
 export type ChatQuestion = z.infer<typeof chatQuestionSchema>;
 export interface ChatCitation { doc_id: string; url: string; quoted_span: string; retrieved_at: string }
-export interface ChatAnswer { answer: string; citations: ChatCitation[]; sources_used: string[]; missing_facts: string[]; as_of: string; address_id: string | null; notices: string[]; model: string; usage: { input_tokens: number; output_tokens: number }; scope: "research_assistance"; retrieved_chunk_count: number; link_only_sources: { doc_id: string; url: string; jurisdictions: string }[] }
+export interface ChatRetrievalMetadata { mode: "hybrid_vector" | "lexical_fallback"; vector_status: "ready" | "not_indexed" | "unavailable" | "empty_query"; model: string; indexed_chunk_count: number }
+export interface VectorHit { id: string; similarity: number }
+export interface ChatAnswer { retrieval?: ChatRetrievalMetadata; answer: string; citations: ChatCitation[]; sources_used: string[]; missing_facts: string[]; as_of: string; address_id: string | null; notices: string[]; model: string; usage: { input_tokens: number; output_tokens: number }; scope: "research_assistance"; retrieved_chunk_count: number; link_only_sources: { doc_id: string; url: string; jurisdictions: string }[] }
 
 const TOPIC_ALIASES: [RegExp, string[]][] = [
   [/deposit|depósito|deposito|залог|депозит|аманат/iu, ["security", "deposit", "landlord"]],
@@ -46,17 +49,30 @@ function fallbackChunks(source: SourceDocument): RetrievalChunk[] {
   }
   return result;
 }
-export function retrieveKnowledge(question: string, context: DomainContext = {}, addressId?: string, history: ChatQuestion["history"] = []) {
+/** Current, exact captured evidence only. Vector IDs are resolved against this corpus. */
+export function getCurrentKnowledgeChunks(context: DomainContext = {}): RetrievalChunk[] {
   const sources = context.sources ?? starterSources;
   const compiled = challengeData.knowledgeBaseChunks ?? [];
-  const allChunks = sources.flatMap(source => {
-    const imported = compiled.filter(chunk => chunk.doc_id === source.doc_id && chunk.source_sha256 === source.sha256 && source.text?.includes(chunk.text));
+  return sources.flatMap(source => {
+    if (!source.captured || !source.text) return [];
+    const imported = compiled.filter(chunk => chunk.doc_id === source.doc_id && chunk.source_sha256 === source.sha256 && source.text!.slice(chunk.start_offset, chunk.end_offset) === chunk.text);
     return imported.length ? imported : fallbackChunks(source);
   });
+}
+function requestedStates(question: string) {
+  return [["CA", /\bcalifornia\b|\bCA\b/iu], ["NJ", /\bnew jersey\b|\bNJ\b/iu], ["MA", /\bmassachusetts\b|\bMA\b/iu]].filter(([, expression]) => (expression as RegExp).test(question)).map(([state]) => state as string);
+}
+function retrievalState(question: string, addressId?: string) {
+  const requested = requestedStates(question);
+  return requested.length === 1 ? requested[0] : requested.length > 1 ? undefined : addressId ? properties.find(property => property.address_id === addressId)?.state : undefined;
+}
+export function retrieveKnowledge(question: string, context: DomainContext = {}, addressId?: string, history: ChatQuestion["history"] = [], vectorHits: readonly VectorHit[] = []) {
+  const sources = context.sources ?? starterSources;
+  const allChunks = getCurrentKnowledgeChunks(context);
   const property = addressId ? properties.find(property => property.address_id === addressId) : undefined;
   const queryTokens = tokens(`${question} ${history.filter(item => item.role === "user").slice(-2).map(item => item.content).join(" ")}`);
   const queryTerms = [...new Set(queryTokens.map(stem))];
-  const requestedStates = [["CA", /\bcalifornia\b|\bCA\b/iu], ["NJ", /\bnew jersey\b|\bNJ\b/iu], ["MA", /\bmassachusetts\b|\bMA\b/iu]].filter(([, expression]) => (expression as RegExp).test(question)).map(([state]) => state as string);
+  const states = requestedStates(question);
   const namedDocs = (question.match(/\bD\d{3}\b/gi) ?? []).map(id => id.toUpperCase());
   const frequencies = allChunks.map(chunk => {
     const terms = bodyTerms(chunk.text), counts = new Map<string, number>();
@@ -76,17 +92,35 @@ export function retrieveKnowledge(question: string, context: DomainContext = {},
     // Metadata affects relevance and authority, never supplies a legal verdict.
     const metadataTerms = new Set(bodyTerms(source.jurisdictions));
     score += queryTerms.filter(term => metadataTerms.has(term)).length * 0.4;
-    if (requestedStates.length) score *= requestedStates.some(state => source.jurisdictions === state || source.jurisdictions.endsWith(`, ${state}`)) ? 1.4 : 0.35;
+    if (states.length) score *= states.some(state => source.jurisdictions === state || source.jurisdictions.endsWith(`, ${state}`)) ? 1.4 : 0.35;
     if (source.source_type === "official" && /codes_displaySection|\/Laws\/GeneralLaws\/|pub\.njleg/i.test(source.url)) score *= 1.12;
     if (namedDocs.includes(chunk.doc_id)) score += 100;
     if (property && source.jurisdictions === property.state) score += 2;
     if (property && source.jurisdictions === `${property.legal_city_candidate}, ${property.state}`) score += 2;
     return { chunk, score };
   }).filter(item => item.score > 0).sort((a, b) => b.score - a.score || a.chunk.doc_id.localeCompare(b.chunk.doc_id) || a.chunk.chunk_index - b.chunk.chunk_index);
+  const byId = new Map(allChunks.map(chunk => [chunk.id, chunk]));
+  const scopedState = retrievalState(question, addressId);
+  const vectorCandidates = vectorHits.filter(hit => {
+    const chunk = byId.get(hit.id);
+    if (!chunk || !Number.isFinite(hit.similarity) || hit.similarity <= 0) return false;
+    const source = sources.find(source => source.doc_id === chunk.doc_id);
+    return Boolean(source?.captured && (!scopedState || source.jurisdictions === scopedState || source.jurisdictions.endsWith(`, ${scopedState}`)));
+  }).sort((a, b) => b.similarity - a.similarity || a.id.localeCompare(b.id));
+  const uniqueVectors = [...new Map(vectorCandidates.map(hit => [hit.id, hit])).values()];
+  // Weighted reciprocal rank fusion: lexical authority/relevance 2, vector meaning 1.
+  // Raw cosine similarities and BM25 scores are not directly comparable.
+  const fused = new Map<string, { chunk: RetrievalChunk; score: number }>();
+  scored.forEach((item, index) => fused.set(item.chunk.id, { chunk: item.chunk, score: 2 / (60 + index + 1) }));
+  uniqueVectors.forEach((hit, index) => {
+    const item = fused.get(hit.id);
+    fused.set(hit.id, { chunk: byId.get(hit.id)!, score: (item?.score ?? 0) + 1 / (60 + index + 1) });
+  });
+  const ranked = uniqueVectors.length ? [...fused.values()].sort((a, b) => b.score - a.score || a.chunk.doc_id.localeCompare(b.chunk.doc_id) || a.chunk.chunk_index - b.chunk.chunk_index) : scored;
   const selected = new Map<string, RetrievalChunk>();
   let characters = 0;
   const perDocument = new Map<string, number>();
-  const primary = scored.filter(item => {
+  const primary = ranked.filter(item => {
     const count = perDocument.get(item.chunk.doc_id) ?? 0;
     if (count >= 3) return false;
     perDocument.set(item.chunk.doc_id, count + 1);
@@ -100,7 +134,7 @@ export function retrieveKnowledge(question: string, context: DomainContext = {},
     }
   }
   const linkOnly = sources.filter(source => !source.captured && (namedDocs.includes(source.doc_id) || queryTokens.some(token => `${source.jurisdictions} ${source.url}`.toLocaleLowerCase().includes(token)) || Boolean(property && source.jurisdictions.endsWith(property.state)))).slice(0, 10).map(source => ({ doc_id: source.doc_id, url: source.url, jurisdictions: source.jurisdictions }));
-  return { chunks: [...selected.values()], sources, linkOnly };
+  return { chunks: [...selected.values()], sources, linkOnly, vector_hit_count: uniqueVectors.length };
 }
 
 const answerSchema = z.object({ answer: z.string().min(1).max(20_000), citations: z.array(z.object({ doc_id: z.string(), quoted_span: z.string().min(20).max(3000) }).strict()).max(12) }).strict();
@@ -123,11 +157,20 @@ export async function answerQuestion(input: ChatQuestion, context: DomainContext
   const addressId = request.address_id ?? detected ?? streetMatch?.address_id;
   const evaluation = addressId ? evaluateProperty(addressId, asOf, context) : null;
   if (addressId && !evaluation) throw new AiError("PROPERTY_NOT_FOUND", "Select a property from the supplied sample or use a valid address ID.", 404);
-  const retrieval = retrieveKnowledge(request.question, context, addressId, request.history);
+  let vector: Awaited<ReturnType<typeof searchVectorChunks>>;
+  try {
+    const vectorQuery = `${request.question} ${request.history?.filter(item => item.role === "user").slice(-2).map(item => item.content).join(" ") ?? ""}`.trim();
+    vector = await searchVectorChunks(vectorQuery, getCurrentKnowledgeChunks(context), context.sources ?? starterSources, { state: retrievalState(request.question, addressId), limit: 40 });
+  } catch {
+    vector = { hits: [], status: "unavailable", model: "unavailable", indexed_chunk_count: 0 };
+  }
+  const retrieval = retrieveKnowledge(request.question, context, addressId, request.history, vector.status === "ready" ? vector.hits : []);
+  const retrievalMetadata: ChatRetrievalMetadata = { mode: vector.status === "ready" && retrieval.vector_hit_count > 0 ? "hybrid_vector" : "lexical_fallback", vector_status: vector.status, model: vector.model, indexed_chunk_count: vector.indexed_chunk_count };
   const model = process.env.CLAUDE_MODEL?.trim() || "claude-sonnet-5-5";
   const notices = ["Not legal advice. Research assistance based on captured public sources.", "The assistant cannot change deterministic applicability results or publish legal rules."];
+  if (retrievalMetadata.mode === "lexical_fallback") notices.push(vector.status === "ready" ? "Vector search returned no matching current evidence. This answer uses lexical retrieval of captured sources." : `Vector search is ${vector.status.replaceAll("_", " ")}. This answer uses lexical retrieval of captured sources.`);
   if (!(context.rules?.length)) notices.push("No published rule bundle exists. Property-specific applicability has not been evaluated.");
-  const base = { sources_used: [...new Set(retrieval.chunks.map(chunk => chunk.doc_id))], missing_facts: evaluation?.missing_facts ?? [], as_of: asOf, address_id: addressId ?? null, notices, model, scope: "research_assistance" as const, retrieved_chunk_count: retrieval.chunks.length, link_only_sources: retrieval.linkOnly };
+  const base = { retrieval: retrievalMetadata, sources_used: [...new Set(retrieval.chunks.map(chunk => chunk.doc_id))], missing_facts: evaluation?.missing_facts ?? [], as_of: asOf, address_id: addressId ?? null, notices, model, scope: "research_assistance" as const, retrieved_chunk_count: retrieval.chunks.length, link_only_sources: retrieval.linkOnly };
   if (!retrieval.chunks.length) return { ...base, answer: "No matching captured source text was found. Try an address ID, city, statute section, or a topic such as deposits or eviction. Link-only sources require permitted text capture before they can support an answer.", citations: [], usage: { input_tokens: 0, output_tokens: 0 } };
   const propertyContext = evaluation ? { property: evaluation.property, jurisdiction: evaluation.jurisdiction, missing_facts: evaluation.missing_facts, input_snapshot: evaluation.input_snapshot, legal_results: evaluation.rules.map(rule => ({ team_rule_id: rule.team_rule_id, title: rule.rule.title, result: rule.result, explanation: rule.explanation, conflict_flag: rule.conflict_flag })), notices: evaluation.notices } : null;
   let response;
@@ -149,6 +192,12 @@ export async function answerQuestion(input: ChatQuestion, context: DomainContext
     if (!citations.some(existing => existing.doc_id === citation.doc_id && existing.quoted_span === restored.quoted_span)) citations.push({ doc_id: source.doc_id, url: source.url, quoted_span: restored.quoted_span, retrieved_at: source.retrieved_at });
   }
   if (!citations.length) throw new AiError("AI_CITATION_REQUIRED", "The answer did not provide supporting source evidence. Try a more specific question.", 422);
+  const citedStates = [...new Set(citations.map(citation => retrieval.sources.find(source => source.doc_id === citation.doc_id)?.jurisdictions.split(",").at(-1)?.trim()).filter((state): state is string => ["CA", "NJ", "MA"].includes(state ?? "")))];
+  const propertyState = evaluation?.property.state;
+  const otherStates = propertyState ? citedStates.filter(state => state !== propertyState) : [];
+  if (otherStates.length) notices.push(`Source evidence includes ${otherStates.join(" and ")}; the selected property is in ${propertyState}. Property-specific coverage remains governed by the deterministic evaluator.`);
+  else if (citedStates.length > 1) notices.push(`Cited sources span ${citedStates.join(" and ")}. Interpret each source within its own jurisdiction.`);
+
   const prefix = !(context.rules?.length) ? "Property-specific applicability has not been evaluated because no reviewed rule bundle has been published.\n\n" : evaluation?.rules.some(rule => rule.result === "unknown") ? "Some property coverage remains unknown; missing facts must be resolved before applicability can be confirmed.\n\n" : "";
   return { ...base, answer: `${prefix}${parsed.data.answer}`, citations, usage: { input_tokens: response.usage.input_tokens, output_tokens: response.usage.output_tokens } };
 }

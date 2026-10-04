@@ -6,7 +6,7 @@ Live app: [LEXRENT](https://lexrent-zeta.vercel.app). Production is public; Verc
 
 A rental housing law research workspace for the Rental Housing Law Navigator challenge. It connects a property to source evidence, separates pending laws from enacted requirements, and explains missing facts rather than guessing coverage.
 
-One Next.js deployment contains the React frontend, Hono API, deterministic rule engine, source ingestion, Neon Auth, Neon Postgres persistence, and Claude extraction and retrieval. The frontend follows the [original LEXRENT Lovable project](https://lovable.dev/projects/c3e1fb53-d8d2-42f7-a0ef-1775909ab00a): cream, royal blue, yellow, Lexend, rectangular controls and the illustrated city motif.
+One Next.js deployment contains the React frontend, Hono API, deterministic rule engine, source ingestion, Neon Auth, Neon Postgres persistence with pgvector, and Claude extraction and grounded answers. The frontend follows the [original LEXRENT Lovable project](https://lovable.dev/projects/c3e1fb53-d8d2-42f7-a0ef-1775909ab00a): cream, royal blue, yellow, Lexend, rectangular controls and the illustrated city motif.
 
 ## Run locally
 
@@ -17,6 +17,8 @@ npm ci
 cp .env.example .env
 # Configure the server variables below.
 npm run db:migrate
+# Optional: populate the current source vectors before the first chat request.
+npm run rag:index
 npm run dev
 ```
 
@@ -51,15 +53,26 @@ Enable the Google provider in Neon Auth and whitelist the app’s actual product
 - Run the five supplied change cases and export `rules.json`, `lookups.json`, `changes.json`, and a separate submission readiness report.
 - Import reviewed, source-backed rule bundles. Validation rejects fabricated quotations, unknown source references, invalid dates and executable-code conditions.
 - Ask Claude grounded questions with citations and optional address/date context. The supplied Python bot’s grounding instructions and JSONL knowledge base are incorporated into the monolith; it needs no separate Python service or unrestricted cloud-agent environment.
+- Retrieve evidence with weighted lexical/vector search using the supplied 128-dimensional LSA model and Neon pgvector. Updated captures produce a new versioned corpus; old source vectors cannot support current answers.
 - Extract atomic, structured requirement drafts from captured sources using Claude. Long documents are processed in overlapping chunks, with resumable progress and explicit review before publication.
 
 ## Corpus and legal coverage
 
-The build reads `participant-final-no-hour16 3/` and `AI capabilities/rag_knowledge_base.jsonl`. It validates the 568 supplied law chunks against authoritative captured documents, restores exact original whitespace for quotations, and compiles the index into `src/data/challenge.json`. The supplied 500 address records and 33 uncaptured-source links remain traceable to the manifest.
+The build reads `participant-final-no-hour16 3/` and the supplied `AI RAG/` knowledge base. It validates the 568 supplied law chunks against authoritative captured documents, restores exact original whitespace for quotations, and compiles the chunks into `src/data/challenge.json`. The supplied 500 address records and 33 uncaptured-source links remain traceable to the manifest. Link-only records cannot support citations.
 
 No legal rules are seeded or fabricated. The initial corpus is searchable, but a complete challenge submission requires reviewed rule imports, relevant verified municipal boundaries, missing fact review and all five evaluated change cases. The readiness flag checks that rules exist and all five cases are marked evaluated; it reports unresolved addresses separately and does not certify source, fact or legal completeness. Property results always retain `coverage_complete: false`. AI answers are research summaries; they do not replace the deterministic applicability engine or certify a complete legal analysis.
 
 The original `AI capabilities/build_agent_v1.py` is preserved as a separate reference/optional experiment. Its credential now comes from `ANTHROPIC_API_KEY`, and its file paths are relative to the script. Its beta managed-agent environment is not created by LEXRENT. The deployed app uses the supported Claude Messages SDK with bounded retrieval and source validation.
+
+## Vector retrieval
+
+`AI RAG/kb_index.npz` supplies a fitted TF-IDF vocabulary, IDF weights and truncated-SVD projection. `scripts/build-vector-model.ts` exports that fixed model into the checked-in, server-only `src/data/vector-model.json`; TypeScript computes normalized 128-dimensional vectors for questions and validated source chunks. These are local LSA vectors, not neural embeddings. No Python service or additional embedding API key is required; Claude answers still require `ANTHROPIC_API_KEY`.
+
+Run `npm run vector:model` to regenerate the export after changing the supplied NPZ. Normal builds use the checked-in model JSON and do not fit a model at runtime. GitHub retains the original `AI RAG/` files. Vercel receives the knowledge JSONL for build validation and deploys the compiled model and source chunks; the Python experiments, NPZ and duplicate vector dataset are excluded from deployment.
+
+Neon stores versioned corpora and chunks in `lexrent_vector_corpora` and `lexrent_vector_chunks`. A corpus fingerprint includes the model identity and current validated chunk content and metadata. Indexing is idempotent and atomic, runs lazily when needed, and can be triggered with `npm run rag:index`. A signed-in, verified administrator can also request `POST /api/admin/vector-index`; the server checks the administrator allowlist and records the index operation. Previous corpora remain preserved. New source text is projected with the same fitted model; retrieval requires current source hashes and URLs, so a changed capture cannot reuse stale evidence.
+
+Search combines lexical and cosine-distance rankings using weighted reciprocal rank fusion, with lexical weight 2 and vector weight 1. The 568 captured chunks use exact pgvector cosine search; an approximate HNSW index is unnecessary at this size. Lexical retrieval remains available when vector storage is unavailable or a question has no usable model vocabulary. Existing multilingual topic aliases help retrieval, but the supplied ASCII tokenizer is not a general multilingual embedding model. Evidence quotes are validated independently of their retrieval rank.
 
 ## Review workflow
 

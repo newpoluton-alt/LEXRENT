@@ -24,13 +24,16 @@ const sources: SourceDocument[] = await Promise.all((await parseCsv("corpus/corp
   return { ...row, captured: text !== undefined, ...(text !== undefined ? { text } : {}) } as SourceDocument;
 }));
 const data: ChallengeData = { generated_at: new Date().toISOString(), properties, sources, changeFixtures: JSON.parse(await readFile(resolve(root, "dev/change_tests.json"), "utf8")), verifiedRules: [] };
+for (const knowledgeFile of ["AI RAG/rag_knowledge_base.jsonl", "AI capabilities/rag_knowledge_base.jsonl"]) {
 try {
-  const records = (await readFile(resolve(process.cwd(), "AI capabilities/rag_knowledge_base.jsonl"), "utf8")).split(/\r?\n/).filter(line => line.trim()).map(line => JSON.parse(line) as Record<string, unknown>);
+  const records = (await readFile(resolve(process.cwd(), knowledgeFile), "utf8")).split(/\r?\n/).filter(line => line.trim()).map(line => JSON.parse(line) as Record<string, unknown>);
   const knowledge = validateKnowledgeBaseChunks(records, sources);
   data.knowledgeBaseChunks = knowledge.chunks;
   data.knowledgeBaseAudit = knowledge.audit;
+  break;
 } catch (error) {
   if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+}
 }
 await mkdir(resolve(process.cwd(), "src/data"), { recursive: true });
 await writeFile(resolve(process.cwd(), "src/data/challenge.json"), JSON.stringify(data));

@@ -5641,3 +5641,27 @@ body {
   margin-left: auto
 }
 }
+
+.chat-retrieval {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 13px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.chat-retrieval small {
+  flex-basis: 100%;
+  font-size: 11px;
+}
+
+.chat-research-notes {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.85;
+}
+.chat-research-notes summary { cursor: pointer; }
+.chat-research-notes ul { padding-left: 18px; margin: 8px 0 0; }

@@ -30,7 +30,7 @@ describe("monolith API", () => {
     expect(response.status).toBe(403);
   });
   it("requires real server sessions for saved work and admin/AI mutations", async () => {
-    for (const route of ["saved", "admin/rules", "ai/extract"]) {
+    for (const route of ["saved", "admin/rules", "admin/vector-index", "ai/extract"]) {
       expect((await app.request(`/api/${route}`, post({}))).status).toBe(503);
     }
     expect((await app.request("/api/me")).status).toBe(200);

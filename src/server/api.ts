@@ -8,8 +8,10 @@ import { appendAudit, createEvaluationRun, DatabaseError, deleteSavedProperty, g
 import { loadContext } from "./context";
 import { AiError, isAiConfigured } from "./ai";
 import { extractWithPersistence, reserveAiRequest } from "./extraction-store";
-import { answerQuestion, chatQuestionSchema } from "./chat";
+import { answerQuestion, chatQuestionSchema, getCurrentKnowledgeChunks } from "./chat";
 import { JurisdictionError, resolveJurisdiction } from "./jurisdiction";
+import { syncVectorCorpus, VectorStoreError } from "./vector-store";
+import { vectorModelInfo } from "../domain/vector-embedding";
 
 const addressId = z.string().min(1).max(100);
 const factsSchema = z.object({
@@ -26,7 +28,7 @@ app.use("*", bodyLimit({ maxSize: 2_000_000, onError: c => c.json({ error: "BODY
 app.use("*", async (c, next) => { c.header("Cache-Control", "no-store"); if (!["GET", "HEAD", "OPTIONS"].includes(c.req.method)) assertSameOrigin(c.req.raw); await next(); });
 app.onError((error, c) => {
   if (error instanceof z.ZodError) return c.json({ error: "INVALID_INPUT", message: error.issues.map(issue => `${issue.path.join(".")}: ${issue.message}`).join("; ") }, 400);
-  if (error instanceof AuthError || error instanceof DatabaseError || error instanceof AiError || error instanceof JurisdictionError) return c.json({ error: error.code, message: error.message }, error.status as 400);
+  if (error instanceof AuthError || error instanceof DatabaseError || error instanceof AiError || error instanceof JurisdictionError || error instanceof VectorStoreError) return c.json({ error: error.code, message: error.message }, error.status as 400);
   if (error instanceof SyntaxError) return c.json({ error: "INVALID_JSON", message: "Provide valid JSON." }, 400);
   console.error("LEXRENT request failed", { name: error.name });
   return c.json({ error: "REQUEST_FAILED", message: "This request could not be completed. Please try again." }, 500);
@@ -34,7 +36,7 @@ app.onError((error, c) => {
 app.notFound(c => c.json({ error: "NOT_FOUND", message: "This endpoint does not exist." }, 404));
 
 app.get("/health", c => c.json({ status: "ok", app: "LEXRENT" }));
-app.get("/capabilities", c => c.json({ auth: { configured: isAuthConfigured() }, database: { configured: isDatabaseConfigured() }, ai: { configured: isAiConfigured(), model: process.env.CLAUDE_MODEL || "claude-sonnet-5-5", requires_review: true } }));
+app.get("/capabilities", c => c.json({ auth: { configured: isAuthConfigured() }, database: { configured: isDatabaseConfigured() }, ai: { configured: isAiConfigured(), model: process.env.CLAUDE_MODEL || "claude-sonnet-5-5", requires_review: true, retrieval: { engine: "neon_pgvector", method: "lsa_keyword_hybrid", dimensions: vectorModelInfo.dimensions, embedding_api_required: false } } }));
 app.get("/me", async c => { const session = await getSession(); return c.json({ user: session?.user ?? null, auth_configured: isAuthConfigured(), is_admin: !!session && isAdmin(session.user) }); });
 app.get("/dashboard", async c => {
   const { context, createdAt } = await loadContext(); const dashboard = getDashboard(context);
@@ -77,6 +79,14 @@ app.delete("/saved", async c => { const user = await requireUser(c.req.raw); con
 app.get("/runs", async c => c.json({ runs: await listEvaluationRuns(await requireUser()) }));
 app.get("/runs/:id", async c => { const run = await getEvaluationRun(await requireUser(), c.req.param("id")); return run ? c.json(run) : c.json({ error: "NOT_FOUND", message: "That evaluation is not in your workspace." }, 404); });
 app.get("/admin/audit", async c => c.json({ records: await listAuditRecords(await requireAdmin()) }));
+app.post("/admin/vector-index", async c => {
+  const user = await requireAdmin(c.req.raw);
+  z.object({}).strict().parse(await c.req.json());
+  const { context } = await loadContext({ allowEvidenceRepair: true });
+  const result = await syncVectorCorpus(getCurrentKnowledgeChunks(context), context.sources ?? []);
+  await appendAudit(user, { action: "ai.vector.index", entityType: "source_index", entityId: result.fingerprint, metadata: { model: result.model, dimensions: result.dimensions, indexed_chunks: result.indexed_chunk_count } });
+  return c.json(result);
+});
 app.post("/admin/rules", async c => {
   const user = await requireAdmin(c.req.raw); const input = z.object({ rules: z.array(z.unknown()).min(1).max(5000), ruleLogic: z.record(z.string(), z.unknown()).optional(), logic: z.record(z.string(), z.unknown()).optional(), name: z.string().min(1).max(200).optional(), mode: z.enum(["merge", "replace"]).default("merge") }).strict().parse(await c.req.json());
   const { context } = await loadContext({ allowEvidenceRepair: true });
