@@ -1,0 +1,632 @@
+{
+  "schema_version": 1,
+  "cache_key": "4d6382433523cc398cd615283d983ab6dce2efab03c5d059eb12189c26af47fa",
+  "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-6ba5849b53fbd6f1",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "RSO automatic annual rent increase of 1% to 4% (CPI-based)",
+          "requirement": "For units subject to the Rent Stabilization Ordinance, rent may be increased without Rent Adjustment Commission or Rent Stabilization Division permission by 1% to 4% every 12 months. The percentage is based on the 12-month CPI average ending September 30. The adjustment may be applied once each year and is not cumulative or retroactive.",
+          "citation": "LAHD Rent Stabilization Bulletin, Allowable Rent Increase (#3 – 02/02/2026), Automatic Adjustments item 1",
+          "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+          "quoted_span": "The \nannual adjustment may be applied once each year. The 1% to 4% annual increase is",
+          "key_value": "1%-4% per 12 months",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The current-year percentage is drafted separately as la-rso-2026-27-annual-percentage-3pct.",
+          "effective_date": null,
+          "source_doc_id": "S001",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-e0bcf5e561a493a4",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "RSO calculated annual increase of 3% for July 1, 2026 through June 30, 2027",
+          "requirement": "The calculated annual rent increase percentage for RSO units is 3%, effective July 1, 2026 through June 30, 2027.",
+          "citation": "LAHD Rent Stabilization Bulletin, Allowable Rent Increase (#3 – 02/02/2026), Automatic Adjustments item 1 and chronology table",
+          "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+          "quoted_span": "7/1/03 - 6/30/04 3% 7/1/26 - 6/30/27 3%",
+          "key_value": "3%",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Sets the specific percentage within the 1%-4% range in la-rso-annual-allowable-increase-cpi-1-4pct. Applies through 2027-06-30.",
+          "effective_date": "2026-07-01",
+          "source_doc_id": "S001",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-ddecbf15c03c80bb",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "RSO security deposit increase tied to annual rent increase",
+          "requirement": "For RSO units, the security deposit may be increased by 1% to 4%, at the same time and by the same percentage as the annual rent increase.",
+          "citation": "LAHD Rent Stabilization Bulletin, Allowable Rent Increase (#3 – 02/02/2026), Automatic Adjustments item 2",
+          "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+          "quoted_span": "An increase of 1% to 4% of the security deposit is allowed at the same time and by",
+          "key_value": "1%-4% (same as annual rent increase)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Tied to the annual increase in la-rso-annual-allowable-increase-cpi-1-4pct.",
+          "effective_date": null,
+          "source_doc_id": "S001",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-bf538493e152ce9b",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "RSO annual increase may not include additional utilities percentage (eff. Feb. 2, 2026)",
+          "requirement": "Effective February 2, 2026, the RSO annual rent increase must not include any additional percentage increase for utilities.",
+          "citation": "LAHD Rent Stabilization Bulletin, Allowable Rent Increase (#3 – 02/02/2026), Automatic Adjustments item 3",
+          "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+          "quoted_span": "Effective February 2, 2026, the RSO annu al rent increase must not include",
+          "key_value": "0% additional for utilities",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2026-02-02",
+          "source_doc_id": "S001",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-3d8ce84d93cce34d",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "No RSO rent increase when an additional dependent is added (eff. Feb. 2, 2026)",
+          "requirement": "Effective February 2, 2026, no rent increase is permitted when an additional dependent is added to the tenancy of an RSO unit.",
+          "citation": "LAHD Rent Stabilization Bulletin, Allowable Rent Increase (#3 – 02/02/2026), Automatic Adjustments item 4",
+          "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+          "quoted_span": "Effective February 2, 2026, no rent increase is permitted when an additional dependent is",
+          "key_value": "0%",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The trigger (an additional dependent being added) is not an available coverage field and is described only in the requirement text.",
+          "effective_date": "2026-02-02",
+          "source_doc_id": "S001",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-b2c4ec3c83646dd5",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "RSO increase of up to 10% per additional non-dependent tenant",
+          "requirement": "For additional tenants who are not dependents, the landlord may increase the rent by 10% for each such additional tenant, and the security deposit may also be increased by 10%. The bulletin lists this under the Feb. 2, 2026 item, but the 10% provision itself carries no separate effective date in the text.",
+          "citation": "LAHD Rent Stabilization Bulletin, Allowable Rent Increase (#3 – 02/02/2026), Automatic Adjustments item 4",
+          "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+          "quoted_span": "increase the rent by ten percent (10%) for each such additional tenant, and the security",
+          "key_value": "10% per additional non-dependent tenant",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Paired with la-rso-no-increase-additional-dependent for dependents. The additional-tenant trigger is not an available coverage field.",
+          "effective_date": "2026-02-02",
+          "source_doc_id": "S001",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-2dcb9f258d49aa27",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Notice of additional-tenant rent increase within 60 days",
+          "requirement": "The landlord must notify the tenants of the rent increase for an additional tenant within 60 days of obtaining actual or constructive knowledge of the new tenant.",
+          "citation": "LAHD Rent Stabilization Bulletin, Allowable Rent Increase (#3 – 02/02/2026), Automatic Adjustments item 4",
+          "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+          "quoted_span": "increase within 60 days of obtaining actual or constructive knowledge of the new tenant,",
+          "key_value": "60 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Applies to the additional non-dependent tenant increase in la-rso-additional-nondependent-tenant-10pct.",
+          "effective_date": "2026-02-02",
+          "source_doc_id": "S001",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-631017ae8c636fe8",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Rent reduction when additional tenant vacates",
+          "requirement": "A corresponding rent reduction is required when an additional tenant, whose addition supported a rent increase, vacates the unit.",
+          "citation": "LAHD Rent Stabilization Bulletin, Allowable Rent Increase (#3 – 02/02/2026), Automatic Adjustments item 4",
+          "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+          "quoted_span": "and a corresponding rent reduction is required when the additional tenant vacates the unit.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Applies to the additional non-dependent tenant increase in la-rso-additional-nondependent-tenant-10pct.",
+          "effective_date": "2026-02-02",
+          "source_doc_id": "S001",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-8eb1524f001e2af1",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Written notice for rent increases: 30 days (under 10%) or 90 days (over 10%)",
+          "requirement": "Landlords must serve tenants a written 30-day notice for rent increases of less than 10% of the tenant's rent, or a 90-day notice for increases over 10% of the tenant's rent within a 12-month period.",
+          "citation": "LAHD Rent Stabilization Bulletin, Allowable Rent Increase (#3 – 02/02/2026), notice paragraph following item 7",
+          "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+          "quoted_span": "Landlords are required to serve tenants with a written 30-day notice for rent increases that",
+          "key_value": "30 days (<10%); 90 days (>10%)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The bulletin does not say whether this notice requirement is limited to RSO units, so the RSO coverage is a conservative assumption. Review is needed.",
+          "effective_date": null,
+          "source_doc_id": "S001",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-3ae0869b6277ff82",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Rent to new tenant must remain the same after most vacancies",
+          "requirement": "For RSO units, rent to a new tenant must remain the same if the vacancy occurred for any reason other than the listed exceptions. Examples where rent may not be raised include evictions for owner or family or resident-manager occupancy, illegal use (unless based on law enforcement information), refusal to sign a new compliant rental agreement, and refusal of reasonable access.",
+          "citation": "LAHD Rent Stabilization Bulletin, Allowable Rent Increase (#3 – 02/02/2026), Rent Level After a Vacancy",
+          "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+          "quoted_span": "The RSO requires the rent to a new tenant to remain the same, if the vacancy occurred for any",
+          "key_value": "Rent remains the same",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Rent may be raised to any amount on re-rental if the tenant voluntarily vacated; was evicted for non-payment of legal rent; was evicted for violating the rental agreement and failing to cure; or signed a Disclosure Notice filed with LAHD and then a cash-for-keys agreement under the Tenant Buyout Notification Program (LAMC Section 151.31). The mobile home park new-tenant case is limited to 10% or the highest comparable rent, whichever is lower.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "S001",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-6ba5849b53fbd6f1": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-e0bcf5e561a493a4": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-07-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-ddecbf15c03c80bb": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-bf538493e152ce9b": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-02-02",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-3d8ce84d93cce34d": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-02-02",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-b2c4ec3c83646dd5": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-02-02",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-2dcb9f258d49aa27": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-02-02",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-631017ae8c636fe8": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-02-02",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-8eb1524f001e2af1": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-3ae0869b6277ff82": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "S001",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 9638,
+    "source_sha256": "d53b96d61a86c216a9ad701aaf2351ead3fd744c8b04337aad6eade81c0fe68f",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Source is an LAHD informational bulletin (#3 – 02/02/2026), not the ordinance text. No LAMC section is cited for the rent increase rules, so citations point to the bulletin only. Verify against the ordinance.",
+      "The bulletin states laws are frequently amended. Status in_force as of 2026-10-01 is assumed from the bulletin's stated dates, and no later changes were checked.",
+      "RSO coverage is represented only by legal_city and city_rent_controlled. Unit-level RSO exemptions (for example year built or certificate of occupancy) are not stated in this chunk and are not encoded.",
+      "The additional-dependent and additional-tenant triggers cannot be expressed with the allowed coverage fields and are described only in requirement text.",
+      "The 10% additional-tenant rent increase and the 60-day notice have no separate effective date in the text. Feb. 2, 2026 is applied because they sit under item 4, which begins 'Effective February 2, 2026'. Verify.",
+      "Not drafted because they fall outside the six categories or lack safe coverage: SCEP and RSO registration surcharges, the JCO registration fee, cost recovery applications (capital improvement, rehabilitation, just and reasonable, primary renovation, seismic), the COVID-19 surcharge prohibition, and the mobile home new-tenant 10% cap as a standalone rule.",
+      "The Just Cause Ordinance is mentioned only for its registration fee. No just cause eviction requirement is supported in this chunk.",
+      "Lifecycle enacted_on dates are null because the text gives no enactment dates. The 1979 RSO effective date is not tied to any drafted obligation. The 2026 effective dates are used only as effective_on.",
+      "The quoted span for the 3% rule is taken from the chronology table. The prose line giving the 3% figure breaks across lines, and the quote avoids the line break to preserve exact whitespace.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "la-rso-annual-allowable-increase-cpi-1-4pct: model whitespace was replaced with the exact captured span; inspect the original quotation during review."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 7321,
+      "output_tokens": 9905
+    },
+    "created_at": "2026-10-04T10:05:32.925Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "cache_key": "c5dbbc936693c5e0982b339c6d301fdbc89a27c5e3cc57e870b4941f4c10a140",
+  "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "D067",
+    "chunk": 4,
+    "total_chunks": 9,
+    "next_chunk": 5,
+    "chunk_start": 72000,
+    "chunk_end": 92000,
+    "source_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No draft rules were created from this chunk (5/9, offsets 72000..92000 of D067). It covers the Homestead Property Tax Credit, landlord identity registration, habitability, housing code reporting, window guards, smoke and carbon monoxide detectors, locks, heat and utilities, rent receivership, multifamily receivership, public housing maintenance, and the start of the federal lead-based paint disclosure. None of this falls within the six supported categories: rent increase limits, just cause eviction, security deposits, application screening fees, screening restrictions, and algorithmic rent setting.",
+      "The landlord registration passage says a landlord who is not properly registered cannot evict, and that the court must reserve judgment for up to 90 days to allow compliance, then dismiss. This is a procedural registration-compliance bar on eviction. It does not set out grounds or a just-cause standard for eviction, so it was not drafted as a just_cause_eviction rule. An administrator may want to review it separately.",
+      "This chunk has no text on security deposits, rent increase caps, screening fees, screening restrictions, or algorithmic rent setting. No fixture aliases are supported by this chunk.",
+      "Neighboring chunks overlap and this chunk is cut off mid-sentence at the lead-based paint section. Categories covered elsewhere in the document should be extracted from the other chunks.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 9990,
+      "output_tokens": 630
+    },
+    "created_at": "2026-10-04T10:00:01.969Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

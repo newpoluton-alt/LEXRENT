@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "cache_key": "1a9d7577f347e20af7481ece5fac88b3be708d5361df0ec2da102d59188e1c01",
+  "source_url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "D065",
+    "chunk": 1,
+    "total_chunks": 2,
+    "next_chunk": null,
+    "chunk_start": 18000,
+    "chunk_end": 20915,
+    "source_sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No draft rules were created. This chunk (2/2) contains only enforcement remedies by the director (cease and desist, conditional offer, return of application fee, payment up to $1,000), a rulemaking deadline, and the effective-date clause. It does not contain the substantive obligations or coverage conditions, which are presumably in chunk 1.",
+      "Coverage for the act cannot be safely encoded from this chunk, so any rule would be unsupported. Rules should be drafted from chunk 1 and reviewed together with these remedy provisions.",
+      "The act is not identified by name in this chunk. The text mentions conditional offers, rental application fees, and Anti-Eviction Act cross-references. The NJ-ALG-01 (NJ FAIR Act) fixture alias is not supported here and was not applied.",
+      "Enactment: the text says 'Approved June 18, 2021.' Effective date: the text says the act takes effect 'on the first day of the seventh month next following the date of enactment.' No explicit calendar effective date is stated, so none was recorded. A reviewer should confirm the computed date from the statute. Rulemaking deadline: the director must adopt rules by the first day of the fifth month next following enactment.",
+      "The text says the division may take anticipatory administrative action before the effective date. This is not a rental-housing obligation within the six supplied categories.",
+      "The paragraph (2) provision allowing eviction after 45 days' notice if an appeal succeeds relates to just cause eviction and the Anti-Eviction Act. It is only a remedy-related exception, and the underlying Anti-Eviction Act text is not in this chunk, so no just_cause_eviction rule was drafted.",
+      "The provision that the director may require return of the applicant's rental application fee is a discretionary remedy, not a general application-fee limit. It was not drafted as an application_screening_fees rule.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 3990,
+      "output_tokens": 1243
+    },
+    "created_at": "2026-10-04T10:11:32.616Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { SiteHeader } from "./site-header";
+import { PersonaDemos } from "./persona-demos";
 import { useLang } from "./language";
 
 const topics = [
@@ -53,7 +54,7 @@ function PageFooter() {
   const { pick } = useLang();
   return <footer className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-3 border-t-2 border-primary pt-6 text-sm">
     <Link href="/" className="font-semibold underline underline-offset-4">{pick("Search the property sample", "Buscar en la muestra de propiedades")}</Link>
-    <Link href="/workspace?view=sources" prefetch={false} className="underline underline-offset-4">{pick("Explore the official source library", "Explorar la biblioteca de fuentes oficiales")}</Link>
+    <Link href="/workspace?view=sources" prefetch={false} className="underline underline-offset-4">{pick("Explore the source library", "Explorar la biblioteca de fuentes")}</Link>
   </footer>;
 }
 
@@ -72,6 +73,7 @@ export function AboutPage() {
       <h1 className="section-title text-3xl">{pick("About LexRent", "Acerca de LexRent")}</h1>
       <p className="text-lg leading-relaxed">{pick("LexRent helps you research rental housing rules, see the law behind a result, and understand what information is still missing.", "LexRent le ayuda a investigar las reglas de vivienda de alquiler, ver la ley detrás de un resultado y comprender qué información todavía falta.")}</p>
       <p>{pick("This challenge app uses a supplied sample of 500 property records in California, New Jersey, and Massachusetts, together with a source library of state and local materials. Coverage depends on the sources captured and the rules reviewed for the app.", "Esta aplicación del reto utiliza una muestra proporcionada de 500 registros de propiedades de California, Nueva Jersey y Massachusetts, junto con una biblioteca de materiales estatales y locales. La cobertura depende de las fuentes capturadas y las reglas revisadas para la aplicación.")}</p>
+      <PersonaDemos compact />
       <div className="border-l-4 border-accent bg-card p-5">
         <h2 className="section-title mb-2 text-lg">{pick("Address + date + evidence", "Dirección + fecha + evidencia")}</h2>
         <p className="text-sm leading-relaxed">{pick("Select a supplied property and an as-of date. The app evaluates reviewed rules against the available property facts, dates, and recorded rule interactions. A postal city is a candidate, not proof of a legal city boundary; unresolved jurisdiction is shown explicitly.", "Seleccione una propiedad de la muestra y una fecha de consulta. La aplicación evalúa las reglas revisadas según los datos disponibles de la propiedad, las fechas y las interacciones registradas entre reglas. Una ciudad postal es una candidata, no una prueba del límite municipal legal; una jurisdicción sin resolver se muestra explícitamente.")}</p>

@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "cache_key": "b54d0e7161d2c8e40e1d1f916e6a1dfed6e555cf5a1a53568970e01b1d22e1fd",
+  "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-b72fcba5bac450c9",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "San Francisco annual allowable rent increase for 3/1/2026 - 2/28/2027 (1.6%)",
+          "requirement": "For rent-controlled units, the annual allowable rent increase effective March 1, 2026 through February 28, 2027 is 1.6% of the tenant's base rent (calculated by multiplying base rent by .016).",
+          "citation": "SF Rent Board announcement, \"Annual Rent Increase for 3/1/26 - 2/28/27 Announced\", SF.gov, January 14, 2026",
+          "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+          "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+          "key_value": "1.6%",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Applies for the 3/1/2026-2/28/2027 period; the prior period (3/1/2025-2/28/2026) was 1.4% and has ended. The chunk does not state which units are rent-controlled or any state-law interaction.",
+          "effective_date": "2026-03-01",
+          "source_doc_id": "D080",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-b72fcba5bac450c9": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-03-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D080",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 1084,
+    "source_sha256": "924783981b92aabf2a5200517290879d008fd1e8c579969bdddaa28ff6f9fd7d",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "The source is a news announcement and cites no ordinance or code section. The citation field uses the announcement title and date only, so the underlying legal authority needs verification.",
+      "The chunk does not define which units are rent-controlled or list exemptions. Coverage relies on the city_rent_controlled fact, and exemptions are null and need review.",
+      "The date of enactment or formal adoption of the 1.6% figure is not stated. January 14, 2026 is the posting date of the announcement and was not used as the enacted date.",
+      "The prior-year 1.4% increase (3/1/2025-2/28/2026) is mentioned but expired before 2026-10-01 and the schema has no expired status, so no rule was drafted for it.",
+      "The 1.6% rate ends February 28, 2027. The next annual rate is not in this source.",
+      "The retrieval date (2026-10-01) was not used as an effective date.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 3514,
+      "output_tokens": 1571
+    },
+    "created_at": "2026-10-04T10:09:46.748Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

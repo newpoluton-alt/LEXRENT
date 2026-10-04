@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "cache_key": "2626e4f8a067897d19cd72dbc90dc9602a8ef6b6fe4e5db914e7d279bc1407c9",
+  "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "D067",
+    "chunk": 8,
+    "total_chunks": 9,
+    "next_chunk": null,
+    "chunk_start": 144000,
+    "chunk_end": 161137,
+    "source_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No draft rules were created from this chunk (D067 chunk 9/9). The rental housing legal requirements it contains do not fit the six supplied categories or cannot be encoded safely in coverage_json.",
+      "The Foreclosure Fairness Act text (N.J.S.A. 2A:50-69 et seq.) covers 90-day notices to quit, tenant notices after a foreclosure sale, and pressure tactics in buy-out offers. These are notice and anti-coercion rules for foreclosed properties, not rent increase limits or just-cause eviction rules. No allowed coverage field exists for foreclosed-property status, so the coverage cannot be represented. Flagged for administrator review.",
+      "The foreclosure pressure-tactic list includes a rent increase above any rent control or rent leveling ordinance, or an unreasonable or unconscionable increase. It is part of a buy-out offer rule. It states no numeric cap or standalone rent-increase limit. Not drafted as rent_increase_limits. Flagged for review.",
+      "The Senior Citizens and Disabled Protected Tenancy Act (N.J.S.A. 2A:18-61.22 to -61.39) and the Tenant Protection Act of 1992 (Hudson County) provide protected tenancy for up to 40 years in building conversions. This chunk does not state the eviction grounds or the permitted-eviction framework. The eligibility conditions (age, disability, military service, income, conversion recording date) have no allowed coverage field. Omitted and flagged for review. A fuller source chunk would be needed to assess whether this is a just_cause_eviction rule.",
+      "The senior citizen housing disclosure requirement (N.J.S.A. 2A:42-113) is a lease-time disclosure obligation. It is outside the six categories.",
+      "The remaining content is contact directories for ombudsman offices, civil rights offices, legal services programs, and trade or advocacy organizations. It contains no rent increase limits, security deposit, application fee, screening restriction, or algorithmic rent-setting rules.",
+      "No effective dates, enactment dates, or legislative status are given in this chunk. The retrieval date (2026-10-01) was not used as a law date. Earlier chunks may contain relevant material, such as security deposits or rent rules, but it was not available here and was not assumed.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 10820,
+      "output_tokens": 1448
+    },
+    "created_at": "2026-10-04T10:00:55.334Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

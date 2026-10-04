@@ -1,0 +1,383 @@
+{
+  "schema_version": 1,
+  "cache_key": "e71e091a192eb7cd1cf7578e30a3ac662c2997f89bf862db7c232b97038cae33",
+  "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-79267efd9afe1973",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Just cause required, as dominant motive, to evict from Rent Ordinance-covered unit",
+          "requirement": "To evict a tenant from a rental unit covered by the San Francisco Rent Ordinance, the landlord must have a \"just cause\" reason that is the dominant motive for pursuing the eviction.",
+          "citation": "San Francisco Rent Ordinance (as summarized in SF.gov Overview of Just Cause Evictions)",
+          "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+          "quoted_span": "In order to evict a tenant from a rental unit covered by the Rent Ordinance, a landlord must have a \"just cause\" reason that is the dominant motive for pursuing the eviction.",
+          "key_value": "just cause as dominant motive",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Related to the enumerated just cause reasons rule and the rule that expiration of a lease or change in ownership is not just cause.",
+          "effective_date": null,
+          "source_doc_id": "D079",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-d70d8247852b8b1a",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Lease expiration or change in ownership is not just cause",
+          "requirement": "The mere expiration of a rental agreement or a change in ownership does not constitute just cause for eviction of a tenant in a Rent Ordinance-covered unit.",
+          "citation": "San Francisco Rent Ordinance (as summarized in SF.gov Overview of Just Cause Evictions)",
+          "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+          "quoted_span": "Note that the mere expiration of a rental agreement or a change in ownership does not constitute \"just cause\" for eviction.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Clarifies the general just cause requirement.",
+          "effective_date": null,
+          "source_doc_id": "D079",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-69a8e2196181cae9",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Eviction limited to the 17 enumerated just cause reasons in Section 37.9(a)",
+          "requirement": "The just cause reasons for eviction under Rent Ordinance Section 37.9(a) number 17 and are summarized on the page. They include non-payment of rent, breach, nuisance, illegal use, refusal to renew, refusal of access, unapproved subtenant, owner or family occupancy, condominium conversion sale, demolition or removal from housing use, capital improvements, substantial rehabilitation, Ellis Act withdrawal, lead remediation, development agreement, Good Samaritan tenancy expiration, and Planning Code Section 317 demolition. Tenancies in categories exempt from rent increase limits can only be evicted for one of the listed reasons.",
+          "citation": "San Francisco Rent Ordinance Section 37.9(a)",
+          "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+          "quoted_span": "The 17 just cause reasons for eviction under",
+          "key_value": "17 just cause reasons",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The page is a summary; the ordinance text controls the conditions for each reason.",
+          "effective_date": null,
+          "source_doc_id": "D079",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-661b2ead691471f9",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Just cause required to remove housing services",
+          "requirement": "A landlord needs a just cause reason to take away or remove access to certain housing services, including but not limited to garage facilities, parking facilities, driveways, storage spaces, and laundry rooms.",
+          "citation": "San Francisco Rent Ordinance (as summarized in SF.gov Overview of Just Cause Evictions)",
+          "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+          "quoted_span": "reason to take away or remove access to certain",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "A landlord who has complied with Ordinance Section 37.2(r) may temporarily remove certain housing services, including parking and storage spaces, to perform mandatory soft-story seismic retrofit work required by the Building Code.",
+          "overrides": [],
+          "interaction": "The soft-story exception cannot be represented with the supported coverage fields and is described in exemptions only.",
+          "effective_date": null,
+          "source_doc_id": "D079",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-ec5a1b029ad89ece",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Newly constructed units (certificate of occupancy after June 13, 1979) remain subject to just cause eviction provisions",
+          "requirement": "Tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979 are exempt from the Ordinance's rent increase limitations but remain subject to its eviction provisions and can only be evicted for a listed just cause reason.",
+          "citation": "San Francisco Rent Ordinance (as summarized in SF.gov Overview of Just Cause Evictions)",
+          "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+          "quoted_span": "This includes tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979",
+          "key_value": "Certificate of Occupancy after 1979-06-13",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "certificate_of_occupancy_date",
+                "op": "gt",
+                "value": "1979-06-13"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Applies the just cause rules to units exempt from rent increase limits. Other categories (Costa-Hawkins-eligible tenancies and some tenancies regulated by another agency) are not encoded as separate rules.",
+          "effective_date": null,
+          "source_doc_id": "D079",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-79267efd9afe1973": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-d70d8247852b8b1a": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-69a8e2196181cae9": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-661b2ead691471f9": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-ec5a1b029ad89ece": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "certificate_of_occupancy_date",
+                "op": "gt",
+                "value": "1979-06-13"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D079",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 5362,
+    "source_sha256": "51f9490227bafc8a6f458c7e417f41bce3af07c1416fae77f281b987d97ef793",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "The source is an informational city web page summary, not the ordinance text. Enactment and effective dates are not stated, so effective_date and all lifecycle dates are null. Status in_force is inferred from the page's present-tense description and needs reviewer confirmation as of 2026-10-01. The retrieval date was not used as a law date.",
+      "The scope of 'covered by the Rent Ordinance' is not defined in this chunk. Coverage relies on the city_eviction_covered fact, which the backend must supply or return unknown.",
+      "The Costa-Hawkins-eligible tenancy and other-government-agency-regulated tenancy categories have no supported coverage predicates and were not drafted as separate rules.",
+      "The soft-story retrofit exception (Section 37.2(r)) is only described in the exemptions text and is not encoded in coverage_json.",
+      "Details of each of the 17 reasons and the conditions for each (for example, owner-occupancy limits) were not drafted as separate rules because the summary lacks complete conditions; the ordinance text should be reviewed.",
+      "The page does not give a section citation for the dominant-motive requirement, the housing-services requirement, or the exempt-tenancy statement, so the generic ordinance and page citation is used.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4831,
+      "output_tokens": 5652
+    },
+    "created_at": "2026-10-04T10:10:03.326Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "cache_key": "9ee27b929212af65e7cf99bb20c4755b660f63ebff30de2169d4710d9a475892",
+  "source_url": "https://cityofjerseycity.civicweb.net/document/433505/Amending%20218-12%20to%20clarify%20language.pdf?handle=42A331E429724B93A4477962ABE6783F",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-f736d3bb15f2d162",
+          "jurisdiction": "Jersey City, NJ",
+          "level": "city",
+          "category": "algorithmic_rent_setting",
+          "status": "in_force",
+          "title": "Jersey City: lessors and agents barred from using algorithmic rent-fixing Service Providers",
+          "requirement": "It is unlawful for any real estate lessor, agent, or subcontractor of either to subscribe to, contract with, exchange anything of value in return for, or otherwise use the services of a Service Provider. The term Service Provider is defined in a part of §218-12 that is not in this chunk.",
+          "citation": "Jersey City Ord. 25-076 amending Jersey City Code ch. 218, §218-12, subsection 2 (Unlawful Conduct), paragraph 1",
+          "source_url": "https://cityofjerseycity.civicweb.net/document/433505/Amending%20218-12%20to%20clarify%20language.pdf?handle=42A331E429724B93A4477962ABE6783F",
+          "quoted_span": "It is unlawful for any real estate lessor, agent, or subcontractor thereof, to subscribe to, contract with, or",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Jersey City"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "This ordinance amends §218-12 subsection 2 to clarify its language and follows Ord. 25-057, which is referenced but not reproduced. Sections 218-13 (Exempt dwellings), 218-14 (Occupancy required), 218-15 (Extension of time period), 218-16 (Violations and penalties) and 218-17 (Conflicts with state law) are listed as unchanged and their text is not in this chunk.",
+          "effective_date": null,
+          "source_doc_id": "S011",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-23de8cb88369e34e",
+          "jurisdiction": "Jersey City, NJ",
+          "level": "city",
+          "category": "algorithmic_rent_setting",
+          "status": "in_force",
+          "title": "Jersey City: Service Providers barred from facilitating agreements not to compete among lessors",
+          "requirement": "No Service Provider shall facilitate an agreement not to compete among real estate lessors with respect to any aspect of residential dwelling units, including rental pricing, fees, or any other rental terms.",
+          "citation": "Jersey City Ord. 25-076 amending Jersey City Code ch. 218, §218-12, subsection 2 (Unlawful Conduct), paragraph 2",
+          "source_url": "https://cityofjerseycity.civicweb.net/document/433505/Amending%20218-12%20to%20clarify%20language.pdf?handle=42A331E429724B93A4477962ABE6783F",
+          "quoted_span": "No service provider shall facilitate an agreement not to compete among real estate lessors with respect to",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Jersey City"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "This is a separate obligation from the lessor-side prohibition in paragraph 1. Its coverage and exemptions may be limited by unchanged sections not shown in this chunk.",
+          "effective_date": null,
+          "source_doc_id": "S011",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-f736d3bb15f2d162": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Jersey City"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2025-07-17",
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": [
+            "JC-ALG-01"
+          ]
+        },
+        "r-23de8cb88369e34e": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Jersey City"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2025-07-17",
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": [
+            "JC-ALG-01"
+          ]
+        }
+      }
+    },
+    "doc_id": "S011",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 4250,
+    "source_sha256": "f3b08e1be49aaae573e905b3ea520e47fd69b2deafbf32b2ac81c7cdddb6414b",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No effective date is stated in this chunk. Status is set to in_force only because the ordinance was adopted on Jul 16 2025 and approved by the Mayor on Jul 17 2025, over a year before 2026-10-01, and the chunk shows no delayed effective date. Unchanged section 218-15 (Extension of time period) is not shown. An administrator must confirm the effective date. The retrieval date was not used.",
+      "enacted_on is set to the Mayor's approval date, 2025-07-17. Council final adoption and the Council President's approval were Jul 16 2025.",
+      "The definition of Service Provider (§218-12 subsection 1, 'No Change') is not in this chunk, so the scope of the term is unverified.",
+      "Exempt dwellings (§218-13), occupancy required (§218-14), penalties (§218-16), conflicts with state law (§218-17) and findings (§218-18) are 'No changes' and not reproduced. Exemptions and penalties are therefore not captured, and coverage is limited to Jersey City, NJ. A review should add any exemptions from §218-13.",
+      "The text shows inconsistent section numbering (e.g. '§ 218-1213') and calls Chapter 218 both 'Multiple Dwellings' and 'Fees and Charges'. The citation follows the ordinance title.",
+      "Ord. 25-057 is mentioned as previously passed on May 21 2025 but its text is not in this chunk, so the original obligations and the exact changes made by this amendment cannot be verified.",
+      "No other captured categories (rent limits, eviction, deposits, fees, screening) are supported by this chunk.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 5355,
+      "output_tokens": 3051
+    },
+    "created_at": "2026-10-04T10:07:10.667Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

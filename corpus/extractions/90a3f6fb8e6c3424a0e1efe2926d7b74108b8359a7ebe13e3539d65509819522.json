@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "cache_key": "90a3f6fb8e6c3424a0e1efe2926d7b74108b8359a7ebe13e3539d65509819522",
+  "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-fb01f92d2fc4ede7",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "San Francisco allowable annual rent increase, March 1, 2026 - February 28, 2027",
+          "requirement": "The allowable rent increase published by the SF Rent Board for the period March 1, 2026 through February 28, 2027 is 1.6%.",
+          "citation": "SF Rent Board, Current Rates (sf.gov report page), Allowable Rent Increase",
+          "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+          "quoted_span": "1.6% for March 1, 2026 – February 28, 2027",
+          "key_value": "1.6%",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The chunk does not state which units are covered or any exemptions. The coverage predicate is a conservative placeholder that depends on the city_rent_controlled fact and needs reviewer confirmation.",
+          "effective_date": "2026-03-01",
+          "source_doc_id": "D083",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-9f43ddf27cb41660",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "San Francisco security deposit interest rate, March 1, 2026 - February 28, 2027",
+          "requirement": "The security deposit interest rate published by the SF Rent Board for the period March 1, 2026 through February 28, 2027 is 4.2%.",
+          "citation": "SF Rent Board, Current Rates (sf.gov report page), Security Deposit Interest",
+          "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+          "quoted_span": "4.2% for March 1, 2026 – February 28, 2027",
+          "key_value": "4.2%",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The chunk gives only the rate. It does not state who owes the interest, the payment mechanics, or which tenancies are covered. The coverage predicate is a placeholder for review.",
+          "effective_date": "2026-03-01",
+          "source_doc_id": "D083",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-42f605db697b0011",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "San Francisco relocation payments for owner/relative move-in, demolition/removal, temporary capital improvement, or substantial rehabilitation evictions (notices served 3/01/26 - 2/28/27)",
+          "requirement": "For evictions based on owner/relative move-in, demolition or permanent removal of the unit from housing use, temporary capital improvement work, or substantial rehabilitation, where the eviction notice is served 3/01/26 - 2/28/27, the relocation amount is $8,245.00 per tenant, up to $24,733.00 per unit. An additional $5,497.00 is due for each elderly (60 or older) or disabled tenant or household with minor child(ren).",
+          "citation": "SF Rent Ordinance Section 37.9C (as referenced on SF Rent Board Current Rates page)",
+          "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+          "quoted_span": "3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+          "key_value": "$8,245.00 per tenant; $24,733.00 max per unit; +$5,497.00 per elderly/disabled tenant or household with minor child(ren)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Temporary capital improvement evictions of less than 20 days are governed by Civil Code Section 1947.9, not Section 37.9C, per the source note. See the separate temporary displacement rule.",
+          "effective_date": "2026-03-01",
+          "source_doc_id": "D083",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-9d31a07937c19f69",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "San Francisco relocation payments for Ellis Act evictions (notices served 3/01/26 - 2/28/27)",
+          "requirement": "For tenants evicted under the Ellis Act, where the eviction notice is served 3/01/26 - 2/28/27, the relocation amount is $11,110.05 per tenant, up to $33,330.13 per unit. An additional $7,443.90 is due for each elderly (62 or older) or disabled tenant.",
+          "citation": "SF Rent Ordinance Section 37.9A (as referenced on SF Rent Board Current Rates page)",
+          "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+          "quoted_span": "3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+          "key_value": "$11,110.05 per tenant; $33,330.13 max per unit; +$7,443.90 per elderly/disabled tenant",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2026-03-01",
+          "source_doc_id": "D083",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-1f9ace0fd5d97e28",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "San Francisco relocation payment for temporary displacement of less than 20 days (notices served 3/01/26 - 2/28/27)",
+          "requirement": "For temporary displacement of less than 20 days, where the eviction notice is served 3/01/26 - 2/28/27, the relocation amount per tenant household is $446.00 per day plus actual moving expenses.",
+          "citation": "California Civil Code Section 1947.9 (as referenced on SF Rent Board Current Rates page)",
+          "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+          "quoted_span": "3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)",
+          "key_value": "$446.00/day plus actual moving expenses",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The source note says relocation for temporary capital improvement evictions of less than 20 days is governed by Civil Code 1947.9 and not Rent Ordinance Section 37.9C.",
+          "effective_date": "2026-03-01",
+          "source_doc_id": "D083",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-fb01f92d2fc4ede7": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-03-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-9f43ddf27cb41660": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-03-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-42f605db697b0011": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-03-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-9d31a07937c19f69": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-03-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-1f9ace0fd5d97e28": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-03-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D083",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 4656,
+    "source_sha256": "764e9e3a023bd434458dfea8ffbb57e57d23e5f0a4939cc10948b9e495034d2f",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "This is an administrator rates page, not statutory text. Enactment dates are not stated, so enacted_on is null. Effective dates reflect only the published rate period start (2026-03-01).",
+      "The page does not state which rental units are covered or any exemptions for the rent increase, security deposit interest, or relocation rules. Coverage predicates use only jurisdiction facts plus city_rent_controlled or city_eviction_covered, and need human review.",
+      "Relocation rules depend on the eviction ground, which has no allowed coverage field. The ground is described only in the requirement text and needs reviewer confirmation.",
+      "The page does not say who owes security deposit interest or when. Only the published rate is captured.",
+      "Rent Board fees, capital improvement imputed interest rates, and uncompensated labor rates were omitted because they are outside the six supplied categories.",
+      "Prior-period rates were listed but not drafted as rules because they are outside the current-date window as of 2026-10-01.",
+      "The retrieval date (2026-10-01) was not used as any effective date.",
+      "No fixture aliases apply to this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 5338,
+      "output_tokens": 4848
+    },
+    "created_at": "2026-10-04T10:10:32.699Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

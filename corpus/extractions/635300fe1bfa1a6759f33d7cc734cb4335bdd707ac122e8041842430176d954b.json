@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "cache_key": "635300fe1bfa1a6759f33d7cc734cb4335bdd707ac122e8041842430176d954b",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-3b2380369200c256",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Rental discrimination against public assistance or housing subsidy recipients prohibited",
+          "requirement": "A person furnishing rental accommodations may not discriminate against an individual who receives federal, state, or local public assistance (including medical assistance) or a tenant who receives federal, state, or local housing subsidies (including rental assistance or rental supplements). This applies whether the discrimination is because the individual is such a recipient or because of any requirement of the assistance, rental assistance, or subsidy program.",
+          "citation": "M.G.L. c. 151B, § 4(10)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+          "quoted_span": "For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The paragraph's introductory lead-in (defining unlawful practices) is in a different chunk. No exemptions for this paragraph appear in this chunk. The exemptions listed after paragraph 11 are scoped to paragraph 11 only.",
+          "effective_date": null,
+          "source_doc_id": "D049",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-3b2380369200c256": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D049",
+    "chunk": 2,
+    "total_chunks": 3,
+    "next_chunk": null,
+    "chunk_start": 36000,
+    "chunk_end": 55982,
+    "source_sha256": "ac42593c79533c25223582de77eb5411d2f8ef501a0d027d2a61042b7e81d7ef",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "This chunk is 3/3 of M.G.L. c. 151B § 4. The introductory text that frames the enumerated paragraphs as unlawful practices, along with any exemptions or definitions, is outside this chunk and must be verified by a reviewer.",
+      "No enactment, amendment, or effective dates appear in this chunk, so all lifecycle dates and effective_date are null. The in_force status reflects only that the page presents the current statute text and needs verification.",
+      "Paragraph 10 is categorized as screening_restrictions as a judgment call (source-of-income/subsidy discrimination in rental accommodations). A reviewer should confirm this fits the category.",
+      "Paragraph 11 (refusal to rent because of children) was omitted. Its exemptions, such as dwellings of three apartments or less with an elderly or infirm occupant, and temporary owner leasing during an absence of up to one year, cannot be safely represented with the allowed coverage fields. It is also unclear whether it belongs to a supplied category. Flagged for manual review.",
+      "Paragraph 13 (blockbusting and steering) and paragraph 18 (sexual harassment of tenants or prospective tenants) are not within the six supplied categories and were excluded.",
+      "Employment, credit, genetic information, parental leave, and recordkeeping provisions in this chunk are outside the supplied categories and were excluded.",
+      "Nothing in this chunk addresses rent increase limits, just cause eviction, security deposits, application screening fees, or algorithmic rent setting. No fixture aliases are supported by this source.",
+      "The trailing website sign-in and registration text is page boilerplate and was ignored.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 8880,
+      "output_tokens": 2617
+    },
+    "created_at": "2026-10-04T09:55:33.214Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

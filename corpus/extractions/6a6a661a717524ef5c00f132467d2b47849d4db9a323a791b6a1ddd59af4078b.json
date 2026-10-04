@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "cache_key": "6a6a661a717524ef5c00f132467d2b47849d4db9a323a791b6a1ddd59af4078b",
+  "source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-59d56fb3e2c1ad43",
+          "jurisdiction": "San Diego, CA",
+          "level": "city",
+          "category": "algorithmic_rent_setting",
+          "status": "in_force",
+          "title": "Prohibition on selling, licensing, or providing algorithmic devices to landlords",
+          "requirement": "It is unlawful for a person to sell, license, or otherwise provide an algorithmic device to a landlord. An algorithmic device is software or a product that uses algorithms to calculate nonpublic competitor data of two or more landlords and advise or recommend rental rates or occupancy levels for residential rental property in the City of San Diego.",
+          "citation": "San Diego Municipal Code §98.1103(a)",
+          "source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+          "quoted_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an algorithmic",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Per §98.1102, 'algorithmic device' excludes: (a) software or products used to publish reports from aggregated historical nonpublic competitor data more than 90 days old, or from public information, that do not recommend rental rates or occupancy levels for future leases or renewals; (b) software or products used to set rental rates or income limits under local, state, or federal affordable housing program guidelines; (c) software or products used in an appraisal that do not recommend rental rates during runtime operation.",
+          "overrides": [],
+          "interaction": "Companion to the landlord-use prohibition in §98.1103(b). Remedies are in §98.1104.",
+          "effective_date": "2025-06-21",
+          "source_doc_id": "S002",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-4d963d4640f48986",
+          "jurisdiction": "San Diego, CA",
+          "level": "city",
+          "category": "algorithmic_rent_setting",
+          "status": "in_force",
+          "title": "Prohibition on landlord use of algorithmic devices to set rents or occupancy levels",
+          "requirement": "It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property.",
+          "citation": "San Diego Municipal Code §98.1103(b)",
+          "source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+          "quoted_span": "(b) It is unlawful for a landlord to use an algorithmic device to set rental rates or",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Software or products excluded from the 'algorithmic device' definition in §98.1102 (public or aged aggregated data reports without recommendations; affordable housing program rate or income-limit tools; appraisal tools that do not recommend rates at runtime) are not covered.",
+          "overrides": [],
+          "interaction": "Each month of a continuing violation, and each property where a device is used, is a separate violation (see separate rule).",
+          "effective_date": "2025-06-21",
+          "source_doc_id": "S002",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-0daf6cd1bb9b90ed",
+          "jurisdiction": "San Diego, CA",
+          "level": "city",
+          "category": "algorithmic_rent_setting",
+          "status": "in_force",
+          "title": "Separate violation counted per month and per property for landlord algorithmic device use",
+          "requirement": "For each month a violation of section 98.1103(b) exists or continues, and for each residential rental property on which a landlord uses an algorithmic device, the violation is a separate and distinct violation.",
+          "citation": "San Diego Municipal Code §98.1103 (unnumbered paragraph following (b))",
+          "source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+          "quoted_span": "For each month a violation of section 98.1103(b) exists or continues, and for",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Applies to violations of §98.1103(b); relevant to the per-violation penalty in §98.1104.",
+          "effective_date": "2025-06-21",
+          "source_doc_id": "S002",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-639c5020a907904c",
+          "jurisdiction": "San Diego, CA",
+          "level": "city",
+          "category": "algorithmic_rent_setting",
+          "status": "in_force",
+          "title": "Tenant civil remedies for algorithmic device violations",
+          "requirement": "A tenant may bring a civil action against a landlord for injunctive relief, damages, or civil penalties of up to $1,000 per violation of the Division. A prevailing landlord or tenant recovers costs and reasonable attorney's fees.",
+          "citation": "San Diego Municipal Code §98.1104(a)",
+          "source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+          "quoted_span": "(a) A tenant may seek injunctive relief, damages, or civil penalties of up to",
+          "key_value": "$1,000 per violation (maximum civil penalty)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Remedies are cumulative with other remedies under §98.1104(b). The City may also enforce under Chapter 1, Article 2 per §98.1104(c).",
+          "effective_date": "2025-06-21",
+          "source_doc_id": "S002",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-59d56fb3e2c1ad43": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2025-05-22",
+            "effective_on": "2025-06-21",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-4d963d4640f48986": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2025-05-22",
+            "effective_on": "2025-06-21",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-0daf6cd1bb9b90ed": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2025-05-22",
+            "effective_on": "2025-06-21",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-639c5020a907904c": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2025-05-22",
+            "effective_on": "2025-06-21",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "S002",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 4816,
+    "source_sha256": "f655c4fe382d18c028b3571b9abd49abcdbc6692a0e8fbff34213b4cc41e914b",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No fixture aliases were assigned: this source is the San Diego ordinance, and none of the supplied aliases (CA AB325/SB763, Hoboken, Jersey City, NJ FAIR Act, MA bills) are supported by it.",
+      "The §98.1102 exclusions from 'algorithmic device' and the 'two or more landlords' nonpublic-data element cannot be expressed with the allowed coverage fields. They are described in the exemptions text only, and coverage_json reflects only jurisdiction and residential use. Administrator review is needed.",
+      "The legal_city value 'San Diego' is an assumed encoding for the city fact.",
+      "Definitions of landlord, lease, residential rental property, and tenant refer to SDMC §98.0702, and 'person' refers to §11.0210. Those sections are not in this chunk, so any scope limits there are unknown.",
+      "The City's enforcement authority under §98.1104(c), including civil and criminal remedies via Chapter 1, Article 2, is not drafted as a separate rule because those provisions are not included in this chunk.",
+      "Enactment date 2025-05-22 and effective date 2025-06-21 come from the history note 'added 5-22-2025 by O-21955 N.S.; effective 6-21-2025'. The retrieval date was not used.",
+      "Possible interaction with state law (for example, California statutes) is not addressed in this source and has not been assessed.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4909,
+      "output_tokens": 4269
+    },
+    "created_at": "2026-10-04T10:04:21.825Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

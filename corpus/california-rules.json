@@ -1,0 +1,2218 @@
+{
+  "rules": [
+    {
+      "team_rule_id": "CA-ALG-01",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Common pricing algorithms: anti-collusion and coercion prohibition",
+      "requirement": "A person may not use or distribute a common pricing algorithm as part of an unlawful restraint-of-trade combination or conspiracy, or coerce another person to adopt its recommended price or commercial term. A common pricing algorithm uses competitor data and is used by two or more persons. This is a conduct-specific antitrust prohibition, not a ban on every automated rent calculation.",
+      "citation": "AB 325, Stats. 2025 ch. 338, §1; Business & Professions Code §16729(a)-(d)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+      "source_doc_id": "D022",
+      "quoted_span": "(a) It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.\n(b) It shall be unlawful for a person to use or distribute a common pricing algorithm if the person coerces another person to set or adopt a recommended price or commercial term recommended by the common pricing algorithm for the same or similar products or services in the jurisdiction of this state.\n(c) Nothing in this section shall impair or limit the applicability of antitrust laws.\n(d) For purposes of this section, the following definitions apply:\n(1) “Antitrust laws” means the provisions of this part.\n(2) “Commercial term” includes, without limitation, any of the following:\n(A) Level of service.\n(B) Availability.\n(C) Output, including quantities of products produced or distributed or the amount or level of service provided.\n(3) “Common pricing algorithm” means any\nmethodology, including a computer, software, or other technology, used by two or more persons, that uses competitor data to recommend, align, stabilize, set, or otherwise influence a price or commercial\nterm.\n(4) “Distribute,” “distribution,” and “distributing” include selling, licensing, providing access to, or otherwise making available by any means, including through a subscription or the sale of a service.\n(5) “Person” has the same meaning as defined in Section 16702 and does not include the end consumer of a product or service.\n(6) “Price” means the amount of money or other thing of value, whether tangible or not, expected, required, or given in payment for any product or service, including compensation paid to an employee or independent contractor for services provided.",
+      "key_value": "Anti-collusion / coercion prohibition",
+      "effective_date": "2026-01-01",
+      "coverage_conditions": "All supplied California residential addresses are within the geographic scope of this legal standard; no finding that a property uses prohibited software.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false,
+      "supporting_source_doc_ids": [
+        "S017"
+      ],
+      "effective_date_basis": "Inferred regular-session activation from the chaptered non-urgency AB 325 capture and the official Senate 2026 calendar (Jan 1 statutes take effect, Art.IV §8(c)); not inferred from fixture expectations."
+    },
+    {
+      "team_rule_id": "CA-RENT-01",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "California rent cap: 5% + applicable CPI, at most 10%",
+      "requirement": "For covered, nonexempt residential housing, annual gross-rent increases are limited to 5% plus the applicable cost-of-living percentage or 10%, whichever is lower, measured against the lowest gross rent in the preceding 12 months. Initial rent after complete tenant turnover is treated separately. Do not substitute a fixed statewide percentage for the regional CPI formula.",
+      "citation": "Civil Code §1947.12(a)(1), (b), (d), (g); SB 567 operative version",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+      "source_doc_id": "D024",
+      "quoted_span": "(a) (1)   Subject to subdivision (b), an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, of the lowest gross rental rate charged for that dwelling or unit at any time during the 12 months prior to the effective date of the increase. In determining the lowest gross rental amount pursuant to this section, any rent discounts, incentives, concessions, or credits offered by the owner of such unit of residential real property and accepted by the tenant shall be excluded. The gross per-month rental rate and any owner-offered discounts, incentives, concessions, or credits shall be separately listed and identified in the lease or rental agreement or any\namendments to an existing lease or rental agreement.\n(2) If the same tenant remains in occupancy of a unit of residential real property over any 12-month period, the gross rental rate for the unit of residential real property shall not be increased in more than two increments over that 12-month period, subject to the other restrictions of this subdivision governing gross rental rate increase.\n(b) For a new tenancy in which no tenant from the prior tenancy remains in lawful possession of the residential real property, the owner may establish the initial rental rate not subject to subdivision (a). Subdivision (a) is only applicable to subsequent increases after that initial rental rate has been established.\n(c) A tenant of residential real property subject to this section shall not enter into a sublease that results in a total rent for the premises that\nexceeds the allowable rental rate authorized by subdivision (a). Nothing in this subdivision authorizes a tenant to sublet or assign the tenant’s interest where otherwise prohibited.\n(d) This section shall not apply to the following residential real properties:\n(1) Housing restricted by deed, regulatory restriction contained in an agreement with a government agency, or other recorded document as affordable housing for persons and families of very low, low, or moderate income, as defined in Section 50093 of the Health and Safety Code, or subject to an agreement that provides housing subsidies for affordable housing for persons and families of very low, low, or moderate income, as defined in Section 50093 of the Health and Safety Code or comparable federal statutes.\n(2) Dormitories owned and operated by an institution of higher education or a kindergarten\nand grades 1 to 12, inclusive, school.\n(3) Housing subject to rent or price control through a public entity’s valid exercise of its police power consistent with Chapter 2.7 (commencing with Section 1954.50) that restricts annual increases in the rental rate to an amount less than that provided in subdivision (a).\n(4) Housing that has been issued a certificate of occupancy within the previous 15 years, unless the housing is a mobilehome.\n(5) Residential real property that is alienable separate from the title to any other dwelling unit, including a mobilehome, provided that both of the following apply:\n(A) The owner is not any of the following:\n(i) A real estate investment trust, as defined in Section 856 of the Internal Revenue Code.\n(ii) A corporation.\n(iii) A limited liability company in which at least one member is a corporation.\n(iv) Management of a mobilehome park, as defined in Section 798.2.\n(B) (i) The tenants have been provided written notice that the residential real property is exempt from this section using the following statement:\n“This property is not subject to the rent limits imposed by Section 1947.12 of the Civil Code and is not subject to the just cause requirements of Section 1946.2 of the Civil Code. This property meets the requirements of Sections 1947.12 (d)(5) and 1946.2 (e)(8) of the Civil Code and the owner is not any of the following: (1) a real estate investment trust, as defined by Section 856 of the Internal Revenue Code; (2) a corporation; or (3) a limited liability company\nin which at least one member is a corporation.”\n(ii) For a tenancy existing before July 1, 2020, or July 1, 2022, if the lease is for a tenancy in a mobilehome, the notice required under clause (i) may, but is not required to, be provided in the rental agreement.\n(iii) For a tenancy commenced or renewed on or after July 1, 2020, or July 1, 2022, if the lease is for a tenancy in a mobilehome, the notice required under clause (i) must be provided in the rental agreement.\n(iv) Addition of a provision containing the notice required under clause (i) to any new or renewed rental agreement or fixed-term lease constitutes a similar provision for the purposes of subparagraph (E) of paragraph (1) of subdivision (b) of Section 1946.2.\n(6) A property containing two separate dwelling units within a single\nstructure in which the owner occupied one of the units as the owner’s principal place of residence at the beginning of the tenancy, so long as the owner continues in occupancy, and neither unit is an accessory dwelling unit or a junior accessory dwelling unit.",
+      "key_value": "min(5% + applicable CPI, 10%)",
+      "effective_date": "2024-04-01",
+      "coverage_conditions": "Conventional residential apartment scope. Use the actual certificate-of-occupancy date for the rolling 15-year test. Restricted affordable housing and other statutory exemptions require reviewed facts. The separately alienable exemption requires the prescribed ownership and written-notice conditions. The city rent-control flag confirms stronger applicable local control.",
+      "exemptions": "Section 1947.12(d): qualifying restricted affordable housing; school dormitories; stronger valid local rent control; a certificate issued within the previous 15 years (mobilehomes differ); separately alienable housing with the prescribed ownership and exemption notice; a qualifying owner-occupied duplex with tenancy-start, continued-occupancy, and non-ADU conditions. Voucher receipt alone is not a restricted-affordable-housing exemption.",
+      "interaction": "A covered stricter local cap governs under §1947.12(d)(3). Local cap applicability is not inferred from postal city or construction year.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-RENT-02",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Covered continuing tenancies: no more than two increases per year",
+      "requirement": "If the same tenant remains in occupancy over a 12-month period, a covered unit may not receive more than two gross-rent increase increments during that period. The annual percentage cap still applies.",
+      "citation": "Civil Code §1947.12(a)(2)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+      "source_doc_id": "D024",
+      "quoted_span": "(2) If the same tenant remains in occupancy of a unit of residential real property over any 12-month period, the gross rental rate for the unit of residential real property shall not be increased in more than two increments over that 12-month period, subject to the other restrictions of this subdivision governing gross rental rate increase.",
+      "key_value": "At most 2 increments / 12 months",
+      "effective_date": "2024-04-01",
+      "coverage_conditions": "Same executable property coverage as CA-RENT-01; continuing-tenancy condition is stated in the requirement, not inferred as an observed event.",
+      "exemptions": "Same property exemptions as CA-RENT-01.",
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-JC-01",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "California just-cause termination: 2026 statutory version",
+      "requirement": "For a covered tenancy, a landlord must have just cause and state it in the termination notice. The household threshold requires all tenants to have continuously and lawfully occupied for at least 12 months, or at least one tenant for 24 months, subject to the additional-adult-tenant proviso in §1946.2(a).",
+      "citation": "Civil Code §1946.2(a), (e), (i), (m)-(n); AB 1529 current version",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+      "source_doc_id": "D023",
+      "quoted_span": "(a) Notwithstanding any other law, after a tenant has continuously and lawfully occupied a residential real property for 12 months, the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy. If any additional adult tenants are added to the lease before an existing tenant has continuously and lawfully occupied the residential real property for 24 months, then this subdivision shall only apply if either of the following are satisfied:\n(1) All of the tenants have continuously and lawfully occupied the residential real property for 12 months or more.\n(2) One or more tenants have continuously and lawfully\noccupied the residential real property for 24 months or more.",
+      "key_value": "Just cause; household 12/24-month threshold",
+      "effective_date": null,
+      "coverage_conditions": "Review statutory exemptions, the rolling certificate age, restricted affordability, shared owner kitchen or bathroom, and separately alienable ownership plus notice. Confirm all tenants have occupied for 12 months, or one tenant for 24 months. A qualifying stronger local just-cause ordinance takes precedence.",
+      "exemptions": "Transient or tourist occupancy; specified institutions, care facilities, and dormitories; owner-shared kitchen or bathroom; qualifying owner-occupied single-family or duplex arrangements; a certificate issued within the previous 15 years (mobilehomes differ); separately alienable property with prescribed ownership and notice conditions; restricted affordable housing; an applicable qualifying local just-cause ordinance.",
+      "interaction": "§1946.2(i) disallows simultaneous coverage under this section and a qualifying stronger local just-cause ordinance. City-coverage review flag is required; no blanket city-wide assumption.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-JC-02",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Covered no-fault termination: relocation payment or rent waiver",
+      "requirement": "When a covered tenancy is terminated for no-fault just cause, provide one month of the tenant’s rent as relocation assistance within 15 calendar days of service, or waive the final month’s rent in writing. State the right and the selected option in the notice. Assistance is credited against other legally required relocation assistance; failure to strictly comply renders the notice void.",
+      "citation": "Civil Code §1946.2(d)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+      "source_doc_id": "D023",
+      "quoted_span": "(d) (1) For a tenancy for which just cause is required to terminate the tenancy under subdivision (a), if an owner of residential real property issues a termination notice based on a no-fault just cause described in paragraph (2) of subdivision (b), the owner shall, regardless of the tenant’s income, at the owner’s option, do one of the following:\n(A) Assist the tenant to relocate by providing a direct payment to the tenant as described in paragraph (3).\n(B) Waive in writing the payment of rent for the final month of the tenancy, prior to the rent becoming due.\n(2) If an owner issues a notice to terminate a tenancy for no-fault just cause, the owner shall notify the tenant in the written termination notice of the tenant’s right to relocation assistance or rent waiver pursuant to this section. If the owner elects to waive the rent for the final month of the tenancy as provided in subparagraph (B) of paragraph (1), the notice shall state the amount of rent waived and that no rent is due for the final month of the tenancy.\n(3) (A) The amount of relocation assistance or rent waiver shall be equal to one month of the tenant’s rent that was in effect when the owner issued the notice to terminate the tenancy. Any relocation assistance shall be provided\nwithin 15 calendar days of service of the notice.\n(B) If a tenant fails to vacate after the expiration of the notice to terminate the tenancy, the actual amount of any relocation assistance or rent waiver provided pursuant to this subdivision shall be recoverable as damages in an action to recover possession.\n(C) The relocation assistance or rent waiver required by this subdivision shall be credited against any other relocation assistance required by any other law.\n(4) An owner’s failure to strictly comply with this subdivision shall render the notice of termination void.",
+      "key_value": "1 month rent; payment within 15 days",
+      "effective_date": null,
+      "coverage_conditions": "Same reviewed statutory coverage as CA-JC-01. No-fault termination is an event condition, not a finding from address data.",
+      "exemptions": "Same property/tenancy exemptions as CA-JC-01; §1946.2(b)(2)(C)(ii) has a tenant-fault government-order relocation exception.",
+      "interaction": "Local amounts may govern; never automatically sum duplicate relocation amounts.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-DEP-01",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "One-month security cap for owners outside the small-landlord exception",
+      "requirement": "For security demanded or collected on or after July 1, 2024 by an owner outside the qualifying small-landlord exception, the default maximum is one month’s rent in addition to first-month rent. Certain six-month advance-rent and tenant-requested alteration agreements are separate exceptions. Existing deposits collected before July 1, 2024 are not retroactively limited by this subdivision.",
+      "citation": "Civil Code §1950.5(c)(1)-(6)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+      "source_doc_id": "D025",
+      "quoted_span": "(c) (1) Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy.\n(2) This subdivision does not prohibit an advance payment of not less than six months’ rent if the term of the lease is six months or longer.\n(3) This subdivision does not preclude a landlord and a tenant from entering into a mutual agreement for the landlord, at the request of the tenant and for a specified fee or charge, to make structural,\ndecorative, furnishing, or other similar alterations, if the alterations are other than cleaning or repairing for which the landlord may charge the previous tenant as provided by subdivision (e).\n(4) On or after April 1, 2025, if a landlord or its agent charges a service member who rents residential property in which the service member will reside a higher than standard or advertised security pursuant to paragraph (1) due to the credit history, credit score, housing history, or other factor related to the tenant, the landlord shall provide the tenant with a written statement, on or before the date the lease is signed, of the amount of the higher security and an explanation why the higher security amount is being charged. The additional amount of security shall be returned to the tenant after no more than six months of residency if the tenant\nis not in arrears for any rent due during that period. The date for return of the additional amount of security shall be included in the lease agreement. For purposes of this paragraph, “service member” has the same meaning as in Section 400 of the Military and Veterans Code.\n(5) (A) Notwithstanding paragraph (1), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to two months’ rent, in addition to any rent for the first month paid on or before initial occupancy if the landlord meets both of the following requirements:\n(i) The landlord is a natural person or a limited liability company in which all members are natural persons.\n(ii) The\nlandlord owns no more than two residential rental properties that collectively include no more than four dwelling units offered for rent.\n(B) Subparagraph (A) shall not apply if the prospective tenant is a service member. A landlord shall not refuse to enter into a rental agreement for residential property with a prospective tenant who is a service member because this subparagraph prohibits the landlord from demanding or receiving a greater amount of security than that which is established in paragraph (1). For purposes of this subparagraph, “service member” has the same meaning as in Section 400 of the Military and Veterans Code.\n(C) For purposes of this paragraph:\n(i) “Natural person” includes any natural person who is a\nsettlor or beneficiary of a family trust.\n(ii) “Family trust” means a revocable living trust or irrevocable trust in which the settlors and beneficiaries of the trust are persons who are related to each other as sibling, spouse, domestic partner, child, parent, grandparent, or grandchild.\n(6) This subdivision shall not apply to a security collected or demanded by the landlord before July 1, 2024.",
+      "key_value": "1 month rent (covered new demand)",
+      "effective_date": "2024-07-01",
+      "coverage_conditions": "Owner has >2 residential rental properties, >4 total rented units, or a legally incompatible ownership type. Generic LLC ownership is insufficient to decide all-natural-person membership. Deposit-demand date remains an explicit condition.",
+      "exemptions": "A qualifying natural person, family trust, or LLC whose members are all natural persons, with no more than 2 residential rental properties and 4 rented units, may demand up to 2 months, except for service-member applicants. Preserve advance-rent, alteration-agreement, and pre-July 2024 deposit exceptions.",
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-DEP-02",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Return remaining security and itemize deductions within 21 days",
+      "requirement": "No later than 21 calendar days after the tenant vacates, return the remaining deposit and furnish an itemized statement of the security received and its disposition. The statute specifies delivery methods, electronic-return requirements, documentation, estimate procedures, and limited documentation exceptions.",
+      "citation": "Civil Code §1950.5(h)(1)-(7), current AB 414 version",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+      "source_doc_id": "D025",
+      "quoted_span": "(h) (1) No later than 21 calendar days after the tenant has vacated the premises, but not earlier than the time that either the landlord or the tenant provides a notice to terminate the tenancy under Section 1946 or 1946.1, Section 1161 of the Code of Civil Procedure, or not earlier than 60 calendar days prior to\nthe expiration of a fixed-term lease, the landlord shall furnish the tenant, a copy of an itemized statement indicating the basis for, and the amount of, any security received and the disposition of the security, and shall return any remaining portion of the security to the tenant as follows:",
+      "key_value": "21 calendar days after vacancy",
+      "effective_date": null,
+      "coverage_conditions": "Residential property used as the tenant dwelling; obligation is conditional on vacating/held security, not proof of a present unpaid deposit.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-DEP-03",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Deposit deductions: no ordinary wear or preexisting damage",
+      "requirement": "Claim only reasonably necessary amounts for permitted deposit purposes. Do not charge the tenant or deposit for preexisting defective conditions, ordinary wear and tear, or its cumulative effects; cleaning/repair claims must reasonably restore inception condition without ordinary wear.",
+      "citation": "Civil Code §1950.5(e)(1)-(2)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+      "source_doc_id": "D025",
+      "quoted_span": "(e) (1) Subject to paragraph (2), the landlord\nmay claim of the security only those amounts as are reasonably necessary for the purposes specified in subdivision (b).\n(2) (A) The landlord shall not assert a claim against the tenant or the security for damages to the premises or any defective conditions that preexisted the tenancy, for ordinary wear and tear or the effects thereof, whether the wear and tear preexisted the tenancy or occurred during the tenancy, or for the cumulative effects of ordinary wear and tear occurring during any one or more tenancies.\n(B) Claims against the tenant or the security for materials or supplies and for work performed by a contractor, the landlord, or the landlord’s employee shall be limited to a reasonable amount necessary to restore the premises back to the condition it was\nin at the inception of the tenancy, exclusive of ordinary wear and tear.\n(C) The landlord shall not require a tenant to pay for, or assert a claim against the tenant or the security for, professional carpet cleaning or other professional cleaning services, unless reasonably necessary to return the premises to the condition it was in at the inception of tenancy, exclusive of ordinary wear and tear.",
+      "key_value": "No ordinary-wear deductions",
+      "effective_date": null,
+      "coverage_conditions": "Conditional standard governing any deduction, not an assessment of a particular damage claim.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-DEP-04",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Security may not be described as nonrefundable",
+      "requirement": "A lease or rental agreement may not characterize security as nonrefundable. Application screening fees are separately regulated and are not security under §1950.6(k).",
+      "citation": "Civil Code §1950.5(n)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+      "source_doc_id": "D025",
+      "quoted_span": "(n) A lease or rental agreement shall not contain a provision characterizing any security as “nonrefundable.”",
+      "key_value": "Security is not nonrefundable",
+      "effective_date": null,
+      "coverage_conditions": "Residential security governed by §1950.5; no inference that a lease actually contains a prohibited term.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-DEP-05",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Photograph condition before and after deposit-funded work",
+      "requirement": "Beginning April 1, 2025, photograph the unit after possession is returned and before deduction-related repairs or cleaning, and again after that work. Supply the photographs and written cost explanation with the itemized statement as prescribed by the statute.",
+      "citation": "Civil Code §1950.5(g)(2), (h)(2)(D)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+      "source_doc_id": "D025",
+      "quoted_span": "(2) Beginning April 1, 2025, the landlord shall take photographs of the unit within a reasonable time after the possession of the unit is returned to the landlord, but prior to any repairs or cleanings for which the landlord will make a deduction from or claim against the security deposit pursuant to this section, and shall also take photographs of the unit within a reasonable time after such repairs or cleanings are completed.",
+      "key_value": "Before-and-after photos",
+      "effective_date": "2025-04-01",
+      "coverage_conditions": "Triggered only by relevant deposit repairs/cleaning after returned possession; does not declare that a particular property has made deductions.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-FEE-01",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Screening fee: actual costs and CPI-adjusted statutory ceiling",
+      "requirement": "A screening fee may not exceed actual out-of-pocket information-gathering cost plus reasonable processing time, and may not exceed the statutory $30 base adjusted annually with CPI beginning January 1, 1998. Verify the indexed amount for the relevant year; the unadjusted $30 is not the 2026 maximum.",
+      "citation": "Civil Code §1950.6(b)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+      "source_doc_id": "D026",
+      "quoted_span": "(b) The amount of the application screening fee shall not be greater than the actual\nout-of-pocket costs of gathering information concerning the applicant, including, but not limited to, the cost of using a tenant screening service or a consumer credit reporting service, and the reasonable value of time spent by the landlord or their agent in obtaining information on the applicant. In no case shall the amount of the application screening fee charged by the landlord or their agent be greater than thirty dollars ($30) per applicant. The thirty dollar ($30) application screening fee may be adjusted annually by the landlord or their agent commensurate with an increase in the Consumer Price Index, beginning on January 1, 1998.",
+      "key_value": "Actual costs; CPI-adjusted ceiling",
+      "effective_date": null,
+      "coverage_conditions": "Residential rental applications and guarantors under the current statute. The fee-charging event is conditional.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-FEE-02",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Screening fee collection and refund process",
+      "requirement": "Do not collect a screening fee when no rental unit is or will reasonably be available. Offer either the statutory ordered first-qualified-applicant process, charging only actually considered applications with a 7-day refund for inadvertently collected fees, or refund every unselected applicant by the earlier of 7 days after selection and 30 days after submission.",
+      "citation": "Civil Code §1950.6(c)(1)-(2)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+      "source_doc_id": "D026",
+      "quoted_span": "(c) (1) A landlord or their agent shall not charge an applicant an application screening fee when they know or should have known that no rental unit is available at that time or will be available within a reasonable period of time.\n(2) A landlord or their agent may charge an applicant an application screening fee only if the landlord or their agent, at the time the application screening fee is collected, offers any of the following:\n(A) An application screening process that complies with all of the following:\n(i) Completed applications are considered, as provided for in the landlord’s established screening criteria, in the order in which the completed applications were received. The landlord’s screening criteria shall be provided to the applicant in writing together with the application form.\n(ii) The first applicant who meets the landlord’s established screening criteria is approved for tenancy.\n(iii) Applicants are not\ncharged an application screening fee unless or until their application is actually considered.\n(iv) Clause (iii) shall not be considered violated if a landlord or their agent inadvertently collects an application screening fee from an applicant as the result of multiple concurrent application submissions, provided that the landlord or their agent issues a refund of the application screening fee within seven days to any applicant whose application is not considered. The landlord may offer, as an alternative to refunding the screening fee, the option, at the applicant’s discretion, for the screening fee paid by the applicant to be applied to an application for another rental unit offered by the landlord. A landlord or their agent shall not be required to refund an application screening fee to an applicant whose application is denied, after consideration, because the applicant does not meet the landlord’s established screening criteria.\n(B) An application screening process in which the landlord or their agent returns the entire screening fee to any applicant who is not selected for tenancy, regardless of the reason, within 7 days of selecting an applicant for tenancy or 30 days of when the application was submitted, whichever occurs first.",
+      "key_value": "Ordered consideration or timely refund",
+      "effective_date": null,
+      "coverage_conditions": "Conditional on collection of a residential application screening fee; no assumption about actual applications.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-FEE-03",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Provide the paid-for credit report within 7 days",
+      "requirement": "If the applicant paid a screening fee, provide their consumer credit report by personal delivery, mail, or email within 7 days after the landlord or agent receives the report.",
+      "citation": "Civil Code §1950.6(f)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+      "source_doc_id": "D026",
+      "quoted_span": "(f) If an application screening fee has been paid by the applicant, the landlord or their agent shall provide a copy of the consumer credit report to the applicant who is the subject of that report by personal delivery, mail, or email within seven days of the landlord or their agent receiving the report.",
+      "key_value": "Report within 7 days of receipt",
+      "effective_date": null,
+      "coverage_conditions": "Fee-paid applicant and received-report trigger stated explicitly; receipt and unused-fee refund duties are in §1950.6(d)-(e).",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-SCREEN-01",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Housing advertising: no source-of-income exclusion",
+      "requirement": "Do not make, print, or publish housing advertising that indicates a preference, limitation, or discrimination based on source of income. The statutory definition includes government assistance and housing subsidies such as Section 8 vouchers. Advertising protections are distinct from exemptions affecting particular shared-home selections.",
+      "citation": "Government Code §12955(c), (p)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+      "source_doc_id": "D027",
+      "quoted_span": "(c) For any person to make, print, or publish, or cause to be made, printed, or published any notice, statement, or advertisement, with respect to the sale or rental of a housing accommodation that indicates any preference, limitation, or discrimination based on race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information or an intention to make that preference, limitation, or discrimination.",
+      "key_value": "No source-of-income advertising exclusion",
+      "effective_date": null,
+      "coverage_conditions": "Geographic legal standard for rental-housing advertising; no factual finding of discrimination.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-SCREEN-02",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Subsidy applicants: assess tenant-paid rent and offer alternative credit evidence",
+      "requirement": "In instances of a government rent subsidy, base the financial/income standard on the tenant-paid portion of rent. Before using credit history, offer the applicant lawful verifiable alternative ability-to-pay evidence, allow reasonable time, and reasonably consider it if chosen.",
+      "citation": "Government Code §12955(o)(1)-(2)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+      "source_doc_id": "D027",
+      "quoted_span": "(o) (1) In instances in which there is a government rent subsidy, to do either of the following:\n(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.\n(B) (i) Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay\nthe portion of the rent to be paid by the tenant, including, but not limited to, government benefit payments, pay records, and bank statements.\n(ii) If the applicant elects to provide lawful, verifiable alternative evidence of the applicant’s\nreasonable ability to pay pursuant to clause (i), the housing provider shall do both of the following:\n(I) Provide the applicant reasonable time to respond with that alternative evidence.\n(II) Reasonably consider that alternative evidence in lieu of the person’s credit history in determining whether to offer the rental accommodation to the applicant.\n(2) This subdivision does not limit the ability of the owner of a housing accommodation to request information or documentation to verify employment, to request landlord references, or to verify the identity of a person.",
+      "key_value": "Tenant portion; alternative evidence",
+      "effective_date": "2024-01-01",
+      "coverage_conditions": "Conservative non-owner-occupied housing scope; the government-rent-subsidy transaction condition is expressly conditional, not inferred from is_subsidized building status.",
+      "exemptions": "FEHA shared-home selection exceptions require review if an owner resides in the home; government rent subsidy must actually be present for this specific duty.",
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "CA-SCREEN-03",
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Non-owner-occupied housing: criminal-history screening limits",
+      "requirement": "The Civil Rights Department says housing providers cannot consider arrests without conviction, sealed/expunged records, or juvenile matters and cannot impose blanket criminal-history bans. A conviction used to deny an application must be directly related to being a good tenant and health/safety/property, considering the offense and elapsed time.",
+      "citation": "CRD housing guidance, criminal-history FAQ; FEHA",
+      "source_url": "https://calcivilrights.ca.gov/housing/",
+      "source_doc_id": "D016",
+      "quoted_span": "Yes.  Generally, a housing provider may check the criminal history of an applicant, but there are some limitations. Housing  providers cannot consider some types of criminal history including arrests that did not lead to a conviction, records that are sealed or expunged, or records or matters processed in the juvenile justice system. Housing providers are also prohibited from having “blanket bans” of all people with a criminal history.\nIf a housing provider intends to deny someone’s application based on a criminal conviction, it must be directly-related to someone’s ability to be a good tenant and to not be a threat to the health and safety of others and the property. In determining whether a criminal conviction is directly-related, a housing provider should consider the nature and severity of the crime and the amount of time that has passed since the criminal conduct occurred.",
+      "key_value": "No blanket criminal-history bans",
+      "effective_date": null,
+      "coverage_conditions": "Conservative non-owner-occupied housing scope. This source is agency guidance rather than a captured regulatory section.",
+      "exemptions": "The source describes specific shared-owner-home exemptions. This record does not resolve such cases.",
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "BER-RENT-01",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Berkeley 2026 annual general adjustment for eligible rent ceilings",
+      "requirement": "Eligible landlords may raise 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026. The 2026 AGA may not adjust rents for Costa-Hawkins tenancies beginning on or after January 1, 2025. Registration, notice, and Regulation 1148 qualification conditions still apply. Banked earlier AGAs and approved adjustments are separate.",
+      "citation": "BMC §13.76.110A; Rent Board Regulation 1148 and 2026 AGA order",
+      "source_url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
+      "source_doc_id": "D008",
+      "quoted_span": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026. The 2026 AGA of 1.0% represents 65% of the increase in the Consumer \nPrice Index (CPI) for All Urban Consumers in the Bay Area during the period from July 1, \n2024 - June 30, 2025, which was 1.5% as posted by the Bureau of Labor Statistics. The \n65% of CPI formula was approved by Berkeley voters in the November 2004 general \nmunicipal election. See Berkeley Municipal Code section 13.76.110A. for rules related to \nestablishing the AGA. \n \nThe 2026 AGA may not adjust tenants’ rents when their tenancy began on or after \nJanuary 1, 2025, and who had their rents set pursuant to the Costa-Hawkins Rental \nHousing Act.  The Order – Rent Board Regulation 1148 – also sets forth the conditions \nfor qualifying for this rent increase and the notice that must be given to tenants in order \nto raise the rent.",
+      "key_value": "2026 AGA: 1.0% for eligible ceilings",
+      "effective_date": "2026-01-01",
+      "coverage_conditions": "Verified Berkeley municipality and reviewed full rent-control coverage. Annual AGA entitlement additionally requires tenant-start, Costa-Hawkins, registration, and qualification review.",
+      "exemptions": "Partially covered or exempt units; the Costa-Hawkins tenancy exclusion. D009 provides coverage guidance but does not automatically classify a parcel.",
+      "interaction": "The stricter local annual adjustment governs covered units. Banking and approved petitions can affect a particular increase; this is not a universal 1% transaction ceiling.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "BER-JC-01",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Berkeley covered units require just cause",
+      "requirement": "Tenants in units fully or partially covered by Berkeley’s Rent Ordinance may not be evicted without just cause. Review coverage; new construction may be partially covered even when exempt from rent control.",
+      "citation": "BMC §13.76.130; Measure BB agency explanation",
+      "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+      "source_doc_id": "D006",
+      "quoted_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”). Measure BB has changed some just causes, eliminated one just cause, added new requirements for eviction notices, and shortened the timeline for landlords to file copies of certain eviction-related documents with the Rent Board.",
+      "key_value": "Just cause for fully/partially covered units",
+      "effective_date": null,
+      "coverage_conditions": "Verified Berkeley municipality and reviewed local eviction coverage. The D009 coverage table distinguishes rent-control coverage from eviction coverage.",
+      "exemptions": "Review golden-duplex historical owner occupancy, owner-shared kitchen or bathroom and tenancy-start facts, owner-occupied ADU arrangements, university housing, nonprofit cooperatives, and specialized subsidy coverage.",
+      "interaction": "The applicable local just-cause ordinance controls. A negative rent-control flag does not mean there is no eviction protection.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "BER-JC-02",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Berkeley nonpayment eviction requires at least one month of FMR debt",
+      "requirement": "For a covered nonpayment eviction, rental debt must be at least one month of the HUD Oakland-Fremont metropolitan Fair Market Rent for a unit of equivalent size for the fiscal year in which rent is demanded. This is not simply one month of the tenant’s contract rent.",
+      "citation": "BMC §13.76.130; Measure BB nonpayment restriction",
+      "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+      "source_doc_id": "D006",
+      "quoted_span": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded. See our\nJust Cause & Other Local Requirements webpage\nfor a table summarizing the FMR for the current year.",
+      "key_value": "Debt ≥ 1 month of relevant HUD FMR",
+      "effective_date": null,
+      "coverage_conditions": "Reviewed covered Berkeley tenancy. Bedroom size, demand fiscal year, and actual debt are transaction conditions absent from parcel data.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "BER-DEP-01",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Berkeley covered tenancies earn security-deposit interest",
+      "requirement": "For tenancies in units fully or partially covered by Berkeley’s Rent Ordinance, pay security-deposit interest at the end of each year and prorate it if the tenant moves out before year-end. Verify the applicable interest rate in the linked official rate record.",
+      "citation": "Berkeley Rent Ordinance security-deposit interest; Rent Board guidance",
+      "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+      "source_doc_id": "D007",
+      "quoted_span": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year.",
+      "key_value": "Annual interest; prorate at move-out",
+      "effective_date": null,
+      "coverage_conditions": "Verified Berkeley municipality and reviewed full or partial Rent Ordinance coverage. The coverage flag must refer to that ordinance.",
+      "exemptions": "Units exempt under a reviewed ordinance classification. No interest percentage is assumed.",
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "BER-FEE-01",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Berkeley screening-fee rights disclosure",
+      "requirement": "Before receiving a fee for a credit report or application processing, provide a clear and conspicuous screening-fee rights statement and state the maximum fee allowed by Civil Code §1950.6(b), in the application or a separate disclosure.",
+      "citation": "BMC §13.78.010",
+      "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+      "source_doc_id": "D005",
+      "quoted_span": "When an owner or the owner’s agent gets a request to rent residential property in Berkeley from an applicant and the owner charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under\nCalifornia Civil Code Section 1950.6(b)\n.",
+      "key_value": "Rights and cap disclosure before fee",
+      "effective_date": null,
+      "coverage_conditions": "Berkeley residential rental application; the fee event is conditional. This chapter applies despite contrary contract terms.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "BER-FEE-02",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Berkeley existing-tenancy application charges may not be nonrefundable",
+      "requirement": "Do not charge an existing tenant a nonrefundable fee for tenancy renewal, a roommate’s departure, or adding or replacing a roommate in an existing household.",
+      "citation": "BMC §13.78.016, .018",
+      "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+      "source_doc_id": "D005",
+      "quoted_span": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+      "key_value": "No nonrefundable renewal/roommate fees",
+      "effective_date": null,
+      "coverage_conditions": "Verified Berkeley residential municipality; the existing-tenancy transaction condition is expressly stated.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "SF-ALG-01",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "San Francisco nonpublic-data rent algorithm prohibition",
+      "requirement": "Do not sell or use an algorithmic device that analyzes nonpublic competitor rental data to recommend rent for a vacant residential unit or manage occupancy levels. The definition does not cover every rent calculator or use of public rental data.",
+      "citation": "San Francisco Administrative Code §37.10C",
+      "source_url": "https://www.sf.gov/news/new-law-prohibits-algorithmic-devices-used-set-rents-san-francisco",
+      "source_doc_id": "D081",
+      "quoted_span": "Legislation\nadding Section 37.10C to the Rent Ordinance went into effect on October 14, 2024. The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.\nThe term “algorithmic device” means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit. The law prohibits the sale or use of such algorithmic devices and allows a tenant or the City Attorney to bring a civil action if they believe an entity is in violation of the law.",
+      "key_value": "Nonpublic-competitor-data device prohibition",
+      "effective_date": "2024-10-14",
+      "coverage_conditions": "Verified San Francisco residential municipality. No finding that prohibited software is used.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "SF-RENT-01",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "San Francisco 2026–27 annual allowable rent increase",
+      "requirement": "For rent-controlled units, the annual allowable increase is 1.6% from March 1, 2026 through February 28, 2027. This is the annual adjustment, not an assessment of a particular increase or a complete treatment of banked adjustments and authorized pass-throughs.",
+      "citation": "San Francisco Rent Board 2026–27 annual adjustment; Rent Ordinance",
+      "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+      "source_doc_id": "D080",
+      "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
+      "key_value": "1.6% annual adjustment",
+      "effective_date": "2026-03-01",
+      "coverage_conditions": "Verified San Francisco municipality and reviewed rent-control coverage. Do not infer certificate, rental-history, or condominium exceptions from construction year.",
+      "exemptions": null,
+      "interaction": "Local rent control governs covered units. The state cap may govern eligible units exempt from local rent limits.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "SF-JC-01",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "San Francisco covered rental units require a dominant just-cause reason",
+      "requirement": "An eviction from a unit covered by the Rent Ordinance requires a just-cause reason that is the dominant motive. Lease expiration or ownership change alone is not just cause. Some new-construction, Costa-Hawkins, or rent-regulated tenancies remain subject to eviction provisions despite rent-limit exemptions.",
+      "citation": "San Francisco Administrative Code §37.9(a); Rent Board overview",
+      "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+      "source_doc_id": "D079",
+      "quoted_span": "In order to evict a tenant from a rental unit covered by the Rent Ordinance, a landlord must have a \"just cause\" reason that is the dominant motive for pursuing the eviction.\nRent Board\nIn order to evict a tenant from a rental unit covered by the Rent Ordinance, a landlord must have a \"just cause\" reason that is the dominant motive for pursuing the eviction. Note that the mere expiration of a rental agreement or a change in ownership does not constitute \"just cause\" for eviction.",
+      "key_value": "Just cause; lease expiry alone insufficient",
+      "effective_date": null,
+      "coverage_conditions": "Verified San Francisco municipality and reviewed local eviction scope. Rent-control coverage alone is not used.",
+      "exemptions": "Review the full ordinance exceptions and rental history. Construction after June 13, 1979 does not by itself exempt a tenancy from eviction provisions.",
+      "interaction": "Applicable local just-cause law controls under Civil Code §1946.2(i); no automatic state and local double counting.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "SD-JC-01",
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "San Diego covered residential tenancies require just cause",
+      "requirement": "A landlord may not terminate a covered tenancy without at-fault or no-fault just cause. The ordinance defines tenancy as continuous lawful occupation for more than 30 days and excludes fixed-term leases of 3 months or less, including their short-term extensions. Review the applicable exceptions.",
+      "citation": "San Diego Municipal Code §§98.0702–98.0704",
+      "source_url": "https://docs.sandiego.gov/municode/municodechapter09/ch09art08division07.pdf",
+      "source_doc_id": "D073",
+      "quoted_span": "§98.0702 Definitions \nFor the purposes of this Division, defined terms appear in italics. The following \ndefinitions apply in this Division: \nBuyout agreement means an agreement where the landlord pays the tenant money or \nother consideration to vacate the residential rental property. A buyout agreement \ndoes not include an agreement to settle a pending unlawful detainer action. \n \nBuyout offer means any discussion or bargaining, whether oral or written, between a \ntenant and a landlord regarding the possibility of entering into a buyout agreement. A \ncounteroffer by the tenant does not end discussion or bargaining of a buyout offer. \n \nCommission means the San Diego Housing Commission. \n \nDisabled means any person with a disability as defined in California Government \nCode section 12955.3, as may be amended.  \n \n \n \nCh. Art. Div.  \n9 8 7 2 \n \nSan Diego Municipal Code Chapter 9:  Building, Housing and Sign Regulations   \n(3-2024) \n \n \n \nDwelling unit has the same meaning as in San Diego Municipal Code \nsection 113.0103, as may be amended.  \n \nFamily trust means a revocable living trust or irrevocable trust in which the settlors \nand beneficiaries of the trust are persons who are related to each other as sibling, \nspouse, domestic partner, child (by blood or adoption), parent, grandparent, or \ngrandchild (by blood or adoption). \n \nLandlord means an owner and any person, acting as principal or through an agent, \nwho has the right to offer residential rental property for rent, and includes a \npredecessor in interest to the landlord. \n \nLease means any lease, sublease, or agreement, written or oral, for the use and \noccupancy of residential rental property. \nNatural person includes a natural person who is a settlor or beneficiary of a family \ntrust; or if the residential rental property is owned by a limited liability company or \npartnership, a natural person with a 25 percent ownership in the residential rental \nproperty. \nNon-profit transitional housing means temporary housing operated by a non-profit \norganization for up to 24 months with supportive services to individuals and families \nwith the goal of interim stability and support to successfully move to and maintain \npermanent housing, which may cover housing costs and accompanying supportive \nservices for program participants. \nOwner means a natural person that has at least a 25 percent recorded ownership \ninterest in the residential rental property; a natural person who has any recorded \nownership interest in the residential rental property if 100 percent of the recorded \nownership is divided among owners who are related to each other as sibling, spouse, \ndomestic partner, child (by blood or adoption), parent, grandparent, or grandchild (by \nblood or adoption); or a natural person whose recorded interest in the residential \nrental property is owned through a limited liability company or partnership. \nResidential rental property means any dwelling or unit that is intended for human \nhabitation, including any dwelling or unit in a mobilehome park. \nRetaliation means any threat or any other adverse action against a tenant for \nexercising or attempting to exercise any right guaranteed under this Division. \n \nCh. Art. Div.  \n9 8 7 3 \n \nSan Diego Municipal Code Chapter 9:  Building, Housing and Sign Regulations   \n(3-2024) \n \n \n \nSection 8 means residential rental property in which the tenant receives tenant-based \nhousing assistance under Section 8 of the United States Housing Act of 1937, also \nknown as the Housing Choice Voucher Program.  \n \nSenior means any person 62 years old or older. \nTenancy means the lawful right or entitlement of a tenant to continuously use or \noccupy a residential rental property for more than 30 days. A tenancy does not \ninclude a lease for a fixed-term of three months or less, including any extensions or \nrenewals of that lease for a fixed-term of three months or less. \nTenant means a tenant, subtenant, lessee, sublessee, or any other natural person \nentitled to lease any residential rental property. \n(“When Tenants’ Right to Know Regulations Apply” added 3–30–2004 by \nO-19269 N.S.) \n(Retitled to “Definitions” and amended 5-25-2023 by O-21647 N.S.; effective \n6-24-2023.) \n(Amended 2-27-2024 by O-21769 N.S.; effective 3-28-2024.) \n \n§98.0703 Exemptions \nThis Division shall not apply to the following types of residential rental properties or \nresidential circumstances: \n(a) transient and tourist hotel occupancy as defined in California Civil Code \nsection 1940(b), as may be amended; \n(b) short-term residential occupancy, as defined in and subject to Chapter 5, \nArticle 10, Division 1 of this Code, as may be amended;  \n \n(c) housing restricted by deed, regulatory restriction contained in an agreement \nwith a government agency, or other document as affordable housing for \npersons and families of very low, low, or moderate income, as defined in \nCalifornia Health and Safety Code section 50093, as may be amended;  \n(d)  housing subject to an agreement that provides housing subsidies for affordable \nhousing for persons and families of very low, low, or moderate income, as \ndefined in California Health and Safety Code section 50093, as may be \namended, or comparable federal statutes. This exemption shall not include \nSection 8;  \nCh. Art. Div.  \n9 8 7 4 \n \nSan Diego Municipal Code Chapter 9:  Building, Housing and Sign Regulations   \n(3-2024) \n \n \n \n(e) mobilehomes subject to the Mobilehome Residency Law (California Civil \nCode sections 798-799.11), as may be amended;  \n \n(f) housing accommodations in a nonprofit hospital, religious facility, extended \ncare facility, licensed residential care facility for the elderly, as defined in \nCalifornia Health and Safety Code section 1569.2, as may be amended, an \nadult residential facility, as defined in Title 22, Division 6, Chapter 6 of the \nManual of Policies and Procedures published by the California Department of \nSocial Services, as may be amended, or non- profit transitional housing; \n(g) dormitories owned and operated by an institution of higher education or an \ninstitution offering instruction to any grade from kindergarten through 12; \n(h) residential rental property in which the tenant shares bathroom or kitchen \nfacilities with the landlord who maintains their principal residence at the \nresidential rental property;  \n \n(i) single-family residence occupied by the landlord as the landlord’s principal \nplace of residence, including both of the following:  \n \n(1) a residence in which the landlord-occupant rents or leases no more \nthan two bedrooms, two accessory dwelling units, or two junior \naccessory dwelling units, as defined in section 113.0103; and  \n \n(2) a mobilehome. \n(j) a property containing two separate dwelling units within a single structure in \nwhich the landlord occupies one of the dwelling units as the landlord’s \nprincipal place of residence at the beginning of the tenancy, so long as the \nlandlord continues in occupancy;  \n \n(k) housing that has been issued a certificate of occupancy within the previous \n15 years, unless the housing is a mobilehome; and \n(l) residential rental property, including a mobilehome, that is alienable separate \nfrom the title to any other dwelling unit, provided that both of the following \napply: \n(1) The landlord is not any of the following: \n(A) a real estate investment trust, as defined in California Internal \nRevenue Code section 856, as may be amended; \nCh. Art. Div.  \n9 8 7 5 \n \nSan Diego Municipal Code Chapter 9:  Building, Housing and Sign Regulations   \n(3-2024) \n \n \n \n(B) a corporation; \n(C) a limited liability company in which at least one member is a \ncorporation; or  \n \n(D) management of a mobilehome park, as defined in California \nCivil Code section 798.2, as may be amended. \n(2) The tenants have been provided written notice that the residential \nrental property is exempt from this Division using the following \nstatement: \nThis property is not subject to the just cause requirements of \nChapter 9, Article 8, Division 7 of the San Diego Municipal \nCode. This property meets the requirements of San Diego \nMunicipal Code section 98.0703(l) and the landlord is not any \nof the following: (1) a real estate investment trust, as defined \nby California Internal Revenue Code section 856; (2) a \ncorporation; (3) a limited liability company in which at least \none member is a corporation; or (4) management of a \nmobilehome park, as defined in California Civil Code \nsection 798.2.  \n \nFor a tenancy existing before January 1, 2024, the notice required \nabove may be provided in the lease. For a tenancy commenced or \nrenewed on or after January 1, 2024, the notice required above shall be \nprovided in the lease. \n(“Exemptions” added 5-25-2023 by O-21647 N.S.; effective 6-24-2023.) \n \n§98.0704 Just Cause Required for Termination of Tenancy \nA landlord shall not terminate a tenancy without just cause. For purposes of this \nDivision, just cause includes at-fault just cause and no-fault just cause.",
+      "key_value": "Just cause for covered tenancy",
+      "effective_date": "2024-03-28",
+      "coverage_conditions": "Verified San Diego municipality and reviewed local eviction coverage, including lawful tenancy, short-lease, and exemption conditions.",
+      "exemptions": "Section 98.0703: transient or short-term occupancy; specified restricted affordability or subsidies (tenant-based Section 8 is not excluded); institutional housing; owner-shared facilities; qualifying owner-occupied single-family or duplex arrangements; the rolling 15-year certificate exception; separately alienable property with prescribed ownership and notice conditions.",
+      "interaction": "The reviewed more-protective San Diego ordinance controls covered tenancies. Section 98.0701 describes consistent just cause and additional protections.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "SD-JC-02",
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "San Diego covered no-fault terminations require relocation assistance",
+      "requirement": "For covered no-fault terminations, provide two months of actual rent, or three months for a senior aged 62 or older or a disabled tenant, through direct payment or an equivalent rent waiver. Direct payment must be provided within 15 days as specified in the notice. Assistance does not replace the owed security deposit and is credited against other required relocation assistance.",
+      "citation": "San Diego Municipal Code §98.0706(b)-(c)",
+      "source_url": "https://docs.sandiego.gov/municode/municodechapter09/ch09art08division07.pdf",
+      "source_doc_id": "D073",
+      "quoted_span": "(b) Requirements Upon Termination of Tenancy for No-Fault Just Cause. If a \nlandlord issues a termination notice for no-fault just cause, the landlord shall \ndo the following: \n(1) Notice to Tenant. The landlord shall give written notice to the tenant \nat least 30 or 60 days prior to the proposed date of termination as \nrequired by California Civil Code section 1946.1, as may be amended, \nin no less than 12-point font. The written notice shall contain the \nfollowing: \n(A) The landlord shall provide a description of the basis for the \ntermination. \n(B) The notice shall state the tenant’s right to relocation assistance \nestablished in section 98.0706(c) by a direct payment to the \ntenant or rent waiver.  \n \n \nCh. Art. Div.  \n9 8 7 14 \n \nSan Diego Municipal Code Chapter 9:  Building, Housing and Sign Regulations   \n(3-2024) \n \n \n \n(i) If the landlord elects to provide relocation assistance by \na direct payment to the tenant, the notice shall state the \namount of relocation assistance available to the tenant \nand that the landlord shall provide the payment within \n15 days from the date of the notice.  \n(ii) If the landlord elects to provide relocation assistance by \nrent waiver, the notice shall state the amount of rent \nwaived and that no rent is due for the final \ncorresponding months of the tenancy. \n(C) The notice shall state the tenant’s right to receive an offer to \nrenew the tenancy established in section 98.0706(d) and \n30 days to accept the offer in the event the residential rental \nproperty is offered again for rent or lease for residential \npurposes within five years of the date the tenant was evicted \nunder sections 98.0704(b)(1), (3), or (4), and that to exercise \nsuch right, the tenant:   \n(i) shall notify the landlord in writing within 30 days of \nthe termination notice of tenant’s desire to receive an \noffer to renew the tenancy;  \n(ii) provide the landlord a mailing address or email address \nfor the landlord to send the offer; and  \n \n(iii) provide the landlord a change of mailing address or \nemail address.  \n(2) Notice to Commission. The landlord shall provide written notice to the \nCommission of the no-fault just cause termination of tenancy under \nsection 98.0704(b) no later than three business days after the date the \nlandlord provided the required notice to tenant. Section 98.0706(b)(2) \nshall not apply until 30 days after the Commission establishes a \nsubmission portal and provides the public notice of its creation.   \n(c) Relocation Assistance for Termination of Tenancy for No-Fault Just Cause.  \n(1) The landlord shall, regardless of the tenant’s income or length of \ntenancy and at the landlord’s option, provide relocation assistance to \nthe tenant by one of the following:  \nCh. Art. Div.  \n9 8 7 15 \n \nSan Diego Municipal Code Chapter 9:  Building, Housing and Sign Regulations   \n(3-2024) \n \n \n \n(A) The landlord shall provide a direct payment to the tenant. \n \n(i) Unless section 98.0706(c)(1)(A)(ii) applies, the direct \npayment to the tenant shall be in an amount equal to \ntwo months of actual rent under the tenant’s lease in \neffect at the date of the notice.  \n \n(ii) If the tenant is a senior or disabled, the direct payment \nto the tenant shall be in an amount equal to three \nmonths of actual rent under the tenant’s lease in effect \nat the date of the notice. \n(B) The landlord shall waive, and not collect the payment by \ntenant, of any currently due or future rent under the tenant’s \nlease at the time of the notice and through the remainder of the \ntenancy in an amount equal to the applicable direct payment as \nset forth in section 98.0706(c)(1)(A). \n(2) When more than one tenant occupies the residential rental property \nand the landlord elects to provide direct payment of relocation \nassistance to the tenants, the landlord may make a single direct \npayment to all the tenants named in the lease. \n \n(3) The relocation assistance required by this Division shall not relieve the \nlandlord’s obligation to, and shall be in addition to, the return of any \ndeposit or security amounts owed to the tenant.  \n \n(4) Any relocation assistance required by this Division shall be credited \nagainst any other relocation assistance required by any federal, state, \nor other local law. \n \n(5) If a tenant fails to vacate after the expiration of the notice to terminate \nthe tenancy, the actual amount of any relocation assistance provided \nunder this Division may be recoverable by landlord as damages in an \naction to recover possession of the residential rental property.",
+      "key_value": "2 months; 3 months if senior or disabled",
+      "effective_date": "2023-06-24",
+      "coverage_conditions": "Reviewed covered San Diego tenancy. The no-fault trigger, senior or disability status, and actual rent are not inferred from an address.",
+      "exemptions": "Same coverage exceptions as SD-JC-01; government-order tenant-fault exception under §98.0704(b)(3).",
+      "interaction": "Credit other legally required assistance. Security-deposit return remains separate.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "LA-RENT-01",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Los Angeles 2026–27 RSO annual rent adjustment",
+      "requirement": "For units subject to RSO rent limits, the calculated annual adjustment is 3% from July 1, 2026 through June 30, 2027. It may be applied once every 12 months and is not cumulative or retroactive. Separately authorized increases, vacancy rules, and surcharges require their own review.",
+      "citation": "LAMC §151.06; LAHD Allowable Rent Increase Bulletin, annual adjustment item 1",
+      "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+      "source_doc_id": "S001",
+      "quoted_span": "1. One percent (1%) to f our percent (4%) every 12 months in accordance with the \nannual rent increase percentage, which is  based on the Consumer Price Index (CPI) \naverage for the twelve (12) month period ending September 30 of each year. The \nannual adjustment may be applied once each year. The 1% to 4% annual increase is \nNOT cumulative or retroactive. THE CALCULATED ANNUAL INCREASE \nPERCENTAGE EFFECTIVE JULY 1, 20 26 THROUGH JUNE 30, 2027 IS THREE \nPERCENT (3%). For allowable rent increase amounts in previous years, refer to the \ntable on the next page.",
+      "key_value": "3% annual adjustment, July 2026–June 2027",
+      "effective_date": "2026-07-01",
+      "coverage_conditions": "Verified Los Angeles municipality and reviewed RSO rent-control coverage. Construction year alone does not establish RSO, condominium, replacement-unit, or tenancy-history coverage.",
+      "exemptions": "Units not subject to RSO rent limits; approved adjustment or cost-recovery programs and lawful vacancy adjustments are separate.",
+      "interaction": "The applicable stricter local annual adjustment governs RSO rent-controlled units. The current bulletin replaces reliance on the expired 2025–26 calculator result.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "LA-RENT-02",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Los Angeles RSO: no utility percentage add-on",
+      "requirement": "Effective February 2, 2026, the RSO annual rent increase may not include an additional percentage increase for utilities.",
+      "citation": "LAHD Allowable Rent Increase Bulletin, item 3; RSO overview",
+      "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+      "source_doc_id": "S001",
+      "quoted_span": "3. Effective February 2, 2026, the RSO annu al rent increase must not include \nany additional percentage increase for utilities.",
+      "key_value": "No utility percentage add-on",
+      "effective_date": "2026-02-02",
+      "coverage_conditions": "Verified Los Angeles municipality and reviewed RSO rent-control coverage.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "LA-RENT-03",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Los Angeles RSO: no increase for an added dependent",
+      "requirement": "Effective February 2, 2026, adding a dependent to an RSO tenancy does not permit a rent increase. The separate nondependent additional-tenant rule can allow a 10% increase with the prescribed knowledge, notice, and later reduction conditions; do not apply that rule to dependents.",
+      "citation": "LAHD Allowable Rent Increase Bulletin, item 4; RSO overview",
+      "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+      "source_doc_id": "S001",
+      "quoted_span": "4. Effective February 2, 2026, no rent increase is permitted when an additional dependent is \nadded to the tenancy. For additional tenants who are not dependents, the landlord may \nincrease the rent by ten percent (10%) for each such additional tenant, and the security \ndeposit may also be increased by 10%. The landlord must notify the tenants of the rent \nincrease within 60 days of obtaining actual or constructive knowledge of the new tenant, \nand a corresponding rent reduction is required when the additional tenant vacates the unit. \nThe landlord has the right to approve or disapprove a prospective tenant, provided that \napproval is not unreasonably withheld.",
+      "key_value": "No dependent-based increase",
+      "effective_date": "2026-02-02",
+      "coverage_conditions": "Verified Los Angeles municipality and reviewed RSO rent-control coverage; an actual dependent-addition event is not inferred from parcel records.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "LA-JC-01",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Los Angeles nonpayment eviction requires debt above FMR",
+      "requirement": "For RSO or JCO covered rental units, landlords may not evict for rent arrears unless the amount owed is higher than the applicable Fair Market Rent. The threshold depends on the unit’s bedroom size; it is not simply the tenant’s contract rent.",
+      "citation": "LAHD JCO guidance, nonpayment section; effective March 27, 2023",
+      "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+      "source_doc_id": "D040",
+      "quoted_span": "Evictions for Non-Payment of Rent\nApplies to all RSO & JCO rental units. Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR). The FMR depends on the bedroom size of the rental unit.\nFor example, if a tenant rents a 1-bedroom unit and the rent is $1,500, the landlord cannot evict the tenant since the rent owed is less than the FMR for a 1-bedroom unit.",
+      "key_value": "Debt > applicable HUD FMR",
+      "effective_date": "2023-03-27",
+      "coverage_conditions": "Verified Los Angeles municipality and reviewed tenancy coverage under RSO or JCO. The covered-tenancy flag includes applicable exceptions and, for JCO, six-month or first-lease-expiry activation. Bedroom size, debt, and the applicable FMR require separate event evidence.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "LA-JC-02",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Los Angeles covered no-fault evictions: relocation payment timing",
+      "requirement": "For covered RSO or JCO no-fault evictions requiring relocation assistance, pay the applicable amount per unit, divided pro rata among occupants; if more than one amount applies, use the higher amount. Make payment available within 15 days of service, or fund the permitted escrow within that period. Amounts depend on household qualification, tenancy, income, ownership, and the reason for displacement. Do not calculate a payment from address data alone.",
+      "citation": "LAHD Relocation Assistance Bulletin A; LAMC §§151.09.G, 165.06",
+      "source_url": "https://housing.lacity.gov/wp-content/uploads/2026/08/Relocation-Assistance-Bulletins-A-and-B-Combined.pdf",
+      "source_doc_id": "D043",
+      "quoted_span": "How and When Shall Landlords Provide Payment \nThe Ordinance requires that relocation assistance payments be made as follows: \n1. The entire payment shall be made to a tenant who is the only tenant in a rental unit.\n2. If two or more tenants occupy a rental unit, each tenant shall be paid an equal pro rata\nshare of the payment.\n3. If more than one payment amount applies to a unit, the landlord pays the\nhigher amount for the unit.\nThe Ordinance requires timely relocation assistance payments as follows: \n1. Payment shall be made available within fifteen (15) days of service of the written notice of\neviction; however,\n2. At the landlord's sole discretion and cost, the landlord may elect to pay the monetary\nrelocation benefits through an escrow account. The monies must be placed in the escrow\naccount within the required 15-day period. The escrow account must provide for payments to\nthe tenant(s) for actual relocation expenses incurred by the tenant before vacating the unit\nfor the following relocation expenses: first and last month’s rent; security deposit; utility\nconnection charges; moving expenses. Payments from the escrow account shall be made within\nthree (3) working days of receiving a payment request. The remaining balance of the escrow\naccount shall be disbursed upon certification of the vacation of the rental housing unit. (Refer\nto RAC Regulations, Section 960.00).\nExemptions from Relocation Assistance Payments \nLandlords are exempt from paying relocation assistance when: \n1. Evicting a resident manager to replace him/her with another resident manager. If the\nresident manager is a Manager -Tenant receiving free or reduced rent with no other\ncompensation, he/she may be entitled to relocation assistance. (See RAC Regulations\n920.00, Managers as Tenants.)\n2. They are required to evict due to hazardous conditions caused by a natural disaster ,\nwhich is not caused by the landlord's negligence.\n3. Relocation Offset: A landlord may offset the tenant's accumulated rent against any\nrelocation assistance, unless the relocation assistance is owed because a termination of\ntenancy is required by a governmental agency order to vacate or comply with an issued\norder for an unpermitted dwelling. (LAMC 151.09.G,5., 165.06.J.).",
+      "key_value": "Within 15 days; amount requires household review",
+      "effective_date": null,
+      "coverage_conditions": "Reviewed tenancy coverage under RSO or JCO. The no-fault event and relocation qualification are conditional, not an observed eviction.",
+      "exemptions": "Review resident-manager replacement and non-negligent natural-disaster exceptions, lawful rent offsets, and special demolition/new-construction protections. The bulletin contains different ordinary, qualifying-household, small-owner, and RPO/HCA schedules.",
+      "interaction": "Use the governing local benefit and any legally required greater state/RPO/HCA amount; do not automatically add duplicate relocation benefits.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "LA-JC-03",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Los Angeles residential buildings: right-to-counsel notice",
+      "requirement": "Beginning August 20, 2025, landlords must post the Notice of Right to Counsel in a conspicuous common area of the residential building and provide it at the beginning of tenancy and whenever an eviction notice is served. This is a notice duty; it does not establish that a specific tenant qualifies for representation.",
+      "citation": "LAHD JCO guidance, Required Registration and Posted Notification",
+      "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+      "source_doc_id": "D040",
+      "quoted_span": "Beginning August 20, 2025, landlords must post a\nNotice of Right to Counsel\nin a conspicuous common area of the residential building where the tenant resides. This notice is also to be provided to the tenant at the beginning of the tenancy and anytime an eviction notice is served.",
+      "key_value": "Post and deliver right-to-counsel notice",
+      "effective_date": "2025-08-20",
+      "coverage_conditions": "Verified Los Angeles residential municipality. Delivery is conditional on the specified tenancy or notice event.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "LA-JC-04",
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Los Angeles covered eviction notices: file within 3 business days",
+      "requirement": "For RSO and JCO covered rental properties, file issued eviction notices with LAHD within 3 business days after service on the tenant.",
+      "citation": "LAMC §§151.09.C.9, 165.05.B.5; LAHD JCO and RSO guidance",
+      "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+      "source_doc_id": "D040",
+      "quoted_span": "Eviction Notices Filed with LAHD\nApplies to all JCO & RSO rental properties – All eviction notices issued to tenants in the City of Los Angeles must be filed with LAHD within three (3) business days of service on the tenant. For more information, please click\nhere.",
+      "key_value": "File within 3 business days",
+      "effective_date": null,
+      "coverage_conditions": "Reviewed RSO or JCO tenancy coverage. The service-of-notice event is conditional.",
+      "exemptions": null,
+      "interaction": null,
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "SD-ALG-01",
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "San Diego nonpublic-competitor-data algorithm prohibition",
+      "requirement": "Do not provide or use a covered algorithmic device to set residential rental rates or occupancy levels. A covered device performs calculations using nonpublic competitor data from two or more landlords to advise or recommend rates or occupancy. Review the express reporting, affordable-housing, and appraisal exceptions; public-data tools are not automatically prohibited.",
+      "citation": "San Diego Municipal Code §§98.1102–98.1103; Ordinance O-21955 N.S.",
+      "source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+      "source_doc_id": "S002",
+      "quoted_span": "§98.1102 Definitions \nFor purposes of this Division, defined terms appear in italics. The following \ndefinitions apply in this Division: \nAlgorithmic device means a software or product that uses or incorporates one or more \nalgorithms to perform calculations of nonpublic competitor data of two or more \nlandlords to advise a landlord on, or recommend to a landlord, rental rates or \noccupancy levels that may be achieved for a residential rental property in the City of \nSan Diego. Algorithmic device does not include the following: \n(a) A software or product used by a person to publish reports regarding rental \nrates or occupancy levels from aggregated historical nonpublic competitor \ndata that is more than 90 days old, or from information available to the \ngeneral public, and does not recommend rental rates or occupancy levels for \nfuture residential rental property leases or renewals.    \n(b) A software or product used by a person to establish rental rates or income \nlimits in accordance with local, state, or federal affordable housing program \nguidelines. \n(c) A software or product used by a person conducting an appraisal that does not \nrecommend rental rates during the runtime operation of the software or \nproduct. \nLandlord has the same meaning as in San Diego Municipal Code section 98.0702, as \nmay be amended. \n\n \nSan Diego Municipal Code Chapter 9: Building, Housing and Sign Regulations   Chapter 2: Government   \n(6-2025) \n \nCh. Art. Div.  \n9 8 1 2 \n \n \nLease has the same meaning as in San Diego Municipal Code section 98.0702, as \nmay be amended.  \n \nNonpublic competitor data means information that is not available to the general \npublic, whether the information is attributable to a specific competitor or anonymized \nor whether the information is derived from or otherwise provided by another person. \nNonpublic competitor data includes information about actual rental rates, rental rate \nchanges, residential rental property supply levels, occupancy levels, or lease start \nand end dates. \nPerson has the same meaning as in San Diego Municipal Code section 11.0210, as \nmay be amended. \nResidential rental property has the same meaning as in San Diego Municipal Code \nsection 98.0702, as may be amended.  \nTenant has the same meaning as in San Diego Municipal Code section 98.0702, as \nmay be amended. \n(“Definitions” added 5-22-2025 by O-21955 N.S.; effective 6-21-2025.) \n§98.1103 Use and Sale of Algorithmic Devices Prohibited \n(a) It is unlawful for a person to sell, license, or otherwise provide an algorithmic \ndevice to a landlord. \n(b) It is unlawful for a landlord to use an algorithmic device to set rental rates or \noccupancy levels for residential rental property. \nFor each month a violation of section 98.1103(b) exists or continues, and for \neach residential rental property a landlord uses an algorithmic device, it shall \nconstitute a separate and distinct violation. \n(“Use and Sale of Algorithmic Devices Prohibited” added 5-22-2025 by \nO-21955 N.S.; effective 6-21-2025.)  \n\nSan Diego Municipal Code Chapter 9: Building, Housing and Sign Regulations   \n(6-2025) \n \nCh. Art. Div.  \n9 8 11 3",
+      "key_value": "Covered algorithm sale and use prohibited",
+      "effective_date": "2025-06-21",
+      "coverage_conditions": "Verified San Diego residential municipality. No finding that a property uses a prohibited device.",
+      "exemptions": "Reports using aggregated historical nonpublic data more than 90 days old or public information without future-lease recommendations; affordable-housing rent/income limits; appraisals without runtime rental-rate recommendations.",
+      "interaction": "Use the final codified S002 text. The unsigned D076 proposal differs in definitions and attorney-fee remedies.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "BER-ALG-01",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Berkeley coordinated pricing algorithm sale and use prohibition",
+      "requirement": "Do not provide or use a covered coordinated pricing algorithm to set rents or occupancy levels for Berkeley residential dwelling units. The definition requires coordination using nonpublic competitor data less than 90 days old, from another owner or manager. Review reporting, affordable-housing, financing-research, appraisal, and development/testing exceptions; model-training data must not be used as a runtime recommendation input to qualify for that exception.",
+      "citation": "BMC §§13.63.020–13.63.030; Ordinance 7,992-N.S., final adoption corroborated by S003",
+      "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+      "source_doc_id": "D001",
+      "quoted_span": "13.63.020   Definitions. \n \nA. “Coordinated pricing algorithm” means any analytical or computation process that \nuses Competitor Data to calculate and recommend rent prices, fees, occupancy rates or \nother rental contract terms for future leases in coordination between one City of Berkeley \nlandlord and one or more of such landlord’s competitors, including through a third-party \nvendor. A “coordinated pricing algorithm” includes a product that incorporates a \ncoordinated pricing algorithm, but does not include (a) a product or process that \ngenerates or presents any report, study, or presentation that publishes rental data in an \naggregated and anonymous manner but does not recommend rent prices, fees, or \noccupancy rates or other rental contract terms for future leases; (b) a product used for \nthe purpose of establishing rent or income limits in accordance with the affordable \nhousing guidelines of a local government, the state, the federal government, or other \npolitical subdivision; or (c) a product or process that provides or uses, or the provision or \nuse of, information for the purpose of (i) conducting market research for project financing, \n(ii) conducting an appraisal, or (iii) conducting research, testing, or training for software \ndevelopment. For clarity, “research, testing, or training for software development” \nincludes without limitation the use or processing of Competitor Data in the development, \ntraining, or testing of predictive or machine learning models so long as any such data is \nnot used as an input in the operation of the model at the time a recommendation is \ncalculated for publication or provision to a City of Berkeley landlord.\nB. “Competitor Data” means information that is not available to the general public \nconcerning actual rent prices, occupancy rates, lease start and end dates, and similar \ndata regarding a property other than a property that is owned or managed by the landlord \nwho is the recipient or user of the generated recommendation, when such data is less \nthan 90 days old. \n13.63.030   Use and sale of coordinated pricing algorithms prohibited. \n \nPage 2 of 4\nOrdinance No. 7,992-N.S. Page 3 of 4\nA. It shall be unlawful to sell, license, or otherwise provide to City of Berkeley \nlandlords any coordinated pricing algorithm that sets or recommends rents or occupancy \nlevels that may be achieved for residential dwelling units in the City of Berkeley. \nB. It shall be unlawful for a landlord to use a coordinated pricing algorithm described \nin subsection A when setting rents or occupancy levels for residential dwelling units in \nthe City of Berkeley. Each separate month that a violation exists or continues, and each \nseparate residential dwelling unit for which the landlord used the coordinated pricing \nalgorithm, shall constitute a separate and distinct violation.",
+      "key_value": "Covered coordinated algorithms prohibited",
+      "effective_date": null,
+      "coverage_conditions": "Verified Berkeley residential municipality. D001 supplies ordinance text; S003 confirms second-reading adoption on December 2, 2025. The exact activation date is not supplied, so earlier historical queries remain unknown.",
+      "exemptions": "Anonymous aggregate reports without future-lease recommendations; government affordable-housing limits; financing research and appraisals; software-development research, training, or testing without using competitor data as runtime recommendation input.",
+      "interaction": "Current snapshot status is supported by adoption evidence. No guessed January or March 2026 activation date is encoded.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "BER-SCREEN-01",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Berkeley Fair Chance: criminal-history inquiries and adverse actions",
+      "requirement": "For covered Berkeley housing, do not ask about or use criminal history in advertising, applications, selection, or tenancy decisions. Prohibited conduct includes criminal-history exclusions, forced disclosure or release authorization, higher rent or deposits, and adverse decisions about immediate-family additions. Limited statutory exceptions need their own review, written notice, and an opportunity to respond.",
+      "citation": "BMC Chapter 13.106; Berkeley Rent Board Fair Chance guidance",
+      "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+      "source_doc_id": "D003",
+      "quoted_span": "The Fair Chance Access to Housing Ordinance prohibits rental housing providers in Berkeley from asking about and using criminal history and/or criminal background checks in their rental housing advertising, applications, tenant selection process, or decision-making.\nOn April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106). An overview of the ordinance is available below. Please review the Ordinance for more specific details related to your property or tenancy.\nIt is unlawful to do any of the following with regard to current or prospective tenants\nInquire about criminal history\nIndicate that persons with criminal backgrounds will not be considered for housing, including in rental advertisements, application materials, or verbally\nRefuse to rent or terminate a tenancy based on criminal history\nRequire disclosure or authorization for release of criminal history\nDemand a higher security deposit or rental amount based on criminal history\nRefuse to allow the addition of an immediate family member based on the family member’s criminal history\nDisqualify tenants from rental assistance programs such as Section 8 based on criminal history (subject to certain exceptions below)\nTreating rental applicants or tenants differently based on their criminal history\nExemptions\nPlease view the Ordinance on specific requirements for each exemption.\nLifetime sex offenders\nPublic housing/Section 8 properties limited exemptions\nOwner-occupied properties (between 1-3 units) in which an owner of record resides in one of the units as their primary residence\nUnits under a rental agreement allowing owners to move back to their home in accordance with BMC 13.76.130 A.9\nUnits occupied by existing tenant(s) seeking to sublet or add/replace roommates\nWritten Notice and Opportunity to Respond Required\nIf a landlord takes any action against an applicant or tenant based on criminal history (such as refusing to offer a lease, refusing to add a family member, etc.), the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond. This is due to the fact that criminal background checks and reporting services frequently provide inaccurate or incomplete information.",
+      "key_value": "No covered criminal-history inquiries or adverse actions",
+      "effective_date": null,
+      "coverage_conditions": "Verified Berkeley municipality and a separately reviewed Fair Chance coverage flag. Rent-control and eviction flags do not establish Fair Chance scope.",
+      "exemptions": "Lifetime sex-offender checks; limited public-housing/Section 8 exceptions; qualifying owner-occupied 1–3-unit properties; owner return under BMC 13.76.130 A.9; existing-tenant sublet or roommate decisions. Consult the operative ordinance for each exception.",
+      "interaction": "Stricter local limits constrain criminal-history inquiries where covered; state FEHA screening obligations remain relevant.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "BER-JC-03",
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Berkeley 2026 owner-move-in and Ellis relocation schedule",
+      "requirement": "For covered owner-move-in or Ellis Act evictions, the published 2026 standard relocation payment is $19,413, with an additional $6,471 for qualifying households. Confirm the relevant eviction type, ordinance scope, household qualification, and payment procedure before applying the amount.",
+      "citation": "Berkeley Rent and Ellis Implementation Ordinances; 2026 Rent Board relocation adjustment",
+      "source_url": "https://rentboard.berkeleyca.gov/elected-rent-board/news/2026-adjustments-relocation-assistance-payments",
+      "source_doc_id": "D004",
+      "quoted_span": "The Rent Stabilization and Good Cause for Eviction Ordinance requires owners to pay tenants relocation assistance in the event of an owner move-in eviction. The Ellis Implementation Ordinance requires the same relocation assistance payments for tenants evicted so the owner can remove a property from the rental housing market. Both ordinances index the relocation payments to inflation, and provide that the Rent Board shall publish the yearly inflationary increases.\nAt its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.\nThe standard relocation assistance payment will increase to\n$19,413\n.\nThe additional relocation assistance payment for qualifying households will increase to\n$6,471\n.",
+      "key_value": "2026 standard $19,413; qualifying addition $6,471",
+      "effective_date": "2026-01-01",
+      "coverage_conditions": "Reviewed Rent Ordinance or Ellis coverage, conditional owner-move-in or Ellis eviction. The address does not establish household qualification.",
+      "exemptions": null,
+      "interaction": "The schedule is annual; a later notice requires the later rate. Do not automatically add state and local relocation benefits.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "SF-JC-02",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "San Francisco 2026–27 ordinary no-fault relocation schedule",
+      "requirement": "For qualifying owner/relative move-in, demolition or permanent removal, temporary capital-improvement work, or substantial-rehabilitation evictions, the 2026–27 schedule lists $8,245 per tenant, a $24,733 per-unit maximum, and an additional $5,497 for each qualifying elderly or disabled tenant or household with minor children. Temporary capital-improvement displacement for less than 20 days follows a different rule. Confirm notice date and full eligibility before calculating benefits.",
+      "citation": "San Francisco Rent Ordinance §37.9C; Rent Board Current Rates",
+      "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+      "source_doc_id": "D083",
+      "quoted_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation\nRelocation payments\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (60 years or older) or Disabled Tenant or Household with Minor Child(ren)\n3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00\n3/01/25 – 2/28/26\n$8,062.00\n$24,184.00\n$5,375.00\n579 Multilingual Relocation Payments 37.9C\n*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C. See below for relocation payments for temporary displacement for less than 20 days.",
+      "key_value": "$8,245 / tenant; $24,733 unit cap; qualifying addition $5,497",
+      "effective_date": "2026-03-01",
+      "coverage_conditions": "Reviewed eviction coverage plus a qualifying event. The schedule depends on date of service, household facts, and displacement type, not merely the research date.",
+      "exemptions": "Temporary capital-improvement displacement of less than 20 days is governed by Civil Code §1947.9 and a separate daily schedule. Ellis Act evictions use a distinct schedule.",
+      "interaction": "The quoted ordinary schedule is distinct from the Ellis schedule and is not automatically cumulative with state relocation benefits.",
+      "conflict_flag": false
+    },
+    {
+      "team_rule_id": "SF-JC-03",
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "San Francisco 2026–27 Ellis relocation schedule",
+      "requirement": "For qualifying Ellis Act evictions with notice served from March 1, 2026 through February 28, 2027, the published relocation schedule lists $11,110.05 per tenant, a $33,330.13 per-unit maximum, and an additional $7,443.90 for each qualifying elderly tenant aged 62 or older or disabled tenant. Confirm the full ordinance eligibility and notice date before calculating an entitlement.",
+      "citation": "San Francisco Rent Ordinance §37.9A; Rent Board Archive of Relocation Rates",
+      "source_url": "https://www.sf.gov/reports--archive-relocation-rates",
+      "source_doc_id": "D082",
+      "quoted_span": "Relocation payments for tenants evicted under the Ellis Act\nRelocation payments for tenants evicted under the Ellis Act\nDate of Service of Notice of Termination of Tenancy (\"Eviction Notice\")\nRelocation Amount Due Per Tenant\nMaximum Relocation Amount Due Per Unit\nPLUS Additional Amount Due for Each Elderly (62 years or older) or Disabled Tenant\n3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+      "key_value": "Ellis: $11,110.05 / tenant; qualifying addition $7,443.90",
+      "effective_date": "2026-03-01",
+      "coverage_conditions": "Reviewed applicable ordinance coverage and a qualifying Ellis withdrawal. Amounts depend on the service date and tenant eligibility; they are not computed from parcel data.",
+      "exemptions": null,
+      "interaction": "Ellis relocation and ordinary no-fault relocation use distinct schedules. Do not add both schedules automatically.",
+      "conflict_flag": false
+    }
+  ],
+  "ruleLogic": {
+    "CA-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-10-06",
+        "effective_on": "2026-01-01"
+      },
+      "fixture_rule_ids": [
+        "CA-ALG-01"
+      ]
+    },
+    "CA-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "affordable_housing_restricted",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "special_housing_exempt",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "certificate_age_years",
+            "op": "gte",
+            "value": 15
+          },
+          {
+            "not": {
+              "all": [
+                {
+                  "field": "separately_alienable",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "field": "exemption_notice_provided",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "not": {
+                    "any": [
+                      {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "corporation",
+                          "reit"
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "field": "owner_type",
+                            "op": "eq",
+                            "value": "llc"
+                          },
+                          {
+                            "field": "owner_llc_has_corporate_member",
+                            "op": "eq",
+                            "value": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-04-01",
+        "repealed_on": "2030-01-01"
+      }
+    },
+    "CA-RENT-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "affordable_housing_restricted",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "special_housing_exempt",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "certificate_age_years",
+            "op": "gte",
+            "value": 15
+          },
+          {
+            "not": {
+              "all": [
+                {
+                  "field": "separately_alienable",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "field": "exemption_notice_provided",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "not": {
+                    "any": [
+                      {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "corporation",
+                          "reit"
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "field": "owner_type",
+                            "op": "eq",
+                            "value": "llc"
+                          },
+                          {
+                            "field": "owner_llc_has_corporate_member",
+                            "op": "eq",
+                            "value": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-04-01",
+        "repealed_on": "2030-01-01"
+      }
+    },
+    "CA-JC-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "affordable_housing_restricted",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "special_housing_exempt",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "certificate_age_years",
+            "op": "gte",
+            "value": 15
+          },
+          {
+            "field": "shares_kitchen_or_bath_with_owner",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "not": {
+              "all": [
+                {
+                  "field": "separately_alienable",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "field": "exemption_notice_provided",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "not": {
+                    "any": [
+                      {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "corporation",
+                          "reit"
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "field": "owner_type",
+                            "op": "eq",
+                            "value": "llc"
+                          },
+                          {
+                            "field": "owner_llc_has_corporate_member",
+                            "op": "eq",
+                            "value": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "any": [
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 24
+              },
+              {
+                "field": "all_tenants_12_months",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "repealed_on": "2030-01-01"
+      }
+    },
+    "CA-JC-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "affordable_housing_restricted",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "special_housing_exempt",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "certificate_age_years",
+            "op": "gte",
+            "value": 15
+          },
+          {
+            "field": "shares_kitchen_or_bath_with_owner",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "not": {
+              "all": [
+                {
+                  "field": "separately_alienable",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "field": "exemption_notice_provided",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "not": {
+                    "any": [
+                      {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "corporation",
+                          "reit"
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "field": "owner_type",
+                            "op": "eq",
+                            "value": "llc"
+                          },
+                          {
+                            "field": "owner_llc_has_corporate_member",
+                            "op": "eq",
+                            "value": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "any": [
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 24
+              },
+              {
+                "field": "all_tenants_12_months",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "repealed_on": "2030-01-01"
+      }
+    },
+    "CA-DEP-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "any": [
+              {
+                "field": "owner_total_properties",
+                "op": "gt",
+                "value": 2
+              },
+              {
+                "field": "owner_total_units",
+                "op": "gt",
+                "value": 4
+              },
+              {
+                "field": "owner_type",
+                "op": "in",
+                "value": [
+                  "corporation",
+                  "reit",
+                  "partnership",
+                  "nonprofit",
+                  "government"
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "field": "owner_type",
+                    "op": "eq",
+                    "value": "llc"
+                  },
+                  {
+                    "field": "owner_llc_has_corporate_member",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-07-01"
+      }
+    },
+    "CA-DEP-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-DEP-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-DEP-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-DEP-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2025-04-01"
+      }
+    },
+    "CA-FEE-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-FEE-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-FEE-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-SCREEN-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "owner_occupied",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-01-01"
+      }
+    },
+    "CA-SCREEN-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "owner_occupied",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "BER-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-01-01",
+        "repealed_on": "2027-01-01"
+      },
+      "supersedes": [
+        "CA-RENT-01",
+        "CA-RENT-02"
+      ]
+    },
+    "BER-JC-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "supersedes": [
+        "CA-JC-01",
+        "CA-JC-02"
+      ]
+    },
+    "BER-JC-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "BER-DEP-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "BER-FEE-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Berkeley"
+          }
+        ]
+      }
+    },
+    "BER-FEE-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Berkeley"
+          }
+        ]
+      }
+    },
+    "SF-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "San Francisco"
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-10-14"
+      }
+    },
+    "SF-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              }
+            ]
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-03-01",
+        "repealed_on": "2027-03-01"
+      },
+      "supersedes": [
+        "CA-RENT-01",
+        "CA-RENT-02"
+      ]
+    },
+    "SF-JC-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "supersedes": [
+        "CA-JC-01",
+        "CA-JC-02"
+      ]
+    },
+    "SD-JC-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-03-28"
+      },
+      "supersedes": [
+        "CA-JC-01",
+        "CA-JC-02"
+      ]
+    },
+    "SD-JC-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2023-06-24"
+      }
+    },
+    "LA-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-07-01",
+        "repealed_on": "2027-07-01"
+      },
+      "supersedes": [
+        "CA-RENT-01",
+        "CA-RENT-02"
+      ]
+    },
+    "LA-RENT-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-02-02"
+      }
+    },
+    "LA-RENT-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-02-02"
+      }
+    },
+    "LA-JC-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2023-03-27"
+      }
+    },
+    "LA-JC-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "LA-JC-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Los Angeles"
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2025-08-20"
+      }
+    },
+    "LA-JC-04": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "SD-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "San Diego"
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-05-22",
+        "effective_on": "2025-06-21"
+      }
+    },
+    "BER-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Berkeley"
+          }
+        ]
+      }
+    },
+    "BER-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_fair_chance_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "BER-JC-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-01-01",
+        "repealed_on": "2027-01-01"
+      }
+    },
+    "SF-JC-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-03-01",
+        "repealed_on": "2027-03-01"
+      }
+    },
+    "SF-JC-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-03-01",
+        "repealed_on": "2027-03-01"
+      }
+    }
+  }
+}

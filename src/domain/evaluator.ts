@@ -26,7 +26,7 @@ export function ruleStatusAt(rule: RuleRecord, logic: RuleLogic | undefined, asO
     if (asOf < latest) return { status: "unknown", reason: `Effective date ${effective} lacks day-level precision.` };
   }
   if (!effective && rule.status === "not_yet_effective") return asOf === DEFAULT_AS_OF ? { status: "not_yet_effective", reason: "Enacted but the exact effective date has not been supplied." } : { status: "unknown", reason: "The effective date is required to evaluate this query date." };
-  if (!effective && asOf < DEFAULT_AS_OF && !lifecycle?.enacted_on) return { status: "unknown", reason: "The source snapshot confirms current status but supplies no historical start date." };
+  if (!effective && asOf < DEFAULT_AS_OF) return { status: "unknown", reason: "The source snapshot confirms current status but supplies no exact historical effective date. Adoption alone does not establish when a waiting or publication period ended." };
   return { status: "applies", reason: "In force on the query date." };
 }
 
@@ -45,6 +45,7 @@ export function evaluatePropertyRecord(property: PropertyRecord, asOf: string, c
     if (ruleState !== state) continue;
     const ruleCity = rule.level === "city" ? rule.jurisdiction.slice(0, -4) : null;
     if (verified && ruleCity && ruleCity.toLocaleLowerCase() !== city!.toLocaleLowerCase()) continue;
+    if (!verified && ruleCity && ruleCity.toLocaleLowerCase() !== property.legal_city_candidate.toLocaleLowerCase()) continue;
     const logic = context.ruleLogic?.[rule.team_rule_id];
     const temporal = ruleStatusAt(rule, logic, asOf);
     if (temporal.status === "excluded") continue;

@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "cache_key": "dc70050257195a915b9a3ce7cc9eb9fa598b5bf86a739e45045fcb4c18100a6f",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-3ffe00f012e4393e",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Landlord must send repair/cleaning documentation with itemized security deposit statement",
+          "requirement": "When the landlord deducts repair or cleaning charges from the security, the landlord must send copies of documents showing the charges incurred and deducted along with the itemized statement. Documentation varies: a work description with time and hourly rate for landlord or employee work, a bill, invoice or receipt for third-party work, and a receipt or vendor documentation for materials. Photographs taken under subdivision (g) and a written explanation of cost must also be provided.",
+          "citation": "Cal. Civ. Code § 1950.5(h)(2)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "copies of documents showing charges incurred and deducted by",
+          "key_value": null,
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": "Not required if deductions for repairs and cleaning together do not exceed $125, or if the tenant signed a valid waiver (only effective if signed at or after a termination notice under Civ. Code 1946/1946.1 or CCP 1161, or no earlier than 60 calendar days before a fixed-term lease expires, and substantially including the text of paragraph (2)). Under (h)(5), a tenant request for documentation within 14 days after the statement revives the obligation.",
+          "overrides": [],
+          "interaction": "Subject to (h)(3) estimate rule, (h)(4) exceptions and (h)(5) tenant-request rule.",
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-8f55a748ae8cb196",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Good faith estimate when repairs or documents are not complete within 21 days; follow-up within 14 days",
+          "requirement": "If repairs cannot reasonably be completed, or vendor documents are not in the landlord's possession, within 21 calendar days after the tenant vacates, the landlord may deduct a good faith estimate and provide it with the itemized statement. If the reason is missing vendor documents, the statement must include the name, address and telephone number of the person or entity. Within 14 calendar days of completing the repair or receiving the documentation, the landlord must complete the requirements of paragraphs (1) and (2).",
+          "citation": "Cal. Civ. Code § 1950.5(h)(3)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "the landlord may deduct the amount of a good faith estimate of the charges that will be incurred and provide that estimate with the itemized statement.",
+          "key_value": "21 calendar days; 14 calendar days follow-up",
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": "Under (h)(4), paragraphs (2) and (3) need not be complied with if deductions for repairs and cleaning together do not exceed $125 or the tenant validly waived the rights, subject to (h)(5).",
+          "overrides": [],
+          "interaction": "Operates together with the (h)(2) documentation rule.",
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-949bbe7fbd1209da",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Landlord must provide documentation within 14 days of tenant request despite $125 or waiver exception",
+          "requirement": "Notwithstanding the $125 threshold or a tenant waiver, if the tenant requests documentation within 14 calendar days after receiving the itemized statement, the landlord must comply with paragraphs (2) and (3) within 14 calendar days after receiving the request.",
+          "citation": "Cal. Civ. Code § 1950.5(h)(5)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "the landlord shall comply with paragraphs (2) and (3) when a tenant makes a request for documentation within 14 calendar days after receiving the itemized statement specified in paragraph (1).",
+          "key_value": "14 calendar days",
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Overrides the (h)(4) exceptions when the tenant makes a timely request.",
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-ba968d3172ecc1db",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "No claim to security deposit if landlord in bad faith fails to comply with subdivision (h)",
+          "requirement": "A landlord who, in bad faith, fails to comply with subdivision (h) is not entitled to claim any amount of the security.",
+          "citation": "Cal. Civ. Code § 1950.5(h)(7)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "The landlord shall not be entitled to claim any amount of the security if the landlord, in bad faith, fails to comply with this",
+          "key_value": null,
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-c5c6bda8b6ebece5",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Transfer or return of security upon termination of landlord's interest",
+          "requirement": "Upon termination of the landlord's interest in the premises (sale, assignment, death, receiver, or otherwise), the landlord or agent must within a reasonable time either (1) transfer the remaining security, after lawful deductions, to the successor in interest and notify the tenant of the transfer, claims, amount and successor details, or (2) return the remaining security to the tenant with an accounting under subdivision (h). Either relieves the landlord of further liability for the security.",
+          "citation": "Cal. Civ. Code § 1950.5(i)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "the landlord or the landlord’s agent shall, within a reasonable time, do one of the following acts, either of which shall relieve the landlord of further liability with respect to the security held:",
+          "key_value": "within a reasonable time",
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Subdivisions (j) and (k) address related duties and successor liability.",
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-aea3e865663b6e79",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Written statement to successor before voluntary transfer of landlord's interest",
+          "requirement": "Before a voluntary transfer of the landlord's interest in the premises, the landlord must deliver to the successor in interest a written statement of the security remaining after lawful deductions, an itemization of lawful deductions, and the landlord's election under paragraph (1) or (2) of subdivision (i).",
+          "citation": "Cal. Civ. Code § 1950.5(j)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "Prior to the voluntary transfer of a landlord’s interest in the premises, the landlord shall deliver to the landlord’s successor in interest a written statement indicating the following:",
+          "key_value": null,
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The text states this does not affect the validity of title to real property transferred in violation of the subdivision.",
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-bb6c6f50a4369e54",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Successor in interest jointly liable if landlord does not comply with subdivision (i)",
+          "requirement": "If the landlord does not comply with subdivision (i), the successor in interest is jointly and severally liable with the landlord for repayment of the security (or the portion the tenant is entitled to). The successor may not require replacement security from the tenant until it makes restitution under (i)(2) or provides an accounting under (h).",
+          "citation": "Cal. Civ. Code § 1950.5(k)(1)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "the landlord’s successors in interest shall be jointly and severally liable with the landlord for repayment of the security",
+          "key_value": null,
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": "Under (k)(3), a successor with a good faith belief, after inquiry and reasonable investigation, that the lawfully remaining deposit was transferred or returned is not liable for subdivision (m) damages or for security not transferred.",
+          "overrides": [],
+          "interaction": "Triggered by noncompliance with subdivision (i).",
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-73162790cc5150de",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Statutory damages up to twice the deposit for bad faith retention",
+          "requirement": "Bad faith claim or retention of the security, or a bad faith demand for replacement security, may subject the landlord or successors in interest to statutory damages of up to twice the amount of the security, in addition to actual damages. The landlord or successor bears the burden of proof as to the reasonableness of amounts claimed or authority to demand additional security.",
+          "citation": "Cal. Civ. Code § 1950.5(m)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "may subject the landlord or the landlord’s successors in interest to statutory damages of up to twice the amount of the security, in addition to actual damages.",
+          "key_value": "up to 2x security amount",
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": "See (k)(3) good faith belief exception for successors in interest.",
+          "overrides": [],
+          "interaction": "Remedy provision for violations of section 1950.5.",
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-39468554cbda1cad",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Lease may not characterize security as nonrefundable",
+          "requirement": "A lease or rental agreement shall not contain a provision characterizing any security as nonrefundable.",
+          "citation": "Cal. Civ. Code § 1950.5(n)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "A lease or rental agreement shall not contain a provision characterizing any security as “nonrefundable.”",
+          "key_value": null,
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-3ffe00f012e4393e": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-8f55a748ae8cb196": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-949bbe7fbd1209da": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-ba968d3172ecc1db": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-c5c6bda8b6ebece5": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-aea3e865663b6e79": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-bb6c6f50a4369e54": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-73162790cc5150de": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-39468554cbda1cad": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D025",
+    "chunk": 1,
+    "total_chunks": 2,
+    "next_chunk": null,
+    "chunk_start": 18000,
+    "chunk_end": 27433,
+    "source_sha256": "48b1d005fb59f73082dc625d4038272f4bde950d2c93a70ef400a43b630e1511",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "This chunk is 2/2 and begins mid-subdivision (h). The statute's scope, definitions, deposit caps, timing of the 21-day return and other provisions in the earlier chunk were not reviewed. Coverage is limited to state=CA and may need narrowing (e.g., residential tenancies) after review of chunk 1.",
+      "The only effective date in this chunk is the amendment note 'Amended by Stats. 2025, Ch. 340, Sec. 1. (AB 414) Effective January 1, 2026.' It is used as effective_on for all rules. Some provisions may have been in force earlier under prior versions; enacted_on is null because no full enactment date is given.",
+      "Subdivision numbering of (h)(2) etc. is inferred from internal cross-references because the chunk starts mid-text; verify citations against the full section.",
+      "Omitted as non-requirement or outside scope: (h)(6) mailing address rule, (l), (o) small claims venue, (p) proof of deposit, (q) and (r) declaratory-amendment clauses.",
+      "Quoted spans avoid line breaks in the captured text; (h)(7) quote ends at 'this' because the sentence is split by a line break before 'subdivision.'",
+      "No fixture aliases apply to this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 6064,
+      "output_tokens": 6804
+    },
+    "created_at": "2026-10-04T10:00:43.460Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

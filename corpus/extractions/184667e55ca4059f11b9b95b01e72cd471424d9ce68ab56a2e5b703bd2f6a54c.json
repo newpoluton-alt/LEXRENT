@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "cache_key": "184667e55ca4059f11b9b95b01e72cd471424d9ce68ab56a2e5b703bd2f6a54c",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "D057",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 2756,
+    "source_sha256": "c678b42f8fc6ecfc7c7a6b1bdf6c68aec877daa80a53d62d5d2ca8176c967d7b",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Source D057 (M.G.L. c. 112, s. 87DDD 1/2) covers broker licensing and who may pay a tenant-finding broker's fee. This subject is not one of the six supplied categories: rent increase limits, just cause eviction, security deposits, application/screening fees, screening restrictions, and algorithmic rent setting. No draft rules were created.",
+      "The text could be read as touching on fees, but it does not address application or screening fees charged to applicants. Classifying it as application_screening_fees would be unsupported, so it was excluded for administrator review.",
+      "The chunk shows two text versions: one effective until August 1, 2025 and one amended by 2025, 9, Sec. 43, effective August 1, 2025. This matters only if a broker-fee category is added later.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4149,
+      "output_tokens": 391
+    },
+    "created_at": "2026-10-04T10:06:24.165Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

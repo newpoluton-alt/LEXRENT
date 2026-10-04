@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "cache_key": "df1b1e1f9acdad50adaa0c21362a448364bffd9b1fb1b22244b0eb04cc9db4d0",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "D048",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 2759,
+    "source_sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No draft rules were emitted from D048 (M.G.L. c. 40P, s. 4). Every provision here depends on whether a city or town 'accepts this chapter', and the allowed coverage fields have no way to represent municipal acceptance. Encoding any of them as unconditional Massachusetts coverage would misstate their scope, so they are omitted for administrator review.",
+      "Omitted for review: the general prohibition ('No city or town may enact, maintain or enforce rent control of any kind'). It carries the acceptance exception, which cannot be encoded safely.",
+      "Omitted for review: s. 4(a), under which compliance becomes voluntary six months after initial adoption of rent control regulation by an accepting city or town. This also depends on acceptance and on the adoption date, which are not available fields.",
+      "Omitted for review: s. 4(b), which bars regulating occupancy, services, evictions, condominium conversion or removal of properties, and bars applying rent control to units owned by an owner of fewer than ten rental units or with fair market rent above $400. Fair market rent is not an allowed coverage field. The provision is also tied to acceptance. The text refers to 'rental units', but the ownership threshold cannot be matched safely to the owner_total_units field without review.",
+      "Omitted for review: s. 4(c), which requires a municipality to compensate owners of rent controlled units for the difference between fair market rent and the controlled rent from general funds. It is a municipal funding obligation, not a property-level fact, and it depends on acceptance.",
+      "Rent control prohibitions and exceptions fit the category list (rent_increase_limits) only loosely. Administrators should confirm the category before any import.",
+      "This chunk gives no enactment date, effective date, or amendment history. All lifecycle dates would be null. The retrieval date of 2026-10-01 is not an effective date. The page presents the section as a General Law, but its in-force status as of 2026-10-01 is not independently verified in the text.",
+      "No fixture alias is supported by this source. MA-RENT-P1 (failed MA IP25-21) is not mentioned in the text, and no interaction with any other rule is asserted.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4018,
+      "output_tokens": 1899
+    },
+    "created_at": "2026-10-04T09:55:04.759Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

@@ -4,7 +4,7 @@ import { challengeData, evaluateProperty, properties, sources as starterSources 
 import { DEFAULT_AS_OF, type DomainContext, type RetrievalChunk, type SourceDocument } from "../domain/types";
 import { queryDateSchema } from "../domain/validation";
 import { restoreOriginalQuote } from "../domain/quotes";
-import { AiError } from "./ai";
+import { AiError, claudeProviderFailure } from "./ai";
 import { searchVectorChunks } from "./vector-store";
 
 export const chatQuestionSchema = z.object({ question: z.string().trim().min(1).max(2500), address_id: z.string().max(100).optional(), as_of: queryDateSchema.optional(), history: z.array(z.object({ role: z.enum(["user", "assistant"]), content: z.string().max(3000) }).strict()).max(6).optional() }).strict();
@@ -73,7 +73,7 @@ export function retrieveKnowledge(question: string, context: DomainContext = {},
   const queryTokens = tokens(`${question} ${history.filter(item => item.role === "user").slice(-2).map(item => item.content).join(" ")}`);
   const queryTerms = [...new Set(queryTokens.map(stem))];
   const states = requestedStates(question);
-  const namedDocs = (question.match(/\bD\d{3}\b/gi) ?? []).map(id => id.toUpperCase());
+  const namedDocs = (question.match(/\b[DS]\d{3}\b/gi) ?? []).map(id => id.toUpperCase());
   const explicitState = states.length === 1 ? states[0] : undefined;
   const lexicalChunks = explicitState ? allChunks.filter(chunk => {
     const source = sources.find(source => source.doc_id === chunk.doc_id)!;
@@ -182,7 +182,7 @@ export async function answerQuestion(input: ChatQuestion, context: DomainContext
   try {
     const client = new Anthropic({ apiKey, timeout: 60_000, maxRetries: 1 });
     response = await client.messages.create({ model, max_tokens: 5000, system, output_config: { format: { type: "json_schema", schema: outputSchema } }, messages: [{ role: "user", content: JSON.stringify({ question: request.question, as_of: asOf, conversation_history_untrusted: request.history ?? [], published_rule_count: context.rules?.length ?? 0, deterministic_property_context: propertyContext, link_only_sources: retrieval.linkOnly, captured_excerpts: retrieval.chunks.map(chunk => ({ chunk_id: chunk.id, doc_id: chunk.doc_id, context: chunk.context, source_url: retrieval.sources.find(source => source.doc_id === chunk.doc_id)?.url, text: chunk.text })) }) }] });
-  } catch { throw new AiError("AI_UPSTREAM_ERROR", "Claude could not answer right now. Check server model access and API credits, then retry.", 502); }
+  } catch (error) { throw claudeProviderFailure(error, "Claude could not answer right now. Check server model access and API credits, then retry."); }
   if (response.stop_reason === "max_tokens" || response.stop_reason === "refusal") throw new AiError("AI_INCOMPLETE_ANSWER", "Claude did not complete a grounded answer. No legal results were changed.", 422);
   let decoded: unknown;
   try { decoded = JSON.parse(response.content.filter(block => block.type === "text").map(block => block.text).join("")); } catch { throw new AiError("AI_INVALID_ANSWER", "Claude did not return a valid structured answer.", 422); }

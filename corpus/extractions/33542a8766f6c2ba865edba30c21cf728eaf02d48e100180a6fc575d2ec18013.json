@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "cache_key": "33542a8766f6c2ba865edba30c21cf728eaf02d48e100180a6fc575d2ec18013",
+  "source_url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "D065",
+    "chunk": 1,
+    "total_chunks": 2,
+    "next_chunk": null,
+    "chunk_start": 18000,
+    "chunk_end": 20915,
+    "source_sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Chunk 2/2 contains only the tail of the act: director remedies (cease and desist, conditional offer or comparable unit, return of application fee, payment to applicant of up to $1,000), the non-exclusivity clause, the rulemaking deadline, and the effective-date clause. The substantive screening obligations, definitions, coverage and exemptions are in the earlier chunk, so no draft rule was created.",
+      "Coverage cannot be represented safely from this chunk alone, and the remedies are enforcement provisions rather than standalone obligations in one of the six categories. Review the whole act, including chunk 1, before drafting rules.",
+      "The text says the act takes effect on the first day of the seventh month next following enactment, and the chunk ends 'Approved June 18, 2021.' No complete effective date is stated, so effective_on and effective_date should stay null unless an administrator confirms the computed date. The 2021 approval date makes it likely, but not proven by this chunk, that the act was in force as of 2026-10-01.",
+      "The chunk gives no act title, citation number or subject matter beyond references to applicants, conditional offers and rental application fees. No fixture alias (including NJ-ALG-01) is supported by this text, and nothing in it concerns algorithmic rent setting.",
+      "The rulemaking deadline (the first day of the fifth month next following enactment) is an administrative directive and not a tenant or landlord obligation in the supplied categories.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 3990,
+      "output_tokens": 1450
+    },
+    "created_at": "2026-10-04T10:01:16.326Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

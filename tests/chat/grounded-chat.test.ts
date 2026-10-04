@@ -28,6 +28,7 @@ describe("provided RAG index and citation grounding", () => {
   });
   it("retrieves official evidence for a named source and multilingual topics", () => {
     expect(retrieveKnowledge(question).chunks.some(chunk => chunk.doc_id === "D069")).toBe(true);
+    expect(retrieveKnowledge("Explain the pending Massachusetts proposal S020").chunks.some(chunk => chunk.doc_id === "S020")).toBe(true);
     expect(retrieveKnowledge("депозит залог California").chunks.length).toBeGreaterThan(0);
     expect(retrieveKnowledge("depósito Berkeley").chunks.length).toBeGreaterThan(0);
     const source: SourceDocument = { doc_id: "CUSTOM", jurisdictions: "CA", url: "https://example.invalid/captured", source_type: "test", capture: "yes", retrieved_at: "2026-10-01", sha256: "new", text_file: "test", status: "ok", captured: true, text: "A synthetic security deposit passage for updated-capture retrieval tests." };
@@ -93,11 +94,20 @@ describe("provided RAG index and citation grounding", () => {
     expect(createMessage).not.toHaveBeenCalled();
   });
   it("returns safe provider failures and never publishes a rule bundle", async () => {
+    const publishedBefore = structuredClone({ rules: challengeData.verifiedRules, ruleLogic: challengeData.ruleLogic, audit: challengeData.corpusAudit });
+    expect(publishedBefore.rules.length).toBeGreaterThan(0);
     createMessage.mockRejectedValue(new Error("Provider error with mock-only secret"));
     const error = await answerQuestion({ question }).catch(error => error);
     expect(error.code).toBe("AI_UPSTREAM_ERROR");
     expect(error.message).not.toContain("mock-only");
-    expect(challengeData.verifiedRules).toEqual([]);
+    expect({ rules: challengeData.verifiedRules, ruleLogic: challengeData.ruleLogic, audit: challengeData.corpusAudit }).toEqual(publishedBefore);
+  });
+  it("shows a specific safe billing message when Anthropic reports insufficient API credits", async () => {
+    createMessage.mockRejectedValue({ status: 400, error: { error: { message: "Your credit balance is too low to access the Anthropic API. private-diagnostic" } } });
+    const error = await answerQuestion({ question }).catch(error => error);
+    expect(error).toMatchObject({ code: "AI_CREDITS_UNAVAILABLE", status: 503 });
+    expect(error.message).toContain("needs API credits");
+    expect(error.message).not.toContain("private-diagnostic");
   });
   it("promotes a relevant semantic hit beyond the lexical shortlist with weighted rank fusion", () => {
     const documents = Array.from({ length: 9 }, (_, index) => capturedSource(`TEST${index + 1}`, "A security deposit provision in this captured document."));

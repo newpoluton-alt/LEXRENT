@@ -12,7 +12,7 @@ export const predicateSchema: z.ZodType<Predicate> = z.lazy(() => z.union([
   z.object({ field: z.enum(FACT_FIELDS), op: z.enum(["eq", "neq", "lt", "lte", "gt", "gte", "in"]), value: z.union([scalar, z.array(scalar).min(1).max(100)]) }).strict().superRefine((predicate, ctx) => {
     if ((predicate.op === "in") !== Array.isArray(predicate.value)) ctx.addIssue({ code: "custom", message: "Only the in comparator takes an array." });
     const numeric = ["year_built", "units", "certificate_age_years", "owner_total_properties", "owner_total_units", "tenancy_months"].includes(predicate.field);
-    const boolean = ["owner_occupied", "construction_exemption_filed", "is_subsidized", "is_single_family", "residential_use"].includes(predicate.field);
+    const boolean = !numeric && !["certificate_of_occupancy_date", "owner_type", "state", "legal_city"].includes(predicate.field);
     const values = Array.isArray(predicate.value) ? predicate.value : [predicate.value];
     const type = numeric ? "number" : boolean ? "boolean" : "string";
     if (values.some(value => typeof value !== type)) ctx.addIssue({ code: "custom", message: `Values for ${predicate.field} must be ${type}.` });
@@ -29,6 +29,7 @@ export const ruleRecordSchema = z.object({
   exemptions: z.string().nullable().optional(), overrides: z.array(z.string()).optional(), interaction: z.string().nullable().optional(),
   effective_date: partialDate.nullable().optional(), source_doc_id: z.string().nullable().optional(), confidence: z.number().min(0).max(1).nullable().optional(),
   conflict_flag: z.boolean().optional(), conflict_note: z.string().nullable().optional(),
+  supporting_source_doc_ids: z.array(z.string().min(1)).max(20).optional(), effective_date_basis: z.string().max(4000).optional(),
 }).passthrough();
 export const ruleLogicSchema: z.ZodType<RuleLogic> = z.object({
   coverage: predicateSchema,
@@ -77,6 +78,10 @@ export function validateRuleBundle(input: unknown, sources: readonly SourceDocum
       if (!rule.source_doc_id) rule.source_doc_id = source.doc_id;
     }
     if (rule.level === "state" && !/^[A-Z]{2}$/.test(rule.jurisdiction)) errors.push({ path: `${path}.jurisdiction`, message: "State jurisdiction must be a two-letter state code." });
+    for (const docId of rule.supporting_source_doc_ids ?? []) {
+      const support = sources.find(document => document.doc_id === docId);
+      if (!support?.captured || !support.text?.trim()) errors.push({ path: `${path}.supporting_source_doc_ids`, message: `Supporting source ${docId} must have captured text.` });
+    }
     if (rule.level === "city" && !/^.+, [A-Z]{2}$/.test(rule.jurisdiction)) errors.push({ path: `${path}.jurisdiction`, message: "City jurisdiction must use City, ST." });
     if (!bundle.ruleLogic[rule.team_rule_id]) {
       const embedded = predicateSchema.safeParse(rule.coverage_conditions);

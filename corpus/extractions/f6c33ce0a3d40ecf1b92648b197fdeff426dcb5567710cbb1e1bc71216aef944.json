@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "cache_key": "f6c33ce0a3d40ecf1b92648b197fdeff426dcb5567710cbb1e1bc71216aef944",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-9f05d9aca3042723",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Successor in interest must notify tenant of transferred security deposit within 45 days",
+          "requirement": "When a lessor's interest in residential premises is transferred, the successor in interest must give the tenant who made the security deposit written notice within 45 days of the transfer. The notice must say the deposit was transferred and is being held by the successor. It must also include the lessor's name, business address and business telephone number, plus the same details for the lessor's agent, if any. Granting a mortgage is not a transfer of interest.",
+          "citation": "M.G.L. c. 186, § 15B(5)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "The successor in interest shall, within forty-five days from the date of said transfer, notify the tenant who made such security deposit that such security deposit was transferred to him and that he is holding said security deposit.",
+          "key_value": "45 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Subsection (9): the section does not apply to a lease, rental, occupancy or tenancy of 100 days or less that is for a vacation or recreational purpose.",
+          "overrides": [],
+          "interaction": "Subsection (5) also keeps the transferring lessor liable until the deposit is transferred and the tenant notified, the successor complies, or the deposit is returned.",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-52ac071071000900",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Return of security deposit within 30 days of tenancy termination or forfeit right to retain it",
+          "requirement": "The lessor must return the security deposit, or the balance owed after permitted deductions, together with any interest, within thirty days after the tenancy terminates. Failing to do so forfeits the lessor's right to retain any portion of the deposit for any reason. It also forfeits the right to counterclaim for damage to the premises in a tenant's action to recover the deposit.",
+          "citation": "M.G.L. c. 186, § 15B(6)(e)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "fails to return to the tenant the security deposit or balance thereof to which the tenant is entitled after deducting therefrom any sums in accordance with the provisions of this section, together with any interest thereon, within thirty days after termination of the tenancy.",
+          "key_value": "30 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Subsection (9): the section does not apply to a lease, rental, occupancy or tenancy of 100 days or less that is for a vacation or recreational purpose.",
+          "overrides": [],
+          "interaction": "Treble damages under subsection (7) apply to a failure under clause (6)(e).",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-a166df035c35b85e",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Itemized list of damages within 30 days of occupancy termination or forfeit right to retain deposit",
+          "requirement": "The lessor must give the tenant the itemized list of damages, if any, within thirty days after the occupancy ends, in compliance with the section. Failing to do so forfeits the lessor's right to retain any portion of the deposit and the right to counterclaim for damage to the premises in a tenant's action to recover the deposit.",
+          "citation": "M.G.L. c. 186, § 15B(6)(b)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "fails to furnish to the tenant within thirty days after the termination of the occupancy the itemized list of damages, if any, in compliance with the provisions of this section;",
+          "key_value": "30 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Subsection (9): the section does not apply to a lease, rental, occupancy or tenancy of 100 days or less that is for a vacation or recreational purpose.",
+          "overrides": [],
+          "interaction": "The treble-damages remedy in subsection (7) names clauses (a), (d) and (e) of subsection (6), not clause (b).",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-9bd3ad1c826c51fc",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Treble damages, 5% interest, costs and fees for certain security deposit violations",
+          "requirement": "If the lessor or agent violates clause (6)(a) (failing to deposit funds in the required account), (6)(d) (failing to transfer the deposit or comply with subsection (5) after succeeding to an interest), or (6)(e) (failing to return the deposit or balance within thirty days), the tenant shall be awarded three times the deposit or balance owed. The award also includes interest at five per cent from the date payment became due, court costs and reasonable attorney's fees.",
+          "citation": "M.G.L. c. 186, § 15B(7)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "If the lessor or his agent fails to comply with clauses (a), (d), or (e) of subsection 6, the tenant shall be awarded damages in an amount equal to three times the amount of such security deposit or balance thereof to which the tenant is entitled plus interest at the rate of five per cent from the date when such payment became due, together with court costs and reasonable attorney's fees.",
+          "key_value": "3x deposit plus 5% interest, court costs and reasonable attorney's fees",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Subsection (9): the section does not apply to a lease, rental, occupancy or tenancy of 100 days or less that is for a vacation or recreational purpose.",
+          "overrides": [],
+          "interaction": "Applies to violations of subsection (6) clauses (a), (d) and (e). Clause (a) refers to the account requirement in subsection (3), which is in another chunk.",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-d539f9a1ffe94742",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Successor must notify tenant within 45 days that last-month rent advance was credited",
+          "requirement": "When a lessor who received rent in advance for the last month of tenancy transfers the unit, the successor in interest must give the tenant written notice within 45 days of the transfer. The notice must say the advance was credited and that the successor has assumed responsibility for it. It must also include the lessor's name, business address and business telephone number, plus the same details for the lessor's agent, if any. Granting a mortgage is not a transfer of interest.",
+          "citation": "M.G.L. c. 186, § 15B(7A)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "The successor in interest shall, within forty-five days from the date of said transfer, notify the tenant who made such rental advance that such rental advance was so credited, and that such successor has assumed responsibility therefor pursuant to the foregoing provision.",
+          "key_value": "45 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Subsection (9): the section does not apply to a lease, rental, occupancy or tenancy of 100 days or less that is for a vacation or recreational purpose.",
+          "overrides": [],
+          "interaction": "Last-month rent advances are treated here as security-deposit-related; the category mapping needs reviewer confirmation.",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-a6a99554bfe1c93a",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Conflicting lease provisions and tenant waivers of the security deposit section are void",
+          "requirement": "Any lease provision that conflicts with the security deposit section, and any waiver of its provisions by a tenant or prospective tenant, is against public policy and void and unenforceable.",
+          "citation": "M.G.L. c. 186, § 15B(8)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "Any provision of a lease which conflicts with any provision of this section and any waiver by a tenant or prospective tenant of any provision of this section shall be deemed to be against public policy and therefore void and unenforceable.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Subsection (9): the section does not apply to a lease, rental, occupancy or tenancy of 100 days or less that is for a vacation or recreational purpose.",
+          "overrides": [],
+          "interaction": "Under subsection (6)(c), using a conflicting lease provision and attempting to enforce it, or seeking a waiver, forfeits the lessor's right to retain any deposit.",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-9f05d9aca3042723": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-52ac071071000900": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-a166df035c35b85e": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-9bd3ad1c826c51fc": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-d539f9a1ffe94742": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-a6a99554bfe1c93a": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "vacation_or_recreational_lease_100_days_or_less",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D052",
+    "chunk": 1,
+    "total_chunks": 2,
+    "next_chunk": null,
+    "chunk_start": 18000,
+    "chunk_end": 26126,
+    "source_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "This is chunk 2/2 only (offsets 18000..26126). Subsections (1)-(4) and part of (5), such as the deposit cap, account requirements and receipts, are in another chunk and were not extracted here.",
+      "The chunk gives no enactment, amendment or effective dates, so all lifecycle fields and effective_date are null. Status 'in_force' is inferred from the source being a General Laws section page and must be verified by the reviewer.",
+      "The citation is built from the source URL (Chapter 186, Section 15B) and the subsection numbers in the text. No session law citation is present.",
+      "Omitted draft: the successor's assumed liability and free-occupancy remedy when a lessor fails to transfer a deposit (subsection 5). It exempts cities or towns taking title under chapter sixty and foreclosing mortgagees or mortgagees in possession that are financial institutions chartered by the commonwealth or the United States. coverage_json has no safe field for those exemptions.",
+      "Omitted draft: the successor's liability to credit a last-month rent advance (subsection 7A). It has the same chapter sixty and financial-institution mortgagee exemptions, which coverage_json cannot represent.",
+      "The subsection (9) exemption for vacation or recreational leases of 100 days or less is encoded in each rule's coverage as vacation_or_recreational_lease_100_days_or_less eq false. When that fact is unavailable the backend should return unknown.",
+      "Subsection (6)(c) and (6)(d) forfeiture rules, and the lessor's duty to credit last-month rent advances to a successor under (7A), were not drafted as separate rules. Reviewers may add them.",
+      "The chunk ends with MyLegislature sign-in and registration page text, which was ignored as non-legal content.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 5554,
+      "output_tokens": 6410
+    },
+    "created_at": "2026-10-04T10:06:19.179Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

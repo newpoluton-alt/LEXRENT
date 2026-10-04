@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "cache_key": "51d33c77acbc5e03fc777fd26bccbf140317b36635aec9eadccf1db16a839f83",
+  "source_url": "https://malegislature.gov/Bills/194/S2983",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "D046",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 3200,
+    "source_sha256": "6ea5313d0a656ab73b683e72b594cf143ee61bd6923ee1d9f3df46682248004d",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No draft rules were created. The captured page for MA Bill S.2983 (194th General Court) has only the title 'An Act prohibiting algorithmic rent setting', committee-report metadata and the bill history. It does not include the bill's operative text.",
+      "Bill status as shown: reported favorably by the Joint Committee on Housing on 3/12/2026 and referred to Senate Ways and Means. It is a new draft of S994 and S1016. As of 2026-10-01 the page shows no enactment, so the bill is a pending proposal. The title is not proof of enactment, and nothing here shows an effective date.",
+      "The page does not state who or what the bill would cover, what conduct it would prohibit, its definitions or exemptions, any penalties, or its effective date. Any coverage predicate, including an unconditional {\"all\":[]}, would therefore be unsupported and was omitted.",
+      "The fixture alias MA-ALG-P1 (S2983) was not applied to any rule. No draft exists to carry it, and aliases cannot replace missing source text.",
+      "Retrieve the full bill text (View Text / Download PDF) and re-run extraction to draft a pending algorithmic_rent_setting rule for S.2983. The retrieval date of 2026-10-01 must not be used as any law date.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4291,
+      "output_tokens": 760
+    },
+    "created_at": "2026-10-04T10:06:36.537Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

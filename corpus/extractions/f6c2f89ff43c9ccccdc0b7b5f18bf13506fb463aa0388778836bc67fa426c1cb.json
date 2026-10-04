@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "cache_key": "f6c2f89ff43c9ccccdc0b7b5f18bf13506fb463aa0388778836bc67fa426c1cb",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-d01fe329354218ba",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Owners may not discriminate against or harass persons because of source of income (and other protected characteristics)",
+          "requirement": "An owner of any housing accommodation may not discriminate against or harass any person because of source of income or the other listed protected characteristics. This includes rental applicants.",
+          "citation": "Cal. Gov. Code § 12955(a)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+          "quoted_span": "to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+          "key_value": null,
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": "Under subd. (p)(2), making a written or oral inquiry about the level or source of income is not discrimination based on source of income. The text of subd. (a) states no other exemptions.",
+          "overrides": [],
+          "interaction": "Subd. (p)(1) defines 'source of income', including government housing subsidies such as Section 8 vouchers and HUD-VASH vouchers. Subd. (p)(2) allows income inquiries.",
+          "effective_date": "2024-01-01",
+          "source_doc_id": "D027",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-9355989268ca2ef4",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Owners may not inquire about protected characteristics of prospective tenants",
+          "requirement": "An owner of any housing accommodation may not make or cause to be made any written or oral inquiry about the listed protected characteristics of a person seeking to purchase, rent, or lease housing. The list in subd. (b) does not include source of income.",
+          "citation": "Cal. Gov. Code § 12955(b)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+          "quoted_span": "For the owner of any housing accommodation to make or to cause to be made any written or oral inquiry concerning the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, disability, veteran or military status, or genetic information of any person",
+          "key_value": null,
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": "The text of subd. (b) states no exemptions.",
+          "overrides": [],
+          "interaction": "Subd. (p)(2) separately provides that inquiring about the level or source of income is not source-of-income discrimination.",
+          "effective_date": "2024-01-01",
+          "source_doc_id": "D027",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-fe23dc8ade1e846f",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Income standards must account for aggregate income of co-residents on the same basis as married persons",
+          "requirement": "In renting housing, it is unlawful to use a financial or income standard that fails to account for the aggregate income of persons residing or proposing to reside together on the same basis as the aggregate income of married persons residing or proposing to reside together.",
+          "citation": "Cal. Gov. Code § 12955(n)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+          "quoted_span": "To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income",
+          "key_value": null,
+          "coverage_conditions": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "exemptions": "The text of subd. (n) states no exemptions.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2024-01-01",
+          "source_doc_id": "D027",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-fc35d7c0f8a09cb7",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Where a government rent subsidy exists, income standards must be based on the tenant's portion of rent",
+          "requirement": "Where there is a government rent subsidy, it is unlawful to use a financial or income standard in assessing eligibility for rental housing that is not based on the portion of the rent to be paid by the tenant.",
+          "citation": "Cal. Gov. Code § 12955(o)(1)(A)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+          "quoted_span": "Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "is_subsidized",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Subd. (o)(2) states that this subdivision does not limit an owner's ability to request information or documentation to verify employment, request landlord references, or verify identity.",
+          "overrides": [],
+          "interaction": "Applies in parallel with subd. (o)(1)(B) on credit history.",
+          "effective_date": "2024-01-01",
+          "source_doc_id": "D027",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-b3d029aac4cc4ebe",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Where a government rent subsidy exists, applicants must be offered alternative evidence of ability to pay in lieu of credit history",
+          "requirement": "Where there is a government rent subsidy, a housing provider using credit history in the application process must offer the applicant the option of providing lawful, verifiable alternative evidence of reasonable ability to pay the tenant's portion of the rent. If the applicant elects to do so, the provider must allow reasonable time to respond and reasonably consider that evidence in lieu of credit history.",
+          "citation": "Cal. Gov. Code § 12955(o)(1)(B)(i)-(ii)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+          "quoted_span": "Use a person’s credit history as part of the application process for a rental accommodation without offering the applicant the option, at the applicant’s discretion, of providing lawful, verifiable alternative evidence of the applicant’s reasonable ability to pay",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "is_subsidized",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Subd. (o)(2) states that this subdivision does not limit an owner's ability to request information or documentation to verify employment, request landlord references, or verify identity.",
+          "overrides": [],
+          "interaction": "Applies in parallel with subd. (o)(1)(A) on income standards.",
+          "effective_date": "2024-01-01",
+          "source_doc_id": "D027",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-d01fe329354218ba": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-9355989268ca2ef4": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-fe23dc8ade1e846f": {
+          "coverage": {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-fc35d7c0f8a09cb7": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "is_subsidized",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-b3d029aac4cc4ebe": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "is_subsidized",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D027",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 10847,
+    "source_sha256": "511f8074b8f4959161fb4c7ec922c8fa963735b47c13d852b8a09ca42b922ecf",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "The 'Effective January 1, 2024' note applies to the section as amended by Stats. 2023, Ch. 776 (SB 267). The text does not say which individual provisions were added or changed by that amendment, so the effective date of each provision is not independently confirmed. Enactment/chaptering date is not given and is left null.",
+      "The retrieval date (2026-10-01) was not used as an effective date.",
+      "The coverage predicate uses is_subsidized as a proxy for 'government rent subsidy' in subd. (o). It may not match the statutory term exactly, so administrator review is needed.",
+      "Coverage uses only state = CA. The statute refers to 'owner of any housing accommodation', but the text does not define it, and the broader Fair Employment and Housing Act scope and exemptions are not in this chunk.",
+      "Provisions on advertising (c), retaliation (f), lending (e), appraisal (i), land use (l), and general discrimination, as well as the definitions in (m) and (p), do not fit the six supplied categories and were excluded as separate rules. (p)(1) and (p)(2) are referenced only in the interaction and exemptions fields.",
+      "The text of this section contains no rent increase limits, just cause eviction, security deposit, application screening fee, or algorithmic rent-setting provisions, so no rules were drafted for those categories.",
+      "The chunk is the full section text as captured, but cross-referenced provisions (Civil Code § 51, Business and Professions Code § 11302) were not available and were not relied on.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 6751,
+      "output_tokens": 5022
+    },
+    "created_at": "2026-10-04T10:03:55.011Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

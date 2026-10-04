@@ -2,7 +2,7 @@ import { Hono } from "hono";
 import { bodyLimit } from "hono/body-limit";
 import { z } from "zod";
 import { createHash } from "node:crypto";
-import { CATEGORIES, DEFAULT_AS_OF, FACT_FIELDS, changeFixtures, evaluateChanges, evaluateProperty, exportSubmissions, getDashboard, getProperty, getSource, getSources, properties, queryDateSchema, searchProperties, validateRuleBundle, type FactRecord } from "@/domain";
+import { CATEGORIES, DEFAULT_AS_OF, FACT_FIELDS, changeFixtures, evaluateChanges, evaluateProperty, exportSubmissions, getDashboard, getCoverageReport, getProperty, getSource, getSources, properties, queryDateSchema, searchProperties, validateRuleBundle, type FactRecord } from "@/domain";
 import { assertSameOrigin, AuthError, getSession, isAdmin, isAuthConfigured, requireAdmin, requireUser } from "./auth";
 import { appendAudit, createEvaluationRun, DatabaseError, deleteSavedProperty, getEvaluationRun, isDatabaseConfigured, listAuditRecords, listEvaluationRuns, listSavedProperties, saveJurisdictionResolution, saveProperty, saveRuleBundle, saveSourceCapture } from "./db";
 import { loadContext } from "./context";
@@ -20,6 +20,7 @@ const factsSchema = z.object({
   owner_occupied: z.boolean().nullable().optional(), owner_total_properties: z.number().int().min(0).nullable().optional(), owner_total_units: z.number().int().min(0).nullable().optional(),
   tenancy_months: z.number().min(0).max(2000).nullable().optional(), construction_exemption_filed: z.boolean().nullable().optional(),
   is_subsidized: z.boolean().nullable().optional(), is_single_family: z.boolean().nullable().optional(), residential_use: z.boolean().nullable().optional(),
+  ...Object.fromEntries(FACT_FIELDS.filter(field => !["year_built", "units", "certificate_of_occupancy_date", "certificate_age_years", "owner_type", "owner_total_properties", "owner_total_units", "tenancy_months", "state", "legal_city"].includes(field)).map(field => [field, z.boolean().nullable().optional()])),
 }).strict();
 const lookupSchema = z.object({ address_id: addressId, as_of: queryDateSchema.default(DEFAULT_AS_OF), facts: factsSchema.optional(), persist: z.boolean().optional() }).strict();
 const savedSchema = z.object({ address_id: addressId, label: z.string().max(200).optional() }).strict();
@@ -42,6 +43,7 @@ app.get("/dashboard", async c => {
   const { context, createdAt } = await loadContext(); const dashboard = getDashboard(context);
   return c.json({ ...dashboard, counts: { properties: dashboard.property_count, sources: dashboard.source_count, captured_sources: dashboard.captured_source_count, rules: dashboard.verified_rule_count, jurisdictions: new Set(properties.map(p => p.legal_city_candidate)).size }, latest_import: createdAt });
 });
+app.get("/coverage", async c => { const { context, bundleId } = await loadContext(); return c.json({ ...getCoverageReport(context), rule_bundle_id: bundleId }); });
 app.get("/properties", c => {
   const query = z.object({ q: z.string().max(300).default(""), state: z.enum(["", "CA", "NJ", "MA"]).default(""), page: z.coerce.number().int().min(1).max(500).default(1), limit: z.coerce.number().int().min(1).max(100).default(12) }).parse(c.req.query());
   return c.json({ ...searchProperties(query.q, { state: query.state || undefined, limit: query.limit, offset: (query.page - 1) * query.limit }), page: query.page });

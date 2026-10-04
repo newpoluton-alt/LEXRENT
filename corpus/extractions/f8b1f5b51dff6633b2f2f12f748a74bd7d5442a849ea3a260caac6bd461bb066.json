@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "cache_key": "f8b1f5b51dff6633b2f2f12f748a74bd7d5442a849ea3a260caac6bd461bb066",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-ac71d13485c677f3",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Owner must give tenant the just cause and rent cap notice in at least 12-point type",
+          "requirement": "An owner of residential real property subject to Civil Code 1946.2 must give the tenant a notice or lease provision in at least 12-point type. It must state that California law limits rent increases (Civil Code 1947.12) and that after the required period of occupancy a landlord must state a cause in any notice to terminate a tenancy (Civil Code 1946.2). Delivery methods and deadlines for tenancies commenced, renewed or existing before July 1, 2020 (July 1, 2022 for mobilehomes) are in subdivision (f)(1)-(2). The notice is subject to Section 1632.",
+          "citation": "Cal. Civ. Code § 1946.2(f)(1)-(3)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+          "quoted_span": "(3) The notification or lease provision shall be in no less than 12-point type, and shall include the following:",
+          "key_value": "12-point type",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Subdivision (e)(9) excludes housing restricted as affordable by deed, regulatory agreement or recorded document, or subject to an affordable housing subsidy agreement. Subdivision (i) excludes property covered by certain local just cause ordinances. Subdivision (l) excludes homeowners of mobilehomes. The remaining (e) exemptions appear in the neighboring chunk and are not captured here.",
+          "overrides": [],
+          "interaction": "Subdivision (i) says the section does not apply to property subject to a local just cause ordinance adopted on or before 2019-09-01, or to a more protective ordinance adopted or amended after that date, and the property cannot be subject to both. The section is repealed as of 2030-01-01 by its own terms (subdivision (n)). Local ordinance coverage is not encoded and needs review.",
+          "effective_date": "2024-04-01",
+          "source_doc_id": "D023",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-cceaed9f040ce7c3",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Owner noncompliance with section voids the written termination notice",
+          "requirement": "An owner's failure to comply with any provision of Civil Code 1946.2 renders the written termination notice void.",
+          "citation": "Cal. Civ. Code § 1946.2(g)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+          "quoted_span": "An owner’s failure to comply with any provision of this section shall render the\nwritten termination notice void.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Same exclusions as for the section generally: subdivision (e)(9), the local ordinance carve-outs in (i), and the mobilehome homeowner exclusion in (l). The remaining (e) exemptions are in the neighboring chunk.",
+          "overrides": [],
+          "interaction": "Applies only to property subject to this section. See subdivision (i) on local just cause ordinances. The section is repealed as of 2030-01-01 by its own terms.",
+          "effective_date": "2024-04-01",
+          "source_doc_id": "D023",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-7cd2e24e0c230567",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Owner liable for damages when recovering possession in material violation",
+          "requirement": "An owner who attempts to recover possession of a rental unit in material violation of the section is liable to the tenant for actual damages and, in the court's discretion, reasonable attorney's fees and costs. On a showing of willful, oppressive, fraudulent or malicious conduct, the award may be up to three times actual damages, and punitive damages may also be awarded. The Attorney General, city attorney or county counsel may seek injunctive relief.",
+          "citation": "Cal. Civ. Code § 1946.2(h)(1)-(2)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+          "quoted_span": "An owner who attempts to recover possession of a rental unit in material violation of this section shall be liable to the tenant in a civil action for all of the following:",
+          "key_value": "up to three times actual damages for willful, oppressive, fraudulent or malicious conduct",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Same exclusions as for the section generally: subdivision (e)(9), the local ordinance carve-outs in (i), and the mobilehome homeowner exclusion in (l). The remaining (e) exemptions are in the neighboring chunk.",
+          "overrides": [],
+          "interaction": "See subdivision (i) on local just cause ordinances. The section is repealed as of 2030-01-01 by its own terms.",
+          "effective_date": "2024-04-01",
+          "source_doc_id": "D023",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-ac71d13485c677f3": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-04-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-cceaed9f040ce7c3": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-04-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-7cd2e24e0c230567": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-04-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D023",
+    "chunk": 1,
+    "total_chunks": 2,
+    "next_chunk": null,
+    "chunk_start": 18000,
+    "chunk_end": 24988,
+    "source_sha256": "fdd8d7fca42103cf630c3a9a4ed217150eb17a6e180edd80c1d845ca5e8aa1fe",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Chunk 2/2 only. The core just cause requirement in subdivision (b), the authorized reasons for termination, relocation assistance and most (e) exemptions are in the neighboring chunk, so no rules were drafted for them.",
+      "Coverage_json for all drafts is PARTIAL. It encodes only the state, residential use and affordable-housing exemption (e)(9) visible in this chunk. The other (e) exemptions, including the (e)(8) owner-type and notice conditions, must be added from the neighboring chunk before import.",
+      "The (e)(9) exemption also covers housing subject to a subsidy agreement for affordable housing. The is_subsidized fact was not encoded because it may be broader than the statutory language. Review this.",
+      "The local ordinance carve-outs in (i)(1)-(3) were not encoded in coverage because the available facts cannot safely represent the 'more protective' test, the 2019-09-01 adoption date or the binding-finding requirement. Administrator review is needed.",
+      "The mobilehome homeowner exclusion in (l) and the mobilehome-specific dates (2022-07-01 and 2022-08-01) were not encoded because no matching coverage field exists.",
+      "Lifecycle: the capture states the section becomes operative 2024-04-01, the amendment (AB 1529, Stats. 2025, Ch. 203) is effective 2026-01-01, and the section is repealed as of 2030-01-01. Enactment dates are not stated. The 2030-01-01 repeal is still in the future as of 2026-10-01, so repealed_on is null.",
+      "The 12-point notice rule has date-specific delivery variants for tenancies commenced or renewed before or after 2020-07-01 (2022-07-01 for mobilehomes). These were summarized in one rule rather than split.",
+      "Subdivisions (j) (waiver void) and (k) (definitions) were not drafted as separate rules.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements.",
+      "ca-civ-1946-2-f-tenant-notice-content-and-format: model whitespace was replaced with the exact captured span; inspect the original quotation during review."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 5346,
+      "output_tokens": 5177
+    },
+    "created_at": "2026-10-04T10:06:51.255Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

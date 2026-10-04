@@ -1,0 +1,2322 @@
+{
+  "rules": [
+    {
+      "team_rule_id": "NJ-RENT-01",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Rent increase must not be unconscionable",
+      "requirement": "For covered residential tenancies, a rent increase must not be unconscionable and must comply with applicable municipal rent ordinances. This is a fact-sensitive standard, not a statewide percentage cap.",
+      "citation": "N.J.S.A.2A:18-61.1(f); DCA Truth in Renting, Rent Control/Rent Increases",
+      "source_doc_id": "D067",
+      "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+      "quoted_span": "The increase in rent must not be \nunconscionable; it must not be so unreasonable as to shock the conscience of a fair and honest \nperson and must comply with any municipal ordinances governing rent increases.",
+      "effective_date": null,
+      "key_value": "Fact-sensitive standard; no fixed statewide percentage",
+      "exemptions": "Owner-occupied premises with two or fewer rental units, transient/seasonal hotel or guest-house stays, and the described developmentally-disabled immediate-family trust unit can be excepted. Unit count does not prove owner occupancy or the special trust facts."
+    },
+    {
+      "team_rule_id": "NJ-RENT-02",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "No unilateral rent increase during an existing lease",
+      "requirement": "The state guide says a landlord cannot raise rent mid-lease term; the old lease must end and a new lease must state the increased payment. Review the lease and any separately authorized adjustment before acting.",
+      "citation": "DCA Truth in Renting, Rent Control/Rent Increases",
+      "source_doc_id": "D067",
+      "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+      "quoted_span": "A landlord cannot raise the \nrent mid-lease term. The old lease must be terminated, and the new lease must have the increased \nrental payment. The landlord has to offer the tenant a new lease with the increased rent once the \nold lease has been terminated.",
+      "effective_date": null,
+      "key_value": "Increase through a new lease after the old term ends"
+    },
+    {
+      "team_rule_id": "NJ-EVICT-01",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Good cause required for covered eviction or nonrenewal",
+      "requirement": "For an Anti-Eviction Act tenancy, the landlord must prove statutory good cause for eviction or nonrenewal in court. Lease expiration alone does not establish good cause.",
+      "citation": "N.J.S.A.2A:18-61.1 to 61.12; DCA Truth in Renting, Eviction",
+      "source_doc_id": "D067",
+      "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+      "quoted_span": "No residential landlord may evict or fail to renew a \nlease, whether it is a written or an oral lease without good cause. The landlord must be able to \nprove in court that he has grounds for an eviction.",
+      "effective_date": null,
+      "key_value": "Statutory good cause",
+      "exemptions": "Owner-occupied premises with two or fewer rental units, transient/seasonal hotel or guest-house stays, and the described developmentally-disabled immediate-family trust unit can be excepted. Unit count does not prove owner occupancy or the special trust facts."
+    },
+    {
+      "team_rule_id": "NJ-EVICT-02",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Court process required to recover possession",
+      "requirement": "Recover residential possession by consent or through the court eviction process and an enforced removal warrant. A notice to quit by itself does not remove the tenant.",
+      "citation": "N.J.S.A.2A:18-61.1; DCA Truth in Renting, Eviction",
+      "source_doc_id": "D067",
+      "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+      "quoted_span": "A landlord may recover possession of a dwelling unit used as a residence only by \nconsent of the tenants or through the legal process of eviction. In  an eviction action, when a \nlandlord obtains a judgment of possession of the unit from a court, the landlord is entitled to a \nwarrant for removal. This warrant will direct an officer of the court to remove all persons from \nthe dwelling unit and give the landlord full possession. The warrant may also direct the officer \nof the court to remove the tenants’ belongings. It is the landlord’s responsibility to obtain the \nwarrant for removal and have it enforced ( N.J.S.A. 2A:18-61.1).",
+      "effective_date": null,
+      "key_value": "Court judgment and removal warrant"
+    },
+    {
+      "team_rule_id": "NJ-DEP-01",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Security deposit capped at 1.5 months",
+      "requirement": "Where the Security Deposit Law applies, total security including a pet deposit cannot exceed one and one-half times one month’s rent.",
+      "citation": "N.J.S.A.46:8-21.2; DCA Truth in Renting, Security Deposits",
+      "source_doc_id": "D067",
+      "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+      "quoted_span": "The maximum-security deposit to be collected by the landlord cannot be more than \none and one-half times one month’s rent ( N.J.S.A. 46:8-21.2 ). It can be less. Any additional \nyearly security deposit increase may not exceed 10% of the current security deposit. A landlord \nmay not charge a pet security deposit if it exceeds one and one-half times one month’s rent when \ncombined with the regular security deposit.",
+      "effective_date": null,
+      "key_value": "1.5 months of rent",
+      "exemptions": "Owner-occupied two- or three-family dwellings are generally excepted. A tenant can invoke the Security Deposit Law by written request, effective after 30 days. Written activation and seasonal-rental facts are not supplied; those special cases need review."
+    },
+    {
+      "team_rule_id": "NJ-DEP-02",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Annual deposit increase capped at 10 percent",
+      "requirement": "An additional yearly increase in a covered security deposit may not exceed 10 percent of the current deposit; the overall 1.5-month cap still applies.",
+      "citation": "N.J.S.A.46:8-21.2; DCA Truth in Renting, Security Deposits",
+      "source_doc_id": "D067",
+      "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+      "quoted_span": "Any additional \nyearly security deposit increase may not exceed 10% of the current security deposit.",
+      "effective_date": null,
+      "key_value": "10% of current deposit per year",
+      "exemptions": "Owner-occupied two- or three-family dwellings are generally excepted. A tenant can invoke the Security Deposit Law by written request, effective after 30 days. Written activation and seasonal-rental facts are not supplied; those special cases need review."
+    },
+    {
+      "team_rule_id": "NJ-DEP-03",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Deposit banking notice within 30 days",
+      "requirement": "After accepting a covered deposit, provide written bank/investment details, amount, account type and interest rate within 30 days and again with annual interest payments. This is a conditional deposit-management duty, not a finding a deposit was paid.",
+      "citation": "N.J.S.A.46:8-19; DCA Truth in Renting, Security Deposits",
+      "source_doc_id": "D067",
+      "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+      "quoted_span": "Within 30 days of receipt of the security deposit and at t he time of each annual interest \npayment, the landlord must notify the tenant in writing of the name and address of the banking \ninstitution or investment company in which the money is deposited, the amount of the deposit, \ntype of account, and current rate o f interest for the account.",
+      "effective_date": null,
+      "key_value": "30-day banking notice",
+      "exemptions": "Owner-occupied two- or three-family dwellings are generally excepted. A tenant can invoke the Security Deposit Law by written request, effective after 30 days. Written activation and seasonal-rental facts are not supplied; those special cases need review."
+    },
+    {
+      "team_rule_id": "NJ-DEP-04",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Deposit interest belongs to the tenant",
+      "requirement": "Pay actual earnings on a covered security deposit in cash or credit them toward rent on lease renewal/anniversary, or on January 31 following the required written notice.",
+      "citation": "N.J.S.A.46:8-19(c); DCA Truth in Renting, Security Deposits",
+      "source_doc_id": "D067",
+      "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+      "quoted_span": "The interest or earnings paid on the security deposit belongs to the tenant and shall be paid \nto the tenant in cash or credited toward rent due and owing on the ren ewal or anniversary of the \ntenant’s lease or on January 31,  if the tenant has been given written notice, that the interest \npayments will be paid on January 31 of each year (N.J.S.A. 46:8-19 (c)).",
+      "effective_date": null,
+      "key_value": "Tenant receives actual deposit earnings",
+      "exemptions": "Owner-occupied two- or three-family dwellings are generally excepted. A tenant can invoke the Security Deposit Law by written request, effective after 30 days. Written activation and seasonal-rental facts are not supplied; those special cases need review."
+    },
+    {
+      "team_rule_id": "NJ-DEP-05",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Return deposit and itemize deductions within 30 days",
+      "requirement": "After covered tenancy termination, return the deposit plus interest less lawful deductions within 30 days. Send an itemized deduction list within that period; early departure and emergency displacement have separate rules.",
+      "citation": "N.J.S.A.46:8-21.1; DCA Truth in Renting, Security Deposits",
+      "source_doc_id": "D067",
+      "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+      "quoted_span": "Within 30 days after the termination of a tenancy, a landlord must return the security \ndeposit, plus interest earned less deductions, to the tenant ( N.J.S.A. 46:8-21.1). Deductions may \ninclude the cost of any damages over and above normal wear and tear, and any other money due \nthe landlord under the terms of the lease. The landlord must return the money either by personal \ndelivery, registered, or certified mail. If there are a ny deductions made from the security deposit \nby the landlord, an itemized list of these deductions must also be sent to the tenant by registered \nor certified mail within 30 days from the termination of the tenancy.",
+      "effective_date": null,
+      "key_value": "30 days after tenancy termination",
+      "exemptions": "Owner-occupied two- or three-family dwellings are generally excepted. A tenant can invoke the Security Deposit Law by written request, effective after 30 days. Written activation and seasonal-rental facts are not supplied; those special cases need review."
+    },
+    {
+      "team_rule_id": "NJ-FEE-01",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Residential application fee capped at $50 in 2026",
+      "requirement": "From May 1, 2026, landlord/agent application fees to lease or sublease a covered dwelling cannot exceed $50. One- and two-family dwellings and real-estate licensees acting outside the landlord role are excepted; later CPI-adjusted caps need a fresh source review.",
+      "citation": "P.L.2025,c.405 §§1(a),1(c),1(d),3; N.J.S.A.46:8-18.1",
+      "source_doc_id": "D066",
+      "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+      "quoted_span": "1. a. A landlord, or\nagent thereof, shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+      "effective_date": "2026-05-01",
+      "key_value": "$50 in 2026",
+      "exemptions": "One- and two-family dwellings; NJ Real Estate Commission licensees unless they are the landlord. Positive CPI adjustments begin in the year following enactment (2027), so $50 must not be assumed for later years."
+    },
+    {
+      "team_rule_id": "NJ-SCREEN-01",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Criminal-history inquiry generally waits for conditional offer",
+      "requirement": "Covered providers cannot ask ordinary criminal-history questions in an application or orally/in writing before a conditional offer. The specified federal methamphetamine and lifetime sex-offender checks are allowed.",
+      "citation": "P.L.2021,c.110 §4(a); N.J.S.A.46:8-55",
+      "source_doc_id": "D065",
+      "source_url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
+      "quoted_span": "A\nhousing provider\nshall not require an applicant to\ncomplete any housing application that includes any inquiries regarding an\napplicant’s criminal record prior to the provision of a conditional offer,\nexcept that a housing provider may consider whether an applicant has ever been\nconvicted of drug-related criminal activity for the manufacture or production\nof methamphetamine on the premises of federally assisted housing, and whether\nthe applicant is subject to a lifetime registration requirement under a State\nsex offender registration program.\n(2)\nA housing\nprovider\nshall not make any oral or written inquiry\nregarding an applicant’s criminal record prior to making a conditional offer.",
+      "effective_date": "2022-01-01",
+      "key_value": "Conditional offer first",
+      "exemptions": "Rental units in owner-occupied premises of no more than four dwelling units are excluded. Federal mandatory-screening requirements and the specific methamphetamine/lifetime sex-offender exceptions need separate review."
+    },
+    {
+      "team_rule_id": "NJ-SCREEN-02",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Arrests, expunged and sealed records cannot support denial",
+      "requirement": "A covered provider cannot evaluate an applicant using arrests without conviction, expunged/pardoned/vacated convictions, juvenile adjudications or sealed records, before or after a conditional offer.",
+      "citation": "P.L.2021,c.110 §5(a); N.J.S.A.46:8-56",
+      "source_doc_id": "D065",
+      "source_url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
+      "quoted_span": "A housing provider shall not, either before\nor after the issuance of a conditional offer, evaluate an applicant based on\nany of the following types of criminal records:\n(1)   arrests or charges that have not resulted in a\ncriminal conviction;\n(2)   expunged convictions;\n(3)   convictions erased through executive pardon;\n(4)   vacated and otherwise legally nullified\nconvictions;\n(5)   juvenile adjudications of delinquency; and\n(6)   records that have been sealed.",
+      "effective_date": "2022-01-01",
+      "key_value": "Excluded records cannot support denial",
+      "exemptions": "Rental units in owner-occupied premises of no more than four dwelling units are excluded. Federal mandatory-screening requirements and the specific methamphetamine/lifetime sex-offender exceptions need separate review."
+    },
+    {
+      "team_rule_id": "NJ-SCREEN-03",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Criminal denial requires reasons, appeal and assessment",
+      "requirement": "Withdrawing a covered conditional offer based on criminal history requires a substantial, legitimate nondiscriminatory interest, specific written reasons, an appeal opportunity and individualized assessment of the statutory factors.",
+      "citation": "P.L.2021,c.110 §5(c); N.J.S.A.46:8-56",
+      "source_doc_id": "D065",
+      "source_url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
+      "quoted_span": "A housing provider may withdraw a\nconditional offer based on an applicant's criminal record only if the housing\nprovider determines, by preponderance of the evidence, that the withdrawal is\nnecessary to fulfill a substantial, legitimate, and nondiscriminatory interest.\n(2)   If a housing provider withdraws a conditional\noffer, the housing provider shall provide the applicant with written\nnotification that includes, with specificity, the reason or reasons for the\nwithdrawal of the conditional offer and an opportunity to appeal the denial by\nproviding evidence to the housing provider demonstrating inaccuracies within\nthe applicant's criminal record or evidence of rehabilitation or other\nmitigating factors.\n(3)   The housing provider shall perform an\nindividualized assessment of the application in light of the following factors:\n(a)   the nature and severity of the criminal offense;\n(b)   the age of the applicant at the time of the\noccurrence of the criminal offense;\n(c)   the time which has elapsed since the occurrence\nof the criminal offense;\n(d)   any information produced by the applicant, or\nproduced on the applicant's behalf, in regard to the applicant's rehabilitation\nand good conduct since the occurrence of the criminal offense;\n(e)   the degree to which the criminal offense, if it\nreoccurred, would negatively impact the safety of the housing provider's other\ntenants or property; and\n(f)   whether the criminal offense occurred on or was\nconnected to property that was rented or leased by the applicant.",
+      "effective_date": "2022-01-01",
+      "key_value": "Written reasons, appeal and individualized assessment",
+      "exemptions": "Rental units in owner-occupied premises of no more than four dwelling units are excluded. Federal mandatory-screening requirements and the specific methamphetamine/lifetime sex-offender exceptions need separate review."
+    },
+    {
+      "team_rule_id": "NJ-SCREEN-04",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Disclose criminal screening before accepting a fee",
+      "requirement": "Before an application fee is accepted, a covered provider must disclose whether it reviews criminal history and that the applicant may supply corrections, rehabilitation or mitigating evidence.",
+      "citation": "P.L.2021,c.110 §4(b); N.J.S.A.46:8-55",
+      "source_doc_id": "D065",
+      "source_url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
+      "quoted_span": "Prior to\naccepting any application fee, a housing provider shall disclose in writing to\nthe applicant:\n(1)   Whether the eligibility criteria of the housing\nprovider include the review and consideration of criminal history; and\n(2)   A statement that the applicant, pursuant to\nsubsection a. of this section, may provide evidence demonstrating inaccuracies\nwithin the applicant's criminal record or evidence of rehabilitation or other\nmitigating factors.",
+      "effective_date": "2022-01-01",
+      "key_value": "Written disclosure before fee",
+      "exemptions": "Rental units in owner-occupied premises of no more than four dwelling units are excluded. Federal mandatory-screening requirements and the specific methamphetamine/lifetime sex-offender exceptions need separate review."
+    },
+    {
+      "team_rule_id": "NJ-SCREEN-05",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "No denial solely because rent comes from a lawful voucher",
+      "requirement": "For housing covered by the Law Against Discrimination, a landlord cannot deny housing solely because an applicant uses a lawful source of rent payment, such as a Section 8 voucher.",
+      "citation": "N.J.S.A.10:5-12; NJ Division on Civil Rights housing guidance",
+      "source_doc_id": "D068",
+      "source_url": "https://www.nj.gov/oag/dcr/downloads/kyrhousing02.pdf",
+      "quoted_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses. This\nmeans, for example, that a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+      "effective_date": null,
+      "key_value": "Lawful income/rent source protected",
+      "exemptions": "Owner-occupied two-family apartments and owner-occupied one-family room rentals are excepted as described in the source. Religious preference and older-person housing exceptions concern different protected grounds."
+    },
+    {
+      "team_rule_id": "NJ-ALG-01",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "not_yet_effective",
+      "title": "NJ FAIR Act coordinator-service prohibition",
+      "requirement": "From July 1, 2027, rental owners and their agents cannot receive, subscribe to, contract for or pay consideration for prohibited coordinator services. It is enacted but not yet effective on October 1, 2026; permitted tools and affordability controls remain outside the statutory definitions.",
+      "citation": "P.L.2026,c.43 §§3,4(a),6,9; N.J.S.A.56:9-20 to 26",
+      "source_doc_id": "D069",
+      "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+      "quoted_span": "a rental property owner, or any agent,\nrepresentative, or subcontractor thereof, to receive, subscribe to, contract\nfor, or otherwise exchange any form of consideration in return for the use of,\nthe services of a coordinator;\nb.    a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;\nc.     two or more persons to engage in\n1\nor\notherwise facilitate\n1\nparallel pricing coordination;\nd.    any agent or representative of a coordinator or\nsubcontractor thereof to engage in parallel pricing coordination; or\ne.     any person to perform a coordinating function.\n5.    The provisions of this act shall not be construed\nin any manner that limits the application of sections 6 through 17 of P.L.1970,\nc.73 (C.56:9-6 through 9-17) to a violation of section 4 of this act.\n6.    a.  This act shall not authorize or permit any\nconduct already unlawful pursuant to the “New Jersey Antitrust Act,” P.L.1970,\nc.73 (C.56:9-1 et seq.), or any other law, and shall be construed as in\naddition to that act.\nb.    A municipality shall be prohibited from enacting\nan ordinance that conflicts with this act.  This subsection shall not be\nconstrued to prohibit the enactment of ordinances explicitly authorized or\nrequired by any other law.",
+      "effective_date": "2027-07-01",
+      "key_value": "Effective July 1, 2027",
+      "exemptions": "The statutory definitions exclude qualifying non-AI spreadsheets, raw-data query databases, no-price-setting research/testing, free public estimates, qualifying brokerage databases and government affordability controls. Institutional units outside primary residences are not covered.",
+      "interaction": "Section 6(b) prohibits conflicting municipal ordinances. Review Hoboken/Jersey City interactions individually; existing antitrust law applies independently before this Act begins.",
+      "conflict_note": "Future municipal enactment interaction requires human review. Section 6(b) prohibits conflicting enactments; it does not establish a present conflict or automatically repeal or invalidate existing Hoboken/Jersey City ordinances."
+    },
+    {
+      "team_rule_id": "NJ-ALG-02",
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "not_yet_effective",
+      "title": "NJ FAIR Act parallel-pricing prohibition",
+      "requirement": "From July 1, 2027, persons and coordinators may not engage in or facilitate prohibited parallel pricing coordination or perform a prohibited coordinating function. This does not ban every software tool or public-data calculation.",
+      "citation": "P.L.2026,c.43 §§3,4(b)-(e),9",
+      "source_doc_id": "D069",
+      "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+      "quoted_span": "a coordinator to facilitate a tacit or express\nagreement among rental property owners that restricts competition with respect\nto residential dwelling units, including by performing a coordinating\nfunction;\nc.     two or more persons to engage in\n1\nor\notherwise facilitate\n1\nparallel pricing coordination;\nd.    any agent or representative of a coordinator or\nsubcontractor thereof to engage in parallel pricing coordination; or\ne.     any person to perform a coordinating function.",
+      "effective_date": "2027-07-01",
+      "key_value": "No prohibited coordinating function",
+      "exemptions": "The statutory definitions exclude qualifying non-AI spreadsheets, raw-data query databases, no-price-setting research/testing, free public estimates, qualifying brokerage databases and government affordability controls. Institutional units outside primary residences are not covered."
+    },
+    {
+      "team_rule_id": "MA-RENT-01",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Mandatory municipal rent control generally prohibited",
+      "requirement": "Chapter 40P generally prohibits mandatory municipal rent control, with a narrow voluntary and compensated exception. This record creates no rent cap and does not displace separately enacted special laws or subsidized-housing restrictions.",
+      "citation": "M.G.L.c.40P §4",
+      "source_doc_id": "D048",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+      "quoted_span": "Section 4. No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:\n(a) after six months from the date of the initial adoption of rent control regulation by a particular city or town, compliance on the part of property owners as to the rent control regulation or any subsequently adopted rent control regulation shall be entirely voluntary and uncoerced, and the property of a person or entity declining to have his or its property subjected to such regulation shall be wholly unaffected by any aspect of the rent control regulation or any subsequently adopted rent control regulation;\n(b) such regulation may not include the regulation of occupancy, services, evictions, condominium conversion or the removal of properties from such regulation, nor may such regulation apply to any rental unit that is owned by a person or entity owning less than ten rental units or that has a fair market rent exceeding $400; and\n(c) a municipality adopting such regulation shall compensate owners of rent controlled units for each unit in the amount of the difference between the unit's fair market rent and the unit's below market, rent controlled rent, with such compensation coming from the municipality's general funds, so that the cost of any rent control shall be borne by all taxpayers of a municipality and not by the owners of regulated units only.",
+      "effective_date": null,
+      "key_value": "No mandatory cap created by this record",
+      "exemptions": "The statute permits only its specified voluntary/uncoerced compensated regime with unit/rent limitations. Subsidy restrictions and separately authorized special laws require their own review."
+    },
+    {
+      "team_rule_id": "MA-DEP-01",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Security deposit limited to first month’s rent",
+      "requirement": "For a tenancy governed by §15B, the deposit cannot exceed the first month’s rent and must satisfy bank-handling and condition-statement duties. A separately regulated deposit alternative is not an ordinary application fee.",
+      "citation": "M.G.L.c.186 §15B(1)(b)(iii),(9)",
+      "source_doc_id": "D052",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+      "quoted_span": "(iii) a security deposit equal to the first month's rent provided that such security deposit is deposited as required by subsection (3) and that the tenant is given the statement of condition as required by subsection (2);",
+      "effective_date": null,
+      "key_value": "1 month of rent",
+      "exemptions": "Section 15B excludes vacation or recreational tenancies of 100 days or less. These are ordinary residential challenge addresses, but vacation purpose/lease duration is not verified; do not extend this duty to the statutory vacation exception."
+    },
+    {
+      "team_rule_id": "MA-DEP-02",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Separate Massachusetts interest-bearing deposit account",
+      "requirement": "A lessor accepting a covered deposit must hold it in a separate interest-bearing Massachusetts bank account protected from the lessor’s creditors.",
+      "citation": "M.G.L.c.186 §15B(3)(a),(9)",
+      "source_doc_id": "D052",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+      "quoted_span": "(3) (a) Any security deposit received by such lessor shall be held in a separate, interest-bearing account in a bank, located within the commonwealth under such terms as will place such deposit beyond the claim of creditors of the lessor, including a foreclosing mortgagee or trustee in bankruptcy, and as will provide for its transfer to a subsequent owner of said property.",
+      "effective_date": null,
+      "key_value": "Separate in-state interest-bearing account",
+      "exemptions": "Section 15B excludes vacation or recreational tenancies of 100 days or less. These are ordinary residential challenge addresses, but vacation purpose/lease duration is not verified; do not extend this duty to the statutory vacation exception."
+    },
+    {
+      "team_rule_id": "MA-DEP-03",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Bank receipt due within 30 days",
+      "requirement": "For a covered deposit, give a receipt within 30 days identifying the bank name/location, amount and account number; failure entitles the tenant to immediate return under the cited paragraph.",
+      "citation": "M.G.L.c.186 §15B(3)(a),(9)",
+      "source_doc_id": "D052",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+      "quoted_span": "A receipt shall be given to the tenant within thirty days after such deposit is received by the lessor which receipt shall indicate the name and location of the bank in which the security deposit has been deposited and the amount and account number of said deposit.  Failure to comply with this paragraph shall entitle the tenant to immediate return of the security deposit.",
+      "effective_date": null,
+      "key_value": "30-day banking receipt",
+      "exemptions": "Section 15B excludes vacation or recreational tenancies of 100 days or less. These are ordinary residential challenge addresses, but vacation purpose/lease duration is not verified; do not extend this duty to the statutory vacation exception."
+    },
+    {
+      "team_rule_id": "MA-DEP-04",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Statement of condition when deposit is accepted",
+      "requirement": "Provide the required separate written condition statement upon receipt of a covered deposit or within 10 days after tenancy begins, whichever is later; the remainder of §15B(2)(c) specifies its contents and tenant response.",
+      "citation": "M.G.L.c.186 §15B(2)(c),(9)",
+      "source_doc_id": "D052",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+      "quoted_span": "(c) Any lessor of residential real property, or his agent, who accepts a security deposit from a tenant or prospective tenant shall, upon receipt of such security deposit, or within ten days after commencement of the tenancy, whichever is later, furnish to such tenant or prospective tenant a separate written statement of the present condition of the premises to be leased or rented.",
+      "effective_date": null,
+      "key_value": "Receipt or 10 days after start, whichever later",
+      "exemptions": "Section 15B excludes vacation or recreational tenancies of 100 days or less. These are ordinary residential challenge addresses, but vacation purpose/lease duration is not verified; do not extend this duty to the statutory vacation exception."
+    },
+    {
+      "team_rule_id": "MA-DEP-05",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Annual security-deposit interest",
+      "requirement": "For a covered deposit held one year or longer, pay interest annually at 5 percent or the lesser actual bank rate; the statute separately requires accrued interest within 30 days of early termination.",
+      "citation": "M.G.L.c.186 §15B(3)(b),(9)",
+      "source_doc_id": "D052",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+      "quoted_span": "(b) A lessor of residential real property who holds a security deposit pursuant to this section for a period of one year or longer from the commencement of the term of the tenancy shall, beginning with the first day of the tenancy, pay interest at the rate of five per cent per year, or other such lesser amount of interest as has been received from the bank where the deposit has been held payable to the tenant at the end of each year of the tenancy.  Such interest shall be paid over to the tenant each year as provided in this clause, provided, however, that in the event that the tenancy is terminated before the anniversary date of the tenancy, the tenant shall receive all accrued interest within thirty days of such termination.",
+      "effective_date": null,
+      "key_value": "5% or lower actual bank interest",
+      "exemptions": "Section 15B excludes vacation or recreational tenancies of 100 days or less. These are ordinary residential challenge addresses, but vacation purpose/lease duration is not verified; do not extend this duty to the statutory vacation exception."
+    },
+    {
+      "team_rule_id": "MA-DEP-06",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "30-day deposit return and itemized damage deductions",
+      "requirement": "After covered tenancy/occupancy ends, return the deposit balance within 30 days. Damage deductions must exclude reasonable wear and tear and include the sworn itemized damage list and cost evidence; only statutory deductions are allowed.",
+      "citation": "M.G.L.c.186 §15B(4),(9)",
+      "source_doc_id": "D052",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+      "quoted_span": "(4) The lessor shall, within thirty days after the termination of occupancy under a tenancy-at-will or the end of the tenancy as specified in a valid written lease agreement, return to the tenant the security deposit or any balance thereof;  provided, however, that the lessor may deduct from such security deposit for the following:\n(i) any unpaid rent or water charges which have not been validly withheld or deducted pursuant to any general or special law\n(ii) any unpaid increase in real estate taxes which the tenant is obligated to pay pursuant to a tax escalation clause which conforms to the requirements of section fifteen C;  and\n(iii) a reasonable amount necessary to repair any damage caused to the dwelling unit by the tenant or any person under the tenant's control or on the premises with the tenant's consent, reasonable wear and tear excluded.  In the case of such damage, the lessor shall provide to the tenant within such thirty days an itemized list of damages, sworn to by the lessor or his agent under pains and penalties of perjury, itemizing in precise detail the nature of the damage and of the repairs necessary to correct such damage, and written evidence, such as estimates, bills, invoices or receipts, indicating the actual or estimated cost thereof.",
+      "effective_date": null,
+      "key_value": "30-day return; statutory deductions only",
+      "exemptions": "Section 15B excludes vacation or recreational tenancies of 100 days or less. These are ordinary residential challenge addresses, but vacation purpose/lease duration is not verified; do not extend this duty to the statutory vacation exception."
+    },
+    {
+      "team_rule_id": "MA-FEE-01",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "No additional landlord or landlord-agent application fee",
+      "requirement": "From August 1, 2025, landlord/agent commencement charges are confined to first/last month, a compliant deposit or separately regulated alternative, and actual key/lock installation cost. An additional application/screening fee paid to them is not permitted by that list.",
+      "citation": "M.G.L.c.186 §15B(1)(b); St.2025,c.9 §§54–55,136",
+      "source_doc_id": "D052",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+      "quoted_span": "(b) At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following:\n(i) rent for the first full month of occupancy;  and,\n(ii) rent for the last full month of occupancy calculated at the same rate as the first month;  and,\n(iii) a security deposit equal to the first month's rent provided that such security deposit is deposited as required by subsection (3) and that the tenant is given the statement of condition as required by subsection (2);  provided, however, that the executive office of housing and livable communities may promulgate regulations to authorize a lessor and a tenant or prospective tenant to agree to the payment of a fee in lieu of payment of a security deposit;  provided further, that any such regulations shall:  (A) require the lessor to utilize a fee collected to waive a security deposit to cover for unpaid rent or unit damage that applies to the tenant's lease;  (B) require that a fee so collected be:  (I) entirely or partially non-refundable;  provided, however, that the lessor shall disclose that the fee is non-refundable in the lease;  provided further, that the tenant shall agree to the fee and acknowledge that the tenant understand that it is entirely or partially non-refundable, as the case may be, in writing;  and (II) a recurring monthly fee, or payable upon any schedule and in an amount that the lessor and tenant agree upon, as authorized by the executive office;  (C) limit the total sum of the fee or recurring payments, regardless of the duration of the lease and any extensions thereto, to an amount not to exceed 1 month's rent;  (D) require that the fee be made optional for both the tenant and the lessor and that the tenant be permitted to choose to pay a full security deposit rather than the fee;  (E) require a lessor who offers such a fee in lieu of security deposit:  (I) to offer the option of a fee in lieu of a security deposit to every prospective tenant whose application for occupancy has been approved, regardless of income, race, gender, gender identity, disability, sexual orientation, immigration status, size of household or credit score;  and (II) not to consider such factors and categories when setting the amount of the fee;  and (F) allow a tenant who agrees to pay a fee to waive a security deposit to opt-out of the obligation to pay such fee if such tenant pays the security deposit that would otherwise be in effect for the tenant's apartment on the day the tenant chooses to opt-out of such fee;  provided further, that the sum of fees paid to waive a security deposit and the payment of the security deposit shall not exceed, in total, the amount of 1 month's rent;  and provided further, that the executive office shall consult with the office of the attorney general prior to promulgating regulations authorizing a fee in lieu of a security deposit under this section;  and,\n(iv) the purchase and installation cost for a key and lock.",
+      "effective_date": "2025-08-01",
+      "key_value": "No extra landlord/agent application fee",
+      "exemptions": "Section 15B excludes vacation or recreational tenancies of 100 days or less. These are ordinary residential challenge addresses, but vacation purpose/lease duration is not verified; do not extend this duty to the statutory vacation exception.",
+      "interaction": "A tenant’s separately engaged licensed broker is governed by c.112 §87DDD½; do not label its lawful fee an unrestricted landlord application fee."
+    },
+    {
+      "team_rule_id": "MA-FEE-02",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Hiring party pays the broker’s fee",
+      "requirement": "From August 1, 2025, a rental broker/salesperson fee is paid only by the lessor or tenant who originally hired and contracted with that broker. This blocks shifting a landlord-hired broker’s fee to the tenant.",
+      "citation": "M.G.L.c.112 §87DDD½; St.2025,c.9 §§43,136",
+      "source_doc_id": "D057",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
+      "quoted_span": "A licensed broker or salesperson may solely contract with a prospective tenant to find rental residential real property for a tenant and present an offer to lease to the landlord or landlord's agent and negotiate on behalf of the tenant or may solely contract with a landlord or landlord's agent to find a tenant for a property.  Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+      "effective_date": "2025-08-01",
+      "key_value": "Party who hired broker pays"
+    },
+    {
+      "team_rule_id": "MA-SCREEN-01",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Public assistance and housing-subsidy discrimination prohibited",
+      "requirement": "Rental providers may not discriminate because a person receives public assistance or a federal/state/local housing subsidy, or because of the program’s requirements.",
+      "citation": "M.G.L.c.151B §4(10)",
+      "source_doc_id": "D049",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+      "quoted_span": "10. For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+      "effective_date": null,
+      "key_value": "Assistance/subsidy recipients protected"
+    },
+    {
+      "team_rule_id": "MA-SCREEN-02",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "No protected-class rental discrimination or inquiries",
+      "requirement": "Covered owners/agents must not deny access, impose discriminatory rental terms or make prohibited protected-class inquiries. Protected grounds and specific exceptions are those listed in §4(7).",
+      "citation": "M.G.L.c.151B §4(7)",
+      "source_doc_id": "D049",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+      "quoted_span": "7. For the owner, lessee, sublessee, real estate broker, assignee or managing agent of other covered housing accommodations or of land intended for the erection of any housing accommodation included under subsection 10, 11, 12, or 13 of section one, or other person having the right of ownership or possession or right to rent or lease or sell, or negotiate for the sale or lease of such land or accommodations, or any agent or employee of such a person or any organization of unit owners in a condominium or housing cooperative: (a) to refuse to rent or lease or sell or negotiate for sale or lease or otherwise to deny or withhold from any person or group of persons such accommodations or land because of race, color, religious creed, national origin, sex, gender identity, sexual orientation, which shall not include persons whose sexual orientation involves minor children as the sex object, age, genetic information, ancestry, or marital status, veteran status or membership in the armed forces, blindness, hearing impairment, or because such person possesses a trained dog guide as a consequence of blindness or hearing impairment or other handicap of such person or persons; (b) to discriminate against any person because of his race, color, religious creed, national origin, sex, gender identity, sexual orientation, which shall not include persons whose sexual orientation involves minor children as the sex object, age, genetic information, ancestry, or marital status, veteran status or membership in the armed services, blindness, or hearing impairment or other handicap, or because such person possesses a trained dog guide as a consequence of blindness or hearing impairment in the terms, conditions or privileges of such accommodations or land or the acquisition thereof, or in the furnishing of facilities and services in the connection therewith or (c) to cause to be made any written or oral inquiry or record concerning the race, color, religious creed, national origin, sex, gender identity, sexual orientation, which shall not include persons whose sexual orientation involves minor children as the sex object, age, genetic information, ancestry, marital status, veteran status or membership in the armed services, blindness, hearing impairment or other handicap or because such person possesses a trained dog guide as a consequence of blindness or hearing impairment, of the person seeking to rent or lease or buy any such accommodation or land; provided, however, that this subsection shall not apply to the leasing of a single apartment or flat in a two family dwelling, the other occupancy unit of which is occupied by the owner as his residence.",
+      "effective_date": null,
+      "key_value": "Equal rental access, terms and inquiries",
+      "exemptions": "The owner-occupied two-family §4(7) exception is modeled. Age protections have specific lawful older-person-housing exceptions; publicly assisted/multiple dwellings and accommodation duties have separate provisions."
+    },
+    {
+      "team_rule_id": "MA-EVICT-01",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Rights form with a residential nonpayment notice",
+      "requirement": "A residential nonpayment notice to quit must include the statutory rights/assistance form stating that the notice is not an eviction and only a court order forces departure. This is procedural protection, not statewide just-cause coverage.",
+      "citation": "M.G.L.c.186 §31(a)",
+      "source_doc_id": "D058",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+      "quoted_span": "Section 31. (a) A notice to quit for nonpayment of rent given in writing by a landlord to a residential tenant pursuant to this chapter shall be accompanied by a form that shall include, but not be limited to: (i) documentation of any agreements between the tenant and landlord for the tenant to repay the landlord for nonpayment of rent; and (ii) information on: (1) rental assistance programs including, but not limited to, the residential assistance for families in transition program; (2) applicable trial court rules, standing orders or emergency administrative orders pertaining to actions for summary process; and (3) any relevant federal or state legal restrictions on residential evictions. The form shall also prominently display the following statement:\n''THIS NOTICE TO QUIT IS NOT AN EVICTION. YOU DO NOT NEED TO IMMEDIATELY LEAVE YOUR UNIT. YOU ARE ENTITLED TO A LEGAL PROCEEDING IN WHICH YOU CAN DEFEND AGAINST THE EVICTION. ONLY A COURT ORDER CAN FORCE YOU TO LEAVE YOUR UNIT.''",
+      "effective_date": null,
+      "key_value": "Rights/assistance form with notice"
+    },
+    {
+      "team_rule_id": "MA-EVICT-02",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Proof of rights-form delivery before court filing",
+      "requirement": "A court may not accept a residential nonpayment summary-process writ, summons or complaint without proof the required rights form was delivered.",
+      "citation": "M.G.L.c.186 §31(b)",
+      "source_doc_id": "D058",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+      "quoted_span": "No court having jurisdiction over an action for summary process pursuant to chapter 239, including the Boston municipal court department, shall, in an eviction for nonpayment of rent for a residential dwelling unit, accept for filing a writ, summons or complaint without proof of delivery of the form required under this section.",
+      "effective_date": null,
+      "key_value": "Delivery proof before filing"
+    },
+    {
+      "team_rule_id": "MA-EVICT-03",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Retaliation presumption after protected tenant activity",
+      "requirement": "A termination notice other than nonpayment, rent increase or substantial tenancy change within six months of protected housing complaints/enforcement or tenant organizing creates a rebuttable presumption of retaliation. Review the actual protected activity, timing and defenses.",
+      "citation": "M.G.L.c.186 §18",
+      "source_doc_id": "D053",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section18",
+      "quoted_span": "The receipt of any notice of termination of tenancy, except for nonpayment of rent, or, of increase in rent, or, of any substantial alteration in the terms of tenancy within six months after the tenant has commenced, proceeded with, or obtained relief in such action, exercised such rights, made such report or complaint, or organized or joined such tenants' union or within six months after any other person has taken such action or actions on behalf of the tenant or in, or relating to, the building in which the tenant resides, shall create a rebuttable presumption that such notice or other action is a reprisal against the tenant for engaging in such activities.",
+      "effective_date": null,
+      "key_value": "6-month rebuttable presumption"
+    },
+    {
+      "team_rule_id": "MA-ALG-P1",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Proposed restriction on algorithmic devices and coordinators",
+      "requirement": "Pending S.2983 would prohibit lessors and landlords from using an algorithmic device or coordinator to set residential rents, renewals or occupancy. Its definitions depend on nonpublic competitor data and a coordinating function involving two or more landlords; they exclude certain monthly aggregated trade reports and affordable-housing rent-limit products. The captured bill history remains a referral to Senate Ways and Means: this is a proposal, not an in-force obligation.",
+      "citation": "MA 194th General Court S.2983 proposed G.L. c.186 Section 15G(b); bill history in D046",
+      "source_doc_id": "S020",
+      "source_url": "https://malegislature.gov/Bills/194/S2983.pdf",
+      "quoted_span": "34 (b) In setting the amount of rent to be charged to a tenant for the occupancy of a\n35 residential dwelling unit, determining any change in the amount of rent to be charged to a tenant\n36 for the renewed occupancy of a residential dwelling unit, or otherwise determining what amount\n37 to charge a tenant to rent a residential dwelling unit, or determining occupancy levels of\n38 residential dwelling units, no lessor or landlord shall employ, use or rely upon an algorithmic\n39 device or coordinator.",
+      "effective_date": null,
+      "key_value": "Proposed duty; not enacted",
+      "supporting_source_doc_ids": [
+        "D046"
+      ],
+      "exemptions": "Proposal defines nonpublic competitor data and coordination involving two or more landlords; exclusions include monthly aggregated anonymous trade reports and products establishing affordable-housing program rent or income limits."
+    },
+    {
+      "team_rule_id": "MA-ALG-P2",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Proposed restriction on purchasing coordinating services",
+      "requirement": "Pending H.5222 would prohibit a lessor, agent or subcontractor from subscribing to, contracting with, or exchanging value for services of a defined coordinating provider. Coordination combines rental data collection, computational analysis and recommendations; publication of fair market rent using public data is excluded. Residential units exclude inpatient medical care, licensed long-term care and detention or correctional facilities. The captured bill history remains a referral to House Ways and Means: this is a proposal, not an in-force obligation.",
+      "citation": "MA 194th General Court H.5222 proposed Chapter 40Z Section 2(a); bill history in D045",
+      "source_doc_id": "S019",
+      "source_url": "https://malegislature.gov/Bills/194/H5222.pdf",
+      "quoted_span": "33 Section 2. (a) No real estate lessor, or any agent or subcontractor thereof, shall subscribe\n34 to, contract with or otherwise exchange anything of value in return for the services of a service\n35 provider.",
+      "effective_date": null,
+      "key_value": "Proposed duty; not enacted",
+      "supporting_source_doc_ids": [
+        "D045"
+      ],
+      "exemptions": "Proposal excludes fair market rent calculated from public data from recommendations, and excludes inpatient medical care, licensed long-term care, and detention or correctional facilities from residential dwelling units."
+    },
+    {
+      "team_rule_id": "BOS-EVICT-01",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Tenant-rights notice with termination or nonrenewal",
+      "requirement": "Boston landlords ending a tenancy must deliver the city rights/resources notice with the notice to quit or nonrenewal. The city states violation does not itself halt eviction.",
+      "citation": "Boston Code §10-11.7; Housing Stability Notification Act",
+      "source_doc_id": "D013",
+      "source_url": "https://www.boston.gov/housing-stability-notification-act",
+      "quoted_span": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.\nStep 1\nNotify the Tenant:\nThe Notice of Tenants’ Rights and Resources should be delivered at the same time as the Notice to quit or Notice of non-renewal of lease.",
+      "effective_date": null,
+      "key_value": "Rights notice with termination/nonrenewal",
+      "interaction": "Additional notice duty; not a rent cap or replacement for court process."
+    },
+    {
+      "team_rule_id": "BOS-EVICT-02",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Submit termination notice to city portal",
+      "requirement": "Boston landlords/foreclosing owners must use the city portal to submit the verification form, tenant contact information and notice to quit/nonrenewal copy.",
+      "citation": "Boston Code §10-11.7; Housing Stability Notification Act",
+      "source_doc_id": "D013",
+      "source_url": "https://www.boston.gov/housing-stability-notification-act",
+      "quoted_span": "The Housing Stability Notification Act also requires landlords and foreclosing owners to complete the\nNotice to Quit / Non-renewal of Lease Submission Verification Form\n. Landlords must use this online form to provide tenant contact information and upload a copy of the Notice to Quit or Notice of Non-renewal of Lease.\nSubmit through our online portal\nYou are required to submit this information using our online portal\n. Failure to submit this information may result in a fine up to $300 per day.",
+      "effective_date": null,
+      "key_value": "City portal filing; up to $300/day stated penalty"
+    },
+    {
+      "team_rule_id": "CAM-EVICT-01",
+      "jurisdiction": "Cambridge, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Rights/resources guide at tenancy start and termination",
+      "requirement": "For ordinary Cambridge residential tenancies, provide the guide at the first lease/tenancy or first rent payment and again with legal steps to terminate. Routine renewal does not require another copy.",
+      "citation": "Cambridge Municipal Code ch.8.71; city FAQs",
+      "source_doc_id": "D031",
+      "source_url": "https://www.cambridgema.gov/tenantrights",
+      "quoted_span": "It is required to provide this Guide at the inception and termination of tenancies. For new tenancies, the Guide must be provided when a tenant signs a lease or enters into a tenancy agreement for the first time or tenders the first month’s rent. The Ordinance also requires that a landlord provide the Guide to tenants when legal steps to terminate a tenancy are taken (ex. Notice to Quit or Summary Process).",
+      "effective_date": null,
+      "key_value": "Guide at inception and termination",
+      "exemptions": "Hospital/skilled nursing/health facilities, specified nonprofit short-term treatment facilities and defined short-term rentals are excluded; owner occupancy or a single unit alone is not an exemption."
+    },
+    {
+      "team_rule_id": "CAM-SCREEN-01",
+      "jurisdiction": "Cambridge, MA",
+      "level": "city",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Apply selection standards equally",
+      "requirement": "The Cambridge Fair Housing Ordinance requires reasonable tenant-selection standards to be applied equally and uniformly; protected rental discrimination remains prohibited.",
+      "citation": "Cambridge Fair Housing Ordinance; Human Rights Commission guidance",
+      "source_doc_id": "D029",
+      "source_url": "https://www.cambridgema.gov/departments/humanrightscommission",
+      "quoted_span": "Under the law, landlords, sellers and rental agents may use any reasonable standard to determine which applicants are selected, as long as that standard is applied equally and uniformly to all applicants. Tenant selection may be based on:\nan applicant's ability to pay the rent\nan applicant's ability to take care of the apartment and to respect the rights of others\nNOTE: there is an exemption for 2-family dwellings, when the owner lives there",
+      "effective_date": null,
+      "key_value": "Uniform nondiscriminatory selection",
+      "exemptions": "The city source exempts owner-occupied two-family dwellings; unknown owner occupancy remains unknown."
+    },
+    {
+      "team_rule_id": "BOS-SCREEN-01",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Fair-chance policy limits criminal screening in participating housing",
+      "requirement": "Providers in the Boston DND/BPDA/affirmative-marketing programs covered by this policy cannot impose a blanket arrest/conviction exclusion and must assess applicants individually. Program participation must be verified; generic subsidy status does not establish it.",
+      "citation": "Boston DND Fair Chance Tenant Selection Policy, February 2017",
+      "source_doc_id": "D010",
+      "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+      "quoted_span": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions. Housing providers will consider applicants on \na case-by-case basis.",
+      "effective_date": null,
+      "key_value": "Participating-program fair-chance selection",
+      "exemptions": "Only the policy’s listed DND funding/land, BPDA inclusionary-income-restricted and affirmative-marketing participants; conflicting state/federal mandatory criminal-history requirements control."
+    },
+    {
+      "team_rule_id": "BOS-SCREEN-02",
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Participating housing cannot use credit score to decide admission",
+      "requirement": "Under the Boston fair-chance policy, covered agents must not use an applicant credit score to approve or deny admission. Credit history can only substitute for missing rental history to assess ability to pay; verify qualifying program participation.",
+      "citation": "Boston DND Fair Chance Tenant Selection Policy, Credit 5(a)–(b)",
+      "source_doc_id": "D010",
+      "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+      "quoted_span": "a) The agent agrees not to use the applicant credit score to approve or deny housing    \napplications.  \n \n  b) Property Managers may consider an applicant’s credit history, but such information may \nONLY be used in lieu of rental history to determine an applicant’s ability to pay rent when rental \nhistory is not available.",
+      "effective_date": null,
+      "key_value": "No admission decision based on credit score",
+      "exemptions": "Program-specific policy, not a universal rule for all Boston rental property."
+    },
+    {
+      "team_rule_id": "MA-EVICT-04",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Termination notice for an at-will tenancy",
+      "requirement": "For a verified tenancy at will, ordinary termination requires three months’ written notice, or if rent is paid more often, the rent interval or 30 days, whichever is longer. Nonpayment follows the separate 14-day notice and statutory cure rules.",
+      "citation": "M.G.L.c.186 §12",
+      "source_doc_id": "D051",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+      "quoted_span": "Section 12. Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party; and, if the rent reserved is payable at periods of less than three months, the time of such notice shall be sufficient if it is equal to the interval between the days of payment or thirty days, whichever is longer.",
+      "effective_date": null,
+      "key_value": "At least 30 days or rental interval for common monthly tenancy",
+      "exemptions": "Only estates/tenancies at will. Written fixed-term leases and nonpayment termination have different rules; monthly payment alone does not prove at-will tenure."
+    },
+    {
+      "team_rule_id": "MA-EVICT-05",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Nonpayment cure for an at-will tenancy",
+      "requirement": "For an at-will tenant not given a similar notice in the preceding 12 months, payment/tender of all rent due within 10 days after a nonpayment notice prevents termination under §12. The notice must include the statutory cure warning.",
+      "citation": "M.G.L.c.186 §12",
+      "source_doc_id": "D051",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+      "quoted_span": "In case of neglect or refusal to pay the rent due from a tenant at will, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the tenancy; provided, that the tenancy of a tenant who has not received a similar notice from the landlord within the twelve months next preceding the receipt of such notice shall not be determined if the tenant, within ten days after the receipt thereof, pays or tenders to the landlord, the landlord's attorney, or the person to whom the tenant customarily pays rent, the full amount of any rent due. Every notice to determine an estate at will for nonpayment of rent shall contain the following notification to the tenant: ''If you have not received a notice to quit for nonpayment of rent within the last twelve months, you have a right to prevent termination of your tenancy by paying or tendering to your landlord, your landlord's attorney or the person to whom you customarily pay your rent the full amount of rent due within ten days after your receipt of this notice.''",
+      "effective_date": null,
+      "key_value": "14-day notice; conditional 10-day cure",
+      "exemptions": "At-will tenants with no similar notice in the preceding 12 months; otherwise the quoted statute’s different timing and defenses control."
+    },
+    {
+      "team_rule_id": "HOB-RENT-01",
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Ordinary annual increase limited to lower of 5 percent or CPI",
+      "requirement": "For a verified Chapter 155 covered unit, an ordinary increase at lease expiry/periodic termination cannot exceed the lesser of 5% and the specified CPI differential. CPI uses the three-month lag window described in §155-5. Board-approved surcharges and other chapter-specific adjustments require separate review.",
+      "citation": "Hoboken Code §155-5",
+      "source_doc_id": "S009",
+      "source_url": "https://ecode360.com/15252470",
+      "quoted_span": "At the expiration of a lease or at the termination of a lease of a periodic tenant, no landlord may request or receive a percentage increase in rent which is greater than 5% or the percentage difference between the consumer price index three months prior to the expiration or termination of the lease and three months prior to the commencement of the lease term, whichever is less.",
+      "effective_date": null,
+      "key_value": "Lesser of 5% or prescribed CPI differential",
+      "exemptions": "Requires a verified municipal rent-control determination. Construction/certificate filing, vacancy or rehabilitation exemptions, special housing and preemptive government rent regulation are not inferred from year built, unit count or generic subsidy status."
+    },
+    {
+      "team_rule_id": "HOB-RENT-02",
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "At most one ordinary cost-of-living increase in 12 months",
+      "requirement": "For a verified covered unit, no more than one cost-of-living increase may be imposed in a 12-month period even if the tenant changes. This does not authorize a vacancy or capital surcharge.",
+      "citation": "Hoboken Code §155-5",
+      "source_doc_id": "S009",
+      "source_url": "https://ecode360.com/15252470",
+      "quoted_span": "No more than one such cost-of-living rental increase in any one twelve-month period shall be permitted irrespective of the number of different tenants occupying said housing space during said twelve-month period.",
+      "effective_date": null,
+      "key_value": "One ordinary CPI increase per 12 months",
+      "exemptions": "Requires a verified municipal rent-control determination. Construction/certificate filing, vacancy or rehabilitation exemptions, special housing and preemptive government rent regulation are not inferred from year built, unit count or generic subsidy status."
+    },
+    {
+      "team_rule_id": "HOB-RENT-03",
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Written increase notice at least 30 days ahead",
+      "requirement": "A covered Hoboken landlord seeking an increase must give the tenant written notice at least 30 days before it becomes effective, explaining the reason in detail, and report rent increases to the Board.",
+      "citation": "Hoboken Code §155-4",
+      "source_doc_id": "S009",
+      "source_url": "https://ecode360.com/15252470",
+      "quoted_span": "Landlords shall report all increases of rents imposed after October 1, 1985, to the Rent Leveling and Stabilization Board. Any landlord seeking an increase shall notify the tenant, in writing, at least 30 days prior to the effective date of the increase and explain, in detail, the reason for the increase.",
+      "effective_date": null,
+      "key_value": "30-day written notice and Board reporting",
+      "exemptions": "Requires a verified municipal rent-control determination. Construction/certificate filing, vacancy or rehabilitation exemptions, special housing and preemptive government rent regulation are not inferred from year built, unit count or generic subsidy status."
+    },
+    {
+      "team_rule_id": "HOB-RENT-04",
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Capital surcharge requires prior Board approval",
+      "requirement": "For a covered unit, obtain Rent Leveling and Stabilization Board approval before imposing a capital-improvement surcharge. The ordinary 5%/CPI ceiling is not a substitute for a separate Board decision.",
+      "citation": "Hoboken Code §155-10",
+      "source_doc_id": "S009",
+      "source_url": "https://ecode360.com/15252470",
+      "quoted_span": "No landlord shall impose upon any tenant a rent surcharge under this Article without first obtaining approval from the Board.",
+      "effective_date": null,
+      "key_value": "Prior Board approval",
+      "exemptions": "Requires a verified municipal rent-control determination. Construction/certificate filing, vacancy or rehabilitation exemptions, special housing and preemptive government rent regulation are not inferred from year built, unit count or generic subsidy status."
+    },
+    {
+      "team_rule_id": "NEW-RENT-01",
+      "jurisdiction": "Newark, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Ordinary annual increase limited to CPI and 4 percent",
+      "requirement": "For a verified covered Newark unit at lease expiry/periodic termination, the ordinary annual increase cannot exceed the specified 12-month CPI change or 4%. Substantial housing-code compliance and registration are required; special surcharges are separately governed.",
+      "citation": "Newark Code §19:2-3.1",
+      "source_doc_id": "S010",
+      "source_url": "https://ecode360.com/36623772",
+      "quoted_span": "At the expiration of a lease or at the termination of the lease of a periodic tenant, no landlord may request or receive an increase greater than the percentage increase in the Consumer Price Index (CPI) from the CPI 15 months prior to the month of the proposed rent increase to the CPI three months prior to the month of the proposed rent increase. In no case shall the allowable rent increase exceed 4%. The allowable annual increase will not be permitted, if the dwelling is not in substantial compliance and/or if the landlord has not met the registration requirements as specified in subsection 19:2-9.8.",
+      "effective_date": null,
+      "key_value": "CPI differential, maximum 4%",
+      "exemptions": "Requires a verified municipal rent-control determination. Construction/certificate filing, vacancy or rehabilitation exemptions, special housing and preemptive government rent regulation are not inferred from year built, unit count or generic subsidy status."
+    },
+    {
+      "team_rule_id": "NEW-RENT-02",
+      "jurisdiction": "Newark, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Annual cap follows the unit despite vacancy or ownership change",
+      "requirement": "For a covered unit, the ordinary increase limit applies across any consecutive 12 months regardless of different occupants, vacancy or change of ownership. Prior rent legality can still be challenged.",
+      "citation": "Newark Code §19:2-3.2",
+      "source_doc_id": "S010",
+      "source_url": "https://ecode360.com/36623772",
+      "quoted_span": "The rents for any housing space shall not be increased more than the percentages stated above in any consecutive twelve-month period irrespective of the number of different tenants occupying the housing space during the twelve-month period, any change of ownership of the landlord or vacancy of the housing space. This provision does not preclude a tenant from challenging the legality of the rent being charged immediately prior to an increase authorized by this section.",
+      "effective_date": null,
+      "key_value": "Cap across consecutive 12 months",
+      "exemptions": "Requires a verified municipal rent-control determination. Construction/certificate filing, vacancy or rehabilitation exemptions, special housing and preemptive government rent regulation are not inferred from year built, unit count or generic subsidy status."
+    },
+    {
+      "team_rule_id": "NEW-RENT-03",
+      "jurisdiction": "Newark, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Notify tenant and Rent Regulation Officer 30 days ahead",
+      "requirement": "A landlord seeking a covered increase must notify both the affected tenant and Rent Regulation Officer in writing at least 30 days ahead, with prior rent, proposed and allowed amount/percentage details.",
+      "citation": "Newark Code §19:2-3.2",
+      "source_doc_id": "S010",
+      "source_url": "https://ecode360.com/36623772",
+      "quoted_span": "Any landlord seeking an increase in rent, including the rent of a period tenant, shall notify the tenant and the Rent Regulation Officer in writing of the proposed rental increase and the proposed percentage increase, the prior year's rent, the allowable rental increase amount, and allowable percentage increase under the provisions of this section.\nAny landlord seeking a rental increase pursuant to this section shall give the Rent Regulation Officer and the affected tenant written notice of the proposed increase at least 30 days in advance.",
+      "effective_date": null,
+      "key_value": "30-day notice to tenant and officer",
+      "exemptions": "Requires a verified municipal rent-control determination. Construction/certificate filing, vacancy or rehabilitation exemptions, special housing and preemptive government rent regulation are not inferred from year built, unit count or generic subsidy status."
+    },
+    {
+      "team_rule_id": "NEW-RENT-04",
+      "jurisdiction": "Newark, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Housing and registration compliance precede increase or surcharge",
+      "requirement": "For a covered unit, annual increases, major-new-improvement surcharges, tax surcharges and hardship increases are barred without substantial housing-code and registration compliance. This record states the requirement, not whether a building is compliant.",
+      "citation": "Newark Code §19:2-3.4",
+      "source_doc_id": "S010",
+      "source_url": "https://ecode360.com/36623772",
+      "quoted_span": "No annual rent increase, major new improvement surcharge, tax surcharge, or hardship increase is allowed, if the dwelling is not in substantial compliance and/or has not met registration requirements as specified in subsection 19:2-9.8.",
+      "effective_date": null,
+      "key_value": "Substantial compliance and registration required",
+      "exemptions": "Requires a verified municipal rent-control determination. Construction/certificate filing, vacancy or rehabilitation exemptions, special housing and preemptive government rent regulation are not inferred from year built, unit count or generic subsidy status."
+    },
+    {
+      "team_rule_id": "JC-ALG-01",
+      "jurisdiction": "Jersey City, NJ",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Use of a defined rent-coordination provider prohibited",
+      "requirement": "A Jersey City residential lessor, agent or subcontractor may not subscribe, contract, exchange value for, or otherwise use services of the coordination provider defined in §218-12. The 2025 amendment includes use without payment. Apply the original ordinance definitions, including same-owner and licensed-agent exceptions, rather than treating every spreadsheet or AI tool as illegal.",
+      "citation": "Jersey City Code §218-12(2)(1), Ord.25-076 amending Ord.25-057",
+      "source_doc_id": "S011",
+      "source_url": "https://cityofjerseycity.civicweb.net/document/433505/Amending%20218-12%20to%20clarify%20language.pdf?handle=42A331E429724B93A4477962ABE6783F",
+      "quoted_span": "It is unlawful for any real estate lessor, agent, or subcontractor thereof, to subscribe to, contract with, or \notherwise exchange anything of value in return for or otherwise utilize the services of a Service \nProvider.",
+      "effective_date": null,
+      "key_value": "No use of a defined coordination service",
+      "exemptions": "Original §1 definitions retain the same-owner-only coordination and compliant licensed-real-estate-agent exclusions. Primary-residence dwelling definition excludes medical, long-term-care and detention facilities.",
+      "interaction": "NJ FAIR Act §6(b), effective 2027-07-01, warrants future conflict review; no local repeal or invalidity is presumed."
+    },
+    {
+      "team_rule_id": "JC-ALG-02",
+      "jurisdiction": "Jersey City, NJ",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Provider cannot facilitate a residential no-compete agreement",
+      "requirement": "A defined service provider cannot facilitate an agreement among residential lessors not to compete over rent, fees or other rental terms. The ordinance definitions remain those enacted in Ord.25-057.",
+      "citation": "Jersey City Code §218-12(2)(2), Ord.25-076",
+      "source_doc_id": "S011",
+      "source_url": "https://cityofjerseycity.civicweb.net/document/433505/Amending%20218-12%20to%20clarify%20language.pdf?handle=42A331E429724B93A4477962ABE6783F",
+      "quoted_span": "No service provider shall facilitate an agreement not to compete among real estate lessors with respect to \nany aspect of residential dwelling units, including rental pricing, fees, or any other rental terms.",
+      "effective_date": null,
+      "key_value": "No rent/fee no-compete coordination",
+      "exemptions": "Defined coordination providers only; apply original §1 and the primary-residence dwelling definition."
+    },
+    {
+      "team_rule_id": "MA-RENT-P1",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "failed",
+      "title": "IP25-21 rent-control initiative barred from 2026 ballot",
+      "requirement": "The Massachusetts Supreme Judicial Court held Initiative Petition 25-21 constitutionally ineligible and ordered it kept off the 2026 ballot. It creates no rent cap or binding tenant protection. The existing c.40P statute remains distinct.",
+      "citation": "Cella v. Attorney General, SJC-13893 (June 23, 2026), slip opinion p.16",
+      "source_doc_id": "S008",
+      "source_url": "https://www.uschamber.com/assets/documents/Opinion-Cella-v.-Campbell-Mass.pdf",
+      "quoted_span": "Conclusion.  The petition contains matters \"relat[ing] to \nreligion, religious practices or religious institutions\" in \nviolation of art. 48.  Art. 48, The Initiative, II, § 2.  We \nremand the matter to the county court for entry of a judgment \ndeclaring that Initiative Petition 25-21 is not in compliance \nwith the excluded matters section of art. 48, and enjoining the \nSecretary from taking steps to place the measure on the 2026 \nStatewide election ballot.",
+      "effective_date": null,
+      "key_value": "Failed ballot proposal; no rent cap"
+    },
+    {
+      "team_rule_id": "HOB-ALG-01",
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Algorithmic price fixing with nonpublic competitor data prohibited",
+      "requirement": "Hoboken residential landlords cannot price fix through software, algorithms or data-sharing platforms that use nonpublic competitor information to coordinate, recommend or implement rents, terms or occupancy among competing lessors. The definition concerns competitor information less than 365 days old that is not widely available free; it is not a universal ban on AI or ordinary spreadsheets.",
+      "citation": "Hoboken Code §158-2(A), Ord.B-781",
+      "source_doc_id": "S012",
+      "source_url": "https://ecode360.com/46833413",
+      "quoted_span": "Landlords who rent any residential dwelling unit (defined as any primary residence excluding medical/long-term care or detention facilities) in the City of Hoboken are prohibited from price fixing using algorithmic pricing. For purposes of this chapter, \"price fixing using algorithmic pricing\" shall be defined as the use of software, algorithms, or data-sharing platforms to collect and analyze nonpublic competitor information from other real estate lessors in order to coordinate, recommend, or implement rental prices, lease terms, or occupancy levels for residential dwelling units among competing real estate lessors. For purposes of this chapter, \"nonpublic competitor information\" shall be defined as information including, but not limited to, prices, supply levels, security deposits, ideal occupancy levels, lease contract termination, renewal dates of residential dwelling units or any other material terms that is less than 365 days old and is not widely and readily available to the public at no cost.",
+      "effective_date": null,
+      "key_value": "No defined competitor-data algorithmic price fixing",
+      "exemptions": "Primary-residence dwellings only; medical/long-term-care and detention facilities are excluded. The prohibition requires the defined nonpublic competitor information and coordination purpose.",
+      "interaction": "NJ FAIR §6(b) is a future conflict-only municipal enactment clause; it does not by itself invalidate this existing ordinance."
+    },
+    {
+      "team_rule_id": "HOB-RENT-05",
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Renewal increases over 10 percent require specific disclosures",
+      "requirement": "Any Hoboken residential landlord seeking a year-over-year renewal increase over 10% for a current tenant must disclose itemized costs, whether a rent algorithm was used, rights to challenge and city housing/tenant-advocate contacts before implementation. This disclosure threshold permits no otherwise unlawful increase and does not replace an applicable rent cap.",
+      "citation": "Hoboken Code §158-1(A), Ord.B-750",
+      "source_doc_id": "S012",
+      "source_url": "https://ecode360.com/46833413",
+      "quoted_span": "All residential landlords seeking to increase rent by more than 10% upon a renewal of a lease with a current tenant year over year shall be required to make the following disclosures to existing tenants either in the lease upon renewal (must be clearly indicated on the first page) or on a form provided by the Hoboken Division of Housing prior to the increase being implemented:\n(1)\nAn itemization of the costs associated with the rent increase;\n(2)\nA statement as to whether a rent algorithm was used to determine the rent increase;\n(3)\nA statement notifying the tenant of their right to take legal action (at their own expense) if they believe that the proposed rent increase is unconscionable or otherwise not in accordance with local or state law; and\n(4)\nThe contact information for the Hoboken Division of Housing and a statement indicating that tenants may reach out to the Hoboken Division of Housing and/or Tenant Advocate with questions or concerns.",
+      "effective_date": null,
+      "key_value": "Disclosures before a >10% current-tenant renewal"
+    },
+    {
+      "team_rule_id": "JC-RENT-01",
+      "jurisdiction": "Jersey City, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Ordinary rent increase limited to lower of published CPI or 4 percent",
+      "requirement": "For a verified Jersey City rent-controlled property, the city’s current §260-3 bulletin prohibits imposing or collecting an increase greater than the lesser of the applicable published CPI percentage and 4%. Consult the publication for the relevant month; a CPI reading above 4% does not increase the legal ceiling. Separate exemptions and approved special adjustments require review.",
+      "citation": "Jersey City Code §260-3; official CPI bulletin through October 2026",
+      "source_doc_id": "S015",
+      "source_url": "https://www.jerseycitynj.gov/UserFiles/Servers/Server_6189660/File/City%20Hall/Housing%20Economic%20Development/Tenant%20Landlord%20Relations/8.20.26%20-%20October%20CPI.pdf",
+      "quoted_span": "§ 260 -3 of the Jersey City Rent Control Ordinance prohibits property owners from \nimposing or collecting a rent increase greater than the applicable percentage posted or 4%, \nwhichever is less, in properties that are subject to rent control.",
+      "effective_date": null,
+      "key_value": "Lesser of applicable published CPI or 4%",
+      "exemptions": "Requires a reviewed municipal rent-control determination. Unit count/year built alone does not resolve the operative new-construction, mortgage-period, public-housing or other exemptions. Special adjustments require the operative chapter and any relevant Board/court decision."
+    }
+  ],
+  "ruleLogic": {
+    "NJ-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 3
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          {
+            "field": "seasonal_or_transient_tenancy",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "family_trust_disability_unit",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "NJ-RENT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NJ-EVICT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 3
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          {
+            "field": "seasonal_or_transient_tenancy",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "family_trust_disability_unit",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "NJ-EVICT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NJ-DEP-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "gt",
+                    "value": 3
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "field": "security_deposit_law_invoked_30_days",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "NJ-DEP-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "gt",
+                    "value": 3
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "field": "security_deposit_law_invoked_30_days",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "NJ-DEP-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "any": [
+                  {
+                    "any": [
+                      {
+                        "field": "units",
+                        "op": "gt",
+                        "value": 3
+                      },
+                      {
+                        "field": "owner_occupied",
+                        "op": "eq",
+                        "value": false
+                      }
+                    ]
+                  },
+                  {
+                    "field": "security_deposit_law_invoked_30_days",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "seasonal_or_transient_tenancy",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "NJ-DEP-04": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "any": [
+                  {
+                    "any": [
+                      {
+                        "field": "units",
+                        "op": "gt",
+                        "value": 3
+                      },
+                      {
+                        "field": "owner_occupied",
+                        "op": "eq",
+                        "value": false
+                      }
+                    ]
+                  },
+                  {
+                    "field": "security_deposit_law_invoked_30_days",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "seasonal_or_transient_tenancy",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "NJ-DEP-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "gt",
+                    "value": 3
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "field": "security_deposit_law_invoked_30_days",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "NJ-FEE-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "units",
+            "op": "gt",
+            "value": 2
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2026-01-20",
+        "effective_on": "2026-05-01"
+      }
+    },
+    "NJ-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 4
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2021-06-18",
+        "effective_on": "2022-01-01"
+      }
+    },
+    "NJ-SCREEN-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 4
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2021-06-18",
+        "effective_on": "2022-01-01"
+      }
+    },
+    "NJ-SCREEN-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 4
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2021-06-18",
+        "effective_on": "2022-01-01"
+      }
+    },
+    "NJ-SCREEN-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 4
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2021-06-18",
+        "effective_on": "2022-01-01"
+      }
+    },
+    "NJ-SCREEN-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 2
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "NJ-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2026-07-20",
+        "effective_on": "2027-07-01"
+      },
+      "fixture_rule_ids": [
+        "NJ-ALG-01"
+      ],
+      "conflicts_with": [
+        "HOB-ALG-01",
+        "JC-ALG-01"
+      ]
+    },
+    "NJ-ALG-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2026-07-20",
+        "effective_on": "2027-07-01"
+      }
+    },
+    "MA-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-DEP-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-DEP-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-DEP-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-DEP-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-DEP-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-DEP-06": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-FEE-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2025-08-01"
+      }
+    },
+    "MA-FEE-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2025-08-01"
+      }
+    },
+    "MA-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-SCREEN-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "neq",
+                "value": 2
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "MA-EVICT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-EVICT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-EVICT-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-ALG-P1": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "fixture_rule_ids": [
+        "MA-ALG-P1"
+      ]
+    },
+    "MA-ALG-P2": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "fixture_rule_ids": [
+        "MA-ALG-P2"
+      ]
+    },
+    "BOS-EVICT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Boston"
+          }
+        ]
+      }
+    },
+    "BOS-EVICT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Boston"
+          }
+        ]
+      }
+    },
+    "CAM-EVICT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Cambridge"
+          },
+          {
+            "field": "cambridge_notification_exempt",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "CAM-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Cambridge"
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "neq",
+                "value": 2
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "BOS-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Boston"
+          },
+          {
+            "field": "boston_fair_chance_program",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "BOS-SCREEN-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Boston"
+          },
+          {
+            "field": "boston_fair_chance_program",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-EVICT-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "tenancy_at_will",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-EVICT-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "tenancy_at_will",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "HOB-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "HOB-RENT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "HOB-RENT-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "HOB-RENT-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NEW-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Newark"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NEW-RENT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Newark"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NEW-RENT-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Newark"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NEW-RENT-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Newark"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "JC-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Jersey City"
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-07-16"
+      },
+      "fixture_rule_ids": [
+        "JC-ALG-01"
+      ]
+    },
+    "JC-ALG-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Jersey City"
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-07-16"
+      }
+    },
+    "MA-RENT-P1": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "failed_on": "2026-06-23"
+      },
+      "fixture_rule_ids": [
+        "MA-RENT-P1"
+      ]
+    },
+    "HOB-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-07-09"
+      },
+      "fixture_rule_ids": [
+        "HOB-ALG-01"
+      ]
+    },
+    "HOB-RENT-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-04-02"
+      }
+    },
+    "JC-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Jersey City"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    }
+  }
+}

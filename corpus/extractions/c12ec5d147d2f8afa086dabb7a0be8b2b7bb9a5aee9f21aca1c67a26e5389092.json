@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "cache_key": "c12ec5d147d2f8afa086dabb7a0be8b2b7bb9a5aee9f21aca1c67a26e5389092",
+  "source_url": "https://www.nj.gov/oag/dcr/downloads/kyrhousing02.pdf",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-74d0654714527bd5",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "NJ LAD: no denial of rental based on lawful source of income (e.g., Section 8 voucher)",
+          "requirement": "A landlord may not deny a rental to a person based solely on the person's lawful source of income or lawful source of rent payment, including a Section 8 HUD voucher. The brochure describes the LAD as prohibiting housing discrimination based on source of lawful income or lawful source of rent or mortgage payment.",
+          "citation": "NJ Law Against Discrimination (LAD), as summarized in NJ Division on Civil Rights brochure, rev. ep. 06.18.15 (Q&A 2); specific statutory section not stated in this source",
+          "source_url": "https://www.nj.gov/oag/dcr/downloads/kyrhousing02.pdf",
+          "quoted_span": "a landlord cannot deny the\nlawful recipient of a Section 8 HUD voucher the right to\nrent an apartment based solely on that source of lawful\nincome.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "units",
+                      "op": "eq",
+                      "value": 2
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "is_single_family",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Per the brochure's LAD exceptions: rental of a single apartment in a two-family dwelling where the owner occupies the other unit as a residence; rental of a room or rooms by the owner/occupant of an owner-occupied one-family dwelling; preference for persons of the same religion by a religious organization (not clearly relevant to source of income); the familial-status exemption for housing for older persons does not bear on this rule. The brochure does not say whether each exception applies to the source-of-income prohibition specifically.",
+          "overrides": [],
+          "interaction": "Part of the broader LAD anti-discrimination framework; the brochure does not address interaction with other NJ or local screening rules.",
+          "effective_date": null,
+          "source_doc_id": "D068",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-74d0654714527bd5": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "units",
+                      "op": "eq",
+                      "value": 2
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "is_single_family",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D068",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 6814,
+    "source_sha256": "857cb50fde16e0027346c44f502b2f0d854aad4bca7cf0926a31cd54adad8159",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Source is a 2015-revised Division on Civil Rights brochure (rev. ep. 06.18.15), a secondary summary; the current statute was not verified and there is no statutory section citation for the source-of-income provision. Status 'in_force' is inferred from the brochure's present-tense description and needs human verification.",
+      "No effective or enactment dates appear in the text, so all lifecycle dates and effective_date are null. The retrieval date was not used as a law date.",
+      "The room-rental exemption for owner-occupied one-family dwellings applies only when renting a room or rooms; the coverage predicate cannot capture whether a room (not the whole unit) is being rented, so it approximates this with is_single_family and owner_occupied. Review needed.",
+      "The service/guide dog extra-fee prohibition and other disability, familial-status and discrimination provisions fall outside the six supplied categories, so no rules were drafted for them.",
+      "No rent increase limits, just cause eviction, security deposit, application screening fee, or algorithmic rent-setting requirements appear in this chunk. The NJ FAIR Act (NJ-ALG-01) is not supported by this source, so no fixture alias was assigned.",
+      "The source states that the Division does not handle ordinary landlord-tenant disputes such as evictions.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 5429,
+      "output_tokens": 2550
+    },
+    "created_at": "2026-10-04T10:11:51.388Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

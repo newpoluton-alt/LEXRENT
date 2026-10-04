@@ -1,0 +1,640 @@
+{
+  "schema_version": 1,
+  "cache_key": "d82f402868e50ef0cbc69b3fd9ee2ad6e28364b38c8cc12e702cbc5795c387cb",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-045885164b4fffd7",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Cap on upfront payments including security deposit",
+          "requirement": "At or before the start of a tenancy, a lessor or lessor's agent may not require a tenant or prospective tenant to pay more than: first full month's rent, last full month's rent at the same rate, a security deposit equal to the first month's rent (conditioned on proper deposit under subsection (3) and delivery of the statement of condition under subsection (2)), and the purchase and installation cost of a key and lock. The text authorizes the executive office of housing and livable communities to promulgate regulations for an optional fee in lieu of a deposit, but this chunk does not show any such regulations.",
+          "citation": "M.G.L. c. 186, § 15B(1)(b)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following:",
+          "key_value": "Security deposit max = 1 month's rent (plus first month, last month, key/lock cost)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Subsection (1)(d) separately bars demanding rent in advance beyond the current month or a deposit above the allowed amount after the tenancy begins (not drafted as a separate rule). The fee-in-lieu option depends on regulations not shown in this chunk.",
+          "effective_date": "2025-08-01",
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-2d14087baecedc2d",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Security deposit held in separate interest-bearing Massachusetts bank account",
+          "requirement": "A security deposit received by the lessor must be held in a separate, interest-bearing account in a bank located within the commonwealth, on terms that place it beyond the claims of the lessor's creditors and allow its transfer to a subsequent owner. Failure to comply with this paragraph entitles the tenant to immediate return of the deposit.",
+          "citation": "M.G.L. c. 186, § 15B(3)(a)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "Any security deposit received by such lessor shall be held in a separate, interest-bearing account in a bank, located within the commonwealth",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-191d34a3b40dd579",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Bank-deposit receipt to tenant within 30 days",
+          "requirement": "The lessor must give the tenant, within thirty days after receiving the security deposit, a receipt showing the name and location of the bank holding the deposit, the amount, and the account number. Failure to comply with this paragraph entitles the tenant to immediate return of the deposit.",
+          "citation": "M.G.L. c. 186, § 15B(3)(a)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "A receipt shall be given to the tenant within thirty days after such deposit is received by the lessor which receipt shall indicate the name and location of the bank in which the security deposit has been deposited and the amount and account number of said deposit.",
+          "key_value": "30 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-6a3cfa481af57d44",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Signed receipt when security deposit is received",
+          "requirement": "A lessor or agent who receives a security deposit must give the tenant or prospective tenant, at the time of receipt, a signed receipt stating the amount, the name of the person receiving it (and the lessor's name if an agent), the date received, and a description of the premises.",
+          "citation": "M.G.L. c. 186, § 15B(2)(b)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "Any lessor or his agent who receives a security deposit from a tenant or prospective tenant shall give said tenant or prospective tenant at the time of receiving such security deposit a receipt indicating the amount of such security deposit",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-143bce428b2bafdd",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Separate written statement of condition of premises",
+          "requirement": "A lessor or agent who accepts a security deposit must, on receipt or within ten days after the tenancy starts (whichever is later), furnish a separate written statement of the present condition of the premises. The statement must list existing damage (including certified or adjudicated code violations), be signed by the lessor or agent, and carry the prescribed twelve-point bold notice at the top of the first page.",
+          "citation": "M.G.L. c. 186, § 15B(2)(c)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "Any lessor of residential real property, or his agent, who accepts a security deposit from a tenant or prospective tenant shall, upon receipt of such security deposit, or within ten days after commencement of the tenancy, whichever is later, furnish to such tenant or prospective tenant a separate written statement of the present condition of the premises to be leased or rented.",
+          "key_value": "10 days after commencement of tenancy (or upon receipt, if later)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The deposit cap in (1)(b)(iii) is conditioned on the tenant being given this statement.",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-cd9cff772e28cc8d",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Annual interest on security deposits held one year or longer",
+          "requirement": "A lessor who holds a security deposit for one year or longer from the start of the tenancy must pay the tenant interest at 5% per year (or the lesser amount actually received from the bank) at the end of each year of tenancy, with all accrued interest due within 30 days if the tenancy ends before the anniversary. The lessor must send a yearly statement giving the bank name and address, deposit amount, account number, and interest payable, and either pay the interest or notify the tenant that it may be deducted from the next rent.",
+          "citation": "M.G.L. c. 186, § 15B(3)(b)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "A lessor of residential real property who holds a security deposit pursuant to this section for a period of one year or longer from the commencement of the term of the tenancy shall, beginning with the first day of the tenancy, pay interest at the rate of five per cent per year, or other such lesser amount of interest as has been received from the bank where the deposit has been held payable to the tenant at the end of each year of the tenancy.",
+          "key_value": "5% per year (or lesser amount received from bank)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 12
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Interest on last month's rent paid in advance is addressed separately in subsection (2)(a); it is not drafted here.",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-12af3c2c9c8cd4ec",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Return of security deposit within 30 days of end of tenancy",
+          "requirement": "Within thirty days after termination of occupancy under a tenancy-at-will, or the end of the tenancy under a valid written lease, the lessor must return the security deposit or any balance, after permitted deductions only (unpaid rent or water charges not validly withheld, certain unpaid tax increases under a conforming escalation clause, and reasonable repair of tenant-caused damage excluding reasonable wear and tear).",
+          "citation": "M.G.L. c. 186, § 15B(4)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "The lessor shall, within thirty days after the termination of occupancy under a tenancy-at-will or the end of the tenancy as specified in a valid written lease agreement, return to the tenant the security deposit or any balance thereof",
+          "key_value": "30 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Deductions are limited to those listed in subsection (4); see the separate itemized-damages rule.",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-b2f7f056be42a398",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Sworn itemized damage list with evidence of cost for deductions",
+          "requirement": "To deduct for tenant-caused damage, the lessor must, within the thirty-day return period, give the tenant an itemized list of damages sworn under pains and penalties of perjury, with written evidence of actual or estimated cost. No deduction may be made for damage listed in the statement of condition or in a tenant list signed by the lessor, unless the lessor repaired it and can prove the renewed damage was unrelated and tenant-caused. No deduction may be made for any purpose other than those in the section.",
+          "citation": "M.G.L. c. 186, § 15B(4)(iii)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "the lessor shall provide to the tenant within such thirty days an itemized list of damages, sworn to by the lessor or his agent under pains and penalties of perjury",
+          "key_value": "30 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Operates together with the 30-day return rule and the statement of condition under subsection (2)(c).",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-29f1d5a9613d0656",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Security deposit records kept two years and open to inspection",
+          "requirement": "Every lessor who accepts a security deposit must keep a record of the deposits (damage descriptions, tenancy termination dates, repair details and receipts, and copies of the receipt and statement of condition). The record must be available for tenant inspection during normal business hours and kept for two years from the end of the tenancy. Wrongful failure to make it available entitles the tenant to immediate return of the deposit with accrued interest.",
+          "citation": "M.G.L. c. 186, § 15B(2)(d)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "The lessor or his agent shall maintain said record for each dwelling unit or premises for which a security deposit was accepted for a period of two years from the date of termination of the tenancy or occupancy upon which the security deposit was conditioned.",
+          "key_value": "2 years",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-3ec4d1908e676235",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Transfer of security deposit to successor in interest",
+          "requirement": "When a lessor transfers its interest in the dwelling unit (by sale, assignment, death, receivership, bankruptcy trustee, or otherwise, but not by granting a mortgage), it must transfer the security deposit with accrued interest to the successor, who becomes liable for retention and return. The successor must notify the tenant in writing within forty-five days of the transfer, giving the lessor's and any agent's name, business address, and business telephone number.",
+          "citation": "M.G.L. c. 186, § 15B(5)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+          "quoted_span": "the lessor shall transfer such security deposit together with any interest which has accrued thereon for the benefit of the tenant who made such security deposit to his successor in interest",
+          "key_value": "45 days for successor notice to tenant",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "The visible text says the successor liability in the final paragraph does not apply to a city or town that acquires title under chapter sixty; the exemption sentence is cut off at the chunk boundary and may extend to a foreclosing mortgagee. Complete text is not in this chunk.",
+          "overrides": [],
+          "interaction": "The prior lessor stays liable until the deposit is transferred and the tenant is notified, the successor complies, or the deposit is returned.",
+          "effective_date": null,
+          "source_doc_id": "D052",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-045885164b4fffd7": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2025-08-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-2d14087baecedc2d": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-191d34a3b40dd579": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-6a3cfa481af57d44": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-143bce428b2bafdd": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-cd9cff772e28cc8d": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 12
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-12af3c2c9c8cd4ec": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-b2f7f056be42a398": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-29f1d5a9613d0656": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-3ec4d1908e676235": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D052",
+    "chunk": 0,
+    "total_chunks": 2,
+    "next_chunk": 1,
+    "chunk_start": 0,
+    "chunk_end": 20000,
+    "source_sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Chunk 1/2 ends mid-sentence in § 15B(5); the remaining text, including the full exemption for foreclosing mortgagees and any later subsections, is not captured and must be reviewed in chunk 2.",
+      "The only explicit effective date is August 1, 2025, for the amended text of subsection (1)(b) (2025, 9, Secs. 54, 55 and 136). Enactment dates are not stated, so enacted_on is null. The retrieval date (2026-10-01) was not used as an effective date.",
+      "Other subsections have no stated effective date in this chunk, so effective_date and effective_on are null. Status in_force is based on the page presenting these as current general law, not on an explicit effective date.",
+      "The fee-in-lieu-of-security-deposit option in (1)(b)(iii) depends on regulations by the executive office of housing and livable communities that are not shown in this chunk. No separate rule was drafted; confirm whether regulations exist.",
+      "Not drafted because they fall outside the six categories or were not clearly in a supplied category: entry-of-premises limits (1)(a), the 30-day late-payment penalty limit (1)(c), rent-in-advance and last-month-rent receipt and interest rules (2)(a), and the commingling and creditor-claims provision (1)(e).",
+      "Coverage uses state=MA and residential_use=true based on the text's reference to residential real property. The text shows no owner-type, unit-count or tenancy-length exemptions in this chunk. The interest rule uses tenancy_months>=12 as a proxy for a deposit held a year or longer, which needs reviewer confirmation.",
+      "No fixture aliases apply to this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 9167,
+      "output_tokens": 8675
+    },
+    "created_at": "2026-10-04T10:06:22.977Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

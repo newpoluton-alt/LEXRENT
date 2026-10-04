@@ -1,131 +1,383 @@
-# LEXRENT
+<div align="center">
+  <img src="app/icon.svg" alt="LEXRENT logo" width="72" height="72" />
+  <h1>LEXRENT</h1>
+  <p><strong>Rental housing law research, grounded in sources.</strong></p>
+  <p>Find a property. Explore the evidence. Understand the requirements and the facts still missing.</p>
+  <p>
+    <a href="https://lexrent-zeta.vercel.app"><strong>Open the app</strong></a> ·
+    <a href="#ai-implementation">AI implementation</a> ·
+    <a href="#architecture-and-diagrams">Architecture</a> ·
+    <a href="#getting-started">Get started</a>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/Next.js-16.3.8-000000?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white" alt="Next.js 16.3.8" />
+    <img src="https://img.shields.io/badge/React-19.3-149ECA?style=flat-square&amp;logo=react&amp;logoColor=white" alt="React 19.3" />
+    <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript 5.9" />
+    <img src="https://img.shields.io/badge/Node.js-24%2B-5FA04E?style=flat-square&amp;logo=nodedotjs&amp;logoColor=white" alt="Node.js 24 or newer" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-4.3-06B6D4?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white" alt="Tailwind CSS 4.3" />
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/Hono-4.13-E36002?style=flat-square&amp;logo=hono&amp;logoColor=white" alt="Hono 4.13" />
+    <img src="https://img.shields.io/badge/PostgreSQL-pgvector-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL with pgvector" />
+    <img src="https://img.shields.io/badge/Neon-Database_%26_Auth-00E599?style=flat-square&amp;logo=neon&amp;logoColor=black" alt="Neon Database and Auth" />
+    <img src="https://img.shields.io/badge/Claude-Grounded_AI-D97757?style=flat-square&amp;logo=anthropic&amp;logoColor=white" alt="Claude grounded AI" />
+    <img src="https://img.shields.io/badge/Vercel-Deployment-000000?style=flat-square&amp;logo=vercel&amp;logoColor=white" alt="Vercel deployment" />
+  </p>
+</div>
 
-Public repository: [newpoluton-alt/LEXRENT](https://github.com/newpoluton-alt/LEXRENT).
+## About the project
 
-Live app: [LEXRENT](https://lexrent-zeta.vercel.app). Production is public; Vercel preview deployments remain protected. LEXRENT sign-in is still required for saved work and paid AI, and publication tools require a verified administrator.
+LEXRENT is a research workspace built for the **Rental Housing Law Navigator challenge**. It connects rental properties in **California, New Jersey, and Massachusetts** to captured public source material, date-sensitive rule evaluation, and explanations of missing facts. Tenants, researchers, and reviewers can inspect the evidence behind a requirement and see where further review is needed.
 
-A rental housing law research workspace for the Rental Housing Law Navigator challenge. It connects a property to source evidence, separates pending laws from enacted requirements, and explains missing facts rather than guessing coverage.
+The application combines a React interface, a Hono API, Claude assistance, a deterministic applicability engine, and Neon persistence in one Next.js deployment. Its six research categories cover rent increases, just-cause eviction, security deposits, application and screening fees, screening restrictions, and algorithmic rent setting.
 
-One Next.js deployment contains the React frontend, Hono API, deterministic rule engine, source ingestion, Neon Auth, Neon Postgres persistence with pgvector, and Claude extraction and grounded answers. The frontend follows the [original LEXRENT Lovable project](https://lovable.dev/projects/c3e1fb53-d8d2-42f7-a0ef-1775909ab00a): cream, royal blue, yellow, Lexend, rectangular controls and the illustrated city motif.
+The interface adapts the [original Lovable design](https://lovable.dev/projects/c3e1fb53-d8d2-42f7-a0ef-1775909ab00a): cream, royal blue, yellow, Lexend typography, rectangular controls, and an illustrated city skyline. The active app uses backend evaluations and captured evidence throughout the property workflow.
 
-## Lovable frontend port
+**Supplied starter corpus:** 500 properties · 87 source records · 54 captured documents · 33 link-only sources · 568 validated law-text chunks · 5 change cases. Supplemental captures retain separate source identities, retrieval dates, URLs, and content hashes; current totals are reported by the build and coverage report.
 
-The original `lexrent/` TanStack Start export is kept as a reference. Its design is ported to the active Next.js app: the original Lexend palette, header and skyline, address/date hero, Overview/List/Summary tabs, map-and-law panel, evidence dialog, guided fact quiz, bilingual About/Rights pages, and a matching account screen. The active components live in `src/components/lovable/`; the route remains `app/page.tsx`.
+The reviewed local baseline contains **95 source-audited atomic records: 40 California, 30 New Jersey, and 25 Massachusetts**, including municipal rules and nonbinding proposals. All **500 addresses** receive relevant statewide records and at least one current applicable record. Municipality evidence supports **447 addresses: 400 official Census matches and 47 manually reviewed official NJ tax-parcel matches**; **53 unresolved addresses** retain statewide results and candidate-city requirements marked unknown. The parcel matches establish current municipal tax assignment of the complete sample address, not a surveyed boundary, title or historical jurisdiction determination. The audit combines cached Claude drafts, agent-assisted source analysis, and deterministic validation; it is not an independent professional legal review and records `human_legal_review: false`.
 
-The imported prototype's static `laws.ts` verdicts, confidence arithmetic and nationwide claims are not used. Search selects an actual supported property; every evaluation uses the existing Hono rule engine and captured source evidence. Public maps use Leaflet with OpenStreetMap tiles and Photon address search for visual orientation only and never establish legal jurisdiction. No additional map API key is required. The map opens immediately at a local postal-area center, even when Photon has no match or is unavailable. A matching street gets a street map without a property pin; an address pin requires the matching house number, street, postal place, state and country. View labels distinguish these cases. Searches are cached briefly in the browser session, and only the selected sample address is sent to Photon. Tile attribution remains visible, including in print.
+The challenge serves **renters, advocates/agencies, and housing providers** through Module A (extraction), Module B (dated address evaluation), and Module C (change analysis). Demonstrate these with **A0001**, **A0008**, and **A0010** respectively. The reviewed local baseline evaluates all five change cases; T2 returns **90 supported affected addresses and 0 unresolved municipality cases**, separately from its fixture expectation of 90. This is a local evidence/export result, not confirmation that a deployment has published the same snapshot. A searchable corpus, evaluated case or readiness flag does not establish complete legal coverage. The default research date is **October 1, 2026**; users can choose another query date. See the [one-page method note](docs/method-note.md), [coverage audit](docs/data-coverage-audit.md), [California audit](docs/california-rule-audit.md), and [New Jersey/Massachusetts audit](docs/nj-ma-rule-audit.md).
 
-The visible **See in real life** panel displays historical aerial photos directly on the page using the public USDA / USGS The National Map imagery service. It shares the map's resolved location without a second address query, preserves street/area precision, and places a pin only for an address match. The source's maximum native zoom is 16; closer views scale those photos. Imagery is historical, not live or proof of current building facts. A separate **Open nearby Street View** button uses Google's official no-key panorama URL for address/street locations; an unresolved area instead offers an address search. Street View availability varies. Photo loading failures offer a retry and an external address link. The export's embedded Google connector credentials are not copied into this deployment; no new environment variable is needed for either photo viewing or Street View links.
+> Not legal advice. Summaries are for research only; consult a qualified attorney or the relevant agency for your case.
 
-`/workspace` retains real Claude/vector research, the source library, law-change cases, private saved properties and verified-admin publication tools. The home exposes Census boundary resolution to verified admins. Authentication returns users to the property or assistant context from which they signed in. The List tab browses the supported 500-property sample rather than inventing client-side verdicts for browsing history. Summary printing and JSON downloads preserve the exact evaluation snapshot and incomplete-coverage status.
+## What you can do
 
-To check the map, search `1619 COMMONWEALTH AV` in Brighton, MA (`A0048`) and open Overview: a matching address shows a location pin. `6238 DE LONGPRE AVE` in Los Angeles (`A0001`) and `1031-1035 CLINTON ST` in Hoboken (`A0002`) can show their matching street without inventing an exact building location. Zoom buttons, dragging and Reset view are available without signing in.
+| Capability | Experience |
+| --- | --- |
+| **Property research** | Search and browse the supplied 500-property sample; choose an address and date; inspect Overview, List, and Summary views. |
+| **Evidence inspection** | Open source text, exact quotations, retrieval dates, and source links from the source library and evidence dialogs. |
+| **Coverage evaluation** | Evaluate reviewed requirements against jurisdiction, dates, facts, exemptions, and explicit rule interactions; preserve `unknown` when information is missing. |
+| **Grounded AI assistance** | Ask Claude questions with citations and optional property/date context in `/workspace`. |
+| **Rule review** | Capture permitted source text, extract structured drafts, validate evidence, and import a reviewed version through administrator tools. |
+| **Change analysis** | Run the five supplied T1–T5 cases and export `rules.json`, `lookups.json`, `changes.json`, and a separate readiness report. |
+| **Saved research** | Sign in to save private properties and immutable evaluation snapshots with their rule-version references. |
+| **Maps and imagery** | Explore Leaflet/OpenStreetMap previews, historical USDA/USGS aerial imagery, and nearby Street View links. |
+| **Interface and sharing** | Use guided fact questions, English/Spanish information pages, printable summaries, and JSON snapshot downloads. |
 
-The reference folder is excluded from the active TypeScript compilation and Vercel deployment. All `.env` files, including the reference export's browser connector credentials, remain ignored.
+Maps use Photon for visual address orientation. Exact property pins require a matching address; street and area views show their precision explicitly. **Municipality evidence uses official Census geography and separately reviewed NJOGIS/MOD-IV municipal tax records.** The [NJ parcel evidence](corpus/nj-parcel-evidence.json) preserves full address matches and municipal fields; its [raw official response](corpus/nj-parcel-provider-response.json) has a verified content hash. [NJGIN](https://nj.gov/njgin/edata/parcels/) cautions that parcel polygons are not legal boundaries or land-ownership surveys. Historical imagery and postal-city labels do not establish legal boundaries or current building facts.
 
-## Run locally
+## Technology stack
 
-Use Node.js 24 or newer. The supplied development/build scripts use Next.js’s supported Webpack compiler; this avoids the Tailwind/PostCSS worker port restriction in the local sandbox.
+Versions below reflect the root [`package.json`](package.json) and committed [`package-lock.json`](package-lock.json). The root Next.js application is the deployed product; Python tools and the original TanStack Start export are retained as reference implementations.
+
+| Layer | Technologies | Role |
+| --- | --- | --- |
+| Application | **Next.js 16.3.8**, **React / React DOM 19.3**, **TypeScript 5.9**, **Node.js 24+** | App Router pages, same-origin server routes, shared types, and server execution. |
+| UI and styling | **Tailwind CSS 4.3**, Tailwind PostCSS, **Lexend 5.3**, **Lucide React 0.577** | Responsive interface, typography, and icons. |
+| HTTP and validation | **Hono 4.13**, `@hono/vercel`, **Zod 4.6** | API routing, request validation, and structured data contracts. |
+| AI | **Anthropic SDK 0.131.0**, **Claude Messages API** | Schema-constrained extraction drafts and grounded research answers. |
+| Retrieval | **TF-IDF**, **truncated SVD / LSA**, **128-dimensional vectors**, **pgvector** | Local vector projection, exact cosine search, and weighted hybrid ranking. |
+| Database and identity | **Neon Postgres**, **Neon serverless driver 1.2**, **Neon Auth 0.5.0-beta / Better Auth** | Versioned rules, source captures, vectors, sessions, private collections, and audit records. |
+| Location | **Leaflet 1.9**, **OpenStreetMap**, **Photon**, **Census Geocoder**, **NJOGIS/MOD-IV** | Visual maps, address matching, Census municipality evidence, and manually reviewed municipal tax assignment. |
+| Imagery | **USDA/USGS The National Map**, **Google Street View URLs** | Historical aerial previews and external panorama links without a map API key. |
+| Build and tests | **npm**, **Webpack**, **tsx 4.23**, **csv-parse 7**, **Vitest 4.1** | Dependency management, builds, TypeScript utilities, CSV ingestion, and automated tests. |
+| Hosting | **Vercel**, Node.js runtime, `iad1` region | One deployment for the frontend and API; additive, repeatable database migrations. |
+| Reference tooling | **Python**, **NumPy**, **SciPy**, **scikit-learn**, **Pillow** | Original knowledge-base indexing/search, optional agent experiments, and architecture-image rendering. |
+
+<p>
+  <img src="https://img.shields.io/badge/Zod-Validation-3E67B1?style=flat-square&amp;logo=zod&amp;logoColor=white" alt="Zod validation" />
+  <img src="https://img.shields.io/badge/Vitest-Tests-6E9F18?style=flat-square&amp;logo=vitest&amp;logoColor=white" alt="Vitest" />
+  <img src="https://img.shields.io/badge/Leaflet-Maps-199900?style=flat-square&amp;logo=leaflet&amp;logoColor=white" alt="Leaflet maps" />
+  <img src="https://img.shields.io/badge/Lucide-Icons-F56565?style=flat-square&amp;logo=lucide&amp;logoColor=white" alt="Lucide icons" />
+  <img src="https://img.shields.io/badge/Python-Reference_Tools-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python reference tools" />
+  <img src="https://img.shields.io/badge/NumPy-Vector_Tooling-013243?style=flat-square&amp;logo=numpy&amp;logoColor=white" alt="NumPy vector tooling" />
+  <img src="https://img.shields.io/badge/scikit--learn-LSA-F7931E?style=flat-square&amp;logo=scikitlearn&amp;logoColor=white" alt="scikit-learn LSA" />
+</p>
+
+## Architecture and diagrams
+
+### Deployed application
+
+The browser, API, rule engine, and AI handlers share one deployment. Managed identity, persistent storage, and Claude are external services. Public source exploration is available without sign-in; paid AI and saved work require an account, and publication requires a verified administrator.
+
+```mermaid
+flowchart TB
+    Browser["React interface<br/>Property search, evidence, research workspace"]
+    subgraph Deployment["Next.js application on Vercel"]
+        AuthProxy["Neon Auth proxy"]
+        API["Hono API"]
+        Engine["Deterministic rule evaluator"]
+        AI["Claude extraction and grounded chat"]
+        Retrieval["Lexical and LSA vector retrieval"]
+        Corpus["Bundled properties and captured sources"]
+    end
+    Auth["Managed Neon Auth"]
+    DB[("Neon Postgres<br/>Rules, captures, snapshots, pgvector, audit")]
+    Claude["Anthropic Messages API"]
+    Census["Official Census Geocoder"]
+    Browser --> AuthProxy
+    Browser --> API
+    AuthProxy --> Auth
+    API -->|protected session checks| Auth
+    API -->|reviewed rules and facts| Engine
+    API --> AI
+    API --> DB
+    API -->|municipality verification| Census
+    Engine --> Corpus
+    AI --> Retrieval
+    Retrieval --> Corpus
+    Retrieval --> DB
+    AI --> Claude
+    AI -->|draft cache and request budgets| DB
+```
+
+### Design and handoff gallery
+
+These existing diagrams explain team responsibilities, lookup/change flow, the logical data model, and evidence handoffs. They are **concept diagrams**; the deployed application above and [`docs/architecture.md`](docs/architecture.md) describe the current services and physical storage. Expand a diagram to view it, or open its full-resolution JPG or editable SVG.
+
+<details open>
+<summary><strong>01 · System architecture and team responsibilities</strong></summary>
+
+![System architecture: AI extracts requirements, the backend evaluates them, and the frontend presents results and evidence](architecture/01-system-architecture-preview.jpg)
+
+[Full-resolution JPG](architecture/01-system-architecture.jpg) · [Editable SVG](architecture/01-system-architecture.svg)
+
+</details>
+
+<details>
+<summary><strong>02 · Property lookup and law-change evaluation</strong></summary>
+
+![Property lookup and change cases using the shared applicability evaluator](architecture/02-lookup-and-change-flow-preview.jpg)
+
+[Full-resolution JPG](architecture/02-lookup-and-change-flow.jpg) · [Editable SVG](architecture/02-lookup-and-change-flow.svg)
+
+</details>
+
+<details>
+<summary><strong>03 · Logical database relationships</strong></summary>
+
+![Logical relationships between laws, rule versions, sources, properties, change cases, and evaluation records](architecture/03-database-relationships-preview.jpg)
+
+[Full-resolution JPG](architecture/03-database-relationships.jpg) · [Editable SVG](architecture/03-database-relationships.svg)
+
+</details>
+
+<details>
+<summary><strong>04 · Request and evidence sequence</strong></summary>
+
+![AI ingestion and the frontend, backend, and storage request sequence](architecture/04-request-and-evidence-sequence-preview.jpg)
+
+[Full-resolution JPG](architecture/04-request-and-evidence-sequence.jpg) · [Editable SVG](architecture/04-request-and-evidence-sequence.svg)
+
+</details>
+
+See the [architecture notes and regeneration instructions](architecture/architecture-notes.md) for the diagram sources and renderer.
+
+## AI implementation
+
+The supplied materials in the main-folder `project description/` explain a Claude agent, a JSONL knowledge base, a vector index, a search tool, and challenge output contracts. Their executable counterparts are preserved in [`AI RAG/`](AI%20RAG/) and [`AI capabilities/`](AI%20capabilities/). The published web app implements the evidence-grounding approach in TypeScript inside its Next.js backend.
+
+| Supplied material | Integration in LEXRENT |
+| --- | --- |
+| `build_agent_PY.txt` / [`build_agent.py`](AI%20RAG/build_agent.py) | Grounding, uncertainty, date, and citation instructions inform [`src/server/chat.ts`](src/server/chat.ts) and [`src/server/ai.ts`](src/server/ai.ts). The web app calls the Claude Messages API. |
+| `rag_knowledge_base_JSONL.txt` / [`rag_knowledge_base.jsonl`](AI%20RAG/rag_knowledge_base.jsonl) | [`build-challenge-data.ts`](scripts/build-challenge-data.ts) validates the supplied chunks against captured documents and compiles the source/property inventory into `src/data/challenge.json`. |
+| `kb_build_index_PY.txt` / [`kb_build_index.py`](AI%20RAG/kb_build_index.py) | The fitted TF-IDF/SVD model from `kb_index.npz` is exported by [`build-vector-model.ts`](scripts/build-vector-model.ts) for local TypeScript projection. |
+| `kb_search_PY.txt` / [`kb_search.py`](AI%20RAG/kb_search.py) | Hybrid keyword/vector retrieval, scoped evidence selection, and neighboring passages support the web assistant. |
+| `rag_vector_dataset_JSONL.txt` / [`rag_vector_dataset.jsonl`](AI%20RAG/rag_vector_dataset.jsonl) | The original vector dataset remains available for reference; runtime vectors are generated from the fixed model and current validated source chunks. |
+| `task_reference_JSON.txt` / [`task_reference.json`](AI%20RAG/task_reference.json) | Rule categories, required JSON outputs, and T1–T5 fixtures inform the typed domain contracts, validator, evaluator, and exports. |
+
+### Two evidence workflows
+
+```mermaid
+flowchart TB
+    Sources["Captured public source text<br/>Document ID, URL, retrieval date, SHA-256"]
+    subgraph Chat["Grounded research answers"]
+        Query["Question and optional property/date"]
+        Search["Keyword ranking + LSA cosine search<br/>Weighted rank fusion and neighboring chunks"]
+        Context["Bounded evidence + deterministic property context"]
+        Answer["Claude structured answer"]
+        Citations{"Citations match retrieved source text?"}
+        Research["Research answer with citations and uncertainty"]
+    end
+    subgraph Extraction["Reviewed rule publication"]
+        Chunks["20,000-character chunks<br/>2,000-character overlap"]
+        Draft["Claude structured requirement drafts"]
+        Validation{"Schema, predicates, dates, and quotes valid?"}
+        Review["Administrator reviews meaning and exemptions"]
+        Import["Explicit validated import"]
+        Rules[("Immutable reviewed rule version")]
+    end
+    Sources --> Search
+    Query --> Search
+    Search --> Context --> Answer --> Citations
+    Citations -->|yes| Research
+    Citations -->|no| Reject["Reject unsupported output; return an error"]
+    Sources --> Chunks --> Draft --> Validation
+    Validation -->|yes| Review --> Import --> Rules
+    Validation -->|no| Reject
+    Rules --> Engine["Deterministic applicability engine"]
+    Facts["Verified jurisdiction + property facts + query date"] --> Engine
+    Engine --> Results["Rule results, missing facts, conflicts, exports"]
+```
+
+### 1. Knowledge preparation and hybrid retrieval
+
+The build validates **568 supplied law chunks** against the captured source documents and restores original whitespace for evidence. Each chunk retains its document identity, URL, retrieval date, content hash, and source offsets. Link-only records remain visible acquisition gaps and cannot support citations.
+
+The original Python tooling builds TF-IDF features and a truncated-SVD **128-dimensional LSA** projection. The app uses the exported, server-only [`vector-model.json`](src/data/vector-model.json) to project questions and current source chunks locally. These are statistical LSA vectors; no separate neural-embedding API or Python service is required for the web application.
+
+Neon stores versioned corpora and vectors in `lexrent_vector_corpora` and `lexrent_vector_chunks`. A corpus fingerprint includes the fitted model and current chunk content/metadata. Indexing is atomic and idempotent, and current source hashes and URLs prevent changed captures from reusing stale evidence. Retrieval uses exact pgvector cosine search at this corpus size.
+
+The web assistant combines **BM25-style lexical ranking** with vector matches using **weighted reciprocal rank fusion: lexical weight 2, vector weight 1**. It selects up to eight primary passages, adds adjacent chunks within a 32,000-character evidence budget, and includes relevant property/date context. Lexical fallback remains available when vector retrieval cannot contribute, with that mode exposed in the answer metadata. Topic aliases help some multilingual queries; the fitted model's ASCII tokenizer has limited multilingual coverage.
+
+### 2. Grounded Claude answers
+
+[`chat.ts`](src/server/chat.ts) sends retrieved evidence and, when selected, the deterministic property evaluation to Claude using a constrained JSON response schema. The server validates the response with Zod, requires supporting citations, checks each quotation against the retrieved intervals of the current source capture, and attaches the authoritative URL and retrieval timestamp itself. Invalid or unsupported citations reject the answer.
+
+The prompt instructs Claude to preserve unknown facts, distinguish pending/failed/future-effective measures, and honor the query date. Captured text, questions, and conversation history are treated as untrusted input. The deployed assistant has no browsing or shell tools. It produces research summaries; it cannot import rules or change evaluator verdicts. Quote validation establishes provenance, while the accuracy of an interpretation still requires review.
+
+### 3. Structured extraction and source review
+
+[`ai.ts`](src/server/ai.ts) processes long captures in overlapping chunks and requests **one atomic requirement per draft**. Drafts include source evidence, lifecycle dates, exemptions, typed coverage predicates, and proposed rule interactions. One law can therefore yield multiple requirements with different coverage or operative dates.
+
+The server assigns source identities, validates schema and quotations, rejects executable-code conditions, and returns `requires_review: true`. [`extraction-store.ts`](src/server/extraction-store.ts) caches drafts by source identity/content hash, model, prompt version, and chunk so work can resume without repeating accepted extraction. An administrator reviews all chunks, deduplicates obligations, and explicitly imports a validated bundle; extraction never publishes automatically.
+
+The seeded corpus uses agent-assisted review of source meaning, dates, exemptions, and interactions. The draft cache and run logs preserve actual extraction progress and provider/validation failures. Failed or unsupported outputs are rejected and cannot replace published rules. Exact quotations establish provenance; they do not establish that a model's interpretation is correct or that every curated record was produced unchanged by Claude.
+
+The configured default in this repository is `claude-sonnet-5-5`. Set `CLAUDE_MODEL` to a model enabled for your Anthropic account. Provider calls use a 60-second timeout and one retry. Durable hourly limits are **20 chat attempts per account**, **60 extraction attempts per administrator**, and **200 AI attempts globally**; provider failures also consume an attempt. Valid cached extraction drafts avoid a new provider request.
+
+The latest provider check reported insufficient Claude credits despite a configured key. A configured credential does not establish paid AI availability. Evidence-backed lookups and local exports do not require a new model call; chat and new extraction require working provider access and credits.
+
+The supplied Python managed-agent experiment remains optional reference tooling. Its cloud agent environment and unrestricted toolset are separate from the deployed web application. Credentials for the maintained [`build_agent_v1.py`](AI%20capabilities/build_agent_v1.py) come from `ANTHROPIC_API_KEY`.
+
+## Applicability and review workflow
+
+The typed evaluator applies reviewed rules to a property, legal jurisdiction, query date, and available facts. Predicates support `all`, `any`, `not`, and typed comparisons. Missing facts preserve uncertainty; scenario inputs are recorded as supplied facts, and cannot overwrite the property's state or verified legal city.
+
+Lifecycle and reviewed interaction records distinguish active, future-effective, pending, failed, conflicting, and superseded requirements. `certificate_age_years` is recomputed from the certificate-of-occupancy date for each query; a construction year never substitutes for that date. The frontend displays the evaluator's results and explanations.
+
+1. Sign in with a verified, allowlisted administrator account.
+2. Inspect a captured source, or capture permitted text for an existing manifest source with its matching URL and retrieval timestamp.
+3. Extract drafts across all chunks; review legal meaning, status, dates, exemptions, and interactions.
+4. Validate and import the reviewed bundle. Imports merge by rule ID unless `mode: "replace"` is explicitly requested.
+5. Review relevant municipality evidence and supply known missing facts as labelled scenarios. NJ tax assignments do not prove historical boundaries or ownership/occupancy exemptions.
+6. Run T1–T5, inspect unresolved items, and export the challenge artifacts.
+
+`coverage_complete` remains `false`. Submission readiness checks that reviewed rules exist and all five cases are evaluated, and reports unresolved addresses separately; it does not certify complete sources, facts, or legal analysis. Retrieval presents selected passages, so an absent passage cannot prove that a full document lacks a provision. Source quotation checks use stored captures, whose completeness and authority require review.
+
+### Reproduce the local challenge pipeline
 
 ```sh
+npm run data:build
+npm run data:extract -- --docs D022,D069 --plan
+npm run data:extract -- --docs D022,D069 --max-requests 12
+npm run data:enrich -- --states CA,NJ,MA --limit 500
+npm run data:build
+npm run data:publish -- --plan
+npm run data:export
+```
+
+Extraction requires `ANTHROPIC_API_KEY`; `--docs all` selects all captured sources. Its budget limits new chunk calls, with at most one SDK retry per call; matching cached drafts consume no new requests. Drafts remain review-required. Census enrichment reuses verified matches; `--retry-failed` revisits unresolved addresses. Rebuild after changing captures, curated bundles, or resolutions.
+
+For bounded source acquisition, `python3 scripts/capture-sources.py --docs S009,S010 --brightdata` tries official public retrieval first and uses Bright Data Web Unlocker when configured. PDF extraction requires `pypdf`. Blocked or failed captures remain evidence gaps. The local artifacts live in `corpus/sources/`, `corpus/supplemental-sources.json`, `corpus/extractions/`, and the jurisdiction audit files; credentials never enter these artifacts.
+
+Publication planning validates the local compiled corpus and extraction provenance **without database access**. Explicit `npm run data:publish -- --publish` adds an immutable Neon rule version and missing jurisdiction seeds while preserving existing versions and administrator jurisdiction records. Local extraction and rebuilding alone do not publish.
+
+`data:export` writes `rules.json`, all 500 addresses in `lookups.json`, all five cases in `changes.json`, `readiness.json`, `data-coverage.json`, and the method note to `submissions/` at the default query date. It uses the compiled local corpus without database access, credentials, or model calls. Use `--output-dir <directory>` to choose another location. Live dated exports are also available at `/api/exports/rules`, `/api/exports/lookups`, `/api/exports/changes`, and `/api/exports/readiness` with `?as_of=YYYY-MM-DD`; administrator overrides can make live results differ from the local submission.
+
+## Getting started
+
+### Explore the public sample
+
+Use **Node.js 24 or newer** and npm. With `DATABASE_URL` unset, the application can serve the bundled properties and captured sources without external credentials.
+
+```sh
+git clone https://github.com/newpoluton-alt/LEXRENT.git
+cd LEXRENT
 npm ci
+npm run data:build
+npm run dev
+```
+
+Open [localhost:3000](http://localhost:3000). Accounts, persistent saved work, rule imports, and paid AI require the services below. Development and production builds use the project's configured Webpack compiler.
+
+### Enable accounts, persistence, and AI
+
+```sh
 cp .env.example .env
-# Configure the server variables below.
+# Replace placeholders with your server configuration before continuing.
 npm run db:migrate
-# Optional: populate the current source vectors before the first chat request.
+# Optional: pre-index current evidence; indexing also runs lazily when needed.
 npm run rag:index
 npm run dev
 ```
 
-Open http://localhost:3000. Public source and property exploration works without credentials. Accounts, saved work and rule imports require the configured services. Database failures never silently substitute an empty verified rule set.
-
-## Server environment
-
 | Variable | Purpose |
 | --- | --- |
-| `DATABASE_URL` | Neon Postgres connection string, including its database role credentials. This is the runtime database credential. |
-| `NEON_AUTH_BASE_URL` | The Neon branch Auth endpoint for Better Auth. |
-| `NEON_AUTH_COOKIE_SECRET` | A cryptographically random secret of at least 32 characters for signed session cookies. |
-| `LEXRENT_ADMIN_EMAILS` | Comma-separated administrator emails. Admin access also requires an upstream-verified email and a live server session. |
-| `ANTHROPIC_API_KEY` | Claude API key, used only on the server for real extraction and answers. |
-| `CLAUDE_MODEL` | Defaults to `claude-sonnet-5-5`. Override with a model enabled for your API account. |
-| `APP_URL` | App origin for project configuration. Request-origin checks use the actual request URL; Neon callback origins are whitelisted in Neon Auth. |
-| `NEON_API_KEY` | Optional Neon management credential; not required by the application. A management key does not replace `DATABASE_URL`. |
+| `DATABASE_URL` | Neon Postgres runtime connection string; required for persisted rules, research, vectors, and AI budgets. |
+| `NEON_AUTH_BASE_URL` | Managed Neon Auth branch endpoint. |
+| `NEON_AUTH_COOKIE_SECRET` | Random secret of at least 32 characters for signed session cookies. |
+| `LEXRENT_ADMIN_EMAILS` | Comma-separated administrator allowlist; access also requires a live session and verified email. |
+| `ANTHROPIC_API_KEY` | Server-side Claude credential for extraction and answers. |
+| `CLAUDE_MODEL` | Model override; repository default: `claude-sonnet-5-5`. |
+| `APP_URL` | App origin; use `http://localhost:3000` locally. |
+| `NEON_API_KEY` | Optional management credential; not a substitute for the runtime database connection. |
+| `BRIGHTDATA_API_KEY` | Optional server-side credential for bounded fallback source acquisition. |
+| `BRIGHTDATA_UNLOCKER_ZONE` | Web Unlocker zone used by source acquisition; example placeholder: `cli_unlocker`. |
 
-Do not use `NEXT_PUBLIC_` for credentials. `.env` and `.vercel` are ignored by Git. `.env.example` contains only placeholders. Set production variables in Vercel’s project environment settings, then redeploy after a change.
+Keep credentials server-side. `.env`, auth artifacts, and `.vercel` are ignored; `.env.example` contains placeholders. An invalid configured database produces an explicit failure, rather than substituting an empty reviewed rule set.
 
-Enable the Google provider in Neon Auth and whitelist the app’s actual production origin; localhost must be enabled for local development. Email/password users must verify their email before an allowlisted email can obtain administrator access. Google sign-in supports verified admin emails.
+Enable Google in Neon Auth if needed, and whitelist the production and localhost origins. Email/password administrators must verify their email. Authentication returns through `/auth/callback` and checks the live session before restoring the user's property or workspace context. Production app access is public; Vercel previews remain protected.
 
-Google sign-in and new accounts return through `/auth/callback`. The Next.js proxy completes Neon's one-time challenge/verifier exchange and preserves the SDK's HTTP-only app cookies; the callback checks the live session before returning to the original property or workspace. Embedded OAuth uses a same-origin popup bridge before the exchange. Ordinary public pages remain public. Email sign-in/sign-up also checks `/api/me` before claiming a successful login. The header shows the verified user's name (or email when no name is supplied), and the header, saved work and AI controls share one account state that refreshes on navigation, focus and sign-in/sign-out in another tab. Authentication failures are shown with a retry action rather than a silent redirect.
+## Codebase guide
 
-## What works
+```text
+app/                         Next.js pages, layouts, API routes, auth callback
+src/components/lovable/      Active property UI, evidence, maps, imagery, account flow
+src/components/research-workspace.tsx Research workspace and administrator tools
+src/domain/                  Types, validation, rule engine, changes, exports, vectors
+src/server/                  Hono API, auth, database, Claude, retrieval, Census resolver
+src/data/                    Compiled challenge inventory and fitted vector model
+migrations/                  Core persistence, AI draft storage, and pgvector SQL
+scripts/                     Corpus build, vector export, migrations, vector indexing
+corpus/                      Supplemental captures, curated rules, draft and jurisdiction audits
+submissions/                 Generated challenge exports and method note
+tests/                       Domain, API, AI, auth, frontend, maps, and imagery checks
+docs/architecture.md         Implemented architecture, storage, access, and contracts
+architecture/                Concept diagrams, editable SVGs, JPGs, and renderer
+AI RAG/                      Supplied JSONL knowledge, Python search/index, task reference
+AI capabilities/             Earlier Claude agent experiment and reference knowledge
+participant-final-no-hour16 3/ Original challenge sources, properties, schema, and fixtures
+lexrent/                     Original Lovable/TanStack Start export retained for reference
+```
 
-- Search and paginate the supplied 500 properties across California, New Jersey and Massachusetts; show incomplete assessor facts and suspect ZIPs.
-- Inspect all 87 manifest sources, including 54 captured documents and uncaptured links. Read source text, retrieval dates and evidence quotes.
-- Query a property on a particular date. A law may create several independently evaluated requirements. Typed predicates support combined conditions and exemptions.
-- Evaluate rolling certificate-age conditions using `certificate_age_years`, derived from the certificate-of-occupancy date and query date. Missing, invalid or future certificate dates remain unknown; year built never substitutes for the certificate.
-- Resolve legal city boundaries through the official Census geocoder. Postal aliases, ambiguous matches and address ranges cannot silently establish a legal municipality.
-- Add temporary scenario facts to a lookup; these are labelled as supplied inputs, not verified assessor data.
-- Sign in, save properties privately, and persist immutable evaluation snapshots with a rule-version reference.
-- Run the five supplied change cases and export `rules.json`, `lookups.json`, `changes.json`, and a separate submission readiness report.
-- Import reviewed, source-backed rule bundles. Validation rejects fabricated quotations, unknown source references, invalid dates and executable-code conditions.
-- Ask Claude grounded questions with citations and optional address/date context. The supplied Python bot’s grounding instructions and JSONL knowledge base are incorporated into the monolith; it needs no separate Python service or unrestricted cloud-agent environment.
-- Retrieve evidence with weighted lexical/vector search using the supplied 128-dimensional LSA model and Neon pgvector. Updated captures produce a new versioned corpus; old source vectors cannot support current answers.
-- Extract atomic, structured requirement drafts from captured sources using Claude. Long documents are processed in overlapping chunks, with resumable progress and explicit review before publication.
+The reference `lexrent/` app is excluded from active TypeScript compilation and deployment. Its static sample verdicts do not determine results in the active application. Python experiments and duplicate index datasets are also excluded from the web deployment; builds use the supplied knowledge JSONL and deploy the compiled corpus/model.
 
-## Corpus and legal coverage
+## Development and verification
 
-The build reads `participant-final-no-hour16 3/` and the supplied `AI RAG/` knowledge base. It validates the 568 supplied law chunks against authoritative captured documents, restores exact original whitespace for quotations, and compiles the chunks into `src/data/challenge.json`. The supplied 500 address records and 33 uncaptured-source links remain traceable to the manifest. Link-only records cannot support citations.
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the development server. |
+| `npm run data:build` | Rebuild and validate the bundled challenge data. |
+| `npm run data:extract -- --docs <IDs> --max-requests <count>` | Create resumable, source-validated Claude drafts; review remains required. |
+| `npm run data:enrich -- --states CA,NJ,MA --limit 500` | Resolve legal municipalities with official Census address geography. |
+| `npm run data:publish -- --plan` | Validate publication provenance locally without database access. |
+| `npm run data:publish -- --publish` | Explicitly add a validated immutable rule version and missing jurisdiction seeds. |
+| `npm run data:export` | Generate the local challenge submission and coverage audit. |
+| `npm run vector:model` | Export the fitted model after changing the supplied NPZ. |
+| `npm run db:migrate` | Apply additive, repeatable database migrations. |
+| `npm run rag:index` | Index the current source corpus in Neon pgvector. |
+| `npm run typecheck` | Check TypeScript types. |
+| `npm test` / `npm run test:watch` | Run Vitest once or in watch mode. |
+| `npm run build` / `npm start` | Build the application and serve the production build. |
 
-No legal rules are seeded or fabricated. The initial corpus is searchable, but a complete challenge submission requires reviewed rule imports, relevant verified municipal boundaries, missing fact review and all five evaluated change cases. The readiness flag checks that rules exist and all five cases are marked evaluated; it reports unresolved addresses separately and does not certify source, fact or legal completeness. Property results always retain `coverage_complete: false`. AI answers are research summaries; they do not replace the deterministic applicability engine or certify a complete legal analysis.
-
-The original `AI capabilities/build_agent_v1.py` is preserved as a separate reference/optional experiment. Its credential now comes from `ANTHROPIC_API_KEY`, and its file paths are relative to the script. Its beta managed-agent environment is not created by LEXRENT. The deployed app uses the supported Claude Messages SDK with bounded retrieval and source validation.
-
-## Vector retrieval
-
-`AI RAG/kb_index.npz` supplies a fitted TF-IDF vocabulary, IDF weights and truncated-SVD projection. `scripts/build-vector-model.ts` exports that fixed model into the checked-in, server-only `src/data/vector-model.json`; TypeScript computes normalized 128-dimensional vectors for questions and validated source chunks. These are local LSA vectors, not neural embeddings. No Python service or additional embedding API key is required; Claude answers still require `ANTHROPIC_API_KEY`.
-
-Run `npm run vector:model` to regenerate the export after changing the supplied NPZ. Normal builds use the checked-in model JSON and do not fit a model at runtime. GitHub retains the original `AI RAG/` files. Vercel receives the knowledge JSONL for build validation and deploys the compiled model and source chunks; the Python experiments, NPZ and duplicate vector dataset are excluded from deployment.
-
-Neon stores versioned corpora and chunks in `lexrent_vector_corpora` and `lexrent_vector_chunks`. A corpus fingerprint includes the model identity and current validated chunk content and metadata. Indexing is idempotent and atomic, runs lazily when needed, and can be triggered with `npm run rag:index`. A signed-in, verified administrator can also request `POST /api/admin/vector-index`; the server checks the administrator allowlist and records the index operation. Previous corpora remain preserved. New source text is projected with the same fitted model; retrieval requires current source hashes and URLs, so a changed capture cannot reuse stale evidence.
-
-Search combines lexical and cosine-distance rankings using weighted reciprocal rank fusion, with lexical weight 2 and vector weight 1. The 568 captured chunks use exact pgvector cosine search; an approximate HNSW index is unnecessary at this size. Lexical retrieval remains available when vector storage is unavailable or a question has no usable model vocabulary. Existing multilingual topic aliases help retrieval, but the supplied ASCII tokenizer is not a general multilingual embedding model. Evidence quotes are validated independently of their retrieval rank.
-
-## Review workflow
-
-1. Sign in with a verified, allowlisted administrator account.
-2. In Rule workspace, select captured sources. For an uncaptured manifest document, upload its permitted exact text, matching source URL and retrieval time first.
-3. Extract drafts. Review all chunks, resolve contradictory dates and interactions, deduplicate obligations and check exemption coverage.
-4. Review the JSON, then validate and import it. Imports merge by rule ID unless the API explicitly receives `mode: "replace"`.
-5. Resolve city boundaries for the relevant sample properties and add necessary scenario facts.
-6. Run the change cases, inspect the readiness report, then export the three submission artifacts.
-
-Source text alone does not prove that a proposed bill became law. A matching quote validates provenance, not the accuracy of a model’s interpretation. Review legislative status, conditions and preemption before import. A source revision that removes the active evidence quote blocks legal evaluation while leaving source inspection and administrator repair available. Rule versions retain source snapshots for audit.
-
-AI retrieval shows selected passages rather than the complete document. A missing passage cannot establish that the full document lacks a rule or exception. Quote validation checks the stored capture, not the live official page; administrators must review source completeness and authority before publication.
-
-`certificate_age_years` counts completed calendar anniversaries and is recomputed for every query after scenario inputs are applied. For a certificate dated `2011-10-04`, the age is 14 on `2026-10-03` and 15 on `2026-10-04`; a February 29 certificate reaches its anniversary on March 1 in a non-leap year. The API accepts the certificate date, never a caller-supplied derived age. This enables rolling age predicates without freezing a cutoff date into a rule; it does not establish the exemption's legal interpretation.
-
-## Access and AI usage
-
-Public reads do not require sign-in. Paid chat requires a live authenticated account; extraction, source captures, boundary resolution and rule publication require a verified administrator. Private collections and evaluations are filtered by the server’s session owner. State and legal city cannot be overwritten by scenario inputs.
-
-AI attempts have durable Postgres limits, shared across deployment instances: 20 chat attempts per account per hour, 60 extraction attempts per administrator per hour, and 200 total AI attempts per hour. Provider failures also consume an attempt. Extraction drafts are cached by document content hash, source identity, model, prompt version and chunk. No draft is automatically published as law.
-
-## Verify and deploy
+Run the standard checks before deployment:
 
 ```sh
 npm run typecheck
 npm test
 npm run build
-vercel --prod
 ```
 
-The opt-in Neon integration test writes temporary records for random test owners and removes only those records:
+Tests cover deterministic evaluation, validation, citation grounding, extraction contracts, vector versioning, persistence limits, authorization, and frontend behavior. The live Neon integration check is opt-in and uses temporary test-owner records:
 
 ```sh
 RUN_NEON_INTEGRATION=1 node --env-file=.env node_modules/vitest/vitest.mjs run tests/auth/neon-live.test.ts
 ```
 
-Production runs on Node.js in Vercel’s `iad1` region. The API shares the same origin and deployment as the frontend. SQL migrations are additive and repeatable. Do not publish `.env`, auth cookies, API tokens, private account data or project magic links.
+The existing Vercel configuration deploys the frontend and API together on the Node.js runtime in `iad1`. Set server variables in the Vercel project environment settings, apply migrations, run the checks, and deploy with `vercel --prod`.
 
-See [architecture and team ownership](docs/architecture.md) and the code-rendered [architecture diagrams](architecture/architecture-notes.md).
+## Project origins
+
+LEXRENT brings together the supplied challenge corpus and AI reference materials, the Lovable interface design, and the integrated backend implementation. [Architecture and team ownership](docs/architecture.md) document the handoffs: AI produces evidence-backed drafts, the backend validates and evaluates reviewed rules, and the frontend presents results and their uncertainty.

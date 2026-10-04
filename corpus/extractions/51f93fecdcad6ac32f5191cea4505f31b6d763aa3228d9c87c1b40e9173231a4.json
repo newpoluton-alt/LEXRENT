@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "cache_key": "51f93fecdcad6ac32f5191cea4505f31b6d763aa3228d9c87c1b40e9173231a4",
+  "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-73444be8e25769cf",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "Maximum tenant screening fee for 2026",
+          "requirement": "The maximum tenant screening fee a landlord may charge for 2026 is $68.96. The page attributes the limit to California Civil Code Section 1950.6.",
+          "citation": "California Civil Code Section 1950.6",
+          "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+          "quoted_span": "The maximum tenant screening fee for 2026 is\n$68.96",
+          "key_value": "$68.96 (2026 maximum screening fee)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Berkeley BMC 13.78.010 requires owners to disclose this state fee cap to applicants.",
+          "effective_date": null,
+          "source_doc_id": "D005",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-bd5dfc988984fb18",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "No screening fee when no rental unit is available",
+          "requirement": "A landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available.",
+          "citation": "California Civil Code Section 1950.6",
+          "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+          "quoted_span": "The landlord cannot charge a prospective tenant a screening fee if no rental unit is actually available.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D005",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-9295438209d9f63c",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "Return screening fee to unselected applicants unless first-qualified policy applies",
+          "requirement": "A landlord must return the screening fee to any applicant not selected. Alternatively, the landlord may have a policy under which it reviews applications in the order received, the first qualified applicant gets the unit, and no screening fee is charged to any applicant not considered.",
+          "citation": "California Civil Code Section 1950.6",
+          "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+          "quoted_span": "The landlord must also return a screening fee to any applicant not selected, or have a policy under which they: (1) review applications in the order received and the first qualified applicant gets the unit, and (2) do not charge a screening fee to any applicant not considered.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D005",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-02267f5347a08278",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Landlord must use a tenant-provided reusable screening report",
+          "requirement": "If the tenant provides a reusable screening report, the landlord must use it.",
+          "citation": "California Civil Code Section 1950.6",
+          "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+          "quoted_span": "If the tenant provides a reusable screening report, the landlord must use it.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D005",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-97115a06f271b078",
+          "jurisdiction": "Berkeley, CA",
+          "level": "city",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "Tenant screening fee rights statement and fee cap disclosure",
+          "requirement": "When an owner or the owner's agent receives a request to rent residential property in Berkeley and charges a fee to purchase a consumer credit report and to validate, review, or otherwise process an application, the owner must give the applicant a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap under Civil Code 1950.6(b). The owner may give these in the rental application or in a separate disclosure before receiving the fee. The statement may be the quoted text or a substantially similar one.",
+          "citation": "BMC 13.78.010",
+          "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+          "quoted_span": "the owner must provide, either in the rental application or in a separate disclosure before receiving the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "BMC 13.78.018 states that Chapter 13.78 applies to all residential rental agreements regardless of contrary lease language. The rights statement refers to a URL the City has not yet provided.",
+          "effective_date": null,
+          "source_doc_id": "D005",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-03f66da8dafec84d",
+          "jurisdiction": "Berkeley, CA",
+          "level": "city",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "No non-refundable renewal or roommate fees for existing tenants",
+          "requirement": "An owner of residential rental property, or the owner's agent, cannot charge an existing tenant a non-refundable fee for renewing a tenancy, in whole or in part. This includes any fee tied to a roommate's departure or to a request to add or replace a roommate in a pre-existing household.",
+          "citation": "BMC 13.78.016",
+          "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+          "quoted_span": "An owner of residential rental property (or the owner’s agent) cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "BMC 13.78.018 states that Chapter 13.78 applies to all residential rental agreements regardless of contrary lease language. Lease provisions that violate the chapter are unenforceable.",
+          "effective_date": null,
+          "source_doc_id": "D005",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-73444be8e25769cf": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-bd5dfc988984fb18": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-9295438209d9f63c": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-02267f5347a08278": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-97115a06f271b078": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-03f66da8dafec84d": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D005",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 3736,
+    "source_sha256": "396972b4e199efe65ff763eae53ed8a81d99e17ba900c39f16bfb44c16637bed",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "This is an administrator-review draft and not legal advice.",
+      "The chunk is a Rent Board summary page, not the statutory text. No enactment, effective, or amendment dates appear in it, so all lifecycle dates and effective_date are null. 'in_force' is inferred from the present-tense descriptions on a page retrieved 2026-10-01, and the retrieval date is not an effective date.",
+      "The state-level rules (maximum fee, no fee when no unit is available, refund or first-qualified policy, reusable report) are taken from a Berkeley page that summarizes Civil Code 1950.6. Verify them against the statute text before import.",
+      "No exemptions or coverage limits are stated in this chunk. Coverage is encoded only as jurisdiction plus residential use. Statutory exclusions may exist that this chunk does not show.",
+      "The 'reusable screening report' rule is categorized as screening_restrictions. Confirm the category with a reviewer.",
+      "The page says prospective tenants 'should expect' a credit report copy within 7 days, a receipt, an itemized list of expenses, and a refund of any unused fee. This is expectation language, so no separate obligation was drafted. Confirm against the statute.",
+      "BMC 13.78.018 (Chapter 13.78 applies regardless of contrary lease terms, and violating provisions are unenforceable) is recorded as interaction text rather than a separate rule, because it is not a standalone category obligation.",
+      "The URL for the Tenant Screening Fee Rights Statement is a placeholder ('to be provided by City'), so the disclosure's operational content is incomplete.",
+      "The page's news items (such as Measure BB registration and fees) do not support any rule in the six categories and were excluded.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "ca_screening_fee_no_unit_available: model whitespace was replaced with the exact captured span; inspect the original quotation during review.",
+      "ca_screening_fee_refund_or_first_qualified_policy: model whitespace was replaced with the exact captured span; inspect the original quotation during review."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4378,
+      "output_tokens": 5182
+    },
+    "created_at": "2026-10-04T10:08:39.033Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "sources": 17,
+  "chunks": 21,
+  "cached_chunks": 0,
+  "new_chunks": 21,
+  "max_new_requests": 30,
+  "planned_new_requests": 21,
+  "max_sdk_transport_attempts": 42,
+  "requires_review": true,
+  "plan_only": false,
+  "created_at": "2026-10-04T10:07:10.670Z",
+  "attempted_requests": 21,
+  "completed_chunks": 19,
+  "failed_chunks": 2,
+  "skipped_chunks": 0,
+  "new_usage": {
+    "input_tokens": 121757,
+    "output_tokens": 75396
+  },
+  "usage_note": "Usage reports successful new chunk responses; failed upstream/validation attempts may consume provider credits without reported token counts. SDK retry attempts are bounded at one retry per chunk call.",
+  "items": [
+    {
+      "doc_id": "D022",
+      "chunk": 0,
+      "cache_key": "f2f94e888d045fa815fb16af206a77a1c6c8f794cb7c152082f4e4eb68faa9a8",
+      "status": "extracted",
+      "rules": 2,
+      "input_tokens": 5404,
+      "output_tokens": 2940
+    },
+    {
+      "doc_id": "D024",
+      "chunk": 0,
+      "cache_key": "346148596bff92719b78e6303f35d612ef1aacbcd7111302fdca698342ee0b63",
+      "status": "extracted",
+      "rules": 3,
+      "input_tokens": 8657,
+      "output_tokens": 7007
+    },
+    {
+      "doc_id": "D025",
+      "chunk": 0,
+      "cache_key": "ba4eb0e646a7bee8dc40e7376020dc21d5914be72a69af45df1e8701339a06df",
+      "status": "extracted",
+      "rules": 6,
+      "input_tokens": 9679,
+      "output_tokens": 7931
+    },
+    {
+      "doc_id": "D025",
+      "chunk": 1,
+      "cache_key": "faaf7edc262ffd8abfcc6419d187049ee1d7690c4322d2b8da49e099a100dfac",
+      "status": "extracted",
+      "rules": 10,
+      "input_tokens": 6064,
+      "output_tokens": 7424
+    },
+    {
+      "doc_id": "D026",
+      "chunk": 0,
+      "cache_key": "0338f17563ebcd488e29336e020594ca1980f49ac410e584b9fa11b6eaafd94e",
+      "status": "extracted",
+      "rules": 6,
+      "input_tokens": 5608,
+      "output_tokens": 4667
+    },
+    {
+      "doc_id": "D027",
+      "chunk": 0,
+      "cache_key": "f6c2f89ff43c9ccccdc0b7b5f18bf13506fb463aa0388778836bc67fa426c1cb",
+      "status": "extracted",
+      "rules": 5,
+      "input_tokens": 6751,
+      "output_tokens": 5022
+    },
+    {
+      "doc_id": "S001",
+      "chunk": 0,
+      "cache_key": "4d6382433523cc398cd615283d983ab6dce2efab03c5d059eb12189c26af47fa",
+      "status": "extracted",
+      "rules": 10,
+      "input_tokens": 7321,
+      "output_tokens": 9905
+    },
+    {
+      "doc_id": "S002",
+      "chunk": 0,
+      "cache_key": "6a6a661a717524ef5c00f132467d2b47849d4db9a323a791b6a1ddd59af4078b",
+      "status": "extracted",
+      "rules": 4,
+      "input_tokens": 4909,
+      "output_tokens": 4269
+    },
+    {
+      "doc_id": "S012",
+      "chunk": 0,
+      "cache_key": "a01c7d12eebeca8b9d80fbb458f7448103ecde5c3c916da7b8ad940156656065",
+      "status": "extracted",
+      "rules": 1,
+      "input_tokens": 4571,
+      "output_tokens": 2109
+    },
+    {
+      "doc_id": "D069",
+      "chunk": 0,
+      "cache_key": "c59eb3d9e51804c5223fc7c8352ec1674d67609bac77effc504a80cd85d7957e",
+      "status": "failed",
+      "rules": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "error_code": "AI_EVIDENCE_REJECTED"
+    },
+    {
+      "doc_id": "D066",
+      "chunk": 0,
+      "cache_key": "0f1fec4a7b0d9df524ceaa2a45f90928342a467a22f35d4581f2a9dd08d01b78",
+      "status": "failed",
+      "rules": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "error_code": "AI_EVIDENCE_REJECTED"
+    },
+    {
+      "doc_id": "D052",
+      "chunk": 0,
+      "cache_key": "d82f402868e50ef0cbc69b3fd9ee2ad6e28364b38c8cc12e702cbc5795c387cb",
+      "status": "extracted",
+      "rules": 10,
+      "input_tokens": 9167,
+      "output_tokens": 8675
+    },
+    {
+      "doc_id": "D052",
+      "chunk": 1,
+      "cache_key": "f6c33ce0a3d40ecf1b92648b197fdeff426dcb5567710cbb1e1bc71216aef944",
+      "status": "extracted",
+      "rules": 6,
+      "input_tokens": 5554,
+      "output_tokens": 6410
+    },
+    {
+      "doc_id": "D057",
+      "chunk": 0,
+      "cache_key": "184667e55ca4059f11b9b95b01e72cd471424d9ce68ab56a2e5b703bd2f6a54c",
+      "status": "extracted",
+      "rules": 0,
+      "input_tokens": 4149,
+      "output_tokens": 391
+    },
+    {
+      "doc_id": "D053",
+      "chunk": 0,
+      "cache_key": "2cde67049a43a4dded3122d75674c39098354a77e0b18e10fa6d5f9a1e3cd759",
+      "status": "extracted",
+      "rules": 0,
+      "input_tokens": 4478,
+      "output_tokens": 555
+    },
+    {
+      "doc_id": "D045",
+      "chunk": 0,
+      "cache_key": "e22f0c9936b33379c6658f50c0c2b7697ce62e716a727cdf202de2e36482e28a",
+      "status": "extracted",
+      "rules": 0,
+      "input_tokens": 4089,
+      "output_tokens": 653
+    },
+    {
+      "doc_id": "D046",
+      "chunk": 0,
+      "cache_key": "51d33c77acbc5e03fc777fd26bccbf140317b36635aec9eadccf1db16a839f83",
+      "status": "extracted",
+      "rules": 0,
+      "input_tokens": 4291,
+      "output_tokens": 760
+    },
+    {
+      "doc_id": "S008",
+      "chunk": 0,
+      "cache_key": "aa32b3d205a23e5e91f34c1bc1ddb8f35fe5a738cfd3d541ae73d35bdcc9b5df",
+      "status": "extracted",
+      "rules": 0,
+      "input_tokens": 10577,
+      "output_tokens": 1863
+    },
+    {
+      "doc_id": "S008",
+      "chunk": 1,
+      "cache_key": "2f8c30c64cecfcdb8cb562335dd118b7d7c69937cd8757e1354fd26ba5ee83af",
+      "status": "extracted",
+      "rules": 0,
+      "input_tokens": 10008,
+      "output_tokens": 1348
+    },
+    {
+      "doc_id": "S008",
+      "chunk": 2,
+      "cache_key": "698bb2d7a701773f948a862650905b321691172aa523df8cc9ae5bc3575bf0b6",
+      "status": "extracted",
+      "rules": 0,
+      "input_tokens": 5125,
+      "output_tokens": 416
+    },
+    {
+      "doc_id": "S011",
+      "chunk": 0,
+      "cache_key": "9ee27b929212af65e7cf99bb20c4755b660f63ebff30de2169d4710d9a475892",
+      "status": "extracted",
+      "rules": 2,
+      "input_tokens": 5355,
+      "output_tokens": 3051
+    }
+  ]
+}

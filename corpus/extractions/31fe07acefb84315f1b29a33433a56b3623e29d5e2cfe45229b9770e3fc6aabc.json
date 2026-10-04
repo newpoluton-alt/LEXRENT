@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "cache_key": "31fe07acefb84315f1b29a33433a56b3623e29d5e2cfe45229b9770e3fc6aabc",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-11639cfdea98d75f",
+          "jurisdiction": "MA",
+          "level": "state",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Prohibition on discrimination against public assistance recipients and housing subsidy tenants in rental accommodations",
+          "requirement": "A person furnishing rental accommodations may not discriminate against an individual because the individual receives federal, state, or local public assistance (including medical assistance) or housing subsidies (including rental assistance or rental supplements), or because of any requirement of such a public assistance, rental assistance, or housing subsidy program.",
+          "citation": "M.G.L. c. 151B, § 4(10)",
+          "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+          "quoted_span": "For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Subsection 10 of the statute, which continues past this chunk's boundary. The text in this chunk states no exemptions for this subsection, but definitions and exemptions elsewhere in c. 151B (for example in section 1) were not reviewed.",
+          "effective_date": null,
+          "source_doc_id": "D049",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-11639cfdea98d75f": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "MA"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D049",
+    "chunk": 1,
+    "total_chunks": 3,
+    "next_chunk": 2,
+    "chunk_start": 18000,
+    "chunk_end": 38000,
+    "source_sha256": "ac42593c79533c25223582de77eb5411d2f8ef501a0d027d2a61042b7e81d7ef",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Draft is for administrator review only and is not legal advice.",
+      "Status 'in_force' is inferred from this being the codified General Laws page. The chunk contains no enactment or effective dates, so all lifecycle dates and effective_date are null.",
+      "Subsections 6(c) and 7(c) (inquiries into protected characteristics of rental applicants) were omitted. Coverage depends on 'multiple dwelling', 'contiguously located' and 'other covered housing accommodations' definitions in section 1 that are not in this chunk and cannot be safely encoded. Subsection 7 also has an owner-occupied two-family exemption.",
+      "Subsection 11 is cut off at the end of this chunk and was not drafted. Neighboring chunks should be reviewed.",
+      "The employment provisions (subsections 9, 9 1/2, 9A), commercial space (8), advertising (7B), and handicap design, modification and accommodation provisions (6, 7A) fall outside the six supplied categories and were not drafted.",
+      "The chunk contains no rent increase limits, just cause eviction, security deposit, application screening fee, or algorithmic rent-setting provisions. No fixture aliases are supported by this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 8866,
+      "output_tokens": 2119
+    },
+    "created_at": "2026-10-04T09:55:30.008Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

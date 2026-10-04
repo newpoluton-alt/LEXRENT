@@ -1,0 +1,4431 @@
+{
+  "as_of": "2026-10-01",
+  "total_addresses": 500,
+  "addresses_with_rules": 500,
+  "addresses_with_in_force_rules": 500,
+  "empty_address_ids": [],
+  "minimum_rules_per_address": 19,
+  "verified_municipalities": 447,
+  "unresolved_municipality_ids": [
+    "A0006",
+    "A0009",
+    "A0046",
+    "A0056",
+    "A0064",
+    "A0068",
+    "A0071",
+    "A0073",
+    "A0098",
+    "A0115",
+    "A0118",
+    "A0124",
+    "A0127",
+    "A0128",
+    "A0144",
+    "A0150",
+    "A0156",
+    "A0166",
+    "A0195",
+    "A0203",
+    "A0217",
+    "A0220",
+    "A0229",
+    "A0231",
+    "A0232",
+    "A0242",
+    "A0245",
+    "A0262",
+    "A0263",
+    "A0271",
+    "A0289",
+    "A0291",
+    "A0295",
+    "A0302",
+    "A0310",
+    "A0328",
+    "A0346",
+    "A0357",
+    "A0362",
+    "A0364",
+    "A0376",
+    "A0380",
+    "A0384",
+    "A0387",
+    "A0392",
+    "A0421",
+    "A0422",
+    "A0427",
+    "A0464",
+    "A0480",
+    "A0484",
+    "A0485",
+    "A0493"
+  ],
+  "coverage_complete": false,
+  "audit": {
+    "revision": "cb8954e1d02a28b65702ba13b63b84c421b81c30464b892fccc017c09bcdc815",
+    "method": "Claude extraction drafts plus agent-assisted source, date and exemption audit; not a professional legal review",
+    "human_legal_review": false,
+    "automated_chunks": 55,
+    "captured_sources_used": 51,
+    "rules_by_state": {
+      "CA": 40,
+      "NJ": 30,
+      "MA": 25
+    }
+  },
+  "cities": [
+    {
+      "city": "Los Angeles, CA",
+      "addresses": 80,
+      "with_rules": 80,
+      "with_in_force_rules": 80,
+      "verified_municipalities": 77
+    },
+    {
+      "city": "Hoboken, NJ",
+      "addresses": 40,
+      "with_rules": 40,
+      "with_in_force_rules": 40,
+      "verified_municipalities": 40
+    },
+    {
+      "city": "Newark, NJ",
+      "addresses": 50,
+      "with_rules": 50,
+      "with_in_force_rules": 50,
+      "verified_municipalities": 50
+    },
+    {
+      "city": "Berkeley, CA",
+      "addresses": 40,
+      "with_rules": 40,
+      "with_in_force_rules": 40,
+      "verified_municipalities": 38
+    },
+    {
+      "city": "Boston, MA",
+      "addresses": 60,
+      "with_rules": 60,
+      "with_in_force_rules": 60,
+      "verified_municipalities": 41
+    },
+    {
+      "city": "Jersey City, NJ",
+      "addresses": 50,
+      "with_rules": 50,
+      "with_in_force_rules": 50,
+      "verified_municipalities": 50
+    },
+    {
+      "city": "Cambridge, MA",
+      "addresses": 50,
+      "with_rules": 50,
+      "with_in_force_rules": 50,
+      "verified_municipalities": 38
+    },
+    {
+      "city": "San Francisco, CA",
+      "addresses": 80,
+      "with_rules": 80,
+      "with_in_force_rules": 80,
+      "verified_municipalities": 69
+    },
+    {
+      "city": "San Diego, CA",
+      "addresses": 50,
+      "with_rules": 50,
+      "with_in_force_rules": 50,
+      "verified_municipalities": 44
+    }
+  ],
+  "examples": [
+    {
+      "persona": "Renters",
+      "address_id": "A0001",
+      "purpose": "Read screening and deposit duties, inspect source quotes and identify facts needed for rent protections.",
+      "street_address": "6238 DE LONGPRE AVE",
+      "city": "Los Angeles",
+      "rules": 23,
+      "in_force_rules": 10,
+      "missing_facts": [
+        "affordable_housing_restricted",
+        "special_housing_exempt",
+        "certificate_age_years",
+        "separately_alienable",
+        "exemption_notice_provided",
+        "owner_type",
+        "owner_llc_has_corporate_member",
+        "city_rent_controlled",
+        "shares_kitchen_or_bath_with_owner",
+        "city_eviction_covered",
+        "tenancy_months",
+        "all_tenants_12_months",
+        "owner_total_properties",
+        "owner_total_units",
+        "owner_occupied"
+      ],
+      "url": "/?address_id=A0001&as_of=2026-10-01"
+    },
+    {
+      "persona": "Advocates and agencies",
+      "address_id": "A0008",
+      "purpose": "Compare Jersey City and state rules, then inspect future NJ FAIR and possible local interactions in change tracking.",
+      "street_address": "1065 SUMMIT AVENUE",
+      "city": "Jersey City",
+      "rules": 20,
+      "in_force_rules": 4,
+      "missing_facts": [
+        "year_built",
+        "units",
+        "owner_occupied",
+        "seasonal_or_transient_tenancy",
+        "family_trust_disability_unit",
+        "security_deposit_law_invoked_30_days",
+        "city_rent_controlled"
+      ],
+      "url": "/?address_id=A0008&as_of=2026-10-01"
+    },
+    {
+      "persona": "Housing providers",
+      "address_id": "A0010",
+      "purpose": "Review Cambridge and Massachusetts rental duties, screening costs and pending proposals with a dated property summary.",
+      "street_address": "134 Oxford St",
+      "city": "Cambridge",
+      "rules": 20,
+      "in_force_rules": 8,
+      "missing_facts": [
+        "vacation_or_recreational_lease_100_days_or_less",
+        "cambridge_notification_exempt",
+        "tenancy_at_will"
+      ],
+      "url": "/?address_id=A0010&as_of=2026-10-01"
+    }
+  ],
+  "limitations": [
+    "Data availability measures recorded requirements; it does not certify complete legal coverage.",
+    "Missing ownership, tenant history, occupancy certificates and exemption notices must be supplied with evidence rather than inferred from public maps.",
+    "Unmatched or ambiguous municipalities retain statewide records and candidate-city rules marked unknown."
+  ],
+  "export_scope": "local_compiled_corpus",
+  "compiled_at": "2026-10-04T10:27:43.644Z",
+  "source_provenance": [
+    {
+      "doc_id": "D001",
+      "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+      "retrieved_at": "2026-10-01T22:44Z",
+      "sha256": "7f24d692c68f42ed2ab11a2d1f8e060a951f8cf6a3974b4e8090e63081ad6f17",
+      "manifest_sha256": "764e0430da30388ff875606eb2f551388fc85e214d549e305d7f502ff550803d",
+      "captured": true
+    },
+    {
+      "doc_id": "D003",
+      "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "a008c846fc4edd842994d8c5ea0367546e55319670e9687c5d1c7ccfdfa1ce40",
+      "manifest_sha256": "f24e09665a24fcf906ff6a75d46a7a72092ef978cfa2a1410dc8dfac48691074",
+      "captured": true
+    },
+    {
+      "doc_id": "D004",
+      "source_url": "https://rentboard.berkeleyca.gov/elected-rent-board/news/2026-adjustments-relocation-assistance-payments",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "bb1b00d69bd3ead225e5bd758bf642256df1cb89dfa4275a5699266b78df30e1",
+      "manifest_sha256": "60224fac40eb78746c3f7bb6ab05985daeb7a433d03132a7a088e56c7827e5a6",
+      "captured": true
+    },
+    {
+      "doc_id": "D005",
+      "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "396972b4e199efe65ff763eae53ed8a81d99e17ba900c39f16bfb44c16637bed",
+      "manifest_sha256": "b5efcc2d1bfb2fbc5609bd30f83d66bfdf5a45f44f690bea0f1d37130f14a18d",
+      "captured": true
+    },
+    {
+      "doc_id": "D006",
+      "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "f1960db522de7f63158e64334835b37e52ae1d8fa8b510eeb314658aef4173fa",
+      "manifest_sha256": "db130d6eaf69a72123c1ef45989faf8b2b4748720425e0a2f4bf378df16ba195",
+      "captured": true
+    },
+    {
+      "doc_id": "D007",
+      "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "2ba3028382b89ee70810a45e25dd9707297bd65512e2723f4f9bda514af57203",
+      "manifest_sha256": "d91318f17f00ac1906efb890b717cf2d73b7a34d5bd82f47c9e9a9ea3752404c",
+      "captured": true
+    },
+    {
+      "doc_id": "D008",
+      "source_url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "969848595b70aa2ff7b9e8420f610c36b914521c4ea4dd1d0656be776e90c39f",
+      "manifest_sha256": "654b6ecd0f7b68896b5c6e9a3b1d9bf28189d3c4e92cad1562c4743c06c45b1a",
+      "captured": true
+    },
+    {
+      "doc_id": "D010",
+      "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
+      "retrieved_at": "2026-10-01T22:44Z",
+      "sha256": "61380f45cb66d87065eb029b6f5ee54dc704a0d059acc6136477337ce5f0cb73",
+      "manifest_sha256": "8d2640c97add084cc59ec2de89097fc2ec9f2fe42d39c8d6c52777aa3d1a4862",
+      "captured": true
+    },
+    {
+      "doc_id": "D013",
+      "source_url": "https://www.boston.gov/housing-stability-notification-act",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "49b8ad77c47ac7a12afc5a1451cc38e8d908b45f83c922cbd2ee2eb320b715f0",
+      "manifest_sha256": "372ca0bcb1bd441d5a0b966989649674a20910bbdcae3defd99485c372421bd5",
+      "captured": true
+    },
+    {
+      "doc_id": "D016",
+      "source_url": "https://calcivilrights.ca.gov/housing/",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "21d92128daede668d6f1a824528ead345982ddf043a32e4fb5d80dd8adbcdce9",
+      "manifest_sha256": "620f35253fad41fd920fc8298db66045a73a5bb5df2b1d22d5efa13f75fa8c2c",
+      "captured": true
+    },
+    {
+      "doc_id": "D022",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "0699980875e6bf3d797abd8b734db7d449b295173e33668cc655e3b394c084ed",
+      "manifest_sha256": "90e2901ce96a4d4b0e698c8a2954e3f2468c5b4e8e3f0a79fb8d7d4a9001fa51",
+      "captured": true
+    },
+    {
+      "doc_id": "D023",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "fdd8d7fca42103cf630c3a9a4ed217150eb17a6e180edd80c1d845ca5e8aa1fe",
+      "manifest_sha256": "823aa700801184618c5511ba5446ff5a2fc9c0687382c87ed41a65fc2fa0ca4b",
+      "captured": true
+    },
+    {
+      "doc_id": "D024",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "eb9c42af2b9a5c220ca37816f409f0bd3ea92a002a973283e779fdb72de18bd7",
+      "manifest_sha256": "e6e520ca190db10aa69e655ede7e91c16622f5ef21eb58a3229487746ef313b1",
+      "captured": true
+    },
+    {
+      "doc_id": "D025",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "48b1d005fb59f73082dc625d4038272f4bde950d2c93a70ef400a43b630e1511",
+      "manifest_sha256": "4fe1fd67bfbeefb49a91f6fa08ebf0cab004204289ed363aa0386be9ed775d08",
+      "captured": true
+    },
+    {
+      "doc_id": "D026",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "35ec54ef926471876977b9cad3f0db7ff5b77393bd0baad03ed30125949f8e7a",
+      "manifest_sha256": "b749f447673b318960fed3651b887c31c8ca301905cf308c9936ca50fcc178c3",
+      "captured": true
+    },
+    {
+      "doc_id": "D027",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+      "retrieved_at": "2026-10-01T22:35Z",
+      "sha256": "511f8074b8f4959161fb4c7ec922c8fa963735b47c13d852b8a09ca42b922ecf",
+      "manifest_sha256": "0b7418e67532d04b912e6218e587650afd50ea695864ccb7425038c919c0aae3",
+      "captured": true
+    },
+    {
+      "doc_id": "D029",
+      "source_url": "https://www.cambridgema.gov/departments/humanrightscommission",
+      "retrieved_at": "2026-10-01T22:36Z",
+      "sha256": "ce40e4d452c15e43e1bb07e7f03f7bd2bd738b2da614d1d21b7826f7e581e01c",
+      "manifest_sha256": "2bf1d0131839b6594bda907caee3d1166c1425712d159abc6817bfd9488cffde",
+      "captured": true
+    },
+    {
+      "doc_id": "D031",
+      "source_url": "https://www.cambridgema.gov/tenantrights",
+      "retrieved_at": "2026-10-01T22:36Z",
+      "sha256": "65ffa9dca5815b925debf63d1ff0974f710aed6614723f28d722209094a36b20",
+      "manifest_sha256": "2a74f0750568bb7cc53620bc79c2e1df938c50f2a17eee4f0f2753b7fd0431d2",
+      "captured": true
+    },
+    {
+      "doc_id": "D040",
+      "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+      "retrieved_at": "2026-10-01T22:36Z",
+      "sha256": "13f9d54597199b73e23ad12dcc38626d53bb30bd53d89a63b6a7f55ecc570425",
+      "manifest_sha256": "6633b8bd769d3795ac08c7599324beb392631f044d3f3ad5c73248fbc09e48c7",
+      "captured": true
+    },
+    {
+      "doc_id": "D043",
+      "source_url": "https://housing.lacity.gov/wp-content/uploads/2026/08/Relocation-Assistance-Bulletins-A-and-B-Combined.pdf",
+      "retrieved_at": "2026-10-01T22:36Z",
+      "sha256": "31b7db7b0e637435a30b1c9bf6db06d8e1a4b748e335bceeaa9232da266e6f04",
+      "manifest_sha256": "b7a8c88e14d50821a59abd88c5c457f101c26d337351da2c7134e1fc1830309b",
+      "captured": true
+    },
+    {
+      "doc_id": "D045",
+      "source_url": "https://malegislature.gov/Bills/194/H5222",
+      "retrieved_at": "2026-10-01T22:36Z",
+      "sha256": "8bc537dfe4d0e00b829147ae82ba11d40bef8a2b0696f487c417ca517673bba7",
+      "manifest_sha256": "cc3a2eee30cb567368f01c10da2da5c38703954d3640199539737980a4caf8ca",
+      "captured": true
+    },
+    {
+      "doc_id": "D046",
+      "source_url": "https://malegislature.gov/Bills/194/S2983",
+      "retrieved_at": "2026-10-01T22:36Z",
+      "sha256": "6ea5313d0a656ab73b683e72b594cf143ee61bd6923ee1d9f3df46682248004d",
+      "manifest_sha256": "d6ea7aaf0dd90e92cbb141ec127402e0db1e00fa3aa67d67a0f1264dd2b96827",
+      "captured": true
+    },
+    {
+      "doc_id": "D048",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+      "retrieved_at": "2026-10-01T22:36Z",
+      "sha256": "090647f489ec5f03c114df23b74c28a107a7e0b855e382969c27dbf58a55837d",
+      "manifest_sha256": "713cae78081e4354df2926b45984dcacdb2299cf4edb8dcd7064d7da7fa3c06e",
+      "captured": true
+    },
+    {
+      "doc_id": "D049",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "ac42593c79533c25223582de77eb5411d2f8ef501a0d027d2a61042b7e81d7ef",
+      "manifest_sha256": "7727efb19acd13f7b10f320df75ceca00526c8584cac1af80c6848cc86c7ae5c",
+      "captured": true
+    },
+    {
+      "doc_id": "D051",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "6c1a194983bb0ee7079919bb8ef0e77efcd35d73dd9795853024a6eaaf5b24de",
+      "manifest_sha256": "94da03e3a8acc3859e73e1f0f15e93c3efcbec8b7926a9f9de9c3e9ff62b04ba",
+      "captured": true
+    },
+    {
+      "doc_id": "D052",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "f24c21cb2b32330c0f2f112f066d02b784887a8552cc3777ea96f1d53dd0171f",
+      "manifest_sha256": "4052b3a94693be64fada21672df3f6f7368198b6b65a7686a8cc20e5f076d997",
+      "captured": true
+    },
+    {
+      "doc_id": "D053",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section18",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "5c418b18df23a00a8b6b056e68352f67b378b94321ee42867df8ce02ce36830a",
+      "manifest_sha256": "0d73e63fc5911e44aba74196703315000e18aac46965310b14142193a5658d8b",
+      "captured": true
+    },
+    {
+      "doc_id": "D057",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
+      "retrieved_at": "2026-10-01T22:56Z",
+      "sha256": "c678b42f8fc6ecfc7c7a6b1bdf6c68aec877daa80a53d62d5d2ca8176c967d7b",
+      "manifest_sha256": "0109f5cb48ad7951f1b8d49df1b1e277f6dbd04d3140063cc6f1ed354e623b8f",
+      "captured": true
+    },
+    {
+      "doc_id": "D058",
+      "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+      "retrieved_at": "2026-10-01T22:54Z",
+      "sha256": "80dcf6692b891859e2601c0732252ba30ec010b5034749c4693ef68ce1fd4281",
+      "manifest_sha256": "50e034e62f603fbf2437d20a85ea9a619fe6ff7e42b7e6ca85c56e0919a7eee1",
+      "captured": true
+    },
+    {
+      "doc_id": "D065",
+      "source_url": "https://pub.njleg.gov/bills/2020/PL21/110_.HTM",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "c7d281ddae183438fd360bfa0b4824d6541c532efe6ae8123dad37e0f4d53e1e",
+      "manifest_sha256": "2ebdb9726f7ae35a1fdecebbcf3d5aeecea142567039747009c568aa0c1408b4",
+      "captured": true
+    },
+    {
+      "doc_id": "D066",
+      "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "e06aa61acf6ddb50631d5be3c89c4029caccb13c0dcc7be888e0e64f8b182c2e",
+      "manifest_sha256": "7de900de205fe25bcb0d2d5a4f4ea1037d784cf677a886f2f6c5ab4782667115",
+      "captured": true
+    },
+    {
+      "doc_id": "D067",
+      "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+      "manifest_sha256": "ba627933d9acecbc4333a21ecc14f35d893a811069c53b304240031a8a08009c",
+      "captured": true
+    },
+    {
+      "doc_id": "D068",
+      "source_url": "https://www.nj.gov/oag/dcr/downloads/kyrhousing02.pdf",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "857cb50fde16e0027346c44f502b2f0d854aad4bca7cf0926a31cd54adad8159",
+      "manifest_sha256": "0262ee31d4e096b1e73056dff3f0511f7ef8da8a43f83d0e6eddc618c912909f",
+      "captured": true
+    },
+    {
+      "doc_id": "D069",
+      "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+      "retrieved_at": "2026-10-01T22:56Z",
+      "sha256": "1fdbfb48743a46429c3f47dbd8d08c665739202361661e1a2f19b94bb0ec43a6",
+      "manifest_sha256": "eb4d4e4797616e5bc1d641db418d4e6cfc3064e1cef925725f83c77472a154f0",
+      "captured": true
+    },
+    {
+      "doc_id": "D073",
+      "source_url": "https://docs.sandiego.gov/municode/municodechapter09/ch09art08division07.pdf",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "d1d4b9874a7c4b51a97cb81809e9ece2658f0f9e52898d904f90d48f3c1a140b",
+      "manifest_sha256": "9b30d1ef437a88840dcc15bfab72dee1952e183e9b7584786224c98214cf4905",
+      "captured": true
+    },
+    {
+      "doc_id": "D079",
+      "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "51f9490227bafc8a6f458c7e417f41bce3af07c1416fae77f281b987d97ef793",
+      "manifest_sha256": "adeded646ba7b0ca6d9daceca173f072948928df492872febafafd487e4d04d1",
+      "captured": true
+    },
+    {
+      "doc_id": "D080",
+      "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "924783981b92aabf2a5200517290879d008fd1e8c579969bdddaa28ff6f9fd7d",
+      "manifest_sha256": "e864d1c6a213ef38e925160f5c3c3532bf59230be3f13b51e43d7ba12d688cae",
+      "captured": true
+    },
+    {
+      "doc_id": "D081",
+      "source_url": "https://www.sf.gov/news/new-law-prohibits-algorithmic-devices-used-set-rents-san-francisco",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "e3437f99eae3882641b5052fd7006f2a0304abd2033e1b721a8c32324be2afab",
+      "manifest_sha256": "c77c6ddad9b2a6c7dda9a5f0c37660eac4c2e4765f677e81dccd517555aad7c1",
+      "captured": true
+    },
+    {
+      "doc_id": "D082",
+      "source_url": "https://www.sf.gov/reports--archive-relocation-rates",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "5e1ee2ddac37eb9639650aaa15af33f6820c182edc506f4b6da787a3da7714f6",
+      "manifest_sha256": "85ca3517f80d9430b1a04b2a635bbabe3acd99c3dbdc245c3c463d12c5a87c41",
+      "captured": true
+    },
+    {
+      "doc_id": "D083",
+      "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+      "retrieved_at": "2026-10-01T22:37Z",
+      "sha256": "764e9e3a023bd434458dfea8ffbb57e57d23e5f0a4939cc10948b9e495034d2f",
+      "manifest_sha256": "ad666827b1e294e0f4bd9cad28741b664a3ab043fc7c7f28ece726215f3a8756",
+      "captured": true
+    },
+    {
+      "doc_id": "S001",
+      "source_url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+      "retrieved_at": "2026-10-04T09:54:08.882667+00:00",
+      "sha256": "d53b96d61a86c216a9ad701aaf2351ead3fd744c8b04337aad6eade81c0fe68f",
+      "manifest_sha256": "d53b96d61a86c216a9ad701aaf2351ead3fd744c8b04337aad6eade81c0fe68f",
+      "captured": true
+    },
+    {
+      "doc_id": "S002",
+      "source_url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+      "retrieved_at": "2026-10-04T09:54:00.347067+00:00",
+      "sha256": "f655c4fe382d18c028b3571b9abd49abcdbc6692a0e8fbff34213b4cc41e914b",
+      "manifest_sha256": "f655c4fe382d18c028b3571b9abd49abcdbc6692a0e8fbff34213b4cc41e914b",
+      "captured": true
+    },
+    {
+      "doc_id": "S008",
+      "source_url": "https://www.uschamber.com/assets/documents/Opinion-Cella-v.-Campbell-Mass.pdf",
+      "retrieved_at": "2026-10-04T09:55:14.042324+00:00",
+      "sha256": "d30f8b2b90b7c24f06f293acd3f660bdd613bc33d6cafaa3c84ac4ff56b40b2d",
+      "manifest_sha256": "d30f8b2b90b7c24f06f293acd3f660bdd613bc33d6cafaa3c84ac4ff56b40b2d",
+      "captured": true
+    },
+    {
+      "doc_id": "S011",
+      "source_url": "https://cityofjerseycity.civicweb.net/document/433505/Amending%20218-12%20to%20clarify%20language.pdf?handle=42A331E429724B93A4477962ABE6783F",
+      "retrieved_at": "2026-10-04T09:55:13.723694+00:00",
+      "sha256": "f3b08e1be49aaae573e905b3ea520e47fd69b2deafbf32b2ac81c7cdddb6414b",
+      "manifest_sha256": "f3b08e1be49aaae573e905b3ea520e47fd69b2deafbf32b2ac81c7cdddb6414b",
+      "captured": true
+    },
+    {
+      "doc_id": "S009",
+      "source_url": "https://ecode360.com/15252470",
+      "retrieved_at": "2026-10-04T09:55:17.266682+00:00",
+      "sha256": "184607f1dac47f89f6c058f863fcac20355ba03ec2ad10edbd160d1c1a428b35",
+      "manifest_sha256": "184607f1dac47f89f6c058f863fcac20355ba03ec2ad10edbd160d1c1a428b35",
+      "captured": true
+    },
+    {
+      "doc_id": "S010",
+      "source_url": "https://ecode360.com/36623772",
+      "retrieved_at": "2026-10-04T09:55:24.681151+00:00",
+      "sha256": "8f2486b5660e29c31d9eae4ab65c28c799bb8dac00b5ceca112c6aac33f0bcf9",
+      "manifest_sha256": "8f2486b5660e29c31d9eae4ab65c28c799bb8dac00b5ceca112c6aac33f0bcf9",
+      "captured": true
+    },
+    {
+      "doc_id": "S012",
+      "source_url": "https://ecode360.com/46833413",
+      "retrieved_at": "2026-10-04T09:58:13.299432+00:00",
+      "sha256": "f21bb83da4bfe93bdefbe9152d660cba25cefd2b0f7a45862bddaaf7f62d18a3",
+      "manifest_sha256": "f21bb83da4bfe93bdefbe9152d660cba25cefd2b0f7a45862bddaaf7f62d18a3",
+      "captured": true
+    },
+    {
+      "doc_id": "S015",
+      "source_url": "https://www.jerseycitynj.gov/UserFiles/Servers/Server_6189660/File/City%20Hall/Housing%20Economic%20Development/Tenant%20Landlord%20Relations/8.20.26%20-%20October%20CPI.pdf",
+      "retrieved_at": "2026-10-04T10:03:13.579167+00:00",
+      "sha256": "18c256d0c926e839a21af769db2642974878536d3eafcce39d926d0867cbc6fe",
+      "manifest_sha256": "18c256d0c926e839a21af769db2642974878536d3eafcce39d926d0867cbc6fe",
+      "captured": true
+    },
+    {
+      "doc_id": "S017",
+      "source_url": "https://www.senate.ca.gov/legislative-deadlines",
+      "retrieved_at": "2026-10-04T10:08:40.282515+00:00",
+      "sha256": "4d6502a98eaab74fd809c9afea287d74514b2da0d928238a66a6d0bc16e2ab74",
+      "manifest_sha256": "4d6502a98eaab74fd809c9afea287d74514b2da0d928238a66a6d0bc16e2ab74",
+      "captured": true
+    },
+    {
+      "doc_id": "S019",
+      "source_url": "https://malegislature.gov/Bills/194/H5222.pdf",
+      "retrieved_at": "2026-10-04T10:12:59.096Z",
+      "sha256": "f23cbbd9f52bd74ece7e585d02535e3cf6f166a36374f7acf1e6879c2048c87c",
+      "manifest_sha256": "f23cbbd9f52bd74ece7e585d02535e3cf6f166a36374f7acf1e6879c2048c87c",
+      "captured": true
+    },
+    {
+      "doc_id": "S020",
+      "source_url": "https://malegislature.gov/Bills/194/S2983.pdf",
+      "retrieved_at": "2026-10-04T10:12:59.097Z",
+      "sha256": "fc1d4e226f37a0624ac37dd44101965ee6e246a3816ac0c56f2de4271627aae1",
+      "manifest_sha256": "fc1d4e226f37a0624ac37dd44101965ee6e246a3816ac0c56f2de4271627aae1",
+      "captured": true
+    }
+  ],
+  "ruleLogic": {
+    "CA-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-10-06",
+        "effective_on": "2026-01-01"
+      },
+      "fixture_rule_ids": [
+        "CA-ALG-01"
+      ]
+    },
+    "CA-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "affordable_housing_restricted",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "special_housing_exempt",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "certificate_age_years",
+            "op": "gte",
+            "value": 15
+          },
+          {
+            "not": {
+              "all": [
+                {
+                  "field": "separately_alienable",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "field": "exemption_notice_provided",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "not": {
+                    "any": [
+                      {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "corporation",
+                          "reit"
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "field": "owner_type",
+                            "op": "eq",
+                            "value": "llc"
+                          },
+                          {
+                            "field": "owner_llc_has_corporate_member",
+                            "op": "eq",
+                            "value": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-04-01",
+        "repealed_on": "2030-01-01"
+      }
+    },
+    "CA-RENT-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "affordable_housing_restricted",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "special_housing_exempt",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "certificate_age_years",
+            "op": "gte",
+            "value": 15
+          },
+          {
+            "not": {
+              "all": [
+                {
+                  "field": "separately_alienable",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "field": "exemption_notice_provided",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "not": {
+                    "any": [
+                      {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "corporation",
+                          "reit"
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "field": "owner_type",
+                            "op": "eq",
+                            "value": "llc"
+                          },
+                          {
+                            "field": "owner_llc_has_corporate_member",
+                            "op": "eq",
+                            "value": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-04-01",
+        "repealed_on": "2030-01-01"
+      }
+    },
+    "CA-JC-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "affordable_housing_restricted",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "special_housing_exempt",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "certificate_age_years",
+            "op": "gte",
+            "value": 15
+          },
+          {
+            "field": "shares_kitchen_or_bath_with_owner",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "not": {
+              "all": [
+                {
+                  "field": "separately_alienable",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "field": "exemption_notice_provided",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "not": {
+                    "any": [
+                      {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "corporation",
+                          "reit"
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "field": "owner_type",
+                            "op": "eq",
+                            "value": "llc"
+                          },
+                          {
+                            "field": "owner_llc_has_corporate_member",
+                            "op": "eq",
+                            "value": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "any": [
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 24
+              },
+              {
+                "field": "all_tenants_12_months",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "repealed_on": "2030-01-01"
+      }
+    },
+    "CA-JC-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "affordable_housing_restricted",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "special_housing_exempt",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "certificate_age_years",
+            "op": "gte",
+            "value": 15
+          },
+          {
+            "field": "shares_kitchen_or_bath_with_owner",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "not": {
+              "all": [
+                {
+                  "field": "separately_alienable",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "field": "exemption_notice_provided",
+                  "op": "eq",
+                  "value": true
+                },
+                {
+                  "not": {
+                    "any": [
+                      {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "corporation",
+                          "reit"
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "field": "owner_type",
+                            "op": "eq",
+                            "value": "llc"
+                          },
+                          {
+                            "field": "owner_llc_has_corporate_member",
+                            "op": "eq",
+                            "value": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "any": [
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 24
+              },
+              {
+                "field": "all_tenants_12_months",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "repealed_on": "2030-01-01"
+      }
+    },
+    "CA-DEP-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "any": [
+              {
+                "field": "owner_total_properties",
+                "op": "gt",
+                "value": 2
+              },
+              {
+                "field": "owner_total_units",
+                "op": "gt",
+                "value": 4
+              },
+              {
+                "field": "owner_type",
+                "op": "in",
+                "value": [
+                  "corporation",
+                  "reit",
+                  "partnership",
+                  "nonprofit",
+                  "government"
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "field": "owner_type",
+                    "op": "eq",
+                    "value": "llc"
+                  },
+                  {
+                    "field": "owner_llc_has_corporate_member",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-07-01"
+      }
+    },
+    "CA-DEP-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-DEP-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-DEP-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-DEP-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2025-04-01"
+      }
+    },
+    "CA-FEE-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-FEE-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-FEE-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "CA-SCREEN-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "owner_occupied",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-01-01"
+      }
+    },
+    "CA-SCREEN-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "owner_occupied",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "BER-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-01-01",
+        "repealed_on": "2027-01-01"
+      },
+      "supersedes": [
+        "CA-RENT-01",
+        "CA-RENT-02"
+      ]
+    },
+    "BER-JC-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "supersedes": [
+        "CA-JC-01",
+        "CA-JC-02"
+      ]
+    },
+    "BER-JC-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "BER-DEP-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "BER-FEE-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Berkeley"
+          }
+        ]
+      }
+    },
+    "BER-FEE-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Berkeley"
+          }
+        ]
+      }
+    },
+    "SF-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "CA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "San Francisco"
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-10-14"
+      }
+    },
+    "SF-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              }
+            ]
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-03-01",
+        "repealed_on": "2027-03-01"
+      },
+      "supersedes": [
+        "CA-RENT-01",
+        "CA-RENT-02"
+      ]
+    },
+    "SF-JC-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "supersedes": [
+        "CA-JC-01",
+        "CA-JC-02"
+      ]
+    },
+    "SD-JC-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2024-03-28"
+      },
+      "supersedes": [
+        "CA-JC-01",
+        "CA-JC-02"
+      ]
+    },
+    "SD-JC-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Diego"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2023-06-24"
+      }
+    },
+    "LA-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-07-01",
+        "repealed_on": "2027-07-01"
+      },
+      "supersedes": [
+        "CA-RENT-01",
+        "CA-RENT-02"
+      ]
+    },
+    "LA-RENT-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-02-02"
+      }
+    },
+    "LA-RENT-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-02-02"
+      }
+    },
+    "LA-JC-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2023-03-27"
+      }
+    },
+    "LA-JC-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "LA-JC-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Los Angeles"
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2025-08-20"
+      }
+    },
+    "LA-JC-04": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "SD-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "San Diego"
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-05-22",
+        "effective_on": "2025-06-21"
+      }
+    },
+    "BER-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Berkeley"
+          }
+        ]
+      }
+    },
+    "BER-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_fair_chance_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "BER-JC-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-01-01",
+        "repealed_on": "2027-01-01"
+      }
+    },
+    "SF-JC-02": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-03-01",
+        "repealed_on": "2027-03-01"
+      }
+    },
+    "SF-JC-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "all": [
+                  {
+                    "field": "state",
+                    "op": "eq",
+                    "value": "CA"
+                  },
+                  {
+                    "field": "residential_use",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              }
+            ]
+          },
+          {
+            "field": "city_eviction_covered",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2026-03-01",
+        "repealed_on": "2027-03-01"
+      }
+    },
+    "NJ-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 3
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          {
+            "field": "seasonal_or_transient_tenancy",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "family_trust_disability_unit",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "NJ-RENT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NJ-EVICT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 3
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          {
+            "field": "seasonal_or_transient_tenancy",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "field": "family_trust_disability_unit",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "NJ-EVICT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NJ-DEP-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "gt",
+                    "value": 3
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "field": "security_deposit_law_invoked_30_days",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "NJ-DEP-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "gt",
+                    "value": 3
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "field": "security_deposit_law_invoked_30_days",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "NJ-DEP-03": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "any": [
+                  {
+                    "any": [
+                      {
+                        "field": "units",
+                        "op": "gt",
+                        "value": 3
+                      },
+                      {
+                        "field": "owner_occupied",
+                        "op": "eq",
+                        "value": false
+                      }
+                    ]
+                  },
+                  {
+                    "field": "security_deposit_law_invoked_30_days",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "seasonal_or_transient_tenancy",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "NJ-DEP-04": {
+      "coverage": {
+        "all": [
+          {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "any": [
+                  {
+                    "any": [
+                      {
+                        "field": "units",
+                        "op": "gt",
+                        "value": 3
+                      },
+                      {
+                        "field": "owner_occupied",
+                        "op": "eq",
+                        "value": false
+                      }
+                    ]
+                  },
+                  {
+                    "field": "security_deposit_law_invoked_30_days",
+                    "op": "eq",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "field": "seasonal_or_transient_tenancy",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "NJ-DEP-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "gt",
+                    "value": 3
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "field": "security_deposit_law_invoked_30_days",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "NJ-FEE-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "units",
+            "op": "gt",
+            "value": 2
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2026-01-20",
+        "effective_on": "2026-05-01"
+      }
+    },
+    "NJ-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 4
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2021-06-18",
+        "effective_on": "2022-01-01"
+      }
+    },
+    "NJ-SCREEN-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 4
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2021-06-18",
+        "effective_on": "2022-01-01"
+      }
+    },
+    "NJ-SCREEN-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 4
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2021-06-18",
+        "effective_on": "2022-01-01"
+      }
+    },
+    "NJ-SCREEN-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 4
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2021-06-18",
+        "effective_on": "2022-01-01"
+      }
+    },
+    "NJ-SCREEN-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 2
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "NJ-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2026-07-20",
+        "effective_on": "2027-07-01"
+      },
+      "conflicts_with": [
+        "HOB-ALG-01",
+        "JC-ALG-01"
+      ],
+      "fixture_rule_ids": [
+        "NJ-ALG-01"
+      ]
+    },
+    "NJ-ALG-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2026-07-20",
+        "effective_on": "2027-07-01"
+      }
+    },
+    "MA-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-DEP-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-DEP-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-DEP-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-DEP-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-DEP-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-DEP-06": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "MA-FEE-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "vacation_or_recreational_lease_100_days_or_less",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2025-08-01"
+      }
+    },
+    "MA-FEE-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "effective_on": "2025-08-01"
+      }
+    },
+    "MA-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-SCREEN-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "neq",
+                "value": 2
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "MA-EVICT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-EVICT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-EVICT-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-ALG-P1": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "fixture_rule_ids": [
+        "MA-ALG-P1"
+      ]
+    },
+    "MA-ALG-P2": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "fixture_rule_ids": [
+        "MA-ALG-P2"
+      ]
+    },
+    "BOS-EVICT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Boston"
+          }
+        ]
+      }
+    },
+    "BOS-EVICT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Boston"
+          }
+        ]
+      }
+    },
+    "CAM-EVICT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Cambridge"
+          },
+          {
+            "field": "cambridge_notification_exempt",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    "CAM-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Cambridge"
+          },
+          {
+            "any": [
+              {
+                "field": "units",
+                "op": "neq",
+                "value": 2
+              },
+              {
+                "field": "owner_occupied",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "BOS-SCREEN-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Boston"
+          },
+          {
+            "field": "boston_fair_chance_program",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "BOS-SCREEN-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Boston"
+          },
+          {
+            "field": "boston_fair_chance_program",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-EVICT-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "tenancy_at_will",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "MA-EVICT-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "tenancy_at_will",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "HOB-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "HOB-RENT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "HOB-RENT-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "HOB-RENT-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NEW-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Newark"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NEW-RENT-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Newark"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NEW-RENT-03": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Newark"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "NEW-RENT-04": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Newark"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    "JC-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Jersey City"
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-07-16"
+      },
+      "fixture_rule_ids": [
+        "JC-ALG-01"
+      ]
+    },
+    "JC-ALG-02": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Jersey City"
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-07-16"
+      }
+    },
+    "MA-RENT-P1": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "MA"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "lifecycle": {
+        "failed_on": "2026-06-23"
+      },
+      "fixture_rule_ids": [
+        "MA-RENT-P1"
+      ]
+    },
+    "HOB-ALG-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-07-09"
+      },
+      "fixture_rule_ids": [
+        "HOB-ALG-01"
+      ]
+    },
+    "HOB-RENT-05": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Hoboken"
+          }
+        ]
+      },
+      "lifecycle": {
+        "enacted_on": "2025-04-02"
+      }
+    },
+    "JC-RENT-01": {
+      "coverage": {
+        "all": [
+          {
+            "field": "state",
+            "op": "eq",
+            "value": "NJ"
+          },
+          {
+            "field": "residential_use",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Jersey City"
+          },
+          {
+            "field": "city_rent_controlled",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    }
+  },
+  "change_evaluations": [
+    {
+      "test_id": "T1",
+      "title": "California AB 325 / SB 763 takes effect",
+      "type": "as_of",
+      "expected_behavior": "not_yet_effective before, applies after, for every CA address.",
+      "expected_address_count": 250,
+      "expected_conflict_count": 0,
+      "evaluation_status": "evaluated",
+      "affected_address_ids": [
+        "A0001",
+        "A0004",
+        "A0005",
+        "A0007",
+        "A0014",
+        "A0016",
+        "A0018",
+        "A0019",
+        "A0021",
+        "A0022",
+        "A0023",
+        "A0025",
+        "A0027",
+        "A0030",
+        "A0031",
+        "A0033",
+        "A0035",
+        "A0037",
+        "A0038",
+        "A0041",
+        "A0045",
+        "A0050",
+        "A0055",
+        "A0058",
+        "A0060",
+        "A0061",
+        "A0062",
+        "A0066",
+        "A0067",
+        "A0069",
+        "A0072",
+        "A0074",
+        "A0079",
+        "A0080",
+        "A0081",
+        "A0084",
+        "A0085",
+        "A0088",
+        "A0091",
+        "A0092",
+        "A0094",
+        "A0097",
+        "A0100",
+        "A0103",
+        "A0105",
+        "A0106",
+        "A0107",
+        "A0109",
+        "A0111",
+        "A0112",
+        "A0113",
+        "A0114",
+        "A0115",
+        "A0117",
+        "A0121",
+        "A0122",
+        "A0126",
+        "A0127",
+        "A0133",
+        "A0135",
+        "A0138",
+        "A0141",
+        "A0142",
+        "A0145",
+        "A0147",
+        "A0150",
+        "A0152",
+        "A0153",
+        "A0154",
+        "A0156",
+        "A0157",
+        "A0158",
+        "A0162",
+        "A0164",
+        "A0165",
+        "A0167",
+        "A0170",
+        "A0172",
+        "A0173",
+        "A0178",
+        "A0179",
+        "A0180",
+        "A0183",
+        "A0184",
+        "A0188",
+        "A0189",
+        "A0192",
+        "A0193",
+        "A0196",
+        "A0197",
+        "A0200",
+        "A0201",
+        "A0202",
+        "A0205",
+        "A0206",
+        "A0207",
+        "A0210",
+        "A0212",
+        "A0213",
+        "A0215",
+        "A0216",
+        "A0219",
+        "A0222",
+        "A0224",
+        "A0225",
+        "A0228",
+        "A0229",
+        "A0231",
+        "A0234",
+        "A0235",
+        "A0236",
+        "A0237",
+        "A0238",
+        "A0239",
+        "A0240",
+        "A0246",
+        "A0247",
+        "A0248",
+        "A0251",
+        "A0252",
+        "A0253",
+        "A0255",
+        "A0257",
+        "A0259",
+        "A0260",
+        "A0262",
+        "A0263",
+        "A0267",
+        "A0268",
+        "A0271",
+        "A0273",
+        "A0274",
+        "A0275",
+        "A0276",
+        "A0277",
+        "A0278",
+        "A0280",
+        "A0281",
+        "A0282",
+        "A0283",
+        "A0285",
+        "A0289",
+        "A0293",
+        "A0303",
+        "A0304",
+        "A0305",
+        "A0309",
+        "A0314",
+        "A0315",
+        "A0316",
+        "A0317",
+        "A0318",
+        "A0319",
+        "A0322",
+        "A0323",
+        "A0324",
+        "A0327",
+        "A0328",
+        "A0330",
+        "A0333",
+        "A0334",
+        "A0335",
+        "A0340",
+        "A0341",
+        "A0345",
+        "A0346",
+        "A0347",
+        "A0349",
+        "A0351",
+        "A0353",
+        "A0355",
+        "A0357",
+        "A0363",
+        "A0364",
+        "A0365",
+        "A0367",
+        "A0368",
+        "A0369",
+        "A0370",
+        "A0373",
+        "A0374",
+        "A0375",
+        "A0378",
+        "A0379",
+        "A0382",
+        "A0383",
+        "A0384",
+        "A0385",
+        "A0386",
+        "A0387",
+        "A0391",
+        "A0392",
+        "A0395",
+        "A0396",
+        "A0397",
+        "A0398",
+        "A0401",
+        "A0402",
+        "A0405",
+        "A0407",
+        "A0408",
+        "A0409",
+        "A0411",
+        "A0413",
+        "A0414",
+        "A0417",
+        "A0419",
+        "A0420",
+        "A0421",
+        "A0425",
+        "A0426",
+        "A0427",
+        "A0430",
+        "A0431",
+        "A0432",
+        "A0433",
+        "A0434",
+        "A0437",
+        "A0439",
+        "A0440",
+        "A0441",
+        "A0442",
+        "A0443",
+        "A0445",
+        "A0451",
+        "A0452",
+        "A0454",
+        "A0456",
+        "A0457",
+        "A0458",
+        "A0461",
+        "A0469",
+        "A0470",
+        "A0474",
+        "A0477",
+        "A0478",
+        "A0479",
+        "A0480",
+        "A0481",
+        "A0483",
+        "A0484",
+        "A0486",
+        "A0487",
+        "A0492",
+        "A0493",
+        "A0494",
+        "A0496",
+        "A0497",
+        "A0499",
+        "A0500"
+      ],
+      "conflict_flag_address_ids": [],
+      "unresolved_address_ids": [],
+      "missing_rule_ids": [],
+      "matched_rule_ids": [
+        "CA-ALG-01"
+      ],
+      "notes": "Affected IDs come from imported rules and evaluated property facts, not from the fixture expectation.",
+      "snapshots": [
+        {
+          "as_of": "2025-12-31",
+          "scenario": "before",
+          "result_counts": {
+            "not_yet_effective": 250
+          }
+        },
+        {
+          "as_of": "2026-01-02",
+          "scenario": "after",
+          "result_counts": {
+            "applies": 250
+          }
+        }
+      ]
+    },
+    {
+      "test_id": "T2",
+      "title": "Hoboken vs Jersey City local algorithmic bans",
+      "type": "boundary",
+      "expected_behavior": "HOB-ALG-01 only for Hoboken addresses; JC-ALG-01 only for Jersey City addresses; neither for Newark.",
+      "expected_address_count": 90,
+      "expected_conflict_count": 0,
+      "evaluation_status": "evaluated",
+      "affected_address_ids": [
+        "A0002",
+        "A0008",
+        "A0012",
+        "A0017",
+        "A0026",
+        "A0032",
+        "A0040",
+        "A0042",
+        "A0047",
+        "A0049",
+        "A0051",
+        "A0078",
+        "A0087",
+        "A0089",
+        "A0099",
+        "A0101",
+        "A0102",
+        "A0108",
+        "A0116",
+        "A0119",
+        "A0125",
+        "A0131",
+        "A0136",
+        "A0139",
+        "A0160",
+        "A0161",
+        "A0163",
+        "A0168",
+        "A0171",
+        "A0177",
+        "A0181",
+        "A0182",
+        "A0185",
+        "A0186",
+        "A0187",
+        "A0208",
+        "A0223",
+        "A0227",
+        "A0241",
+        "A0243",
+        "A0244",
+        "A0250",
+        "A0254",
+        "A0256",
+        "A0261",
+        "A0265",
+        "A0266",
+        "A0269",
+        "A0270",
+        "A0279",
+        "A0287",
+        "A0288",
+        "A0299",
+        "A0308",
+        "A0320",
+        "A0321",
+        "A0325",
+        "A0344",
+        "A0348",
+        "A0350",
+        "A0359",
+        "A0360",
+        "A0372",
+        "A0377",
+        "A0388",
+        "A0389",
+        "A0393",
+        "A0394",
+        "A0399",
+        "A0404",
+        "A0410",
+        "A0415",
+        "A0416",
+        "A0418",
+        "A0424",
+        "A0435",
+        "A0436",
+        "A0438",
+        "A0447",
+        "A0450",
+        "A0455",
+        "A0459",
+        "A0462",
+        "A0471",
+        "A0472",
+        "A0475",
+        "A0482",
+        "A0489",
+        "A0490",
+        "A0495"
+      ],
+      "conflict_flag_address_ids": [
+        "A0002",
+        "A0008",
+        "A0012",
+        "A0017",
+        "A0026",
+        "A0032",
+        "A0040",
+        "A0042",
+        "A0047",
+        "A0049",
+        "A0051",
+        "A0078",
+        "A0087",
+        "A0089",
+        "A0099",
+        "A0101",
+        "A0102",
+        "A0108",
+        "A0116",
+        "A0119",
+        "A0125",
+        "A0131",
+        "A0136",
+        "A0139",
+        "A0160",
+        "A0161",
+        "A0163",
+        "A0168",
+        "A0171",
+        "A0177",
+        "A0181",
+        "A0182",
+        "A0185",
+        "A0186",
+        "A0187",
+        "A0208",
+        "A0223",
+        "A0227",
+        "A0241",
+        "A0243",
+        "A0244",
+        "A0250",
+        "A0254",
+        "A0256",
+        "A0261",
+        "A0265",
+        "A0266",
+        "A0269",
+        "A0270",
+        "A0279",
+        "A0287",
+        "A0288",
+        "A0299",
+        "A0308",
+        "A0320",
+        "A0321",
+        "A0325",
+        "A0344",
+        "A0348",
+        "A0350",
+        "A0359",
+        "A0360",
+        "A0372",
+        "A0377",
+        "A0388",
+        "A0389",
+        "A0393",
+        "A0394",
+        "A0399",
+        "A0404",
+        "A0410",
+        "A0415",
+        "A0416",
+        "A0418",
+        "A0424",
+        "A0435",
+        "A0436",
+        "A0438",
+        "A0447",
+        "A0450",
+        "A0455",
+        "A0459",
+        "A0462",
+        "A0471",
+        "A0472",
+        "A0475",
+        "A0482",
+        "A0489",
+        "A0490",
+        "A0495"
+      ],
+      "unresolved_address_ids": [],
+      "missing_rule_ids": [],
+      "matched_rule_ids": [
+        "HOB-ALG-01",
+        "JC-ALG-01"
+      ],
+      "notes": "Affected IDs come from imported rules and evaluated property facts, not from the fixture expectation.",
+      "snapshots": [
+        {
+          "as_of": "2026-10-01",
+          "scenario": "current",
+          "result_counts": {
+            "applies": 90
+          }
+        }
+      ]
+    },
+    {
+      "test_id": "T3",
+      "title": "NJ FAIR Act: enacted, not yet effective; possible preemption",
+      "type": "as_of",
+      "expected_behavior": "not_yet_effective on 2026-10-01, applies on 2027-07-02 for every NJ address; Jersey City and Hoboken addresses carry a conflict flag for human review.",
+      "expected_address_count": 140,
+      "expected_conflict_count": 90,
+      "evaluation_status": "evaluated",
+      "affected_address_ids": [
+        "A0002",
+        "A0003",
+        "A0008",
+        "A0011",
+        "A0012",
+        "A0013",
+        "A0017",
+        "A0020",
+        "A0026",
+        "A0028",
+        "A0029",
+        "A0032",
+        "A0040",
+        "A0042",
+        "A0044",
+        "A0047",
+        "A0049",
+        "A0051",
+        "A0057",
+        "A0059",
+        "A0076",
+        "A0078",
+        "A0087",
+        "A0089",
+        "A0090",
+        "A0099",
+        "A0101",
+        "A0102",
+        "A0104",
+        "A0108",
+        "A0110",
+        "A0116",
+        "A0119",
+        "A0120",
+        "A0125",
+        "A0129",
+        "A0130",
+        "A0131",
+        "A0132",
+        "A0136",
+        "A0137",
+        "A0139",
+        "A0146",
+        "A0148",
+        "A0159",
+        "A0160",
+        "A0161",
+        "A0163",
+        "A0168",
+        "A0171",
+        "A0177",
+        "A0181",
+        "A0182",
+        "A0185",
+        "A0186",
+        "A0187",
+        "A0190",
+        "A0204",
+        "A0208",
+        "A0223",
+        "A0227",
+        "A0241",
+        "A0243",
+        "A0244",
+        "A0249",
+        "A0250",
+        "A0254",
+        "A0256",
+        "A0261",
+        "A0264",
+        "A0265",
+        "A0266",
+        "A0269",
+        "A0270",
+        "A0279",
+        "A0287",
+        "A0288",
+        "A0296",
+        "A0297",
+        "A0299",
+        "A0307",
+        "A0308",
+        "A0311",
+        "A0313",
+        "A0320",
+        "A0321",
+        "A0325",
+        "A0326",
+        "A0329",
+        "A0331",
+        "A0337",
+        "A0338",
+        "A0343",
+        "A0344",
+        "A0348",
+        "A0350",
+        "A0352",
+        "A0358",
+        "A0359",
+        "A0360",
+        "A0371",
+        "A0372",
+        "A0377",
+        "A0381",
+        "A0388",
+        "A0389",
+        "A0390",
+        "A0393",
+        "A0394",
+        "A0399",
+        "A0400",
+        "A0404",
+        "A0410",
+        "A0412",
+        "A0415",
+        "A0416",
+        "A0418",
+        "A0424",
+        "A0428",
+        "A0435",
+        "A0436",
+        "A0438",
+        "A0447",
+        "A0448",
+        "A0449",
+        "A0450",
+        "A0455",
+        "A0459",
+        "A0460",
+        "A0462",
+        "A0471",
+        "A0472",
+        "A0475",
+        "A0476",
+        "A0482",
+        "A0489",
+        "A0490",
+        "A0491",
+        "A0495",
+        "A0498"
+      ],
+      "conflict_flag_address_ids": [
+        "A0002",
+        "A0008",
+        "A0012",
+        "A0017",
+        "A0026",
+        "A0032",
+        "A0040",
+        "A0042",
+        "A0047",
+        "A0049",
+        "A0051",
+        "A0078",
+        "A0087",
+        "A0089",
+        "A0099",
+        "A0101",
+        "A0102",
+        "A0108",
+        "A0116",
+        "A0119",
+        "A0125",
+        "A0131",
+        "A0136",
+        "A0139",
+        "A0160",
+        "A0161",
+        "A0163",
+        "A0168",
+        "A0171",
+        "A0177",
+        "A0181",
+        "A0182",
+        "A0185",
+        "A0186",
+        "A0187",
+        "A0208",
+        "A0223",
+        "A0227",
+        "A0241",
+        "A0243",
+        "A0244",
+        "A0250",
+        "A0254",
+        "A0256",
+        "A0261",
+        "A0265",
+        "A0266",
+        "A0269",
+        "A0270",
+        "A0279",
+        "A0287",
+        "A0288",
+        "A0299",
+        "A0308",
+        "A0320",
+        "A0321",
+        "A0325",
+        "A0344",
+        "A0348",
+        "A0350",
+        "A0359",
+        "A0360",
+        "A0372",
+        "A0377",
+        "A0388",
+        "A0389",
+        "A0393",
+        "A0394",
+        "A0399",
+        "A0404",
+        "A0410",
+        "A0415",
+        "A0416",
+        "A0418",
+        "A0424",
+        "A0435",
+        "A0436",
+        "A0438",
+        "A0447",
+        "A0450",
+        "A0455",
+        "A0459",
+        "A0462",
+        "A0471",
+        "A0472",
+        "A0475",
+        "A0482",
+        "A0489",
+        "A0490",
+        "A0495"
+      ],
+      "unresolved_address_ids": [],
+      "missing_rule_ids": [],
+      "matched_rule_ids": [
+        "NJ-ALG-01"
+      ],
+      "notes": "Affected IDs come from imported rules and evaluated property facts, not from the fixture expectation.",
+      "snapshots": [
+        {
+          "as_of": "2026-10-01",
+          "scenario": "before",
+          "result_counts": {
+            "not_yet_effective": 140
+          }
+        },
+        {
+          "as_of": "2027-07-02",
+          "scenario": "after",
+          "result_counts": {
+            "applies": 140
+          }
+        }
+      ]
+    },
+    {
+      "test_id": "T4",
+      "title": "Massachusetts pending bills S.2983 and H.5222",
+      "type": "pending",
+      "expected_behavior": "Reported as pending (not in force) for every Boston and Cambridge address; affected set = all MA addresses if enacted.",
+      "expected_address_count": 110,
+      "expected_conflict_count": 0,
+      "evaluation_status": "evaluated",
+      "affected_address_ids": [
+        "A0006",
+        "A0009",
+        "A0010",
+        "A0015",
+        "A0024",
+        "A0034",
+        "A0036",
+        "A0039",
+        "A0043",
+        "A0046",
+        "A0048",
+        "A0052",
+        "A0053",
+        "A0054",
+        "A0056",
+        "A0063",
+        "A0064",
+        "A0065",
+        "A0068",
+        "A0070",
+        "A0071",
+        "A0073",
+        "A0075",
+        "A0077",
+        "A0082",
+        "A0083",
+        "A0086",
+        "A0093",
+        "A0095",
+        "A0096",
+        "A0098",
+        "A0118",
+        "A0123",
+        "A0124",
+        "A0128",
+        "A0134",
+        "A0140",
+        "A0143",
+        "A0144",
+        "A0149",
+        "A0151",
+        "A0155",
+        "A0166",
+        "A0169",
+        "A0174",
+        "A0175",
+        "A0176",
+        "A0191",
+        "A0194",
+        "A0195",
+        "A0198",
+        "A0199",
+        "A0203",
+        "A0209",
+        "A0211",
+        "A0214",
+        "A0217",
+        "A0218",
+        "A0220",
+        "A0221",
+        "A0226",
+        "A0230",
+        "A0232",
+        "A0233",
+        "A0242",
+        "A0245",
+        "A0258",
+        "A0272",
+        "A0284",
+        "A0286",
+        "A0290",
+        "A0291",
+        "A0292",
+        "A0294",
+        "A0295",
+        "A0298",
+        "A0300",
+        "A0301",
+        "A0302",
+        "A0306",
+        "A0310",
+        "A0312",
+        "A0332",
+        "A0336",
+        "A0339",
+        "A0342",
+        "A0354",
+        "A0356",
+        "A0361",
+        "A0362",
+        "A0366",
+        "A0376",
+        "A0380",
+        "A0403",
+        "A0406",
+        "A0422",
+        "A0423",
+        "A0429",
+        "A0444",
+        "A0446",
+        "A0453",
+        "A0463",
+        "A0464",
+        "A0465",
+        "A0466",
+        "A0467",
+        "A0468",
+        "A0473",
+        "A0485",
+        "A0488"
+      ],
+      "conflict_flag_address_ids": [],
+      "unresolved_address_ids": [],
+      "missing_rule_ids": [],
+      "matched_rule_ids": [
+        "MA-ALG-P1",
+        "MA-ALG-P2"
+      ],
+      "notes": "Affected IDs are hypothetical exposure if the imported pending proposals were enacted; they are not current-law protections.",
+      "snapshots": [
+        {
+          "as_of": "2026-10-01",
+          "scenario": "current_pending",
+          "result_counts": {
+            "pending": 220
+          }
+        }
+      ]
+    },
+    {
+      "test_id": "T5",
+      "title": "Massachusetts rent-control ballot question struck",
+      "type": "negative",
+      "expected_behavior": "No rent cap reported for any Boston or Cambridge address; IP 25-21 recorded as failed. Affected set is empty.",
+      "expected_address_count": 0,
+      "expected_conflict_count": 0,
+      "evaluation_status": "evaluated",
+      "affected_address_ids": [],
+      "conflict_flag_address_ids": [],
+      "unresolved_address_ids": [],
+      "missing_rule_ids": [],
+      "matched_rule_ids": [
+        "MA-RENT-P1"
+      ],
+      "notes": "The imported proposal is recorded as failed. It produces no applicable rent cap and the affected set is empty.",
+      "snapshots": [
+        {
+          "as_of": "2026-10-01",
+          "scenario": "current",
+          "result_counts": {}
+        }
+      ]
+    }
+  ],
+  "validation_warnings": [],
+  "note": "These files use compiled sources and reviewed Census/official parcel municipality evidence, without live database overrides or user-supplied scenario facts. Fixture expectations are not source evidence. Readiness and recorded-rule availability are distinct from complete legal coverage."
+}

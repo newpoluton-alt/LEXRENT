@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "cache_key": "1b0e187b0d65bd80b73eabdef642ca43752af2b4c558e704e8c3d824ddb60f31",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-fe23dc8ade1e846f",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Rental income standards must account for aggregate income of persons residing together",
+          "requirement": "It is unlawful to use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income of married persons residing together or proposing to reside together.",
+          "citation": "Cal. Gov. Code § 12955(n)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+          "quoted_span": "To use a financial or income standard in the rental of housing that fails to account for the aggregate income of persons residing together or proposing to reside together on the same basis as the aggregate income",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Part of the Gov. Code 12955 housing discrimination provisions. The captured text states no exemptions for this subdivision.",
+          "effective_date": "2024-01-01",
+          "source_doc_id": "D027",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-fe23dc8ade1e846f": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D027",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 10847,
+    "source_sha256": "511f8074b8f4959161fb4c7ec922c8fa963735b47c13d852b8a09ca42b922ecf",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Drafts are for administrator review only and are not legal advice.",
+      "Section 12955(o)(1)(A)-(B) (government rent subsidy income standards and the credit-history alternative evidence option) was omitted. Its condition, a government rent subsidy for the tenancy, could not be safely represented with the allowed coverage fields. The is_subsidized field may not mean the same thing. Human review is needed.",
+      "The general source-of-income and other protected-class discrimination provisions in 12955(a)-(m) were not drafted as screening_restrictions because they do not clearly fit one of the six supplied categories. This is a category-fit gap to review.",
+      "The effective date 2024-01-01 comes from the amendment note (Stats. 2023, Ch. 776, SB 267). The text does not say when subdivision (n) was first enacted, and no enactment date is given, so enacted_on is null.",
+      "The source retrieval date was not used as an effective date. The section 12955(p)(2) clarification that inquiring about the level or source of income is not discrimination is not a separate obligation and was not drafted.",
+      "The chunk contains nothing on rent increase limits, just cause eviction, security deposits, application screening fees, or algorithmic rent setting. No fixture aliases are supported by this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 6730,
+      "output_tokens": 2196
+    },
+    "created_at": "2026-10-04T09:54:30.236Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

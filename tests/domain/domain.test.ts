@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { challengeData, getDashboard, searchProperties, getSources, getSource, evaluateProperty, evaluateChanges, exportSubmissions, validateRuleBundle, evaluatePredicate, ruleStatusAt, certificateAgeYears, type DomainContext, type RuleRecord, type SourceDocument, type RuleLogic } from "../../src/domain";
 import { evaluateChangeCases } from "../../src/domain/changes";
 
-// Synthetic records exist only in tests. Production deliberately imports zero legal rules.
+// Synthetic records isolate evaluator contracts from the source-reviewed production corpus.
 const quote = "A synthetic requirement used solely to test the deterministic evaluation contract.";
 const source: SourceDocument = { doc_id: "TEST", jurisdictions: "NJ", url: "https://example.invalid/test", source_type: "test fixture", capture: "yes", retrieved_at: "2026-10-01T00:00Z", sha256: "test-hash", text_file: "test", status: "ok", captured: true, text: `Source header\n${quote}\n` };
 function rule(id: string, overrides: Partial<RuleRecord> = {}): RuleRecord {
@@ -15,11 +15,16 @@ function verifiedJurisdictions() {
 }
 
 describe("challenge source inventory", () => {
-  it("preserves all supplied inputs without preloading fabricated rules", () => {
-    expect(getDashboard()).toMatchObject({ property_count: 500, source_count: 87, captured_source_count: 54, verified_rule_count: 0, change_case_count: 5, missing_year_count: 212, missing_units_count: 242, missing_zip_count: 130 });
-    expect(challengeData.verifiedRules).toEqual([]);
-    expect(getSources({ status: "captured" }).total).toBe(54);
-    expect(getSources({ status: "link_only" }).total).toBe(33);
+  it("preserves supplied inputs and separately loads the source-reviewed corpus", () => {
+    const documents = challengeData.sources;
+    const seeded: DomainContext = { rules: challengeData.verifiedRules, ruleLogic: challengeData.ruleLogic, sources: documents, jurisdictionResolutions: challengeData.jurisdictionResolutions };
+    expect(getDashboard(seeded)).toMatchObject({ property_count: 500, source_count: documents.length, captured_source_count: documents.filter(source => source.captured).length, verified_rule_count: challengeData.verifiedRules.length, change_case_count: 5, missing_year_count: 212, missing_units_count: 242, missing_zip_count: 130 });
+    expect(challengeData.verifiedRules.length).toBeGreaterThan(0);
+    expect(validateRuleBundle({ rules: challengeData.verifiedRules, ruleLogic: challengeData.ruleLogic }, documents).valid).toBe(true);
+    expect(getDashboard({ rules: [] }).verified_rule_count).toBe(0);
+    for (let id = 1; id <= 87; id++) expect(getSource(`D${String(id).padStart(3, "0")}`)).not.toBeNull();
+    expect(getSources({ status: "captured" }).total).toBe(documents.filter(source => source.captured).length);
+    expect(getSources({ status: "link_only" }).total).toBe(documents.filter(source => !source.captured).length);
     expect(getSource("D069")?.text).toContain("approved July 20, 2026");
   });
   it("retains postal aliases as candidates rather than verified municipalities", () => {
@@ -150,12 +155,13 @@ describe("temporal and geographic evaluation", () => {
 });
 
 describe("change fixtures and exact exports", () => {
-  it("never substitutes fixture expectations for evaluated rules", () => {
-    const changes = evaluateChanges();
+  it("never substitutes fixture expectations for an explicitly empty context", () => {
+    const empty: DomainContext = { rules: [], ruleLogic: {}, jurisdictionResolutions: {} };
+    const changes = evaluateChanges(empty);
     expect(changes.every(change => change.evaluation_status === "not_evaluated")).toBe(true);
     expect(changes.map(change => change.expected_address_count)).toEqual([250, 90, 140, 110, 0]);
     expect(changes.every(change => change.affected_address_ids.length === 0)).toBe(true);
-    const exported = exportSubmissions();
+    const exported = exportSubmissions(undefined, empty);
     expect(Object.keys(exported.lookups.lookups)).toHaveLength(500);
     expect(Object.keys(exported.changes)).toEqual(["T1", "T2", "T3", "T4", "T5"]);
     expect(exported.readiness.ready).toBe(false);

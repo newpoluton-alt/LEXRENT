@@ -1,0 +1,594 @@
+{
+  "schema_version": 1,
+  "cache_key": "f2492dbf034623517e160e87da3ef27c5d37741de08d7e399d25174319d50f0b",
+  "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-7df93cab3468fe4d",
+          "jurisdiction": "Berkeley, CA",
+          "level": "city",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Berkeley Fair Chance: no criminal history inquiry or exclusionary advertising",
+          "requirement": "Rental housing providers may not inquire about criminal history, or indicate in advertisements, application materials or verbally that persons with criminal backgrounds will not be considered. They may not require disclosure of criminal history or authorization to release it.",
+          "citation": "BMC 13.106",
+          "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+          "quoted_span": "Inquire about criminal history",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_fair_chance_covered",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 1
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Per the page: lifetime sex offenders; limited exemptions for public housing/Section 8 properties; owner-occupied properties of 1-3 units where an owner of record lives in one unit as their primary residence; units under a rental agreement allowing owner move-back under BMC 13.76.130 A.9; units occupied by existing tenants seeking to sublet or add/replace roommates. The page defers to the Ordinance for the specifics of each exemption.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D003",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-d25c14da8793bea8",
+          "jurisdiction": "Berkeley, CA",
+          "level": "city",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Berkeley Fair Chance: no refusal to rent or termination based on criminal history",
+          "requirement": "It is unlawful to refuse to rent to, or to terminate the tenancy of, a current or prospective tenant based on criminal history. The page also lists as unlawful: refusing to add an immediate family member based on that member's criminal history, and treating applicants or tenants differently based on criminal history.",
+          "citation": "BMC 13.106",
+          "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+          "quoted_span": "Refuse to rent or terminate a tenancy based on criminal history",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_fair_chance_covered",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 1
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Per the page: lifetime sex offenders; limited exemptions for public housing/Section 8 properties; owner-occupied properties of 1-3 units where an owner of record lives in one unit as their primary residence; units under a rental agreement allowing owner move-back under BMC 13.76.130 A.9; units occupied by existing tenants seeking to sublet or add/replace roommates.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D003",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-9e170b46dcd3a0b1",
+          "jurisdiction": "Berkeley, CA",
+          "level": "city",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Berkeley Fair Chance: no higher security deposit or rent based on criminal history",
+          "requirement": "It is unlawful to demand a higher security deposit or rental amount from a current or prospective tenant based on criminal history.",
+          "citation": "BMC 13.106",
+          "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+          "quoted_span": "Demand a higher security deposit or rental amount based on criminal history",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_fair_chance_covered",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 1
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Per the page: lifetime sex offenders; limited exemptions for public housing/Section 8 properties; owner-occupied properties of 1-3 units where an owner of record lives in one unit as their primary residence; units under a rental agreement allowing owner move-back under BMC 13.76.130 A.9; units occupied by existing tenants seeking to sublet or add/replace roommates.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D003",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-de443a464f5c08b7",
+          "jurisdiction": "Berkeley, CA",
+          "level": "city",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Berkeley Fair Chance: written notice and opportunity to respond before action based on criminal history",
+          "requirement": "If a landlord takes any action against an applicant or tenant based on criminal history, such as refusing to offer a lease or refusing to add a family member, the landlord must give the applicant or tenant written notice and an opportunity to respond.",
+          "citation": "BMC 13.106",
+          "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+          "quoted_span": "the landlord is required to provide the applicant/tenant with written notice and an opportunity to respond.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_fair_chance_covered",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 1
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Exemptions listed on the page apply to the Ordinance generally: lifetime sex offenders; limited public housing/Section 8 exemptions; owner-occupied 1-3 unit properties; owner move-back rental agreements; existing tenants subletting or adding/replacing roommates. Whether each applies to this notice duty is not stated.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D003",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-1ba304b261e5a2f8",
+          "jurisdiction": "Berkeley, CA",
+          "level": "city",
+          "category": "screening_restrictions",
+          "status": "in_force",
+          "title": "Berkeley Fair Chance: display Notice to Rental Applicants and Tenants",
+          "requirement": "Housing providers must prominently include the Notice to Rental Applicants and Tenants on their application materials, websites, and at locations under their control that applicants frequently visit.",
+          "citation": "BMC 13.106",
+          "source_url": "https://rentboard.berkeleyca.gov/Fair_Chance",
+          "quoted_span": "Housing providers must include the following Notice to Rental Applicants and Tenants prominently on their application materials, websites, and at any locations under their control that are frequently visited by Applicants",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_fair_chance_covered",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 1
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Exemptions listed on the page apply to the Ordinance generally. Whether each applies to the notice-posting duty is not stated.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D003",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-7df93cab3468fe4d": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_fair_chance_covered",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 1
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-d25c14da8793bea8": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_fair_chance_covered",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 1
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-9e170b46dcd3a0b1": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_fair_chance_covered",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 1
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-de443a464f5c08b7": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_fair_chance_covered",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 1
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-1ba304b261e5a2f8": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_fair_chance_covered",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 1
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D003",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 5927,
+    "source_sha256": "a008c846fc4edd842994d8c5ea0367546e55319670e9687c5d1c7ccfdfa1ce40",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Source is a city summary page, not the ordinance text. Section-level citations, exemption details and the exact effective date are not in this chunk; the generic citation BMC 13.106 comes from the page.",
+      "The page says Council passed the ordinance on April 14, 2020. It does not say when it was enacted or took effect, so enacted_on and effective_on are null. Status in_force is inferred from the page's present-tense description and needs human verification.",
+      "Several exemptions (lifetime sex offenders, Section 8/public housing limited exemptions, owner move-back agreements, existing-tenant sublet or roommate changes) cannot be expressed with the allowed coverage fields. Coverage encodes the owner-occupied 1-3 unit exemption and relies on the city_fair_chance_covered fact for the rest. Reviewers must check these against the Ordinance.",
+      "The unlawful acts on the page about Section 8 disqualification are not drafted as a separate rule because their exceptions are not described. Civil penalties ($1,000-$10,000 per violation, damages), the complaint process and the 'treating differently' item are not separate rules or are folded into other rules, since they are enforcement details.",
+      "The page lists the security-deposit/rent demand as a criminal-history screening restriction, so it is categorized as screening_restrictions, not security_deposits.",
+      "The page's news items mention Measure BB registration and fees. They are outside the six categories and were not extracted.",
+      "No fixture aliases apply to this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 5207,
+      "output_tokens": 5873
+    },
+    "created_at": "2026-10-04T10:08:49.802Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

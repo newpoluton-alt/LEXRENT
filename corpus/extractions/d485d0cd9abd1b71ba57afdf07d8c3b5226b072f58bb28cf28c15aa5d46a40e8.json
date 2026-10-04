@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "cache_key": "d485d0cd9abd1b71ba57afdf07d8c3b5226b072f58bb28cf28c15aa5d46a40e8",
+  "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-62f6ccd179da54ad",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "LA JCO: no termination of tenancy without just cause",
+          "requirement": "For covered Los Angeles rental units, a landlord may not terminate a tenancy without just cause. The page lists at-fault reasons (e.g., failure to pay rent, nuisance, illegal use) and no-fault reasons (e.g., owner or family move-in, demolition, government order) as legal reasons for eviction.",
+          "citation": "Los Angeles Just Cause for Eviction Ordinance (JCO), per LAHD webpage",
+          "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+          "quoted_span": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Page says the JCO covers most residential properties not regulated by the RSO. Exceptions include, but are not limited to, transient hotels, licensed care facilities, fraternity or sorority houses, an owner's roommate, certain cooperatives, some non-profit homeless facilities or short-term substance abuse treatment centers, and some HACLA or government-owned properties. The JCO applies to a tenancy only once the tenant has lived in the unit at least six months or the original lease has expired, whichever comes first.",
+          "overrides": [],
+          "interaction": "The page states the JCO does not regulate rent increases. Units subject to the City's Rent Stabilization Ordinance (RSO) are outside the JCO's coverage as described on the page.",
+          "effective_date": null,
+          "source_doc_id": "D040",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-0fc0507f352ff2ef",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "LA JCO: relocation assistance for no-fault evictions",
+          "requirement": "For covered Los Angeles rental units, a landlord must provide relocation assistance to the tenant when the eviction is no-fault (e.g., owner or immediate family move-in, demolition or removal from the rental market). At-fault tenants are not entitled to relocation assistance.",
+          "citation": "Los Angeles Just Cause for Eviction Ordinance (JCO), per LAHD webpage",
+          "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+          "quoted_span": "It prohibits terminations of tenancies without just cause and requires relocation assistance for no-fault evictions.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Same JCO exceptions as the termination rule (transient hotels, licensed care facilities, etc.). The page says an owner \"may have to pay\" relocation assistance and gives no amounts or per-reason conditions.",
+          "overrides": [],
+          "interaction": "Relocation amounts and per-reason conditions are not stated in this source and need review against the ordinance text.",
+          "effective_date": null,
+          "source_doc_id": "D040",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-429bd16eb6765411",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "LA: no nonpayment eviction unless rent owed exceeds Fair Market Rent",
+          "requirement": "For all RSO and JCO rental units in Los Angeles, a landlord may not evict a tenant for falling behind in rent unless the amount owed is higher than the Fair Market Rent (FMR) for the unit's bedroom size.",
+          "citation": "Los Angeles JCO/RSO nonpayment eviction provision (effective March 27, 2023), per LAHD webpage",
+          "source_url": "https://housing.lacity.gov/residents/just-cause-for-eviction-ordinance-jco",
+          "quoted_span": "Effective March 27, 2023, landlords may not evict a tenant who falls behind in rent unless the tenant owes an amount higher than the Fair Market Rent (FMR).",
+          "key_value": "Rent owed must exceed the Fair Market Rent for the unit's bedroom size",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Not stated beyond the underlying RSO and JCO coverage limits.",
+          "overrides": [],
+          "interaction": "The page applies this to all RSO and JCO units. It gives no FMR dollar amounts.",
+          "effective_date": "2023-03-27",
+          "source_doc_id": "D040",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-62f6ccd179da54ad": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-0fc0507f352ff2ef": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-429bd16eb6765411": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "city_eviction_covered",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2023-03-27",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D040",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 9747,
+    "source_sha256": "13f9d54597199b73e23ad12dcc38626d53bb30bd53d89a63b6a7f55ecc570425",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Omitted a draft for state rent increase limits (CA AB 1482 / Civil Code 1947.12). The page says it \"may regulate\" rent in older buildings, and the exemption for \"certain dormitories\" cannot be encoded safely. The page's 8.9% cap (Aug 2024 to Jul 2025) is outdated as of 2026-10-01, and no current-period figure is given. The statute's effective date is not stated. A reviewer should confirm against the primary statute.",
+      "The JCO draft coverage cannot fully encode the \"including, but not limited to\" exceptions, the six-month-or-lease-expiry tenancy trigger, or the 'newer than October 1, 1978' language. These are partly deferred to the city_eviction_covered fact and listed in exemptions. Reviewer should verify.",
+      "The JCO's own enactment and effective dates are not stated in the source, so lifecycle and effective_date are null. The retrieval date (2026-10-01) and the page's last-modified date (September 10, 2026) are not law dates.",
+      "Relocation assistance amounts are not given in the source.",
+      "Omitted from drafts because they fall outside the six categories: annual rental registration and Rent Registry, Notice of Right to Counsel (from August 20, 2025), Notice of Renters' Protections (tenancies beginning or renewing on or after January 27, 2023), and the requirement to file eviction notices with LAHD within three business days.",
+      "No rules found in this source for security deposits, application screening fees, screening restrictions, or algorithmic rent setting.",
+      "Source is an LAHD informational web page (secondary summary), not primary law text, and no ordinance or statute section numbers are given for the JCO. Citations are therefore descriptive.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 6612,
+      "output_tokens": 6151
+    },
+    "created_at": "2026-10-04T10:07:33.274Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

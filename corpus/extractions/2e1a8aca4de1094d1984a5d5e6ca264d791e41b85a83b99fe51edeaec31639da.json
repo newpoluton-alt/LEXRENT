@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "cache_key": "2e1a8aca4de1094d1984a5d5e6ca264d791e41b85a83b99fe51edeaec31639da",
+  "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-020692abc307c9db",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "algorithmic_rent_setting",
+          "status": "not_yet_effective",
+          "title": "Rental property owners may not pay for or use a coordinator's services",
+          "requirement": "It is unlawful, and a violation of the New Jersey Antitrust Act, for a rental property owner or any agent, representative, or subcontractor of the owner to receive, subscribe to, contract for, or otherwise exchange any form of consideration for the use of the services of a coordinator. A coordinator is a person who operates algorithmic revenue management software or an algorithmic device that performs a coordinating function for any rental property owner.",
+          "citation": "P.L. 2026, c.43, §4(a)",
+          "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+          "quoted_span": "for, or otherwise exchange any form of consideration in return for the use of,",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Section 3 excludes from 'residential dwelling unit' inpatient medical care, licensed long-term care, and detention or correctional facilities. Section 3 also excludes certain activities from 'coordinating function', including research, statistical analysis, or testing not used in setting rents; free public rent estimates; equal-terms brokerage databases that do not set or recommend rents; and government affordability controls. Government entities setting rents through affordability controls are not coordinators. These exclusions are not encoded in coverage_json because the allowed facts cannot represent them.",
+          "overrides": [],
+          "interaction": "Section 6(a) says the act adds to the New Jersey Antitrust Act and does not authorize conduct already unlawful under that act or other law. Section 5 preserves application of sections 6 through 17 of P.L.1970, c.73 to violations of section 4.",
+          "effective_date": null,
+          "source_doc_id": "D069",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-2a733c804e31fd3f",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "algorithmic_rent_setting",
+          "status": "not_yet_effective",
+          "title": "Coordinators may not facilitate anticompetitive agreements among rental owners",
+          "requirement": "It is unlawful, and a violation of the New Jersey Antitrust Act, for a coordinator to facilitate a tacit or express agreement among rental property owners that restricts competition for residential dwelling units, including by performing a coordinating function.",
+          "citation": "P.L. 2026, c.43, §4(b)",
+          "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+          "quoted_span": "a coordinator to facilitate a tacit or express",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Section 3 excludes government entities setting or limiting rents through affordability controls from 'coordinator'. It also excludes certain activities from 'coordinating function' (research, statistical analysis, or testing; free public rent estimates; equal-terms brokerage databases; government affordability controls). Section 3 excludes inpatient medical care, licensed long-term care, and detention or correctional facilities from 'residential dwelling unit'. These exclusions are not encoded in coverage_json.",
+          "overrides": [],
+          "interaction": "Section 6(a) says the act adds to the New Jersey Antitrust Act. Section 5 preserves application of sections 6 through 17 of P.L.1970, c.73.",
+          "effective_date": null,
+          "source_doc_id": "D069",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-ef3996993b8baba0",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "algorithmic_rent_setting",
+          "status": "not_yet_effective",
+          "title": "Two or more persons may not engage in or facilitate parallel pricing coordination",
+          "requirement": "It is unlawful, and a violation of the New Jersey Antitrust Act, for two or more persons to engage in or otherwise facilitate parallel pricing coordination. Section 3 defines this as a tacit or express agreement between two or more rental property owners to raise, change, maintain, or manipulate pricing for reasonably interchangeable residential dwelling units, unless required by affordability controls. The definition includes agreements between a coordinator and multiple property owners.",
+          "citation": "P.L. 2026, c.43, §4(c)",
+          "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+          "quoted_span": "two or more persons to engage in",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Section 3 excludes pricing required by affordability controls from 'parallel pricing coordination'. It also excludes inpatient medical care, licensed long-term care, and detention or correctional facilities from 'residential dwelling unit'. These exclusions are not encoded in coverage_json.",
+          "overrides": [],
+          "interaction": "Section 6(a) says the act adds to the New Jersey Antitrust Act. Section 5 preserves application of sections 6 through 17 of P.L.1970, c.73.",
+          "effective_date": null,
+          "source_doc_id": "D069",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-f147bcf8ed171fd8",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "algorithmic_rent_setting",
+          "status": "not_yet_effective",
+          "title": "Agents or representatives of a coordinator may not engage in parallel pricing coordination",
+          "requirement": "It is unlawful, and a violation of the New Jersey Antitrust Act, for any agent or representative of a coordinator, or a subcontractor of the coordinator, to engage in parallel pricing coordination.",
+          "citation": "P.L. 2026, c.43, §4(d)",
+          "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+          "quoted_span": "any agent or representative of a coordinator or",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Section 3 excludes pricing required by affordability controls from 'parallel pricing coordination'. It also excludes inpatient medical care, licensed long-term care, and detention or correctional facilities from 'residential dwelling unit'. These exclusions are not encoded in coverage_json.",
+          "overrides": [],
+          "interaction": "Section 6(a) says the act adds to the New Jersey Antitrust Act. Section 5 preserves application of sections 6 through 17 of P.L.1970, c.73.",
+          "effective_date": null,
+          "source_doc_id": "D069",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-51b0edf3c1832e1b",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "algorithmic_rent_setting",
+          "status": "not_yet_effective",
+          "title": "No person may perform a coordinating function",
+          "requirement": "It is unlawful, and a violation of the New Jersey Antitrust Act, for any person to perform a coordinating function. Section 3 defines this as collecting competitively sensitive information of two or more rental property owners for algorithmic analysis used to set or recommend rents, material lease terms, or occupancy levels. It also covers setting those terms using an algorithm that processes another rental property owner's competitively sensitive information. It also covers setting or recommending those terms for two or more owners using the same or a substantially similar algorithm or automated process that facilitates parallel pricing coordination.",
+          "citation": "P.L. 2026, c.43, §4(e)",
+          "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+          "quoted_span": "any person to perform a coordinating function",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Section 3 excludes from 'coordinating function': research, statistical analysis, or testing where the information is not used to set or recommend rents or lease terms; rent estimates made available to the public at no cost; use of a real estate brokerage database available on equal terms that does not set or recommend rents or lease terms and does not collect competitively sensitive information for that purpose; and a government entity setting or limiting rents or sale prices through affordability controls. Section 3 excludes inpatient medical care, licensed long-term care, and detention or correctional facilities from 'residential dwelling unit'. 'Algorithmic device' excludes certain human-analysis spreadsheets and databases that only use an algorithm to query unprocessed data. These exclusions are not encoded in coverage_json.",
+          "overrides": [],
+          "interaction": "Section 6(a) says the act adds to the New Jersey Antitrust Act. Section 5 preserves application of sections 6 through 17 of P.L.1970, c.73.",
+          "effective_date": null,
+          "source_doc_id": "D069",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-250f7ca184593af8",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "algorithmic_rent_setting",
+          "status": "not_yet_effective",
+          "title": "Municipalities may not enact ordinances that conflict with the FAIR Act",
+          "requirement": "A municipality is prohibited from enacting an ordinance that conflicts with the FAIR Act. This does not prohibit ordinances explicitly authorized or required by any other law.",
+          "citation": "P.L. 2026, c.43, §6(b)",
+          "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+          "quoted_span": "A municipality shall be prohibited from enacting",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              }
+            ]
+          },
+          "exemptions": "Ordinances explicitly authorized or required by any other law are not covered by the prohibition.",
+          "overrides": [],
+          "interaction": "This limits future municipal ordinances that conflict with the act. The chunk does not name or analyze any specific local ordinance, so whether any existing municipal algorithmic-pricing ordinance conflicts or is affected is not determined and requires review.",
+          "effective_date": null,
+          "source_doc_id": "D069",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-020692abc307c9db": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2026-07-20",
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": [
+            "NJ-ALG-01"
+          ]
+        },
+        "r-2a733c804e31fd3f": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2026-07-20",
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": [
+            "NJ-ALG-01"
+          ]
+        },
+        "r-ef3996993b8baba0": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2026-07-20",
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": [
+            "NJ-ALG-01"
+          ]
+        },
+        "r-f147bcf8ed171fd8": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2026-07-20",
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": [
+            "NJ-ALG-01"
+          ]
+        },
+        "r-51b0edf3c1832e1b": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2026-07-20",
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": [
+            "NJ-ALG-01"
+          ]
+        },
+        "r-250f7ca184593af8": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2026-07-20",
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": [
+            "NJ-ALG-01"
+          ]
+        }
+      }
+    },
+    "doc_id": "D069",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 10354,
+    "source_sha256": "1fdbfb48743a46429c3f47dbd8d08c665739202361661e1a2f19b94bb0ec43a6",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Section 9 says the act takes effect on the first day of the twelfth month next following enactment. The source gives no explicit calendar effective date, so effective_date and lifecycle.effective_on are null. Counting from enactment on July 20, 2026 would likely give July 1, 2027, but this is a computation, not stated in the text. Administrators should verify it. On any reading, the effective date is after the 2026-10-01 as-of date, so status is not_yet_effective.",
+      "The enactment date of 2026-07-20 comes from the 'approved July 20, 2026' note in the source. The retrieval date was not used as a law date.",
+      "Section 7 (Attorney General complaint portal) and section 8 (rulemaking authority) are administrative provisions outside the six supplied categories, so no rules were drafted for them.",
+      "Penalties and remedies are not stated in this chunk. Section 4 declares violations of the New Jersey Antitrust Act and section 5 references sections 6 through 17 of P.L.1970, c.73, but those provisions' content is not supplied and was not assumed.",
+      "Hoboken and Jersey City ordinances are not in this source, so no HOB-ALG-01 or JC-ALG-01 mapping was made. The source is a first reprint with bracketed and superscripted amendment markers, and definitions were read in their amended form.",
+      "coverage_json uses only state and residential_use. The definitional exclusions (affordability controls, government entities, excluded facility types, research and public-estimate carve-outs) cannot be represented with the allowed fact fields and are described in the exemptions text for reviewer attention.",
+      "Section 3 defines coordinator broadly, including a rental property owner performing a coordinating function for their own benefit. Whether a given owner or tool is covered is a fact-specific question that this draft does not resolve.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 6539,
+      "output_tokens": 6914
+    },
+    "created_at": "2026-10-04T09:55:13.067Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

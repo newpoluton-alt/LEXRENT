@@ -12,7 +12,8 @@ import { PropertyMap } from "./lovable/property-map";
 import { RealLifeView } from "./lovable/real-life-view";
 import { getAreaMapLocation, type MapLocation } from "@/lib/property-map-location";
 import { FactQuiz } from "./lovable/fact-quiz";
-import { CategoryPanel, EvidenceDialog, LawTable, PropertySummary } from "./lovable/results";
+import { CategoryPanel, EvidenceDialog, LawTable, LookupDataStatus, PropertySummary } from "./lovable/results";
+import { PersonaDemos } from "./lovable/persona-demos";
 import { getAccountSnapshot, useAccount } from "@/lib/account-state";
 
 type Tab = "overview" | "list" | "summary";
@@ -68,13 +69,13 @@ export default function LexrentApp() {
     return () => { live = false; };
   }, [account.user?.id]);
 
-  const runLookup = useCallback(async (addressId: string, asOf: string, facts: FactRecord = {}, updateUrl = true) => {
+  const runLookup = useCallback(async (addressId: string, asOf: string, facts: FactRecord = {}, updateUrl = true, preferredTab: Tab = "overview") => {
     const current = ++generation.current;
     setLoading(true); setError(""); setEvaluation(null); setEvidence(null); setNotice("");
     try {
       const data = await request<PropertyEvaluation>("/api/lookup", post({ address_id: addressId, as_of: asOf, facts }));
       if (generation.current !== current) return;
-      setEvaluation(data); setProperty(data.property); setDate(data.as_of); setScenarioFacts(facts); setTab("overview");
+      setEvaluation(data); setProperty(data.property); setDate(data.as_of); setScenarioFacts(facts); setTab(preferredTab);
       if (updateUrl) window.history.replaceState(null, "", `/?${new URLSearchParams({ address_id: addressId, as_of: asOf })}`);
     } catch (e) { if (generation.current === current) setError((e as Error).message); }
     finally { if (generation.current === current) setLoading(false); }
@@ -82,7 +83,8 @@ export default function LexrentApp() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("address_id");
-    if (id) void runLookup(id, params.get("as_of") || "2026-10-01", {}, false);
+    const requestedTab = params.get("tab");
+    if (id) void runLookup(id, params.get("as_of") || "2026-10-01", {}, false, requestedTab === "summary" || requestedTab === "list" ? requestedTab : "overview");
     return () => { generation.current += 1; };
   }, [runLookup]);
   useEffect(() => {
@@ -172,6 +174,7 @@ export default function LexrentApp() {
           <Link href="/workspace?view=assistant" className="mt-5 flex items-center justify-center gap-2 self-center text-sm underline"><Sparkles size={15} />{pick("Ask LEXRENT with source evidence", "Pregunte a LEXRENT con evidencia de fuentes")}</Link>
           {error && <p role="alert" className="mt-4 max-w-xl bg-accent p-3 text-left text-sm">{error}</p>}
         </form>
+        <div className="mt-8 w-full max-w-4xl text-left"><PersonaDemos /></div>
       </section> : <>
         <section className="no-print pt-8"><form onSubmit={search}>{SearchBar}<div className="mt-4 flex flex-wrap items-center gap-3">
           <button type="button" onClick={newSearch} className="btn-primary">{t("newSearch")}</button>
@@ -188,6 +191,7 @@ export default function LexrentApp() {
           </div>
           <div role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`}>
             {tab === "overview" && <>
+              <LookupDataStatus evaluation={evaluation} />
               <section className="grid border-2 border-primary bg-primary md:grid-cols-[1fr_340px]">
                 <div className="relative min-w-0 bg-card"><PropertyMap property={evaluation.property} onLocationChange={handleMapLocation} /></div>
                 <CategoryPanel evaluation={evaluation} onEvidence={setEvidence} />

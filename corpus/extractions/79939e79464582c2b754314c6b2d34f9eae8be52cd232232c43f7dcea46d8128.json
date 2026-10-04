@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "cache_key": "79939e79464582c2b754314c6b2d34f9eae8be52cd232232c43f7dcea46d8128",
+  "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-a7cee03f2ed0faf8",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "NJ residential rental application fee capped at $50",
+          "requirement": "A landlord or agent may not require an application or similar fee to apply to lease or sublease a residential rental property for dwelling purposes that exceeds $50. The cap is subject to annual CPI adjustment, covered in a separate rule. Penalties of up to $500 for a first offense, $750 for a second and $1,000 for each subsequent offense apply, with the wrongfully charged amount remitted to the applicant.",
+          "citation": "P.L. 2025, c.405, sec. 1a (C.46:8-18.1a)",
+          "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+          "quoted_span": "to lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+          "key_value": "50 USD (base amount, before annual CPI adjustment)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 2
+              }
+            ]
+          },
+          "exemptions": "Does not apply to a dwelling unit located in a one-family or two-family dwelling offered for rent, or to a New Jersey Real Estate Commission licensee unless the licensee is the landlord of the residential rental property.",
+          "overrides": [],
+          "interaction": "The $50 base figure is adjusted annually by the Director of Consumer Affairs based on CPI changes, so the current-year cap may exceed $50.",
+          "effective_date": "2026-05-01",
+          "source_doc_id": "D066",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-8007bb4ed734d8e5",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "NJ application fee cap adjusted annually by CPI",
+          "requirement": "Beginning January 1 of the year next following enactment and each year after, the fee limitation is adjusted by the Director of Consumer Affairs in direct proportion to the percent change in the CPI (All Urban Consumers, NY-Northern NJ-Long Island, All Items) over the 12-month period ending October 31 of the previous year. The adjustment is made only if the percent change is greater than zero. The State Treasurer determines the adjustment by December 1, and the Director publishes the applicable limit on the Division of Consumer Affairs website.",
+          "citation": "P.L. 2025, c.405, sec. 1d (C.46:8-18.1d)",
+          "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+          "quoted_span": "direct proportion to the percent change in the Consumer Price Index over a\n12-month period ending October 31 of the previous year.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 2
+              }
+            ]
+          },
+          "exemptions": "Same exemptions as the underlying fee limitation: one-family or two-family dwellings offered for rent, and Real Estate Commission licensees who are not the landlord.",
+          "overrides": [],
+          "interaction": "Modifies the $50 cap in the application-fee-cap rule. The current adjusted amount is not stated in the source and must be taken from the Division of Consumer Affairs publication.",
+          "effective_date": "2026-05-01",
+          "source_doc_id": "D066",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-a7cee03f2ed0faf8": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 2
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2026-01-20",
+            "effective_on": "2026-05-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-8007bb4ed734d8e5": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "units",
+                "op": "gt",
+                "value": 2
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2026-01-20",
+            "effective_on": "2026-05-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D066",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 4152,
+    "source_sha256": "e06aa61acf6ddb50631d5be3c89c4029caccb13c0dcc7be888e0e64f8b182c2e",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "The effective date 2026-05-01 is computed from section 3 (first day of the fourth month next following enactment) and the 'Approved January 20, 2026' line. The text does not state it as a calendar date, so please verify it.",
+      "The retrieval date was not used as a legal date.",
+      "The real estate licensee exemption cannot be expressed with the allowed coverage fields. It is described in the exemptions text only, so please review it manually.",
+      "The one-family or two-family dwelling exemption is approximated as units <= 2. The source does not define how the units fact maps to a building versus a unit.",
+      "The current CPI-adjusted fee cap amount is not in the source, so only the $50 base figure is captured.",
+      "Penalties and enforcement (sec. 1b) and the rulemaking and reporting mechanism (sec. 2) are summarized only within the requirement text, not as separate rules.",
+      "No fixture aliases apply. NJ-ALG-01 (the FAIR Act) is not supported by this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4543,
+      "output_tokens": 3467
+    },
+    "created_at": "2026-10-04T09:54:47.883Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

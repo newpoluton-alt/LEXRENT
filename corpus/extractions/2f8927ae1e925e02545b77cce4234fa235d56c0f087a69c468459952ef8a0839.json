@@ -1,0 +1,617 @@
+{
+  "schema_version": 1,
+  "cache_key": "2f8927ae1e925e02545b77cce4234fa235d56c0f087a69c468459952ef8a0839",
+  "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-484bca30bc32476b",
+          "jurisdiction": "Santa Ana, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Santa Ana Rent Stabilization Ordinance: annual rent increase cap",
+          "requirement": "Residential rent increases are limited to the lower of 3% per year or 80% of the percent change in the CPI over the most recent 12-month period. Owners may petition the City for relief from the cap.",
+          "citation": "City of Santa Ana news release: Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 (ordinance number not stated)",
+          "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+          "quoted_span": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period.",
+          "key_value": "lower of 3% or 80% of 12-month CPI change",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "year_built",
+                  "op": "gt",
+                  "value": 1995
+                }
+              }
+            ]
+          },
+          "exemptions": "Per the release, the rent cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990. The mobile home exemption is not encoded in coverage_json.",
+          "overrides": [],
+          "interaction": "Owners may petition the City Manager or designee for relief, and the decision is due within 60 days of a complete application. The City publishes the allowable increase annually by June 30, effective September 1.",
+          "effective_date": "2021-11-19",
+          "source_doc_id": "D085",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-6304188d08bc675e",
+          "jurisdiction": "Santa Ana, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Santa Ana Rent Stabilization Ordinance: no increase when CPI is negative",
+          "requirement": "If the CPI change is negative, no rent increase is permitted.",
+          "citation": "City of Santa Ana news release: Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 (ordinance number not stated)",
+          "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+          "quoted_span": "If the CPI is negative, no rent increase is permitted.",
+          "key_value": "0% when CPI negative",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "year_built",
+                  "op": "gt",
+                  "value": 1995
+                }
+              }
+            ]
+          },
+          "exemptions": "Same exemptions as the annual cap: buildings constructed after February 1, 1995 and mobile home spaces offered for rent after January 1, 1990.",
+          "overrides": [],
+          "interaction": "Operates together with the annual cap rule.",
+          "effective_date": "2021-11-19",
+          "source_doc_id": "D085",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-a59b6bde0d50227a",
+          "jurisdiction": "Santa Ana, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Santa Ana Rent Stabilization Ordinance: owner written notice of ordinance and tenant rights",
+          "requirement": "Property owners must give written notice of the Ordinance and tenant rights at the start of a lease or as part of any notice to increase rent. The City provides a template notice.",
+          "citation": "City of Santa Ana news release: Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 (ordinance number not stated)",
+          "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+          "quoted_span": "Property owners are required to provide written notice of the Ordinance and tenant’s rights at commencement of a lease or as part of any notice to increase rent.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "year_built",
+                  "op": "gt",
+                  "value": 1995
+                }
+              }
+            ]
+          },
+          "exemptions": "Presumed to follow the rent cap exemptions, but the release does not say so explicitly. Needs review.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2021-11-19",
+          "source_doc_id": "D085",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-178619fdf8a08c31",
+          "jurisdiction": "Santa Ana, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Santa Ana Just Cause Eviction Ordinance: just cause required to terminate tenancy",
+          "requirement": "After 30 days, an owner may not terminate a tenancy without just cause, which must be stated in a written notice. Just cause includes at-fault causes (such as nonpayment of rent, breach of a material lease term, nuisance, criminal activity) and no-fault causes (such as owner occupancy, removal from the rental market, demolition or substantial remodel).",
+          "citation": "City of Santa Ana news release: Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 (ordinance number not stated)",
+          "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+          "quoted_span": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+          "key_value": "30 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "seasonal_or_transient_tenancy",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Per the release, the ordinance does not apply to certain types of residential property, including housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters. The list is non-exhaustive. Hospital and care facilities, dormitories, and shared living quarters are not encoded.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2021-11-19",
+          "source_doc_id": "D085",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-774137727a1004d9",
+          "jurisdiction": "Santa Ana, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Santa Ana Just Cause Eviction Ordinance: notice to cure before termination notice",
+          "requirement": "Before issuing a notice to terminate for just cause, the owner must first give notice of the violation with a time period for the tenant to fix it.",
+          "citation": "City of Santa Ana news release: Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 (ordinance number not stated)",
+          "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+          "quoted_span": "Before issuing a notice to terminate for just cause, the owner shall first give notice of the violation with a time period for the tenant to fix the violation(s).",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "seasonal_or_transient_tenancy",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Same property-type exemptions as the Just Cause Eviction Ordinance generally (list non-exhaustive). Whether the cure notice applies to all just causes or only at-fault causes is not specified in the release.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2021-11-19",
+          "source_doc_id": "D085",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-4cb76920e075c793",
+          "jurisdiction": "Santa Ana, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Santa Ana Just Cause Eviction Ordinance: relocation assistance for no-fault terminations",
+          "requirement": "For a no-fault just cause termination, the owner must either provide 3 months of relocation assistance or waive rent for the final 3 months of the tenancy.",
+          "citation": "City of Santa Ana news release: Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 (ordinance number not stated)",
+          "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+          "quoted_span": "Under a no-fault just cause termination, the owner shall either provide 3 months of relocation assistance or waive payment of rent for the final 3 months of the tenancy.",
+          "key_value": "3 months relocation assistance or 3 months rent waiver",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "seasonal_or_transient_tenancy",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Same property-type exemptions as the Just Cause Eviction Ordinance generally (list non-exhaustive).",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2021-11-19",
+          "source_doc_id": "D085",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-5c156c9052fac9bd",
+          "jurisdiction": "Santa Ana, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Santa Ana Just Cause Eviction Ordinance: owner notice of ordinance protections",
+          "requirement": "Owners must notify existing tenants of the Just Cause Eviction Ordinance protections before December 19, 2021, or at commencement or renewal of the lease. The City publishes a written notice template.",
+          "citation": "City of Santa Ana news release: Santa Ana City Council adopts rent stabilization and just cause eviction ordinances, effective Nov. 19 (ordinance number not stated)",
+          "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+          "quoted_span": "Property owners must provide notice to existing tenants before December 19, 2021, or at commencement or renewal of their lease of the Just Cause Eviction Ordinance protections.",
+          "key_value": "2021-12-19 for existing tenants",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "seasonal_or_transient_tenancy",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "exemptions": "Presumed to follow the Just Cause Eviction Ordinance property-type exemptions (list non-exhaustive); the release does not say so explicitly.",
+          "overrides": [],
+          "interaction": "The December 19, 2021 deadline for existing tenants has passed as of 2026-10-01. The ongoing duty is notice at commencement or renewal of a lease.",
+          "effective_date": "2021-11-19",
+          "source_doc_id": "D085",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-484bca30bc32476b": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "year_built",
+                  "op": "gt",
+                  "value": 1995
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2021-11-19",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-6304188d08bc675e": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "year_built",
+                  "op": "gt",
+                  "value": 1995
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2021-11-19",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-a59b6bde0d50227a": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "year_built",
+                  "op": "gt",
+                  "value": 1995
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2021-11-19",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-178619fdf8a08c31": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "seasonal_or_transient_tenancy",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2021-11-19",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-774137727a1004d9": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "seasonal_or_transient_tenancy",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2021-11-19",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-4cb76920e075c793": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "seasonal_or_transient_tenancy",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2021-11-19",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-5c156c9052fac9bd": {
+          "coverage": {
+            "all": [
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Santa Ana"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "seasonal_or_transient_tenancy",
+                "op": "eq",
+                "value": false
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2021-11-19",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D085",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 5259,
+    "source_sha256": "de9d126675c8ee1ab2809c897c8c819bfe241dc95de31ace5004b6c7973607d8",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "The source is a city news release, not the ordinance text. No ordinance numbers or municipal code sections are given, so the citation identifies only the news release. Verify against the adopted ordinances.",
+      "The adoption date is not stated (the release says only 'on Tuesday night'), so enacted_on is null.",
+      "The headline says 'effective Nov. 19' and the body gives November 19, 2021. Status is set to in_force as of 2026-10-01 based on that stated date. The source gives no information on later amendment, repeal or litigation. The retrieval date was not used as an effective date.",
+      "The rent cap exemption for buildings 'constructed after February 1, 1995' cannot be encoded exactly with the year_built field. Coverage treats only year_built > 1995 as exempt, so buildings from 1995 remain covered or unknown. Review is needed for 1995 construction.",
+      "The mobile home space rent cap exemption (offered for rent after January 1, 1990) is not encoded because no supported coverage field exists for it. Mobile home park rent increases are also not drafted as a separate rule.",
+      "Just cause exemptions for hospital and care facilities, dormitories, and other shared living quarters are not encoded. The release says the exemption list is non-exhaustive ('including'), so coverage_json may overstate coverage. Administrator review is required.",
+      "The 'housing produced in the last 15 years' exemption is encoded as certificate_age_years >= 15. The release does not say whether the age is measured from the certificate of occupancy or another date. The count is unknown if the certificate date is missing.",
+      "The owner petition for relief (60-day City decision) and the City's annual CPI-based allowable increase publication schedule were not drafted as separate obligations. They are noted in interaction text only.",
+      "The 30-day threshold in the just cause rule cannot be encoded through tenancy_months or any other supported field, so it is not in coverage_json.",
+      "No fixture aliases apply to this source. The 'Recent news' items dated 2026 are unrelated page content and were ignored.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4838,
+      "output_tokens": 8156
+    },
+    "created_at": "2026-10-04T10:11:20.942Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

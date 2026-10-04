@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 const { createMessage } = vi.hoisted(() => ({ createMessage: vi.fn() }));
 vi.mock("@anthropic-ai/sdk", () => ({ default: class { messages = { create: createMessage }; } }));
-import { AiError, chunkSourceText, clearExtractionCache, extractSourceChunk, isAiConfigured } from "../../src/server/ai";
+import { AiError, chunkSourceText, clearExtractionCache, extractSourceChunk, isAiConfigured, recoverCapturedQuote } from "../../src/server/ai";
 import type { SourceDocument } from "../../src/domain/types";
 
 const quote = "A synthetic requirement for SDK adapter tests; it is never published as a legal rule.";
@@ -13,6 +13,21 @@ beforeEach(() => { clearExtractionCache(); createMessage.mockReset(); vi.stubEnv
 afterEach(() => { vi.unstubAllEnvs(); });
 
 describe("Claude extraction adapter", () => {
+  it("reports an exhausted provider account without exposing its diagnostics or credentials", async () => {
+    createMessage.mockRejectedValue({ status: 400, error: { error: { message: "Your credit balance is too low to access the Anthropic API. private-diagnostic-mock-key" } } });
+    const error = await extractSourceChunk(source).catch(error => error);
+    expect(error).toMatchObject({ code: "AI_CREDITS_UNAVAILABLE", status: 503 });
+    expect(error.message).toContain("Address results and source evidence remain available");
+    expect(error.message).not.toContain("mock-key");
+  });
+  it("recovers source whitespace without changing words, punctuation or omissions", () => {
+    const original = "A landlord may require\n  no more than one month's rent.\tNotice follows.";
+    expect(recoverCapturedQuote("A landlord may require no more than one month's rent.", original)).toBe("A landlord may require\n  no more than one month's rent.");
+    expect(recoverCapturedQuote("A landlord may require no more than two month's rent.", original)).toBeNull();
+    expect(recoverCapturedQuote("A landlord may require ... one month's rent.", original)).toBeNull();
+    expect(recoverCapturedQuote("A landlord may require no more than one month's rent!", original)).toBeNull();
+    expect(recoverCapturedQuote("   ", original)).toBeNull();
+  });
   it("fails explicitly without server API configuration or captured text", async () => {
     vi.stubEnv("ANTHROPIC_API_KEY", "");
     expect(isAiConfigured()).toBe(false);

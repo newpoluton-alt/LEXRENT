@@ -1,0 +1,708 @@
+{
+  "schema_version": 1,
+  "cache_key": "fd982d6a5eb09a13746bac80a9a5ede9d2839cda473da76679938140ce2aba9f",
+  "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-571f7092a5dc5352",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Security deposit cap of one month's rent (general landlords)",
+          "requirement": "Starting July 1, 2024, many landlords may charge only one month's rent as a security deposit, for both unfurnished and furnished units. Last month's rent counts as part of the deposit; first month's rent does not. The page attributes this to Assembly Bill 12. This draft covers landlords outside the small-landlord two-month exception.",
+          "citation": "California Assembly Bill 12 (as described on Berkeley Rent Board Security Deposits page, https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits; no statute section cited)",
+          "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+          "quoted_span": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
+          "key_value": "1 month's rent",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_total_properties",
+                      "op": "lte",
+                      "value": 2
+                    },
+                    {
+                      "field": "owner_total_units",
+                      "op": "lte",
+                      "value": 4
+                    },
+                    {
+                      "any": [
+                        {
+                          "field": "owner_type",
+                          "op": "in",
+                          "value": [
+                            "natural_person",
+                            "family_trust"
+                          ]
+                        },
+                        {
+                          "all": [
+                            {
+                              "field": "owner_type",
+                              "op": "eq",
+                              "value": "llc"
+                            },
+                            {
+                              "field": "owner_llc_has_corporate_member",
+                              "op": "eq",
+                              "value": false
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Small landlords owning only two rental properties with no more than four residential units in total, held by a natural person, family trust, or LLC whose members are all natural persons, may charge up to two months' rent. The page says 'many landlords', so other exceptions may exist that this source does not list.",
+          "overrides": [],
+          "interaction": "Mutually exclusive with the small-landlord two-month rule (ca-ab12-deposit-cap-two-months-small-landlord). Before July 1, 2024 the limits were two months (unfurnished) and three months (furnished).",
+          "effective_date": "2024-07-01",
+          "source_doc_id": "D007",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-766d2f52f4e08645",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Security deposit cap of two months' rent (small landlords)",
+          "requirement": "Starting July 1, 2024, landlords who own only two rental properties with no more than four residential units total may charge up to two months' rent for furnished and unfurnished units. Ownership must be held by a natural person, family trust, or LLC whose members are all natural persons.",
+          "citation": "California Assembly Bill 12 (as described on Berkeley Rent Board Security Deposits page, https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits; no statute section cited)",
+          "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+          "quoted_span": "landlords who own only two rental properties with no more than four residential units total can charge up to two months' rent for furnished and unfurnished units if ownership is held by a natural person, family trust, or limited liability company (LLC) where all members are natural persons",
+          "key_value": "up to 2 months' rent",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "owner_total_properties",
+                "op": "lte",
+                "value": 2
+              },
+              {
+                "field": "owner_total_units",
+                "op": "lte",
+                "value": 4
+              },
+              {
+                "any": [
+                  {
+                    "field": "owner_type",
+                    "op": "in",
+                    "value": [
+                      "natural_person",
+                      "family_trust"
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "owner_type",
+                        "op": "eq",
+                        "value": "llc"
+                      },
+                      {
+                        "field": "owner_llc_has_corporate_member",
+                        "op": "eq",
+                        "value": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "This is the exception to the general one-month cap (ca-ab12-deposit-cap-one-month-general). The page says the Rent Board cannot determine whether a landlord may charge one or two months' rent for a new tenancy.",
+          "effective_date": "2024-07-01",
+          "source_doc_id": "D007",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-7291fe355305dbc4",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Photograph unit before or at start of new tenancy",
+          "requirement": "For tenancies beginning on or after July 1, 2025, the landlord must photograph the unit immediately before or at the start of a new tenancy to document its condition.",
+          "citation": "California state law (as described on Berkeley Rent Board Security Deposits page, https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits; no statute section cited)",
+          "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+          "quoted_span": "For tenancies that begin on or after July 1, 2025, a landlord must photograph the unit immediately before or at the start of a new tenancy to document the condition of the unit.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The tenancy start date (on or after 2025-07-01) cannot be expressed with the allowed coverage fields. It must be checked separately.",
+          "effective_date": "2025-07-01",
+          "source_doc_id": "D007",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-067cb8fa6f1efef4",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Offer move-out walk-through inspection",
+          "requirement": "Under state law, landlords must offer a walk-through inspection during the last two weeks of a tenancy to identify items needing repair or cleaning. This lets tenants correct issues to avoid security deposit deductions.",
+          "citation": "California state law (as described on Berkeley Rent Board Security Deposits page, https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits; no statute section cited)",
+          "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+          "quoted_span": "landlords must offer a walk-through inspection during the last two weeks of a tenancy to identify any items that need repair/cleaning",
+          "key_value": "last two weeks of tenancy",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D007",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-c12da11b4e72e90f",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Limits on security deposit deductions",
+          "requirement": "A landlord may deduct only the amount reasonably necessary to cover rent default, repair tenant- or guest-caused damage beyond normal wear and tear, and clean the unit to its start-of-tenancy cleanliness (for tenancies beginning after January 1, 2003). If the lease allows, a landlord may also deduct the cost of restoring or replacing personal property (including keys) or furniture, excluding ordinary wear and tear. A landlord may not require payment for professional carpet or other professional cleaning unless reasonably necessary to return the unit to its start-of-tenancy condition, minus ordinary wear and tear.",
+          "citation": "California state law (as described on Berkeley Rent Board Security Deposits page, https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits; no statute section cited)",
+          "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+          "quoted_span": "A landlord may deduct only the amount that is reasonably necessary to:",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D007",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-70b928d60ed0f496",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Return deposit within 21 days of move-out",
+          "requirement": "All or any remaining portion of a security deposit must be returned within 21 days after the tenant(s) leave the unit vacant.",
+          "citation": "California state law (as described on Berkeley Rent Board Security Deposits page, https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits; no statute section cited)",
+          "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+          "quoted_span": "All or any remaining portion of a security deposit must be returned",
+          "key_value": "21 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D007",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-5928c04d11b46144",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Itemized statement of deductions with supporting documents",
+          "requirement": "If deductions were made, the landlord must give the tenant a written statement itemizing the amount and purpose of each deduction. It must be accompanied by copies of documents showing charges incurred for repair or cleaning, including any bill, invoice, or receipt for materials or supplies. The landlord must also return any remaining portion of the deposit.",
+          "citation": "California state law (as described on Berkeley Rent Board Security Deposits page, https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits; no statute section cited)",
+          "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+          "quoted_span": "If deductions were made, the landlord must give the tenant a written statement itemizing the amount of and and purpose for any security deposit deductions",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Works together with the 21-day return rule (ca-deposit-return-within-21-days).",
+          "effective_date": null,
+          "source_doc_id": "D007",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-5e6d5de3999770cd",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Provide proof that necessary repairs were completed",
+          "requirement": "Starting January 1, 2025, landlords must provide proof that necessary repairs were completed when deducting for them from the security deposit.",
+          "citation": "California state law (as described on Berkeley Rent Board Security Deposits page, https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits; no statute section cited)",
+          "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+          "quoted_span": "Starting January 1, 2025, landlords must provide proof that necessary repairs were completed.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Part of the deposit return and itemization process.",
+          "effective_date": "2025-01-01",
+          "source_doc_id": "D007",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-ac2c17b44283df19",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Photograph unit after regaining possession before repairs or cleaning",
+          "requirement": "Starting April 1, 2025, landlords must photograph the unit after regaining possession and before any repairs or cleaning for which they intend to deduct from the security deposit. The photos and a written explanation of the repair/cleaning costs must be given to the tenant with the itemized statement.",
+          "citation": "California state law (as described on Berkeley Rent Board Security Deposits page, https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits; no statute section cited)",
+          "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+          "quoted_span": "Starting April 1, 2025, landlords must take photographs of a unit after regaining possession, but before any repairs or cleaning for which the landlord intends to make a deduction from the security deposit.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Photos must be delivered with the itemized statement (ca-deposit-itemized-statement-with-documents).",
+          "effective_date": "2025-04-01",
+          "source_doc_id": "D007",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-5f1664af382c2560",
+          "jurisdiction": "Berkeley, CA",
+          "level": "city",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Interest on security deposits for Rent Ordinance-covered units",
+          "requirement": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year. A prorated amount is due if the tenant moves out before year-end. The interest rate and calculation are on a separate Rent Board page not captured here.",
+          "citation": "Berkeley Rent Ordinance (as described on Berkeley Rent Board Security Deposits page, https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits; no section number cited)",
+          "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+          "quoted_span": "landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year",
+          "key_value": "interest paid annually; prorated on move-out",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Applies in addition to the state deposit rules. The source does not state whether it conflicts with them.",
+          "effective_date": null,
+          "source_doc_id": "D007",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-571f7092a5dc5352": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_total_properties",
+                      "op": "lte",
+                      "value": 2
+                    },
+                    {
+                      "field": "owner_total_units",
+                      "op": "lte",
+                      "value": 4
+                    },
+                    {
+                      "any": [
+                        {
+                          "field": "owner_type",
+                          "op": "in",
+                          "value": [
+                            "natural_person",
+                            "family_trust"
+                          ]
+                        },
+                        {
+                          "all": [
+                            {
+                              "field": "owner_type",
+                              "op": "eq",
+                              "value": "llc"
+                            },
+                            {
+                              "field": "owner_llc_has_corporate_member",
+                              "op": "eq",
+                              "value": false
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-07-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-766d2f52f4e08645": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "owner_total_properties",
+                "op": "lte",
+                "value": 2
+              },
+              {
+                "field": "owner_total_units",
+                "op": "lte",
+                "value": 4
+              },
+              {
+                "any": [
+                  {
+                    "field": "owner_type",
+                    "op": "in",
+                    "value": [
+                      "natural_person",
+                      "family_trust"
+                    ]
+                  },
+                  {
+                    "all": [
+                      {
+                        "field": "owner_type",
+                        "op": "eq",
+                        "value": "llc"
+                      },
+                      {
+                        "field": "owner_llc_has_corporate_member",
+                        "op": "eq",
+                        "value": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-07-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-7291fe355305dbc4": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2025-07-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-067cb8fa6f1efef4": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-c12da11b4e72e90f": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-70b928d60ed0f496": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-5928c04d11b46144": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-5e6d5de3999770cd": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2025-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-ac2c17b44283df19": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2025-04-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-5f1664af382c2560": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Berkeley"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D007",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 4850,
+    "source_sha256": "2ba3028382b89ee70810a45e25dd9707297bd65512e2723f4f9bda514af57203",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Source is a Berkeley Rent Board informational web page. It cites no statute sections, so the state-level rules are labeled CA based on the page's references to state law and Assembly Bill 12. Citations are descriptive and need verification against primary sources.",
+      "Enactment and effective dates are not stated apart from the 'Starting [date]' phrases, so enacted_on is null for all rules. The retrieval date was not used as a law date.",
+      "The small-landlord exception wording 'own only two rental properties' is ambiguous (exactly two vs. at most two). It was encoded as owner_total_properties <= 2. Owner type values (natural_person, family_trust, llc) are assumed enumerations. The 'all members are natural persons' LLC condition is approximated with owner_llc_has_corporate_member = false. Review before import.",
+      "The one-month cap says 'many landlords', so other exceptions may exist that this source does not list. The general-cap coverage may over-include.",
+      "The tenancy start-date conditions (on or after July 1, 2025; the January 1, 2003 cleaning reference) cannot be expressed with the allowed coverage fields. The photo-at-start rule is coded as state-wide with the date noted in the requirement.",
+      "The source does not give the interest rate or calculation for Berkeley deposit interest (on a separate page), so no key value was extracted. The city_rent_controlled field is used as a proxy for being 'fully or partially covered' by the Rent Ordinance.",
+      "The page does not mention the Hoboken, Jersey City, NJ, MA, or CA algorithmic rules, so no fixture aliases were applied. The page's July 2026 news items (Measure BB registration amnesty, fees) are out of scope and were not extracted.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "ca-ab12-deposit-cap-one-month-general: model whitespace was replaced with the exact captured span; inspect the original quotation during review.",
+      "ca-deposit-return-within-21-days: model whitespace was replaced with the exact captured span; inspect the original quotation during review.",
+      "ca-deposit-itemized-statement-with-documents: model whitespace was replaced with the exact captured span; inspect the original quotation during review."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4715,
+      "output_tokens": 9181
+    },
+    "created_at": "2026-10-04T10:09:34.648Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

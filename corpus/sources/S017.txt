@@ -1,0 +1,371 @@
+Search [Input: Enter your search terms here ...]
+
+[Input]
+
+ L5:
+  *   *   *   *   *   * # Legislative Deadlines
+
+[Input] 2025
+[Input] 2026
+
+ L12:
+  *  L14:   *  L15:   *  L16:   *  L17:   *  L18:   *  L19:   *  L20:   *  L21:   *  L22:   *  L23: ## January
+
+  * Jan 01, 2025
+
+Statutes take effect (Art. IV, Sec. 8(c)).
+
+ L30:
+  * Jan 06, 2025
+
+Legislature Reconvenes (J.R. 51(a)(1)).
+
+ L36:
+  * Jan 10, 2025
+
+Budget must be submitted by Governor (Art. IV, Sec. 12(a)).
+
+ L42:
+  * Jan 20, 2025
+
+Martin Luther King, Jr. Day.
+
+ L48:
+  * Jan 24, 2025
+
+Last day to submit bill requests to the Office of Legislative Counsel.
+
+ L54: ## February
+
+  * Feb 17, 2025
+
+Presidents’ Day.
+
+ L61:
+  * Feb 21, 2025
+
+Last day for bills to be introduced (J.R. 61(a)(1), (J.R. 54(a)).
+
+ L67:
+## March
+
+  * Mar 31, 2025
+
+Cesar Chavez Day
+
+ L75:
+## April
+
+  * Apr 10, 2025
+
+Spring Recess begins upon adjournment of this day’s session (J.R. 51(a)(2)).
+
+ L83:
+  * Apr 21, 2025
+
+Legislature reconvenes from Spring Recess (J.R. 51(a)(2)).
+
+ L89: ## May
+
+  * May 02, 2025
+
+Last day for policy committees to hear and report to fiscal committees fiscal bills introduced in their house (J.R. 61(a)(2)).
+
+ L96:
+  * May 09, 2025
+
+Last day for policy committees to hear and report to the Floor non-fiscal bills introduced in their house (J.R. 61(a)(3)).
+
+ L102:
+  * May 16, 2025
+
+Last day for policy committees to meet prior to June 9 (J.R. 61(a)(4)).
+
+ L108:
+  * May 23, 2025
+Last day for fiscal committees to hear and report to the Floor bills introduced in their house (J.R. 61(a)(5)). Last day for fiscal committees to meet prior to June 9 (J.R. 61 (a)(6)).
+
+ L113:
+  * May 26, 2025
+
+Memorial Day.
+
+ L119: ## June
+
+  * ### Jun 02, 2025 - Jun 06, 2025
+
+Floor Session Only. No committees, other than conference or Rules committees, may meet for any purpose (J.R. 61(a)(7)).
+
+ L126:
+  * Jun 06, 2025
+
+Last day for each house to pass bills introduced in that house (J.R. 61(a)(8)).
+
+ L132:
+  * Jun 09, 2025
+
+Committee meetings may resume (J.R. 61(a)(9)).
+
+ L138:
+  * Jun 15, 2025
+
+Budget Bill must be passed by midnight (Art. IV, Sec. 12(c)(3)).
+
+ L144: ## July
+
+  * Jul 04, 2025
+
+Independence Day.
+
+ L151:
+  * Jul 18, 2025
+
+Last day for policy committees to meet and report bills (J.R. 61(a)(10)). Summer Recess begins upon adjournment of session provided Budget Bill has been passed (J.R. 51(a)(3)).
+
+ L157: ## August
+
+  * Aug 18, 2025
+
+Legislature reconvenes from Summer Recess (J.R. 51(a)(3)).
+
+ L164:
+  * Aug 29, 2025
+
+Last day for fiscal committees to meet and report bills to the Floor. (J.R. 61(a)(11)).
+
+ L170: ## September
+
+  * Sep 01, 2025
+
+Labor Day.
+
+ L177:
+  * ### Sep 02, 2025 - Sep 12, 2025
+
+Floor Session Only. No committees, other than conference or Rules committees, may meet for any purpose (J.R. 61(a)(12)).
+
+ L183:
+  * Sep 05, 2025
+
+Last day to amend on the Floor (J.R. 61(a)(13)).
+
+ L189:
+  * Sep 12, 2025
+
+Last day for each house to pass bills (J.R. 61(a)(14)). Interim Study Recess begins at end of this day’s session (J.R. 51(a)(4)).
+
+ L195: ## October
+
+  * Oct 13, 2025
+
+Last day for Governor to sign or veto bills passed by the Legislature on or before Sept. 13 and in the Governor’s possession after Sept. 13 (Art. IV, Sec.10(b)(1)).
+
+ L202:
+ L204:
+  *  L206:   *  L207:   *  L208:   *  L209:   *  L210:   *  L211:   *  L212:   *  L213:   *  L214:   *  L215:   *  L216: ## January
+
+  * Jan 01, 2026
+
+Statutes take effect (Art. IV, Sec. 8(c)).
+
+ L223:
+  * Jan 05, 2026
+
+Legislature reconvenes (J.R. 51(a)(4)).
+
+ L229:
+  * Jan 10, 2026
+
+Budget must be submitted by Governor (Art. IV, Sec. 12 (a)).
+
+ L235:
+  * Jan 16, 2026
+
+Last day for policy committees to hear and report to fiscal committees fiscal bills introduced in their house in the odd-numbered year (J.R. 61(b)(1)).
+
+ L241:
+  * Jan 19, 2026
+Martin Luther King, Jr. Day.
+
+ L246:
+  * Jan 23, 2026
+
+Last day for any committee to hear and report to the Floor bills introduced in that house in the odd-numbered year (J.R. 61(b)(2)). Last day to submit bill requests to the Office of Legislative Counsel.
+
+ L252:
+  * Jan 31, 2026
+
+Last day for each house to pass bills introduced in that house in the odd-numbered year (Art. IV, Sec. 10(c)), (J.R. 61(b)(3)).
+
+ L258:
+  * Jan 01, 2027
+Statutes take effect (Art. IV, Sec. 8(c)).
+
+ L263: ## February
+
+  * Feb 16, 2026
+
+Presidents’ Day.
+
+ L270:
+  * Feb 20, 2026
+
+Last day for bills to be introduced (J.R. 61(b)(4)), (J.R. 54(a)).
+
+ L276:
+## March
+
+  * Mar 26, 2026
+
+Spring Recess begins upon adjournment (J.R. 51(b)(1)).
+
+ L284:
+  * Mar 30, 2026
+
+Farmworkers Day observed.
+
+ L290: ## April
+
+  * Apr 06, 2026
+
+Legislature reconvenes from Spring Recess (J.R. 51(b)(1)).
+
+ L297:
+  * Apr 24, 2026
+
+Last day for policy committees to hear and report to fiscal committees fiscal bills introduced in their house (J.R. 61(b)(5)).
+
+ L303: ## May
+
+  * May 01, 2026
+
+Last day for policy committees to hear and report to the Floor non-fiscal bills introduced in their house (J.R. 61(b)(6)).
+
+ L310:
+  * May 08, 2026
+
+Last day for policy committees to meet prior to June 1 (J.R. 61(b)(7)).
+
+ L316:
+  * May 15, 2026
+
+Last day for fiscal committees to hear and report to the Floor bills introduced in their house (J.R. 61 (b)(8)). Last day for fiscal committees to meet prior to June 1 (J.R. 61 (b)(9)).
+
+ L322:   * May 25, 2026
+
+Memorial Day.
+
+ L327:
+  * ### May 26, 2026 - May 29, 2026
+
+Floor Session only. No committees, other than conference or Rules committees, may meet for any purpose (J.R. 61(b)(10)).
+
+ L333:
+  * May 29, 2026
+
+Last day for each house to pass bills introduced in that house (J.R. 61(b)(11)).
+
+ L339: ## June
+
+  * Jun 01, 2026
+
+Committee meetings may resume (J.R. 61(b)(12)).
+
+ L346:
+  * Jun 15, 2026
+
+Budget Bill must be passed by midnight (Art. IV, Sec. 12(c)(3)).
+
+ L352:
+  * Jun 25, 2026
+
+Last day for a legislative measure to qualify for the Nov. 3 General Election ballot (Elections Code Sec. 9040).
+
+ L358: ## July
+
+  * Jul 02, 2026
+
+Last day for policy committees to meet and report bills (J.R. 61(b)(13)).
+Summer Recess begins upon adjournment of session, provided Budget Bill has passed (J.R. 51(b)(2)).
+
+ L366:
+  * Jul 03, 2026
+
+Independence Day observed.
+
+ L372: ## August
+
+  * Aug 03, 2026
+
+Legislature reconvenes from Summer Recess (J.R. 51(b)(2)).
+
+ L379:
+  * Aug 14, 2026
+
+Last day for fiscal committees to meet and report bills to the Floor (J.R. 61(b)(14)).
+
+ L385:
+  * ### Aug 17, 2026 - Aug 31, 2026
+
+Floor Session only. No committee, other than conference and Rules committees, may meet for any purpose (J.R. 61(b)(15)).
+
+ L391:
+  * Aug 21, 2026
+
+Last day to amend on the Floor (J.R. 61(b)(16)).
+
+ L397:   * Aug 31, 2026
+
+Last day for each house to pass bills (Art. IV, Sec. 10(c)), (J.R. 61(b)(17)). Final recess begins upon adjournment. (J.R. 51(b)(3)).
+
+ L402: ## September
+
+  * Sep 07, 2026
+
+Labor Day.
+
+ L409:
+  * Sep 30, 2026
+
+Last day for Governor to sign or veto bills passed by the Legislature before Sept. 1 and in the Governor’s possession on or after Sept. 1 (Art. IV, Sec. 10(b)(2)).
+
+ L415: ## November
+
+  * Nov 03, 2026
+
+General Election.
+
+ L422:
+  * Nov 11, 2026
+
+Veterans Day.
+
+ L428:
+  * ### Nov 26, 2026 - Nov 27, 2026
+
+Thanksgiving Holiday.
+
+ L434:
+  * Nov 30, 2026
+
+Adjournment sine die at midnight (Art. IV, Sec. 3(a)).
+
+ L440: ## December
+
+  * Dec 07, 2026
+
+12 Noon convening of the 2027-28 Regular Session (Art. IV, Sec. 3(a)).
+
+ L447:
+  * ### Dec 23, 2026 - Dec 25, 2026
+
+Winter Holiday.
+
+ L453:
+  * ### Dec 30, 2026 - Jan 01, 2027
+
+New Year's Holiday.
+
+ L459:
+ L461:
+Copyright © 2026 State of California

@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "cache_key": "ba4eb0e646a7bee8dc40e7376020dc21d5914be72a69af45df1e8701339a06df",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-061f7ab7869b5c93",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Security deposit cap of one month's rent (general rule)",
+          "requirement": "A landlord may not demand or receive security in an amount or value above one month's rent, in addition to the first month's rent paid on or before initial occupancy. Draft coverage excludes owners who appear to meet the small-landlord test in (c)(5), which carries a separate two-month cap that is not drafted here.",
+          "citation": "Cal. Civ. Code § 1950.5(c)(1)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy",
+          "key_value": "1 month's rent",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_total_properties",
+                      "op": "lte",
+                      "value": 2
+                    },
+                    {
+                      "field": "owner_total_units",
+                      "op": "lte",
+                      "value": 4
+                    },
+                    {
+                      "field": "owner_llc_has_corporate_member",
+                      "op": "eq",
+                      "value": false
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Per (c)(2), an advance payment of not less than six months' rent is not prohibited if the lease term is six months or longer. Per (c)(3), a landlord and tenant may agree to alterations at the tenant's request for a specified fee. Per (c)(5), qualifying small landlords are subject to a two-month cap instead. Per (c)(6), the subdivision does not apply to security collected or demanded before July 1, 2024. Lease term and alteration agreements cannot be represented in the coverage fields.",
+          "overrides": [],
+          "interaction": "Paragraph (c)(5) sets a separate two-month cap for qualifying natural-person or LLC landlords. That cap is not drafted because its service-member carve-out cannot be encoded.",
+          "effective_date": null,
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-9645ba43c57dce44",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "No deduction from security for preexisting damage or ordinary wear and tear",
+          "requirement": "A landlord may not assert a claim against the tenant or the security for damages or defective conditions that preexisted the tenancy, or for ordinary wear and tear or its effects.",
+          "citation": "Cal. Civ. Code § 1950.5(e)(2)(A)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "The landlord shall not assert a claim against the tenant or the security for damages to the premises or any defective conditions that preexisted the tenancy, for ordinary wear and tear or the effects thereof",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-0319e97432150549",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Written notice of the tenant's option to request an initial inspection",
+          "requirement": "Within a reasonable time after notice of intent to terminate the tenancy, or before the end of the lease term, the landlord must notify the tenant in writing of the option to request an initial inspection and of the right to be present at it.",
+          "citation": "Cal. Civ. Code § 1950.5(f)(1)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "the landlord shall notify the tenant in writing of the tenant’s option to request an initial inspection and of the tenant’s right to be present at the inspection",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "Per (f)(7), the subdivision does not apply when the tenancy is terminated under Code of Civil Procedure § 1161 subdivision (2), (3), or (4). Per (f)(1), if the tenant chooses not to request an initial inspection, the landlord's duties under the subdivision are discharged. The termination basis cannot be represented in the coverage fields.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-d4d1095f4e9577ee",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Photographs of the unit at the start of the tenancy",
+          "requirement": "For tenancies that begin on or after July 1, 2025, the landlord must photograph the unit immediately before, or at the inception of, the tenancy.",
+          "citation": "Cal. Civ. Code § 1950.5(g)(1)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "For tenancies that begin on or after July 1, 2025, the landlord shall take photographs of the unit immediately before, or at the",
+          "key_value": "tenancies beginning on or after 2025-07-01",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The tenancy start date is not an available coverage field, so the July 1, 2025 applicability is stated in the requirement and effective_date.",
+          "effective_date": "2025-07-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-675fad16cda45578",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Photographs after possession returned and after repairs or cleanings",
+          "requirement": "Beginning April 1, 2025, the landlord must photograph the unit within a reasonable time after possession is returned and before any repairs or cleanings for which a deduction or claim will be made. The landlord must also photograph the unit within a reasonable time after those repairs or cleanings are completed.",
+          "citation": "Cal. Civ. Code § 1950.5(g)(2)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "Beginning April 1, 2025, the landlord shall take photographs of the unit within a reasonable time after the possession of the unit is returned to the landlord",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2025-04-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-832814e9e4c12bff",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Itemized statement and return of security within 21 calendar days",
+          "requirement": "No later than 21 calendar days after the tenant has vacated, the landlord must furnish an itemized statement of the basis for and amount of security received and its disposition, and return any remaining portion. Delivery methods and rules for multiple adult tenants are set out in (h)(1)(A)-(C).",
+          "citation": "Cal. Civ. Code § 1950.5(h)(1)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "No later than 21 calendar days after the tenant has vacated the premises",
+          "key_value": "21 calendar days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "The text states the 21-day period runs from vacating, but not earlier than a termination notice under CCP § 1161 or Civil Code § 1946/1946.1, or 60 days before a fixed-term lease expires. Subparagraph (h)(3), which is cut off at the end of this chunk, may address repairs that cannot be completed within 21 days.",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-061f7ab7869b5c93": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_total_properties",
+                      "op": "lte",
+                      "value": 2
+                    },
+                    {
+                      "field": "owner_total_units",
+                      "op": "lte",
+                      "value": 4
+                    },
+                    {
+                      "field": "owner_llc_has_corporate_member",
+                      "op": "eq",
+                      "value": false
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-9645ba43c57dce44": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-0319e97432150549": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-d4d1095f4e9577ee": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2025-07-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-675fad16cda45578": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2025-04-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-832814e9e4c12bff": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D025",
+    "chunk": 0,
+    "total_chunks": 2,
+    "next_chunk": 1,
+    "chunk_start": 0,
+    "chunk_end": 20000,
+    "source_sha256": "48b1d005fb59f73082dc625d4038272f4bde950d2c93a70ef400a43b630e1511",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Chunk 1/2 ends mid-sentence in subdivision (h)(3). Later provisions (the rest of (h), (i) and following) are not covered here and need review in the next chunk.",
+      "The (c)(5) two-month cap for small natural-person/LLC landlords was not drafted. Its service-member carve-out in (c)(5)(B) has no coverage field, so a draft would misstate coverage. It needs manual review.",
+      "The (c)(4) requirement for a written statement when a service member is charged a higher security was not drafted because no service-member coverage field exists.",
+      "The general one-month cap draft excludes owners who appear to meet the small-landlord test (two or fewer properties, four or fewer units, no corporate LLC member). The natural-person requirement is not directly encoded because owner_type values are undefined. A small landlord renting to a service member is still subject to the one-month cap, and that case is not captured.",
+      "Exceptions that depend on facts without coverage fields are described only in the exemptions text: lease term of six months or more, alteration agreements, and termination under CCP § 1161. A reviewer should verify them.",
+      "The text gives no enactment or effective dates for the section or its amendments. Effective dates of 2025-04-01 and 2025-07-01 are taken from explicit dates in (g). The cap's July 1, 2024 applicability is stated only as an exclusion for earlier security, so effective_date is left null.",
+      "Other provisions in this chunk (security held for the tenant, subdivision (e) limits on claims, (f)(2)-(7), and (h)(2) documentation) were not drafted as separate rules. Add them if desired.",
+      "No fixture aliases were mapped; this source is not one of the listed fixture laws.",
+      "The retrieval date of 2026-10-01 was not used as an effective date.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 9679,
+      "output_tokens": 7931
+    },
+    "created_at": "2026-10-04T10:03:07.267Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

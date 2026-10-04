@@ -1,0 +1,454 @@
+{
+  "schema_version": 1,
+  "cache_key": "c16e1dd94b9b205d94c5e456e7bf6c8e9117cb259d2d34c4c58228531fc400a8",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-e12b22a143c0876f",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Security held for tenant; tenant claim prior to landlord's creditors",
+          "requirement": "Any security taken under a residential rental agreement must be held by the landlord for the tenant who is party to the lease or agreement, and the tenant's claim to the security is prior to the claim of any creditor of the landlord.",
+          "citation": "Cal. Civ. Code § 1950.5(d)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "Any security shall be held by the landlord for the tenant who is party to the lease or agreement. The claim of a tenant to the security shall be prior to the claim of any creditor of the landlord.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-603cf3883fae6826",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Landlord may claim only reasonably necessary amounts from security",
+          "requirement": "Subject to paragraph (2), a landlord may claim from the security only amounts reasonably necessary for the purposes specified in subdivision (b) (tenant rent default, repair of damage beyond ordinary wear and tear, cleaning to return the unit to its inception-of-tenancy condition, and remedying future defaults on return of personal property or appurtenances where the rental agreement authorizes it).",
+          "citation": "Cal. Civ. Code § 1950.5(e)(1)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "may claim of the security only those amounts as are reasonably necessary for the purposes specified in subdivision (b).",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Subject to paragraph (e)(2) limits on claims.",
+          "effective_date": null,
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-ed8fa77ff34ff3a7",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "No claims for preexisting damage or ordinary wear and tear",
+          "requirement": "A landlord may not assert a claim against the tenant or the security for preexisting damage or defective conditions, for ordinary wear and tear or its effects (whether preexisting or occurring during the tenancy), or for cumulative effects of ordinary wear and tear over one or more tenancies.",
+          "citation": "Cal. Civ. Code § 1950.5(e)(2)(A)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "The landlord shall not assert a claim against the tenant or the security for damages to the premises or any defective conditions that preexisted the tenancy, for ordinary wear and tear or the effects thereof, whether the wear and tear preexisted the tenancy or occurred during the tenancy, or for the cumulative effects of ordinary wear and tear occurring during any one or more tenancies.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-2a53ee898b276e68",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Professional cleaning charges only if reasonably necessary",
+          "requirement": "A landlord may not require a tenant to pay for, or claim against the tenant or the security for, professional carpet cleaning or other professional cleaning services unless reasonably necessary to return the premises to its condition at the inception of the tenancy, exclusive of ordinary wear and tear.",
+          "citation": "Cal. Civ. Code § 1950.5(e)(2)(C)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "The landlord shall not require a tenant to pay for, or assert a claim against the tenant or the security for, professional carpet cleaning or other professional cleaning services, unless reasonably necessary to return the premises to the condition it was in at the inception of tenancy, exclusive of ordinary wear and tear.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": null,
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-2190e66477b4f3c9",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Landlord photographs of unit after move-out and after repairs/cleanings",
+          "requirement": "Beginning April 1, 2025, the landlord must photograph the unit within a reasonable time after possession is returned to the landlord but before any repairs or cleanings for which a deduction or claim against the security will be made, and again within a reasonable time after those repairs or cleanings are completed.",
+          "citation": "Cal. Civ. Code § 1950.5(g)(2)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "Beginning April 1, 2025, the landlord shall take photographs of the unit within a reasonable time after the possession of the unit is returned to the landlord",
+          "key_value": "2025-04-01",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Photographs under subdivision (g) feed the documentation required with the itemized statement under (h)(2)(D).",
+          "effective_date": "2025-04-01",
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-9da93f052a37d6c9",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Itemized statement and return of security within 21 calendar days",
+          "requirement": "No later than 21 calendar days after the tenant has vacated (not earlier than the stated notice/lease-expiration triggers), the landlord must furnish the tenant an itemized statement of the basis for and amount of any security received and its disposition, and return any remaining portion, using the delivery methods in (h)(1)(A)-(C).",
+          "citation": "Cal. Civ. Code § 1950.5(h)(1)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "No later than 21 calendar days after the tenant has vacated the premises",
+          "key_value": "21 calendar days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Delivery methods vary (personal delivery, first-class mail, electronic return where payments were electronic, multiple-adult-tenant rules); subparagraph details are not individually drafted. Paragraph (h)(3) is cut off at the end of this chunk.",
+          "effective_date": null,
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-e033057c105955a4",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "security_deposits",
+          "status": "in_force",
+          "title": "Supporting documents for deductions must accompany itemized statement",
+          "requirement": "With the itemized statement, the landlord must include copies of documents showing charges incurred and deducted to repair or clean the premises: a description of work with time and hourly rate if done by the landlord or its employee; bills, invoices or receipts if done by others (with contractor name, address and phone if not on the document); receipts for materials or supplies; and, for allowable repairs or cleanings, the photographs taken under subdivision (g) with a written explanation of cost.",
+          "citation": "Cal. Civ. Code § 1950.5(h)(2)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+          "quoted_span": "copies of documents showing charges incurred and deducted by",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Applies when deductions are made for repair or cleaning; ties to photographs under (g).",
+          "effective_date": null,
+          "source_doc_id": "D025",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-e12b22a143c0876f": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-603cf3883fae6826": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-ed8fa77ff34ff3a7": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-2a53ee898b276e68": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-2190e66477b4f3c9": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2025-04-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-9da93f052a37d6c9": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-e033057c105955a4": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D025",
+    "chunk": 0,
+    "total_chunks": 2,
+    "next_chunk": 1,
+    "chunk_start": 0,
+    "chunk_end": 20000,
+    "source_sha256": "48b1d005fb59f73082dc625d4038272f4bde950d2c93a70ef400a43b630e1511",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "This chunk is 1 of 2 and ends mid-paragraph at (h)(3); remaining subdivisions (including successor-in-interest rules) are not covered and need review of the next chunk.",
+      "Enactment, amendment, and chaptered-bill history are not in this chunk, so lifecycle.enacted_on is null for all drafts; status in_force reflects the codified text as retrieved and the explicit dates (2025-04-01, 2025-07-01, 2024-07-01) being before 2026-10-01, and should be confirmed by a reviewer.",
+      "Omitted: the one-month-rent cap (c)(1) and two-month cap for small landlords (c)(5). Coverage depends on landlord type (natural person or LLC with only natural-person members, at most two properties and four units, family-trust definition) and on service-member status of the tenant, which cannot be safely encoded with the allowed fields. Cap per (c)(6) does not apply to security collected or demanded before July 1, 2024; no effective date asserted. Needs human review.",
+      "Omitted: (c)(4) higher-security explanation for service members (effective on or after April 1, 2025) because service-member status is not an allowed coverage field.",
+      "Omitted: (g)(1) photographs at tenancy inception for tenancies beginning on or after July 1, 2025, because tenancy start date is not an allowed coverage field.",
+      "Omitted: (f) initial inspection notice and itemized-statement requirements because exemption for tenancies terminated under CCP § 1161(2),(3),(4) cannot be encoded in coverage.",
+      "Omitted: (c)(2)/(c)(3) exceptions, (b) definition, and (h)(1)(A)-(C) delivery-method sub-rules as separate rules; they are only described within related drafts or not drafted.",
+      "No fixture aliases are supported by this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 9658,
+      "output_tokens": 7409
+    },
+    "created_at": "2026-10-04T09:53:44.987Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

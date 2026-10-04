@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "cache_key": "736f9f91b7566a482e20e1393b56dba674fd278780504905d9700b6bd224774e",
+  "source_url": "https://housing.lacity.gov/rso-rent-increase-calculator",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-31a7b1ee16ac433e",
+          "jurisdiction": "Los Angeles, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "No additional utilities percentage added to RSO annual rent increase",
+          "requirement": "For rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities on top of the annual allowable RSO rent increase.",
+          "citation": "LAHD, RSO Rent Increase Calculator, https://housing.lacity.gov/rso-rent-increase-calculator (underlying ordinance section not cited in source)",
+          "source_url": "https://housing.lacity.gov/rso-rent-increase-calculator",
+          "quoted_span": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
+          "key_value": "0% additional utilities increase",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The page applies this to units subject to the RSO. Applicability is determined by RSO status (ZIMAS lookup), not by facts on this page. The source does not give the ordinance section or the RSO exemptions.",
+          "effective_date": "2026-02-02",
+          "source_doc_id": "D042",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-31a7b1ee16ac433e": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Los Angeles"
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-02-02",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D042",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 5100,
+    "source_sha256": "21a8e44f111659923f120ad5543bf46611e1b2dd5af0087cc16f98de479cd262",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "The 3% annual allowable RSO increase is stated for July 1, 2025 through June 30, 2026. That period had ended as of 2026-10-01, and the page does not state the rate for the following period, so no draft was created. An administrator should confirm the current rate from a current source.",
+      "The statement that state law requires 30 days' written notice for rent increases under 10% is a notice requirement, not a rent increase limit. It cites no statute, so it was not drafted.",
+      "The RSO and SCEP surcharge pass-through details ($1.61 and $2.83 per month, collectable only after unit registration and written notice) were not drafted. The category fit is uncertain and no ordinance citation is given. They are flagged for review.",
+      "The source gives no ordinance or municipal code citation and no enactment date. The citation is the page title and URL only. The effective date of 2026-02-02 comes from the page text.",
+      "The source says non-RSO properties should contact LAHD about allowable increases. It gives no rule for them, so none was drafted.",
+      "The chunk is a web page with a calculator and navigation content. Unrelated announcements (RFPs, TEFRA notice) were ignored as outside the six categories.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 5051,
+      "output_tokens": 1958
+    },
+    "created_at": "2026-10-04T10:01:32.896Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

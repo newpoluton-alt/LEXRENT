@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "cache_key": "aa32b3d205a23e5e91f34c1bc1ddb8f35fe5a738cfd3d541ae73d35bdcc9b5df",
+  "source_url": "https://www.uschamber.com/assets/documents/Opinion-Cella-v.-Campbell-Mass.pdf",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "S008",
+    "chunk": 0,
+    "total_chunks": 3,
+    "next_chunk": 1,
+    "chunk_start": 0,
+    "chunk_end": 20000,
+    "source_sha256": "d30f8b2b90b7c24f06f293acd3f660bdd613bc33d6cafaa3c84ac4ff56b40b2d",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No draft emitted for Initiative Petition 25-21 (the fixture MA-RENT-P1 proposal, a limit on annual rent increases). Its covered-unit definition has five exemptions. Two of them cannot be encoded safely with the allowed coverage fields: (b) units whose rents are regulated by a public authority, with a carve-out so a mobile housing voucher does not count, and (d) dwelling units in facilities operated solely for educational, religious, or non-profit purposes. Per instructions the draft is omitted for administrator review.",
+      "Source is a Massachusetts SJC slip opinion (Cella v. Attorney General, SJC-13893) about the petition, not the text of an enacted law. It describes a proposal: a cap on annual rent increases at the lower of the annual Consumer Price Index increase or five percent. It repeals G. L. c. 40P, the statewide rent control prohibition, by striking it out.",
+      "Status as of 2026-10-01: the petition is not enacted. The court concludes art. 48 bars placing it on the November 2026 statewide ballot because it relates to religion. A reviewer should confirm whether this counts as 'failed' or still 'pending' in later chunks, for example whether any further proceedings remain. No failed_on date was recorded. The header shows 'May 6, 2026. - June 23, 2026.' but this chunk does not state the decision date outright.",
+      "G. L. c. 40P (the existing statewide prohibition on rent control) is described only secondhand in the opinion. The excerpt does not prove its current status, so no rule was drafted for it. It is also not in the supplied categories as a distinct obligation.",
+      "Chunk 1/3 only. The rest of the opinion, including the final disposition and any remedy, was not reviewed. No other supplied categories (just cause eviction, security deposits, screening fees, screening restrictions, algorithmic rent setting) are supported by this chunk.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 10577,
+      "output_tokens": 1863
+    },
+    "created_at": "2026-10-04T10:06:47.328Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

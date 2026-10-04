@@ -1,0 +1,125 @@
+[
+  {
+    "doc_id": "S001",
+    "jurisdictions": "Los Angeles, CA",
+    "url": "https://housing.lacity.gov/wp-content/uploads/2022/01/Allowable-Rent-Increase-Bulletin-English.pdf",
+    "source_type": "municipal_guidance"
+  },
+  {
+    "doc_id": "S002",
+    "jurisdictions": "San Diego, CA",
+    "url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
+    "source_type": "municipal_code"
+  },
+  {
+    "doc_id": "S003",
+    "jurisdictions": "Berkeley, CA",
+    "url": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2025-12-02%20Annotated%20Agenda%20-%20Council.pdf",
+    "source_type": "adoption_record"
+  },
+  {
+    "doc_id": "S004",
+    "jurisdictions": "CA",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=9600.",
+    "source_type": "state_statute"
+  },
+  {
+    "doc_id": "S005",
+    "jurisdictions": "Hoboken, NJ",
+    "url": "https://www.hobokennj.gov/news/city-of-hoboken-outlaws-algorithmic-rent-fixing",
+    "source_type": "municipal_guidance"
+  },
+  {
+    "doc_id": "S006",
+    "jurisdictions": "Jersey City, NJ",
+    "url": "https://cityofjerseycity.civicweb.net/document/429156/Ordinance%20Amending%20Chapter%20218%20creating%20section.pdf?handle=2B058398395C4A5699FBE387DE507D6C",
+    "source_type": "municipal_ordinance"
+  },
+  {
+    "doc_id": "S007",
+    "jurisdictions": "MA",
+    "url": "https://www.mass.gov/doc/25-21-an-initiative-petition-to-protect-tenants-by-limiting-rent-increases/download",
+    "source_type": "initiative_petition"
+  },
+  {
+    "doc_id": "S008",
+    "jurisdictions": "MA",
+    "url": "https://www.uschamber.com/assets/documents/Opinion-Cella-v.-Campbell-Mass.pdf",
+    "source_type": "court_opinion_copy"
+  },
+  {
+    "doc_id": "S009",
+    "jurisdictions": "Hoboken, NJ",
+    "url": "https://ecode360.com/15252470",
+    "source_type": "municipal_code"
+  },
+  {
+    "doc_id": "S010",
+    "jurisdictions": "Newark, NJ",
+    "url": "https://ecode360.com/36623772",
+    "source_type": "municipal_code"
+  },
+  {
+    "doc_id": "S011",
+    "jurisdictions": "Jersey City, NJ",
+    "url": "https://cityofjerseycity.civicweb.net/document/433505/Amending%20218-12%20to%20clarify%20language.pdf?handle=42A331E429724B93A4477962ABE6783F",
+    "source_type": "municipal_ordinance"
+  },
+  {
+    "doc_id": "S012",
+    "jurisdictions": "Hoboken, NJ",
+    "url": "https://ecode360.com/46833413",
+    "source_type": "municipal_code"
+  },
+  {
+    "doc_id": "S013",
+    "jurisdictions": "CA",
+    "url": "https://courts.ca.gov/system/files/file/2025-summary-final.pdf",
+    "source_type": "official_legislative_summary_excerpt",
+    "page_keywords": [
+      "AB 325",
+      "SB 763"
+    ]
+  },
+  {
+    "doc_id": "S014",
+    "jurisdictions": "Jersey City, NJ",
+    "url": "https://library.municode.com/nj/jersey_city/codes/code_of_ordinances?nodeId=CH260RECO",
+    "source_type": "municipal_code"
+  },
+  {
+    "doc_id": "S015",
+    "jurisdictions": "Jersey City, NJ",
+    "url": "https://www.jerseycitynj.gov/UserFiles/Servers/Server_6189660/File/City%20Hall/Housing%20Economic%20Development/Tenant%20Landlord%20Relations/8.20.26%20-%20October%20CPI.pdf",
+    "source_type": "municipal_guidance"
+  },
+  {
+    "doc_id": "S016",
+    "jurisdictions": "CA",
+    "url": "https://ajud.assembly.ca.gov/system/files/2025-10/2025-asm-jud-bill-summary.pdf",
+    "source_type": "official_legislative_summary_excerpt",
+    "page_keywords": [
+      "AB 325",
+      "SB 763",
+      "January 1, 2026"
+    ]
+  },
+  {
+    "doc_id": "S017",
+    "jurisdictions": "CA",
+    "url": "https://www.senate.ca.gov/legislative-deadlines",
+    "source_type": "official_effective_date_calendar"
+  },
+  {
+    "doc_id": "S019",
+    "jurisdictions": "MA",
+    "url": "https://malegislature.gov/Bills/194/H5222.pdf",
+    "source_type": "pending_bill_text"
+  },
+  {
+    "doc_id": "S020",
+    "jurisdictions": "MA",
+    "url": "https://malegislature.gov/Bills/194/S2983.pdf",
+    "source_type": "pending_bill_text"
+  }
+]

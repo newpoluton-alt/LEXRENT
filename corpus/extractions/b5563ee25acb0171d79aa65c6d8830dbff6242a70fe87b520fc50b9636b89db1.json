@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "cache_key": "b5563ee25acb0171d79aa65c6d8830dbff6242a70fe87b520fc50b9636b89db1",
+  "source_url": "https://www.sf.gov/reports--archive-relocation-rates",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "D082",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 3560,
+    "source_sha256": "5e1ee2ddac37eb9639650aaa15af33f6820c182edc506f4b6da787a3da7714f6",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No drafts produced. The source is an archive of Rent Board relocation payment rate tables, with the current-year row for notices served 3/01/26 to 2/28/27 followed by historical rows.",
+      "Each rate applies only by date of service of the eviction notice. The allowed coverage fields have no field for notice date, so that condition cannot be encoded safely and the draft was omitted for review.",
+      "Eligibility for the additional amounts depends on tenant age (60+ or 62+), disability, or minor children in the household. These facts are not available coverage fields.",
+      "The rates apply to specific eviction grounds (owner or relative move-in, demolition or permanent removal, temporary capital improvement, substantial rehabilitation, Ellis Act). The page does not state the underlying ordinance provisions, and its only references are a footnote citing Rent Ordinance Section 37.9C and California Civil Code Section 1947.9. It also does not state an enactment or effective date for the rates, so no lifecycle dates were assigned.",
+      "Relocation payment amounts do not map cleanly to the six supplied categories. The closest fit, just_cause_eviction, would need administrator review.",
+      "The footnote says relocation for temporary capital improvement evictions under 20 days is governed by Civil Code Section 1947.9 and not Rent Ordinance Section 37.9C. That interaction needs review.",
+      "The retrieval date of 2026-10-01 was not used as an effective date. The historical rate rows are not current obligations. No fixture aliases are supported by this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 5159,
+      "output_tokens": 1544
+    },
+    "created_at": "2026-10-04T10:10:11.079Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

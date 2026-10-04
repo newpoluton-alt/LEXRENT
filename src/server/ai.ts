@@ -3,15 +3,24 @@ import { createHash } from "node:crypto";
 import { z } from "zod";
 import { CATEGORIES, DEFAULT_AS_OF, FACT_FIELDS, type RuleBundle, type RuleLogic, type RuleRecord, type SourceDocument } from "../domain/types";
 import { safeParsePredicate, queryDateSchema, validateRuleBundle } from "../domain/validation";
+import { sourceWhitespaceMap } from "../domain/retrieval-index";
 
 export class AiError extends Error {
   constructor(public readonly code: string, message: string, public readonly status = 502, public readonly issues?: { path: string; message: string }[]) {
     super(message); this.name = "AiError";
   }
 }
+/** Provider diagnostics never become public error text or expose request credentials. */
+export function claudeProviderFailure(error: unknown, fallback: string): AiError {
+  const value = error as { status?: number; error?: { error?: { message?: string } } } | null;
+  if (value?.status === 400 && value.error?.error?.message?.startsWith("Your credit balance is too low to access the Anthropic API.")) {
+    return new AiError("AI_CREDITS_UNAVAILABLE", "The Claude account needs API credits before AI assistance can run. Address results and source evidence remain available.", 503);
+  }
+  return new AiError("AI_UPSTREAM_ERROR", fallback, 502);
+}
 export function isAiConfigured() { return Boolean(process.env.ANTHROPIC_API_KEY?.trim()); }
 const CHUNK_SIZE = 20_000, CHUNK_OVERLAP = 2_000;
-export const EXTRACTION_PROMPT_VERSION = "lexrent-extraction-v2";
+export const EXTRACTION_PROMPT_VERSION = "lexrent-extraction-v3";
 export interface SourceChunk { index: number; start: number; end: number; text: string }
 export function chunkSourceText(text: string): SourceChunk[] {
   const chunks: SourceChunk[] = [];
@@ -76,6 +85,17 @@ Lifecycle dates must be complete calendar dates explicitly supported by the capt
 Fixture aliases, if and only if this source supports them: CA-ALG-01 = CA AB325/SB763; HOB-ALG-01 = Hoboken algorithmic ban; JC-ALG-01 = Jersey City algorithmic ban; NJ-ALG-01 = NJ FAIR Act; MA-ALG-P1 = S2983; MA-ALG-P2 = H5222; MA-RENT-P1 = failed MA IP25-21. Aliases are test mappings, not evidence. Missing source text cannot be replaced by fixture expectations.
 All output is a draft requiring human review before import. Use null or empty lists for unsupported optional facts and explain uncertainties in warnings.`;
 
+/** Recover only whitespace differences, returning the original source bytes.
+ * Words, punctuation, omissions and added ellipses are never repaired. */
+export function recoverCapturedQuote(quote: string, text: string): string | null {
+  if (text.includes(quote)) return quote;
+  const normalized = quote.replace(/\s+/g, " ").trim();
+  if (!normalized) return null;
+  const map = sourceWhitespaceMap(text), index = map.text.indexOf(normalized);
+  if (index < 0) return null;
+  return text.slice(map.starts[index], map.ends[index + normalized.length - 1]);
+}
+
 export async function extractSourceChunk(source: SourceDocument, chunk = 0): Promise<ExtractionResult> {
   const apiKey = process.env.ANTHROPIC_API_KEY?.trim();
   if (!apiKey) throw new AiError("AI_NOT_CONFIGURED", "Add ANTHROPIC_API_KEY on the server to enable Claude extraction.", 503);
@@ -87,8 +107,8 @@ export async function extractSourceChunk(source: SourceDocument, chunk = 0): Pro
   try {
     const client = new Anthropic({ apiKey, maxRetries: 1, timeout: 60_000 });
     response = await client.messages.create({ model, max_tokens: 12_000, system: systemPrompt, output_config: { format: { type: "json_schema", schema: CLAUDE_EXTRACTION_SCHEMA } }, messages: [{ role: "user", content: `Source metadata (identity only): ${JSON.stringify({ doc_id: source.doc_id, url: source.url, jurisdictions: source.jurisdictions, retrieved_at: source.retrieved_at })}\nChunk ${chunk + 1}/${chunks.length}; original character offsets ${selected.start}..${selected.end}. Neighboring chunks overlap; do not assume that this chunk contains the whole law.\n<capture-data>\n${selected.text}\n</capture-data>` }] });
-  } catch {
-    throw new AiError("AI_UPSTREAM_ERROR", "Claude extraction could not be completed. Check the server API credentials, model access and available API credits, then retry.", 502);
+  } catch (error) {
+    throw claudeProviderFailure(error, "Claude extraction could not be completed. Check the server API credentials, model access and available API credits, then retry.");
   }
   if (!("content" in response)) throw new AiError("AI_INVALID_RESPONSE", "Claude returned an unsupported response.", 502);
   if (response.stop_reason === "max_tokens") throw new AiError("AI_OUTPUT_INCOMPLETE", "Claude reached the output limit. This chunk was not accepted; no partial rule bundle was published.", 422);
@@ -103,6 +123,9 @@ export async function extractSourceChunk(source: SourceDocument, chunk = 0): Pro
   const keyMap = new Map(parsed.data.draft_rules.map(draft => [draft.rule_key, `r-${createHash("sha256").update(JSON.stringify([source.doc_id, draft.jurisdiction, draft.citation, draft.rule_key])).digest("hex").slice(0, 16)}`]));
   const rules: RuleRecord[] = [], ruleLogic: Record<string, RuleLogic> = {};
   for (const draft of parsed.data.draft_rules) {
+    const capturedQuote = recoverCapturedQuote(draft.quoted_span, selected.text);
+    if (!capturedQuote) throw new AiError("AI_EVIDENCE_REJECTED", "A draft quotation changed or added source words. No rules were imported.", 422);
+    if (capturedQuote !== draft.quoted_span) warnings.push(`${draft.rule_key}: model whitespace was replaced with the exact captured span; inspect the original quotation during review.`);
     let coverageInput: unknown;
     try { coverageInput = JSON.parse(draft.coverage_json); } catch { throw new AiError("AI_INVALID_COVERAGE", "A draft coverage predicate was not valid JSON.", 422); }
     const coverage = safeParsePredicate(coverageInput);
@@ -113,7 +136,7 @@ export async function extractSourceChunk(source: SourceDocument, chunk = 0): Pro
       if (!id) throw new AiError("AI_INVALID_INTERACTION", "A draft interaction references a requirement outside this response; review the source interaction manually.", 422);
       return id;
     });
-    rules.push({ team_rule_id, jurisdiction: draft.jurisdiction, level: draft.level, category: draft.category, status: draft.status, title: draft.title, requirement: draft.requirement, citation: draft.citation, source_doc_id: source.doc_id, source_url: source.url, quoted_span: draft.quoted_span, key_value: draft.key_value, coverage_conditions: coverage.data as Record<string, unknown>, exemptions: draft.exemptions, effective_date: draft.effective_date, interaction: draft.interaction, overrides: [], conflict_flag: draft.conflict_flag, conflict_note: draft.conflict_note });
+    rules.push({ team_rule_id, jurisdiction: draft.jurisdiction, level: draft.level, category: draft.category, status: draft.status, title: draft.title, requirement: draft.requirement, citation: draft.citation, source_doc_id: source.doc_id, source_url: source.url, quoted_span: capturedQuote, key_value: draft.key_value, coverage_conditions: coverage.data as Record<string, unknown>, exemptions: draft.exemptions, effective_date: draft.effective_date, interaction: draft.interaction, overrides: [], conflict_flag: draft.conflict_flag, conflict_note: draft.conflict_note });
     ruleLogic[team_rule_id] = { coverage: coverage.data, lifecycle: draft.lifecycle, supersedes: resolveReferences(draft.supersedes), conflicts_with: resolveReferences(draft.conflicts_with), fixture_rule_ids: draft.fixture_rule_ids };
   }
   const validation = validateRuleBundle({ rules, ruleLogic }, [source]);

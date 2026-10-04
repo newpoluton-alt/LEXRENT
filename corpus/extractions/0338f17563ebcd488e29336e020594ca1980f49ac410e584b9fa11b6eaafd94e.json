@@ -1,0 +1,392 @@
+{
+  "schema_version": 1,
+  "cache_key": "0338f17563ebcd488e29336e020594ca1980f49ac410e584b9fa11b6eaafd94e",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-043258dc694257bb",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "Application screening fee capped at actual costs and $30 per applicant (CPI-adjustable)",
+          "requirement": "An application screening fee may not exceed the landlord's actual out-of-pocket costs of gathering applicant information (including the reasonable value of time spent) and may never exceed $30 per applicant. The $30 figure may be adjusted annually for Consumer Price Index increases, beginning January 1, 1998.",
+          "citation": "Cal. Civ. Code § 1950.6(b)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+          "quoted_span": "In no case shall the amount of the application screening fee charged by the landlord or their agent be greater than thirty dollars ($30) per applicant.",
+          "key_value": "$30 per applicant (CPI-adjustable)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Section 1950.6(l) states it is not intended to preempt provisions or regulations governing collection of deposits and fees under federal or state housing assistance programs. Applies notwithstanding Section 1950.5. Reusable screening reports under Section 1950.1 may be accepted (subdivision (g)).",
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D026",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-352eee9eaf302a69",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "No screening fee when no unit is or will be available",
+          "requirement": "A landlord or agent may not charge an application screening fee when they know or should have known that no rental unit is available now or within a reasonable period of time.",
+          "citation": "Cal. Civ. Code § 1950.6(c)(1)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+          "quoted_span": "A landlord or their agent shall not charge an applicant an application screening fee when they know or should have known that no rental unit is available at that time or will be available within a reasonable period of time.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D026",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-0794f982e34fa58a",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "Fee may be charged only if first-come process or full refund process is offered",
+          "requirement": "A landlord or agent may charge a screening fee only if, when the fee is collected, they offer either (A) a first-received, first-qualified screening process with written criteria provided with the application, approval of the first qualifying applicant, and no fee unless the application is actually considered (with a 7-day refund or optional transfer for inadvertent concurrent collection), or (B) a process returning the entire fee to any applicant not selected, within 7 days of selecting an applicant or 30 days of application submission, whichever occurs first.",
+          "citation": "Cal. Civ. Code § 1950.6(c)(2)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+          "quoted_span": "A landlord or their agent may charge an applicant an application screening fee only if the landlord or their agent, at the time the application screening fee is collected, offers any of the following:",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "No refund is required for an applicant whose application is denied after consideration because they do not meet the established screening criteria (applies to option (A)).",
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D026",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-33797b088c2c36d3",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "Itemized receipt for screening fee",
+          "requirement": "The landlord or agent must give the applicant, personally or by mail, a receipt for the fee that itemizes the out-of-pocket expenses and time spent obtaining and processing applicant information. By agreement, the receipt may be sent to an applicant-provided email account.",
+          "citation": "Cal. Civ. Code § 1950.6(d)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+          "quoted_span": "The landlord or their agent shall provide, personally, or by mail, the applicant with a receipt for the fee paid by the applicant, which receipt shall itemize the out-of-pocket expenses and time spent by the landlord or their agent to obtain and process the information about the applicant.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D026",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-8451e660beb7e60a",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "Return unused portion of screening fee",
+          "requirement": "If the landlord or agent does not perform a personal reference check or obtain a consumer credit report, they must return to the applicant any amount of the screening fee not used for purposes authorized by the section.",
+          "citation": "Cal. Civ. Code § 1950.6(e)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+          "quoted_span": "the landlord or their agent shall return any amount of the screening fee that is not used for the purposes authorized by this section to the applicant.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D026",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-3cb78d79bbb88fbf",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "application_screening_fees",
+          "status": "in_force",
+          "title": "Provide applicant a copy of consumer credit report within seven days",
+          "requirement": "If an application screening fee has been paid, the landlord or agent must give the applicant a copy of the consumer credit report (by personal delivery, mail, or email) within seven days of receiving it.",
+          "citation": "Cal. Civ. Code § 1950.6(f)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+          "quoted_span": "If an application screening fee has been paid by the applicant, the landlord or their agent shall provide a copy of the consumer credit report to the applicant who is the subject of that report by personal delivery, mail, or email within seven days of the landlord or their agent receiving the report.",
+          "key_value": "7 days",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": null,
+          "effective_date": "2026-01-01",
+          "source_doc_id": "D026",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-043258dc694257bb": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-352eee9eaf302a69": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-0794f982e34fa58a": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-33797b088c2c36d3": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-8451e660beb7e60a": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-3cb78d79bbb88fbf": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-01-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D026",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 7184,
+    "source_sha256": "35ec54ef926471876977b9cad3f0db7ff5b77393bd0baad03ed30125949f8e7a",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Effective date 2026-01-01 comes from the amendment note (Stats. 2025, Ch. 67, Sec. 29, AB 1170); the original enactment dates of individual provisions are not in this text, so enacted_on is null. Some provisions (e.g. the $30 cap, CPI adjustment from 1998) may predate this amendment.",
+      "Status in_force is based on the stated effective date of January 1, 2026 being before the as-of date 2026-10-01.",
+      "The CPI-adjusted dollar amount is not stated in the source; only the base $30 figure is captured.",
+      "Coverage is modeled generically as CA residential use; the statute defines 'landlord' as an owner of residential rental property and 'applicant' to include guarantors/cosigners, but no unit-type exemptions are stated. Subdivision (l) (no preemption of federal or state housing assistance program rules) is noted in interaction text, not as a coverage exemption.",
+      "The cost-based limit ('actual out-of-pocket costs') is captured in the cap rule's requirement text, but the quoted span covers only the $30 cap because the cost sentence spans a line break in the capture.",
+      "Subdivisions (g), (h)-(k) (reusable screening reports, definitions, not an advance fee or security) were not drafted as separate obligations.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 5608,
+      "output_tokens": 4667
+    },
+    "created_at": "2026-10-04T10:03:34.082Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

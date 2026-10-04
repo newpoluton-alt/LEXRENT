@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "cache_key": "06a4dab745fb10be79757ef1a1ab43b7a0bf284bbca0e7f3641ee0ad9bf15300",
+  "source_url": "https://santa-ana.gov/departments/rent-stabilization",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-73befa0d8428da7c",
+          "jurisdiction": "Santa Ana, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Annual rent increase cap: lesser of 3% or 80% of CPI change",
+          "requirement": "A landlord may raise rent by no more than the lesser of 3% of current rent or 80% of the CPI change per year, per the city's summary of the Rent Stabilization and Just Cause Eviction Ordinance.",
+          "citation": "https://santa-ana.gov/departments/rent-stabilization (City of Santa Ana Rent Stabilization page; ordinance number/section not stated in source)",
+          "source_url": "https://santa-ana.gov/departments/rent-stabilization",
+          "quoted_span": "The increase cannot be more than 3% of your current rent or 80% of the Consumer Price Index (CPI) change, whichever is less.",
+          "key_value": "lesser of 3% or 80% of CPI change",
+          "coverage_conditions": {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Santa Ana"
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The currently published annual maximum (2.87% for 2026-09-01 through 2027-08-31) is the output of this formula as presented on the page.",
+          "effective_date": null,
+          "source_doc_id": "D084",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-954dda5fccf6642a",
+          "jurisdiction": "Santa Ana, CA",
+          "level": "city",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Current maximum allowable rent increase: 2.87% (Sept 1, 2026 - Aug 31, 2027)",
+          "requirement": "For the period September 1, 2026 through August 31, 2027, the maximum allowable rent increase is 2.87 percent.",
+          "citation": "https://santa-ana.gov/departments/rent-stabilization (City of Santa Ana Rent Stabilization page; ordinance number/section not stated in source)",
+          "source_url": "https://santa-ana.gov/departments/rent-stabilization",
+          "quoted_span": "2.87 percent is the maximum allowable rent increase for the period of September 1, 2026 through August 31, 2027.",
+          "key_value": "2.87%",
+          "coverage_conditions": {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Santa Ana"
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Annual figure under the general cap (lesser of 3% or 80% of CPI change). Applies for the stated period only.",
+          "effective_date": "2026-09-01",
+          "source_doc_id": "D084",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-1d97792119ac9a4f",
+          "jurisdiction": "Santa Ana, CA",
+          "level": "city",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Landlord must have a valid reason to evict",
+          "requirement": "A landlord must have a valid (just) cause to evict a tenant, such as nonpayment of rent, breach of lease, or the landlord moving into the property, per the city's summary. The page's list of reasons is illustrative; the full list of authorized causes is not provided in this chunk.",
+          "citation": "https://santa-ana.gov/departments/rent-stabilization (City of Santa Ana Rent Stabilization page; ordinance number/section not stated in source)",
+          "source_url": "https://santa-ana.gov/departments/rent-stabilization",
+          "quoted_span": "Your landlord must have a valid reason to evict you.",
+          "key_value": null,
+          "coverage_conditions": {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Santa Ana"
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "The page also mentions relocation assistance for certain evictions; details are not provided in this chunk.",
+          "effective_date": null,
+          "source_doc_id": "D084",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-73befa0d8428da7c": {
+          "coverage": {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Santa Ana"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-954dda5fccf6642a": {
+          "coverage": {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Santa Ana"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2026-09-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-1d97792119ac9a4f": {
+          "coverage": {
+            "field": "legal_city",
+            "op": "eq",
+            "value": "Santa Ana"
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D084",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 4333,
+    "source_sha256": "fc10720530c3f1eeb733fe7954d39b62ad374c8d954053c61dea0a89444f08b3",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Source is a city informational web page summarizing the ordinance; it gives no ordinance number, section citations, enactment date, or effective date of the ordinance. Those fields are null.",
+      "Coverage and exemptions (e.g., which units are covered, exempt housing types, owner or tenancy conditions) are not stated in this chunk. Coverage is limited to legal_city = Santa Ana and needs administrator review against the ordinance text.",
+      "The 3%/80% CPI cap is described only in plain-language summary form; the base CPI measure and calculation details are not provided here. The 2.87% rate effective_on date is the start of the stated rate period, not necessarily the ordinance effective date.",
+      "Relocation assistance is mentioned only vaguely ('might have to help pay for your moving costs'), with no amounts, triggers, or coverage; no draft rule was created.",
+      "The registration fee pass-through cap ($50 per rental unit, reimbursement of overpayment) and capital improvement pass-throughs fall outside the six supplied categories; no rules were drafted.",
+      "The page does not contain content for security deposits, application/screening fees, screening restrictions, or algorithmic rent setting; none were drafted.",
+      "No fixture aliases are supported by this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4616,
+      "output_tokens": 3096
+    },
+    "created_at": "2026-10-04T10:10:33.327Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

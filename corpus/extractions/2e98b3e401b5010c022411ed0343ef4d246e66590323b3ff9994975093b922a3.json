@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "cache_key": "2e98b3e401b5010c022411ed0343ef4d246e66590323b3ff9994975093b922a3",
+  "source_url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "D008",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 1846,
+    "source_sha256": "969848595b70aa2ff7b9e8420f610c36b914521c4ea4dd1d0656be776e90c39f",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No draft was emitted for the Berkeley 2026 Annual General Adjustment (AGA) of 1.0%. The notice says it was adopted by the Berkeley Rent Stabilization Board on October 16, 2025 (Rent Board Regulation 1148) and allows eligible landlords to raise the 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026. It also says the AGA may not adjust rents for tenancies that began on or after January 1, 2025 and had rents set under the Costa-Hawkins Rental Housing Act.",
+      "The Costa-Hawkins and tenancy-start carve-out cannot be safely encoded with the allowed coverage fields. There is no field for tenancy start date, for rent set under Costa-Hawkins, or for the permanent rent ceiling. Encoding only city_rent_controlled would overstate coverage, so the rule was omitted for administrator review.",
+      "The notice says the order sets conditions for qualifying for the increase and the notice tenants must receive. It does not state those conditions or notice terms, and the full text of Regulation 1148 is not in this chunk. 'Eligible landlords' is undefined here, and no notice-period or qualification requirement was extracted.",
+      "The effective date is ambiguous. The notice gives only 'no earlier than January 1, 2026' as the earliest date for increases, and enactment is the October 16, 2025 adoption date. Neither is confirmed as a formal effective date. As of 2026-10-01 the January 1, 2026 date has passed, but the status should be confirmed against Regulation 1148.",
+      "Berkeley Municipal Code section 13.76.110A and the 65%-of-CPI formula are cited as background. This chunk does not quote the code text, and the formula is not extracted as a separate rule. The 2004 voter approval date is stated only as 'November 2004 general municipal election', so no full lifecycle date was assigned to it.",
+      "No fixture alias applies to this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 3912,
+      "output_tokens": 1860
+    },
+    "created_at": "2026-10-04T10:09:05.914Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

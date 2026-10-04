@@ -1,0 +1,959 @@
+{
+  "schema_version": 1,
+  "cache_key": "32ee9edb16c0b0fc1a790d529264f3de49a3241f3ec5a293f20488c3f929d9c6",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-b82190ccabd66396",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Just cause required to terminate tenancy after 12 months of occupancy",
+          "requirement": "After a tenant has continuously and lawfully occupied residential real property for 12 months, the owner may not terminate the tenancy without just cause, and the just cause must be stated in the written termination notice. If additional adult tenants were added before an existing tenant reached 24 months, the rule applies only if all tenants have occupied for 12 months or more, or one or more tenants have occupied for 24 months or more. Just cause is either at-fault or no-fault as defined in subdivision (b).",
+          "citation": "Cal. Civ. Code § 1946.2(a)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+          "quoted_span": "after a tenant has continuously and lawfully occupied a residential real property for 12 months, the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy.",
+          "key_value": "12 months continuous lawful occupancy",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 12
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "shares_kitchen_or_bath_with_owner",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "is_single_family",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "separately_alienable",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "not": {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "reit",
+                          "corporation"
+                        ]
+                      }
+                    },
+                    {
+                      "field": "owner_llc_has_corporate_member",
+                      "op": "eq",
+                      "value": false
+                    },
+                    {
+                      "field": "exemption_notice_provided",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "field": "affordable_housing_restricted",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "is_subsidized",
+                  "op": "eq",
+                  "value": true
+                }
+              }
+            ]
+          },
+          "exemptions": "Subdivision (e) exempts: transient and tourist hotel occupancy; housing in a nonprofit hospital, religious facility, extended care facility, licensed residential care facility for the elderly, or adult residential facility; dormitories owned and operated by a higher-education institution or K-12 school; tenants sharing bathroom or kitchen with an owner who lives on the property; single-family owner-occupied residences (renting no more than two units or bedrooms, or a mobilehome); two-unit single-structure properties where the owner occupied one unit at the start of the tenancy (neither unit an ADU or JADU); housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); separately alienable property whose owner is not a REIT, corporation, LLC with a corporate member, or mobilehome park management, and where the required written exemption notice was given; and deed- or regulation-restricted affordable housing or housing under a subsidy agreement.",
+          "overrides": [],
+          "interaction": "Section applies 'Notwithstanding any other law'. The text also cross-references the rent-limit statute (Civ. Code 1947.12) in the exemption notice, but that section is outside this chunk and was not extracted. Relocation assistance under (d)(3)(C) is credited against any other relocation assistance required by other law.",
+          "effective_date": null,
+          "source_doc_id": "D023",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-62af20b103028b49",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Relocation assistance or final-month rent waiver for no-fault terminations",
+          "requirement": "When an owner issues a termination notice based on no-fault just cause for a tenancy covered by the just cause requirement, the owner must, regardless of tenant income and at the owner's option, either pay relocation assistance or waive final-month rent in writing before it becomes due. The amount equals one month of the rent in effect when the notice was issued. Relocation assistance must be paid within 15 calendar days of service of the notice. The notice must tell the tenant of the right to relocation assistance or rent waiver, and if rent is waived, state the amount waived and that no rent is due for the final month. Failure to strictly comply voids the termination notice.",
+          "citation": "Cal. Civ. Code § 1946.2(d)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+          "quoted_span": "The amount of relocation assistance or rent waiver shall be equal to one month of the tenant’s rent that was in effect when the owner issued the notice to terminate the tenancy.",
+          "key_value": "One month of rent; payment within 15 calendar days of service of notice",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 12
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "shares_kitchen_or_bath_with_owner",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "is_single_family",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "separately_alienable",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "not": {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "reit",
+                          "corporation"
+                        ]
+                      }
+                    },
+                    {
+                      "field": "owner_llc_has_corporate_member",
+                      "op": "eq",
+                      "value": false
+                    },
+                    {
+                      "field": "exemption_notice_provided",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "field": "affordable_housing_restricted",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "is_subsidized",
+                  "op": "eq",
+                  "value": true
+                }
+              }
+            ]
+          },
+          "exemptions": "Same subdivision (e) exemptions as the base just cause rule. Additionally, if a government agency or court determines the tenant is at fault for the condition triggering an order to vacate under (b)(2)(C), the tenant is not entitled to the relocation assistance. Applies only where the termination is for no-fault just cause, a fact not modeled in coverage.",
+          "overrides": [],
+          "interaction": "The relocation assistance or rent waiver is credited against any other relocation assistance required by any other law.",
+          "effective_date": null,
+          "source_doc_id": "D023",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-dff53f38c23f9177",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Notice and opportunity to cure before terminating for curable lease violation",
+          "requirement": "Before issuing a termination notice for just cause that is a curable lease violation, the owner must first give the tenant notice of the violation with an opportunity to cure under Code of Civil Procedure 1161(3). If the violation is not cured within the stated time, a three-day notice to quit without opportunity to cure may then be served.",
+          "citation": "Cal. Civ. Code § 1946.2(c)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+          "quoted_span": "the\nowner shall first give notice of the violation to the tenant with an opportunity to cure the violation pursuant to paragraph (3) of Section 1161 of the Code of Civil Procedure.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 12
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "shares_kitchen_or_bath_with_owner",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "is_single_family",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "separately_alienable",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "not": {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "reit",
+                          "corporation"
+                        ]
+                      }
+                    },
+                    {
+                      "field": "owner_llc_has_corporate_member",
+                      "op": "eq",
+                      "value": false
+                    },
+                    {
+                      "field": "exemption_notice_provided",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "field": "affordable_housing_restricted",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "is_subsidized",
+                  "op": "eq",
+                  "value": true
+                }
+              }
+            ]
+          },
+          "exemptions": "Same subdivision (e) exemptions as the base just cause rule.",
+          "overrides": [],
+          "interaction": "Applies to at-fault just cause based on a curable lease violation; cross-references Code of Civil Procedure 1161(3).",
+          "effective_date": null,
+          "source_doc_id": "D023",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-97aca0bb48d7f7e0",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Required contents of notice for demolition or substantial remodel terminations",
+          "requirement": "A written termination notice based on intent to demolish or substantially remodel must state the owner's intent, include the statutory re-rent statement, describe the remodel (or expected demolition date) and expected duration, attach a copy of the required permit(s) (or, only for hazardous-material abatement needing no permit, a signed contractor contract), and notify the tenant to tell the owner of interest in reoccupying and provide address, phone, and email.",
+          "citation": "Cal. Civ. Code § 1946.2(b)(2)(D)(iv)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+          "quoted_span": "A written notice terminating a tenancy for a just cause pursuant to this subparagraph shall include all of the following information:",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 12
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "shares_kitchen_or_bath_with_owner",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "is_single_family",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "separately_alienable",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "not": {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "reit",
+                          "corporation"
+                        ]
+                      }
+                    },
+                    {
+                      "field": "owner_llc_has_corporate_member",
+                      "op": "eq",
+                      "value": false
+                    },
+                    {
+                      "field": "exemption_notice_provided",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "field": "affordable_housing_restricted",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "is_subsidized",
+                  "op": "eq",
+                  "value": true
+                }
+              }
+            ]
+          },
+          "exemptions": "Same subdivision (e) exemptions as the base just cause rule. Applies only to terminations for demolition or substantial remodel, a fact not modeled in coverage.",
+          "overrides": [],
+          "interaction": "Substantial remodel is defined in (b)(2)(D)(ii)-(iii) as work requiring the tenant to vacate for at least 30 consecutive days; cosmetic work does not qualify.",
+          "effective_date": null,
+          "source_doc_id": "D023",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-b82190ccabd66396": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 12
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "shares_kitchen_or_bath_with_owner",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "is_single_family",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "separately_alienable",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "not": {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "reit",
+                          "corporation"
+                        ]
+                      }
+                    },
+                    {
+                      "field": "owner_llc_has_corporate_member",
+                      "op": "eq",
+                      "value": false
+                    },
+                    {
+                      "field": "exemption_notice_provided",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "field": "affordable_housing_restricted",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "is_subsidized",
+                  "op": "eq",
+                  "value": true
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-62af20b103028b49": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 12
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "shares_kitchen_or_bath_with_owner",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "is_single_family",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "separately_alienable",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "not": {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "reit",
+                          "corporation"
+                        ]
+                      }
+                    },
+                    {
+                      "field": "owner_llc_has_corporate_member",
+                      "op": "eq",
+                      "value": false
+                    },
+                    {
+                      "field": "exemption_notice_provided",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "field": "affordable_housing_restricted",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "is_subsidized",
+                  "op": "eq",
+                  "value": true
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-dff53f38c23f9177": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 12
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "shares_kitchen_or_bath_with_owner",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "is_single_family",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "separately_alienable",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "not": {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "reit",
+                          "corporation"
+                        ]
+                      }
+                    },
+                    {
+                      "field": "owner_llc_has_corporate_member",
+                      "op": "eq",
+                      "value": false
+                    },
+                    {
+                      "field": "exemption_notice_provided",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "field": "affordable_housing_restricted",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "is_subsidized",
+                  "op": "eq",
+                  "value": true
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-97aca0bb48d7f7e0": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "tenancy_months",
+                "op": "gte",
+                "value": 12
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "shares_kitchen_or_bath_with_owner",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "is_single_family",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "separately_alienable",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "not": {
+                        "field": "owner_type",
+                        "op": "in",
+                        "value": [
+                          "reit",
+                          "corporation"
+                        ]
+                      }
+                    },
+                    {
+                      "field": "owner_llc_has_corporate_member",
+                      "op": "eq",
+                      "value": false
+                    },
+                    {
+                      "field": "exemption_notice_provided",
+                      "op": "eq",
+                      "value": true
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "field": "affordable_housing_restricted",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "is_subsidized",
+                  "op": "eq",
+                  "value": true
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D023",
+    "chunk": 0,
+    "total_chunks": 2,
+    "next_chunk": 1,
+    "chunk_start": 0,
+    "chunk_end": 20000,
+    "source_sha256": "fdd8d7fca42103cf630c3a9a4ed217150eb17a6e180edd80c1d845ca5e8aa1fe",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Chunk 1/2 ends mid-subdivision (f); subdivisions (f) onward (including any remedies, sunset or effective-date provisions and the history note) are not in this chunk and were not extracted.",
+      "No enactment, effective, or repeal date for the section as a whole is stated in this chunk; lifecycle dates and effective_date are null. Only dates inside operative text (e.g., lease dates in 2020 and 2022) appear, and these are not the law's effective date. The retrieval date was not used.",
+      "Status 'in_force' is assumed because the capture is a current code-section page with no pending or future-effective notation in this chunk. An administrator should confirm this, including any sunset in the second chunk.",
+      "Coverage predicates approximate the exemptions. Several exemptions cannot be modeled with the allowed fields: nonprofit hospital, religious facility, extended care, residential care facility for the elderly and adult residential facility housing; dormitories; the two-unit owner-occupied exemption; the 'no more than two units or bedrooms' limit and mobilehome carve-outs in the single-family owner-occupied exemption; the mobilehome carve-out from the 15-year certificate exemption; and mobilehome park management as owner. Results may be over-inclusive for these; manual review is required.",
+      "The 24-month nuance for additional adult tenants in 1946.2(a)(1)-(2) is not captured by the tenancy_months predicate and requires manual review.",
+      "owner_type values 'reit' and 'corporation' are placeholders; the backend's allowed owner_type values were not supplied, so confirm them.",
+      "Rent increase limits under Civil Code 1947.12 are referenced only in the exemption notice text and are not set out in this chunk, so no rent_increase_limits rule was drafted.",
+      "Other no-fault substantive conditions (owner move-in 90-day and 12-month occupancy, re-offer duties under (b)(2)(A)(v)-(vii), and the notice content for owner intent to occupy) were not drafted as separate rules in this pass; consider adding them in review.",
+      "No fixture aliases apply to this source.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements.",
+      "ca-civ-1946-2-c-cure-notice-before-curable-violation-termination: model whitespace was replaced with the exact captured span; inspect the original quotation during review."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 9807,
+      "output_tokens": 8507
+    },
+    "created_at": "2026-10-04T10:08:06.952Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

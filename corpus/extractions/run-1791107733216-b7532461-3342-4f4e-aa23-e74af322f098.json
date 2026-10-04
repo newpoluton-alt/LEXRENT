@@ -1,0 +1,154 @@
+{
+  "sources": 10,
+  "chunks": 14,
+  "cached_chunks": 0,
+  "new_chunks": 14,
+  "max_new_requests": 18,
+  "planned_new_requests": 14,
+  "max_sdk_transport_attempts": 28,
+  "requires_review": true,
+  "plan_only": false,
+  "created_at": "2026-10-04T09:55:33.216Z",
+  "attempted_requests": 14,
+  "completed_chunks": 9,
+  "failed_chunks": 5,
+  "skipped_chunks": 0,
+  "new_usage": {
+    "input_tokens": 63754,
+    "output_tokens": 32115
+  },
+  "usage_note": "Usage reports successful new chunk responses; failed upstream/validation attempts may consume provider credits without reported token counts. SDK retry attempts are bounded at one retry per chunk call.",
+  "items": [
+    {
+      "doc_id": "D022",
+      "chunk": 0,
+      "cache_key": "e06dfa8e053b910dfe862ec9c101256a26ceb3088a9dc7c3d49413bb35e873f3",
+      "status": "failed",
+      "rules": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "error_code": "AI_EVIDENCE_REJECTED"
+    },
+    {
+      "doc_id": "D023",
+      "chunk": 0,
+      "cache_key": "ddd1ed0a8117cfd9cada668e417bbc24d24fe87fc203a082b74e66c31177fc28",
+      "status": "failed",
+      "rules": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "error_code": "AI_UPSTREAM_ERROR"
+    },
+    {
+      "doc_id": "D023",
+      "chunk": 1,
+      "cache_key": "afec77b2768fc014102cc7b0abf29673671ba1463b0fc04d9f9219acd743d6d0",
+      "status": "failed",
+      "rules": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "error_code": "AI_INVALID_COVERAGE"
+    },
+    {
+      "doc_id": "D024",
+      "chunk": 0,
+      "cache_key": "4ff47eefc9c0648629de9da86e58b69a303cd4d3994f688fa33bd6c91f87842b",
+      "status": "failed",
+      "rules": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "error_code": "AI_INVALID_COVERAGE"
+    },
+    {
+      "doc_id": "D025",
+      "chunk": 0,
+      "cache_key": "c16e1dd94b9b205d94c5e456e7bf6c8e9117cb259d2d34c4c58228531fc400a8",
+      "status": "extracted",
+      "rules": 7,
+      "input_tokens": 9658,
+      "output_tokens": 7409
+    },
+    {
+      "doc_id": "D025",
+      "chunk": 1,
+      "cache_key": "dc70050257195a915b9a3ce7cc9eb9fa598b5bf86a739e45045fcb4c18100a6f",
+      "status": "failed",
+      "rules": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "error_code": "AI_EVIDENCE_REJECTED"
+    },
+    {
+      "doc_id": "D026",
+      "chunk": 0,
+      "cache_key": "ccc6e71f7e9db53524f1ceb67c7c9b6631ead3c911dad1560ff2f66c893b8f8d",
+      "status": "extracted",
+      "rules": 6,
+      "input_tokens": 5587,
+      "output_tokens": 4704
+    },
+    {
+      "doc_id": "D027",
+      "chunk": 0,
+      "cache_key": "1b0e187b0d65bd80b73eabdef642ca43752af2b4c558e704e8c3d824ddb60f31",
+      "status": "extracted",
+      "rules": 1,
+      "input_tokens": 6730,
+      "output_tokens": 2196
+    },
+    {
+      "doc_id": "D066",
+      "chunk": 0,
+      "cache_key": "79939e79464582c2b754314c6b2d34f9eae8be52cd232232c43f7dcea46d8128",
+      "status": "extracted",
+      "rules": 2,
+      "input_tokens": 4543,
+      "output_tokens": 3467
+    },
+    {
+      "doc_id": "D069",
+      "chunk": 0,
+      "cache_key": "2e1a8aca4de1094d1984a5d5e6ca264d791e41b85a83b99fe51edeaec31639da",
+      "status": "extracted",
+      "rules": 6,
+      "input_tokens": 6539,
+      "output_tokens": 6914
+    },
+    {
+      "doc_id": "D048",
+      "chunk": 0,
+      "cache_key": "df1b1e1f9acdad50adaa0c21362a448364bffd9b1fb1b22244b0eb04cc9db4d0",
+      "status": "extracted",
+      "rules": 0,
+      "input_tokens": 4018,
+      "output_tokens": 1899
+    },
+    {
+      "doc_id": "D049",
+      "chunk": 0,
+      "cache_key": "573a55a339d0453870f6e616926b1e4666b157858187313d9d362798356ca264",
+      "status": "extracted",
+      "rules": 0,
+      "input_tokens": 8933,
+      "output_tokens": 790
+    },
+    {
+      "doc_id": "D049",
+      "chunk": 1,
+      "cache_key": "31fe07acefb84315f1b29a33433a56b3623e29d5e2cfe45229b9770e3fc6aabc",
+      "status": "extracted",
+      "rules": 1,
+      "input_tokens": 8866,
+      "output_tokens": 2119
+    },
+    {
+      "doc_id": "D049",
+      "chunk": 2,
+      "cache_key": "635300fe1bfa1a6759f33d7cc734cb4335bdd707ac122e8041842430176d954b",
+      "status": "extracted",
+      "rules": 1,
+      "input_tokens": 8880,
+      "output_tokens": 2617
+    }
+  ]
+}

@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "cache_key": "2469a0b0b6a9ab4594b4a26b14811019b699fb70d91175d73420a1ab99aa50c3",
+  "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-7691897f669ac5e4",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "NJ Anti-Eviction Act: good cause required to evict",
+          "requirement": "A landlord must have good cause to evict a residential tenant, and may not evict or fail to renew a written or oral lease without good cause. The landlord must prove the grounds in court. Possession may be recovered only by tenant consent or through the legal eviction process.",
+          "citation": "N.J.S.A. 2A:18-53",
+          "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+          "quoted_span": "good cause to evict a tenant (N.J.S.A. 2A:18-53).",
+          "key_value": "good cause required",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "family_trust_disability_unit",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "in",
+                      "value": [
+                        2,
+                        3
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "The source says the law may not apply to two- or three-unit owner-occupied premises with two or fewer rental units. It does not apply to hotel, motel or guest-house guests who are transient or seasonal tenants, though hotel and motel occupants with no alternate residence who live there continually are covered. It does not apply to a unit held in trust for a developmentally disabled immediate family member who permanently occupies it.",
+          "overrides": [],
+          "interaction": "The source describes statutory grounds for eviction and separate notice requirements, drafted as separate rules.",
+          "effective_date": null,
+          "source_doc_id": "D067",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-8806bfaee4c38036",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "NJ Anti-Eviction Act: Notice to Quit required for good cause evictions",
+          "requirement": "A Notice to Quit is required for all good cause evictions except eviction for nonpayment of rent. Each cause other than nonpayment must be described in detail in a written notice to the tenant. A Judgment for Possession must still be entered by the court before the tenant must move.",
+          "citation": "N.J.S.A. 2A:18-61.2",
+          "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+          "quoted_span": "A “Notice to Quit” is required for all good cause evictions,",
+          "key_value": "Notice to Quit required (except nonpayment)",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "family_trust_disability_unit",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "in",
+                      "value": [
+                        2,
+                        3
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Nonpayment of rent evictions are excepted from the Notice to Quit requirement. The Anti-Eviction Act exceptions described in the source also apply.",
+          "overrides": [],
+          "interaction": "Complements the general good cause rule. Cause-specific notice periods are stated in the statutory grounds.",
+          "effective_date": null,
+          "source_doc_id": "D067",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-a4df427e6109e69e",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "NJ Anti-Eviction Act: 3-month Notice to Quit for health/safety or removal from market grounds",
+          "requirement": "For eviction on health and safety violation or government removal-from-rental-market grounds, a Notice to Quit must be served at least three months before filing suit. The tenant cannot be evicted until relocation assistance is provided.",
+          "citation": "N.J.S.A. 2A:18-61.1(g)",
+          "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+          "quoted_span": "A Notice to Quit must be served on the tenant at least three months before filing a suit",
+          "key_value": "3 months",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "family_trust_disability_unit",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "in",
+                      "value": [
+                        2,
+                        3
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Applies only where the landlord relies on the health/safety, illegal occupancy or government removal grounds. The general Anti-Eviction Act exceptions apply.",
+          "overrides": [],
+          "interaction": "Ground-specific notice period under the Anti-Eviction Act. Subsection (h) (retirement from residential use) applies only where subsection (g) circumstances do not.",
+          "effective_date": null,
+          "source_doc_id": "D067",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-ed84e97683116283",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "NJ Anti-Eviction Act: 18-month Notice to Quit to retire property from residential use",
+          "requirement": "A landlord who wants to permanently retire a building or mobile home park from residential use, where the health/safety circumstances in subsection (g) do not apply, must serve a Notice to Quit at least 18 months before filing suit. No legal action may be taken until the lease expires.",
+          "citation": "N.J.S.A. 2A:18-61.1(h)",
+          "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+          "quoted_span": "A Notice to Quit must be served on the tenant at least 18 months",
+          "key_value": "18 months",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "family_trust_disability_unit",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "in",
+                      "value": [
+                        2,
+                        3
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Applies only where the landlord relies on the permanent retirement from residential use ground. The general Anti-Eviction Act exceptions apply.",
+          "overrides": [],
+          "interaction": "Applies only when subsection (g) circumstances do not apply.",
+          "effective_date": null,
+          "source_doc_id": "D067",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-7691897f669ac5e4": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "family_trust_disability_unit",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "in",
+                      "value": [
+                        2,
+                        3
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-8806bfaee4c38036": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "family_trust_disability_unit",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "in",
+                      "value": [
+                        2,
+                        3
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-a4df427e6109e69e": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "family_trust_disability_unit",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "in",
+                      "value": [
+                        2,
+                        3
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-ed84e97683116283": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "field": "family_trust_disability_unit",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "in",
+                      "value": [
+                        2,
+                        3
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D067",
+    "chunk": 6,
+    "total_chunks": 9,
+    "next_chunk": 7,
+    "chunk_start": 108000,
+    "chunk_end": 128000,
+    "source_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "This chunk is a state guide excerpt. It gives no enactment or effective dates, so status is set to in_force from the descriptive text and all lifecycle dates and effective_date are null. Administrator review is needed.",
+      "The owner-occupied exception is phrased as 'may not apply' to two- or three-unit owner-occupied premises with two or fewer rental units. It is encoded conservatively by excluding owner-occupied properties with 2-3 units. The 'two or fewer rental units' condition has no available field and needs review.",
+      "The Notice to Quit rule excepts nonpayment of rent evictions. That cause-level exception cannot be represented in the coverage predicate and is described only in the exemptions text.",
+      "Only a subset of the statutory grounds is drafted (general good cause, Notice to Quit, and the 3-month and 18-month notice periods). Other grounds (disorderly conduct, damage, rule violations, lease covenants, rent increase, habitual late payment, lease changes, conversion) have notice periods that could be drafted separately. The conversion text is truncated at the chunk boundary. The tenancy and relocation assistance details were not drafted.",
+      "Self-help eviction and lockout prohibitions, warrant timing and stay-of-eviction provisions were not drafted because they do not fit one of the six supplied categories as a distinct rule.",
+      "Hotel and motel continual-occupancy coverage and the federally subsidized housing 14-day notice for nonpayment were not encoded because the supporting facts cannot be safely represented.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 10073,
+      "output_tokens": 5495
+    },
+    "created_at": "2026-10-04T10:00:42.337Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

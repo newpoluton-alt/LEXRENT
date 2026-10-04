@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "cache_key": "1127c016b4d99bffb2ed1dcf84b70b4884d7d370600a966440ff7062966b6c59",
+  "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-17eb858e8f5b0e9a",
+          "jurisdiction": "NJ",
+          "level": "state",
+          "category": "just_cause_eviction",
+          "status": "in_force",
+          "title": "Good cause required to decline lease renewal (NJ Anti-Eviction Act, as summarized in DCA Truth in Renting guide)",
+          "requirement": "A landlord of residential rental property may not fail to renew a written or oral lease unless the landlord has good cause not to renew. The good causes are listed in the guide's Eviction section, which is not in this chunk. Owner-occupied two- or three-family dwellings, motels or hotels, and transient or seasonal units are excepted.",
+          "citation": "N.J.S.A. 2A:18:61.3 (as cited in the DCA Truth in Renting guide)",
+          "source_url": "https://www.nj.gov/dca/codes/publications/pdf_lti/t_i_r.pdf",
+          "quoted_span": "regardless of whether it is written or oral unless they have good cause not to renew the lease.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 2
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "exemptions": "Owner-occupied two- or three-family dwellings, motels or hotels, and transient or seasonal units. Tenants of owner-occupied two- or three-family buildings are referred to a separate guide section that is not in this chunk.",
+          "overrides": [],
+          "interaction": "The guide says the good causes are detailed in its Eviction section. That section is outside this chunk, so the list of permitted causes is not captured here. Local just-cause ordinances are not addressed in this chunk.",
+          "effective_date": null,
+          "source_doc_id": "D067",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-17eb858e8f5b0e9a": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "not": {
+                  "field": "seasonal_or_transient_tenancy",
+                  "op": "eq",
+                  "value": true
+                }
+              },
+              {
+                "not": {
+                  "all": [
+                    {
+                      "field": "owner_occupied",
+                      "op": "eq",
+                      "value": true
+                    },
+                    {
+                      "field": "units",
+                      "op": "gte",
+                      "value": 2
+                    },
+                    {
+                      "field": "units",
+                      "op": "lte",
+                      "value": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D067",
+    "chunk": 0,
+    "total_chunks": 9,
+    "next_chunk": 1,
+    "chunk_start": 0,
+    "chunk_end": 20000,
+    "source_sha256": "a61f61a51b513b48a41cce48326e28861838a95e5e5a29cdedc41470d44ed505",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "The source is a DCA informational guide, not statutory text. It states it is not legal advice and is not a complete summary. Verify against the statute before import.",
+      "The statutory citation appears as 'N.J.S.A. 2A:18:61.3' in the guide, likely a typographical variant of the usual 2A:18-61.3 form. It is reproduced as written and needs reviewer confirmation.",
+      "Enactment date and effective date are not stated in this chunk, so all lifecycle dates and effective_date are null. The retrieval date was not used. The in_force status rests on the guide's present-tense description.",
+      "The motel/hotel exemption cannot be encoded safely because no allowed coverage field identifies hotel or motel use. It is described in the exemptions text only. The seasonal_or_transient_tenancy field covers the transient and seasonal exemptions. Reviewer should decide whether to add a hotel/motel condition.",
+      "The quoted span supports only the good-cause requirement. The exemption list sits on the preceding line in the source, separated by a line break, so it is not part of the quoted span.",
+      "The Eviction section, with the list of good causes, and the Security Deposits and Rent Control/Rent Increases sections fall outside this chunk (1/9). No rules were drafted for security deposits or rent increase limits. Later chunks should be extracted.",
+      "Truth in Renting statement distribution, late fees, pets, cable and the mobile home rules in this chunk fall outside the six supplied categories and were excluded. A tenant background-check topic appears only in the table of contents, with no substantive text captured.",
+      "No fixture aliases are supported by this source chunk.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import.",
+      "This document has multiple overlapping chunks. Review and deduplicate all chunk drafts before publishing the complete document's requirements."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 10532,
+      "output_tokens": 2381
+    },
+    "created_at": "2026-10-04T09:59:24.203Z",
+    "prompt_version": "lexrent-extraction-v2"
+  }
+}

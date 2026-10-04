@@ -1,0 +1,584 @@
+{
+  "schema_version": 1,
+  "cache_key": "346148596bff92719b78e6303f35d612ef1aacbcd7111302fdca698342ee0b63",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-3de936a9513bf23a",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Statewide cap on gross rent increases in any 12-month period",
+          "requirement": "An owner of covered residential real property may not, over any 12-month period, increase the gross rental rate by more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower. The base is the lowest gross rental rate charged at any time in the 12 months before the effective date of the increase, with accepted owner-offered discounts, incentives, concessions or credits excluded. The cap applies only to increases after the initial rate is set in a new tenancy where no prior tenant remains in lawful possession.",
+          "citation": "Cal. Civ. Code § 1947.12(a)(1)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+          "quoted_span": "an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower",
+          "key_value": "Lesser of (5% + percentage change in CPI-U) or 10%",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "is_subsidized",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "any": [
+                  {
+                    "field": "separately_alienable",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "field": "owner_type",
+                    "op": "in",
+                    "value": [
+                      "reit",
+                      "corporation"
+                    ]
+                  },
+                  {
+                    "field": "owner_llc_has_corporate_member",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "field": "exemption_notice_provided",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "neq",
+                    "value": 2
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              }
+            ]
+          },
+          "exemptions": "Subdivision (d) exempts: deed-restricted or subsidized affordable housing; dormitories owned and operated by a higher-education institution or a K-12 school; housing under local rent or price control that limits annual increases to less than the state cap; housing with a certificate of occupancy issued within the previous 15 years (unless a mobilehome); separately alienable property whose owner is not a REIT, corporation, LLC with a corporate member, or mobilehome park management and where the tenants were given the statutory written notice; and a two-unit structure in which the owner occupies one unit as a principal residence (neither unit an ADU or JADU). Subdivision (j) excludes a homeowner of a mobilehome. Dormitory, mobilehome, ADU and new-tenancy-initial-rate conditions are not encoded in coverage_json.",
+          "overrides": [],
+          "interaction": "Subdivision (m) states that the section does not expand or limit local authority to regulate rents consistent with Civ. Code ch. 2.7 (§ 1954.50 et seq.) and does not authorize local limits not otherwise permissible under that chapter. Local rent-control ordinances with lower caps are exempt under (d)(3). The section is scheduled to be repealed as of January 1, 2030.",
+          "effective_date": "2024-04-01",
+          "source_doc_id": "D024",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-ffc4cae69322d3f0",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Maximum of two rent increase increments per 12 months for the same tenant",
+          "requirement": "If the same tenant remains in occupancy of a covered unit over any 12-month period, the gross rental rate may not be increased in more than two increments over that period, subject to the other restrictions of subdivision (a).",
+          "citation": "Cal. Civ. Code § 1947.12(a)(2)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+          "quoted_span": "the gross rental rate for the unit of residential real property shall not be increased in more than two increments over that 12-month period",
+          "key_value": "Maximum 2 increments per 12 months",
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "is_subsidized",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "any": [
+                  {
+                    "field": "separately_alienable",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "field": "owner_type",
+                    "op": "in",
+                    "value": [
+                      "reit",
+                      "corporation"
+                    ]
+                  },
+                  {
+                    "field": "owner_llc_has_corporate_member",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "field": "exemption_notice_provided",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "neq",
+                    "value": 2
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              }
+            ]
+          },
+          "exemptions": "Same exemptions as subdivision (d) and (j). Dormitory, mobilehome and ADU conditions are not encoded in coverage_json.",
+          "overrides": [],
+          "interaction": "Applies only while the same tenant remains in occupancy; a new tenancy in which no prior tenant remains in lawful possession may set an initial rate not subject to subdivision (a) (subdivision (b)). The section is scheduled to be repealed as of January 1, 2030.",
+          "effective_date": "2024-04-01",
+          "source_doc_id": "D024",
+          "conflict_flag": false,
+          "conflict_note": null
+        },
+        {
+          "team_rule_id": "r-9762adb662202d7e",
+          "jurisdiction": "CA",
+          "level": "state",
+          "category": "rent_increase_limits",
+          "status": "in_force",
+          "title": "Tenant sublease may not exceed the allowable rent",
+          "requirement": "A tenant of residential real property subject to the section may not enter into a sublease that results in a total rent for the premises exceeding the allowable rental rate under subdivision (a). The subdivision does not authorize subletting or assignment where otherwise prohibited.",
+          "citation": "Cal. Civ. Code § 1947.12(c)",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+          "quoted_span": "shall not enter into a sublease that results in a total rent for the premises that",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "is_subsidized",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "any": [
+                  {
+                    "field": "separately_alienable",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "field": "owner_type",
+                    "op": "in",
+                    "value": [
+                      "reit",
+                      "corporation"
+                    ]
+                  },
+                  {
+                    "field": "owner_llc_has_corporate_member",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "field": "exemption_notice_provided",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "neq",
+                    "value": 2
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              }
+            ]
+          },
+          "exemptions": "Applies only to property subject to this section; subdivision (d) and (j) exemptions apply. Dormitory, mobilehome and ADU conditions are not encoded in coverage_json.",
+          "overrides": [],
+          "interaction": "Depends on the allowable rental rate under subdivision (a). The section is scheduled to be repealed as of January 1, 2030.",
+          "effective_date": "2024-04-01",
+          "source_doc_id": "D024",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-3de936a9513bf23a": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "is_subsidized",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "any": [
+                  {
+                    "field": "separately_alienable",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "field": "owner_type",
+                    "op": "in",
+                    "value": [
+                      "reit",
+                      "corporation"
+                    ]
+                  },
+                  {
+                    "field": "owner_llc_has_corporate_member",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "field": "exemption_notice_provided",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "neq",
+                    "value": 2
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-04-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-ffc4cae69322d3f0": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "is_subsidized",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "any": [
+                  {
+                    "field": "separately_alienable",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "field": "owner_type",
+                    "op": "in",
+                    "value": [
+                      "reit",
+                      "corporation"
+                    ]
+                  },
+                  {
+                    "field": "owner_llc_has_corporate_member",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "field": "exemption_notice_provided",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "neq",
+                    "value": 2
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-04-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        },
+        "r-9762adb662202d7e": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "affordable_housing_restricted",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "is_subsidized",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "city_rent_controlled",
+                "op": "eq",
+                "value": false
+              },
+              {
+                "field": "certificate_age_years",
+                "op": "gte",
+                "value": 15
+              },
+              {
+                "any": [
+                  {
+                    "field": "separately_alienable",
+                    "op": "eq",
+                    "value": false
+                  },
+                  {
+                    "field": "owner_type",
+                    "op": "in",
+                    "value": [
+                      "reit",
+                      "corporation"
+                    ]
+                  },
+                  {
+                    "field": "owner_llc_has_corporate_member",
+                    "op": "eq",
+                    "value": true
+                  },
+                  {
+                    "field": "exemption_notice_provided",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "any": [
+                  {
+                    "field": "units",
+                    "op": "neq",
+                    "value": 2
+                  },
+                  {
+                    "field": "owner_occupied",
+                    "op": "eq",
+                    "value": false
+                  }
+                ]
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-04-01",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D024",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 15873,
+    "source_sha256": "eb9c42af2b9a5c220ca37816f409f0bd3ea92a002a973283e779fdb72de18bd7",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Source supports only the rent_increase_limits category; the text has no just-cause, deposit, screening-fee, screening-restriction or algorithmic content. No fixture aliases are supported by this source.",
+      "Enactment date is not given in the captured text (Stats. 2023, Ch. 290, SB 567), so enacted_on is null. The statute is effective January 1, 2024 and operative April 1, 2024 by its own provisions; effective_on uses the operative date 2024-04-01.",
+      "The section is scheduled to be repealed as of January 1, 2030. That date is after the 2026-10-01 reference date, so repealed_on is null and status is in_force. It should be reviewed before that date.",
+      "Coverage gaps: the dormitory exemption (d)(2), the mobilehome carve-out from the 15-year certificate exemption (d)(4), the mobilehome homeowner exclusion (j), and the ADU/JADU condition in (d)(6) have no allowed fact field and are not encoded; the backend cannot return unknown for them. Reviewers should add manual checks.",
+      "The new-tenancy initial-rate exception in subdivision (b) is not encoded because no fact for prior tenant possession is available. It is described in the requirement text.",
+      "city_rent_controlled eq false is a conservative encoding of exemption (d)(3). The statute exempts only local rent control that limits annual increases to less than the state cap. Properties under looser local control could still be covered but would not match this coverage.",
+      "The owner_type values 'reit' and 'corporation' are assumed labels; the allowed field list does not define owner_type values. Mobilehome park management as an owner type is not encoded. Verify the value vocabulary with the backend.",
+      "The certificate exemption encodes covered as certificate_age_years >= 15 for 'issued within the previous 15 years'. Boundary treatment at exactly 15 years should be reviewed.",
+      "The rent-increase notice requirement in (e) (per Section 827), the 2019/2021 transition rules in (h) and (i), the CPI definitions in (g), civil remedies in (k), and the Legislative Analyst report in (f) are not drafted as separate rules. Section 827 text is not in this chunk.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 8657,
+      "output_tokens": 7007
+    },
+    "created_at": "2026-10-04T10:02:39.766Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

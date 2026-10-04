@@ -2,7 +2,10 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import type { EvaluatedRule, PropertyEvaluation } from "../src/domain/types";
-import { CategoryPanel, EvidenceDialog, LawTable, PropertySummary } from "../src/components/lovable/results";
+import { CategoryPanel, EvidenceDialog, LawTable, LookupDataStatus, PropertySummary } from "../src/components/lovable/results";
+import { FactQuiz } from "../src/components/lovable/fact-quiz";
+import { PersonaDemos } from "../src/components/lovable/persona-demos";
+import resolutions from "../corpus/jurisdiction-resolutions.json";
 
 // Synthetic presentation fixtures do not supply production legal rules.
 const quote = "A test-only quotation with <literal markup> & punctuation.\nSecond line stays intact.";
@@ -26,7 +29,7 @@ function evaluation(rules: EvaluatedRule[] = []): PropertyEvaluation {
 const onEvidence = () => {};
 
 describe("reviewed result presentation", () => {
-  it("keeps all atomic requirements from the same category visible in every result view", () => {
+  it("keeps all atomic requirements from the same category available in every result view", () => {
     const data = evaluation([
       entry("one"),
       entry("two", { result: "unknown", missing_facts: ["units"], conflict_flag: true }),
@@ -85,5 +88,96 @@ describe("reviewed result presentation", () => {
     const supplied = renderToStaticMarkup(createElement(LawTable, { evaluation: evaluation([reviewed]), onEvidence }));
     expect(supplied).toContain("Reviewed rule confidence: 82%");
     expect(supplied).toContain("not a probability that it applies to this property");
+  });
+
+  it("keeps large categories expandable without dropping obligations or hiding the review count", () => {
+    const data = evaluation(Array.from({ length: 8 }, (_, index) => entry(String(index), index === 7 ? { result: "unknown", conflict_flag: true, missing_facts: ["owner_llc_has_corporate_member"] } : {})));
+    for (const component of [CategoryPanel, PropertySummary]) {
+      const html = renderToStaticMarkup(createElement(component, { evaluation: data, onEvidence }));
+      expect(html).toContain("<details");
+      expect(html).toMatch(/Show [56] more requirements/);
+      for (let index = 0; index < 8; index++) expect(html).toContain(`Atomic requirement ${index}`);
+      expect(html).toContain("1 need human review");
+      expect(html).toContain("Unknown");
+    }
+    const table = renderToStaticMarkup(createElement(LawTable, { evaluation: data, onEvidence }));
+    expect(table).toContain("LLC has a corporate member");
+    expect(table).toContain("Showing 8 of 8 returned requirements.");
+    expect(table).toContain("Requirement details");
+  });
+
+  it("distinguishes returned law records from fact gaps and evidence gaps even when a record count is stale", () => {
+    const data = evaluation([entry("applies"), entry("unknown", { result: "unknown" }), entry("pending", { result: "pending" })]);
+    data.rule_count = 999;
+    data.missing_facts = ["units", "owner_llc_has_corporate_member", "legal_municipality", "verified_source_evidence", "units"];
+    const text = renderToStaticMarkup(createElement(LookupDataStatus, { evaluation: data })).replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
+    expect(text).toContain("Recorded requirements returned 3");
+    expect(text).toContain("Property or tenancy facts still needed 2");
+    expect(text).toContain("Jurisdiction or evidence items still needed 2");
+    expect(text).toContain("1 apply · 1 unknown");
+    expect(text).toContain("does not establish complete legal coverage");
+    expect(text).not.toContain("999");
+    const empty = renderToStaticMarkup(createElement(LookupDataStatus, { evaluation: evaluation() }));
+    expect(empty).toContain("No reviewed requirements were returned");
+    expect(empty).toContain("This does not mean that no law applies.");
+  });
+});
+
+describe("scenario facts and beneficiary demos", () => {
+  it("asks targeted evidence questions for every newly supported boolean without inferring an exemption", () => {
+    const cases = [
+      ["all_tenants_12_months", "each tenant"],
+      ["affordable_housing_restricted", "voucher alone"],
+      ["special_housing_exempt", "supporting records"],
+      ["separately_alienable", "title or parcel records"],
+      ["exemption_notice_provided", "required delivery timing"],
+      ["owner_llc_has_corporate_member", "membership records"],
+      ["shares_kitchen_or_bath_with_owner", "actual living arrangement"],
+      ["city_rent_controlled", "coverage determination"],
+      ["city_eviction_covered", "separate determinations"],
+      ["city_fair_chance_covered", "housing exemptions"],
+      ["vacation_or_recreational_lease_100_days_or_less", "both the lease"],
+      ["seasonal_or_transient_tenancy", "exact exception"],
+      ["family_trust_disability_unit", "Do not enter medical details"],
+      ["security_deposit_law_invoked_30_days", "receipt date"],
+      ["boston_fair_chance_program", "participation"],
+      ["cambridge_notification_exempt", "supporting tenancy or housing records"],
+      ["tenancy_at_will", "legal classification"],
+    ];
+    for (const [field, evidence] of cases) {
+      const html = renderToStaticMarkup(createElement(FactQuiz, { initial: {}, missing: [field], onApply: () => {}, onClose: () => {} }));
+      expect(html).toContain(evidence);
+      expect(html).toContain("Question 1 of 1");
+      expect(html).toContain('role="group"');
+      expect(html).toContain("aria-describedby=");
+      expect(html).toContain("temporary, user-supplied scenario facts");
+      expect(html).toContain("Skip");
+      expect(html).not.toMatch(/\s(?:aria-)?checked=/);
+    }
+  });
+
+  it("does not present unrelated fact questions as a way to resolve source or municipality gaps", () => {
+    const html = renderToStaticMarkup(createElement(FactQuiz, { initial: { owner_type: "llc" }, missing: ["legal_municipality", "verified_source_evidence"], onApply: () => {}, onClose: () => {} }));
+    expect(html).toContain("This quiz cannot verify a municipal boundary.");
+    expect(html).toContain("There are no editable missing facts");
+    expect(html).not.toContain('role="group"');
+    expect(html).not.toContain("Question 1 of");
+  });
+
+  it("uses three real verified sample cities for the brochure audiences, with distinct working research destinations", () => {
+    const html = renderToStaticMarkup(createElement(PersonaDemos));
+    for (const [id, city] of [["A0001", "Los Angeles"], ["A0008", "Jersey City"], ["A0010", "Cambridge"]] as const) {
+      expect(resolutions[id].verified).toBe(true);
+      expect(resolutions[id].legal_city).toBe(city);
+      expect(html).toContain(`address_id=${id}`);
+      expect(html).toContain(city);
+    }
+    expect(html).toContain("Renters");
+    expect(html).toContain("Advocates &amp; agencies");
+    expect(html).toContain("Housing providers");
+    expect(html).toContain("/workspace?view=changes");
+    expect(html).toContain("tab=summary");
+    expect(html).toContain("aria-label=");
+    expect(html).not.toContain("100%");
   });
 });

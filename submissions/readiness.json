@@ -1,0 +1,10 @@
+{
+  "ready": true,
+  "rule_count": 95,
+  "evaluated_address_count": 500,
+  "incomplete_cases": [],
+  "unresolved_address_count": 500,
+  "coverage_complete": false,
+  "scope": "local_compiled_corpus",
+  "definition": "ready means at least one rule exists and all five change cases have evaluation_status evaluated. It does not certify complete coverage or resolve every missing property fact."
+}

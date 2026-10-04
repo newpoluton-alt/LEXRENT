@@ -1,0 +1,81 @@
+HOUSE . . . . . . . . No. 5222
+The Commonwealth of Massachusetts
+________________________________________
+HOUSE OF REPRESENTATIVES, March 12, 2026.
+The committee on Housing, to whom was referred the petition
+(accompanied by bill, House, No. 1564) of Lindsay N. Sabadosa relative
+to preventing algorithmic rent fixing in the rental housing market, reports
+recommending that the accompanying bill (House, No. 5222) ought to
+pass.
+For the committee,
+RICHARD M. HAGGERTY.1 of 4
+ FILED ON: 3/6/2026
+HOUSE . . . . . . . . . . . . . . . No. 5222
+The Commonwealth of Massachusetts
+_______________
+In the One Hundred and Ninety-Fourth General Court
+(2025-2026)
+_______________
+An Act relative to preventing algorithmic rent fixing in the rental housing market.
+Be it enacted by the Senate and House of Representatives in General Court assembled, and by the authority
+of the same, as follows:
+1 The General Laws are hereby amended by inserting after chapter 40Y the following
+2 chapter:-
+3 CHAPTER 40Z
+4 PREVENTING ALGORITHMIC RENT FIXING IN THE RENTAL HOUSING
+5 MARKET
+6 Section 1. As used in this chapter, the following words shall, unless the context clearly
+7 requires otherwise, have the following meanings:
+8 “Coordinate”, with respect to a service provider, the:
+9 (i) collecting of historical or contemporaneous actual rent prices, price changes, supply
+10 levels, occupancy rates or lease or rental contract termination and renewal dates of residential
+11 dwelling units; 2 of 4
+12 (ii) analyzing or processing of the information described in clause (i), including with the
+13 use of a system, software or process that uses computation; and
+14 (iii) recommending of rental prices, lease terms, occupancy levels, or other commercial
+15 term to a real estate lessor, provided that publication of a fair market rent calculated using
+16 publicly available data shall not constitute a recommendation.
+17 “Person”, any natural person, corporation, partnership, limited liability company, firm or
+18 association.
+19 “Predispute arbitration agreement”, an agreement to arbitrate a dispute that has not yet
+20 arisen at the time of the making of the agreement.
+21 “Predispute joint-action waiver”, an agreement, whether or not part of a predispute
+22 arbitration agreement, that would prohibit or waive the right of one of the parties to participate in
+23 a joint, class or collective action in a judicial, arbitral, administrative or other forum, concerning
+24 a dispute that has not yet arisen at the time of the making of the agreement.
+25 “Real estate lessor”, any individual, corporation, partnership, association, joint-stock
+26 company, trust or unincorporated organization that owns real property and leases such property
+27 or any portion thereof in the form of a residential dwelling unit.
+28 “Residential dwelling unit”, any house, apartment, accessory unit or other unit intended
+29 to be used as a person’s primary residence; provided, that “residential dwelling unit” shall not
+30 include inpatient medical care, licensed long-term care and detention or correctional facilities.
+31 “Service provider”, any person that performs a coordination function for any real estate
+32 lessor or rentor. 3 of 4
+33 Section 2. (a) No real estate lessor, or any agent or subcontractor thereof, shall subscribe
+34 to, contract with or otherwise exchange anything of value in return for the services of a service
+35 provider.
+36 (b) No service provider shall facilitate an agreement to not compete among real estate
+37 lessors with respect to residential dwelling units.
+38 Section 3. (a) A violation of this section shall also constitute an unfair method of
+39 competition, and a violation of the provisions of chapter 93 and chapter 93A. Nothing in this
+40 section shall impair or limit the applicability of either chapter or the antitrust laws, generally.
+41 (b) Pursuant to a motion by the plaintiff promptly made, the court may award simple
+42 interest on actual damages sustained by the plaintiff for the period beginning on the date of
+43 service of the pleading of the plaintiff setting forth a claim under this chapter and ending on the
+44 date of judgment, or for any shorter period therein.
+45 (c) At the election of the person alleging conduct constituting a violation of this section,
+46 or the named representative of a class or in a collective action alleging such conduct, no
+47 predispute arbitration agreement or predispute joint-action waiver shall be valid or enforceable
+48 with respect to a case which is filed under federal, tribal or state or local law and relates to a
+49 violation of this chapter.
+50 (d) In the case of any successful action to enforce liability pursuant to this chapter, the
+51 costs of the action together with reasonable attorney fees, expert fees and the costs of
+52 investigation as determined by the court shall be awarded to plaintiffs. Costs and attorney fees,
+53 expert fees and the costs of investigation shall be awarded to the attorney general or municipality
+54 where the attorney general or municipality successfully enforces this chapter. 4 of 4
+55 Section 4. In a civil action filed pursuant to the provisions of chapter 93, a complaint:
+56 (i) plausibly pleads a violation of chapter 93A if the complaint contains factual
+57 allegations demonstrating that the existence of a contract, combination in the form of trust or
+58 otherwise, or conspiracy in restraint of trade or commerce is among the realm of plausible
+59 possibilities; and
+60 (ii) need not allege facts tending to exclude the possibility of independent action.

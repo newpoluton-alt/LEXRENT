@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "cache_key": "a01c7d12eebeca8b9d80fbb458f7448103ecde5c3c916da7b8ad940156656065",
+  "source_url": "https://ecode360.com/46833413",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-dff3a120f8e6a0f1",
+          "jurisdiction": "Hoboken, NJ",
+          "level": "city",
+          "category": "algorithmic_rent_setting",
+          "status": "in_force",
+          "title": "Algorithmic rent price fixing prohibited for Hoboken residential landlords",
+          "requirement": "Landlords who rent any residential dwelling unit in Hoboken may not engage in price fixing using algorithmic pricing. That means using software, algorithms, or data-sharing platforms to collect and analyze nonpublic competitor information from other real estate lessors in order to coordinate, recommend, or implement rental prices, lease terms, or occupancy levels among competing lessors. Nonpublic competitor information includes prices, supply levels, security deposits, ideal occupancy levels, lease termination and renewal dates, or other material terms that are less than 365 days old and not widely and readily available to the public at no cost.",
+          "citation": "Hoboken City Code § 158-2(A) (Ord. No. B-781)",
+          "source_url": "https://ecode360.com/46833413",
+          "quoted_span": "Landlords who rent any residential dwelling unit (defined as any primary residence excluding medical/long-term care or detention facilities) in the City of Hoboken are prohibited from price fixing using algorithmic pricing.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Hoboken"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": "A residential dwelling unit is defined as a primary residence, excluding medical/long-term care or detention facilities. This exclusion is not fully representable in the coverage predicate. Review it manually.",
+          "overrides": [],
+          "interaction": "Enforcement may be brought by the Division of Housing or an aggrieved private citizen in Hoboken Municipal Court. Penalties on conviction include one or more of the following: penalties under N.J.S.A. 40:49-5, a fine up to $2,000, or community service up to 90 days. Any interaction with state law is not addressed in this chunk.",
+          "effective_date": null,
+          "source_doc_id": "S012",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-dff3a120f8e6a0f1": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "NJ"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "Hoboken"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": "2025-07-09",
+            "effective_on": null,
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": [
+            "HOB-ALG-01"
+          ]
+        }
+      }
+    },
+    "doc_id": "S012",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 4018,
+    "source_sha256": "f21bb83da4bfe93bdefbe9152d660cba25cefd2b0f7a45862bddaaf7f62d18a3",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "Article II (§ 158-2) is stated as adopted 7-9-2025 by Ord. No. B-781, but the text gives no explicit effective date. effective_on and effective_date are null. Status in_force is inferred from adoption and current codification as of 2026-10-01. Administrators should verify.",
+      "§ 158-1 (Ord. No. B-750, adopted 4-2-2025) requires disclosures for rent increases over 10% on lease renewal. It imposes no rent increase cap, so it fits none of the six categories (rent_increase_limits is a limit category). It was omitted from the drafts. Review it manually if disclosure-type rules are wanted.",
+      "The exclusion of medical/long-term care and detention facilities from 'residential dwelling unit' cannot be encoded with the allowed coverage fields. Coverage uses residential_use=true as an approximation. Review manually.",
+      "legal_city value 'Hoboken' is an assumed encoding. Confirm the backend's expected city string.",
+      "The § 158-1 penalty ($1,000 per incident) was not drafted because § 158-1 was omitted. The § 158-2 penalties are described under interaction only.",
+      "Effective dates were not found in the captured chunk. The retrieval date (2026-10-04) was not used as a law date.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4571,
+      "output_tokens": 2109
+    },
+    "created_at": "2026-10-04T10:04:36.959Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

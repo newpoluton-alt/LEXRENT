@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "cache_key": "b655449137699e3b5f314f90b676f5376c0433f524d3d7cc934ad49c2bcf4a22",
+  "source_url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/Rent%20Ordinance%20Coverage%20by%20Unit%20Type.pdf",
+  "result": {
+    "bundle": {
+      "rules": [],
+      "ruleLogic": {}
+    },
+    "doc_id": "D009",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 2677,
+    "source_sha256": "bddd7d3ab24d2717a0393cf879bad9a849af3aa10dd2e426bc9da34dcd19c5e3",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "No drafts emitted for administrator review. The source is a city guide table that says it is 'intended as a guide' and that 'Individual circumstances may differ'. It is not ordinance text, and the chunk gives no ordinance number, section citation, enactment date or effective date.",
+      "The table implies rent control (rent_increase_limits), just cause for eviction (just_cause_eviction) and security deposit interest (security_deposits) obligations for fully and partially covered units. Every coverage row is subject to the separate 'Exempt' rows, and several of those exemptions cannot be encoded with the allowed coverage fields. These are the Golden Duplex (owner-occupancy on Dec 31, 1979), the ADU/owner-occupied tenancy started after Nov 7, 2018, university rental units, and nonprofit cooperatives. Omitting them would give wrong coverage results, so no rule was drafted.",
+      "Tenancy-start-date tests cannot be represented, since there is no field for the tenancy start date and tenancy_months is a duration only. This blocks the single-family test (tenancy began before 1996 versus on or after January 1, 1996) and the Nov 7, 2018 ADU test.",
+      "Several coverage categories cannot be represented safely: rooming houses (five or more rooms rented individually with separate leases), most condominiums, and the government-subsidy conditions. The subsidy conditions include the Section 202/811 programs and the HUD-insured or HUD-held mortgage distinction.",
+      "The table's thresholds do not line up: 'built before 1980' for fully covered multifamily units versus 'built and received a Certificate of Occupancy after June 1980' for new construction. The treatment of units between January and June 1980 is unclear, and year_built must not be substituted for the certificate date.",
+      "The table's 'Registration' column is outside the six supplied categories and was not extracted.",
+      "The 'Security Deposit Interest' column shows only that the ordinance applies. It states no interest rate, deposit cap, or other security deposit requirement, so no substantive requirement could be quoted.",
+      "The table states no rent increase limit, no just cause grounds and no security deposit interest rate. Any such details would need to come from the ordinance text or other chunks, and the retrieval date of 2026-10-01 is not a law effective date.",
+      "The status of any Berkeley rule is not verified. As of 2026-10-01 the guide implies current coverage, but it gives no legislative history, so no lifecycle dates were set.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 4224,
+      "output_tokens": 2425
+    },
+    "created_at": "2026-10-04T10:09:27.228Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}

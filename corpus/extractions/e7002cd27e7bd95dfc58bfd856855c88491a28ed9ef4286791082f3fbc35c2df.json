@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "cache_key": "e7002cd27e7bd95dfc58bfd856855c88491a28ed9ef4286791082f3fbc35c2df",
+  "source_url": "https://www.sf.gov/news/new-law-prohibits-algorithmic-devices-used-set-rents-san-francisco",
+  "result": {
+    "bundle": {
+      "rules": [
+        {
+          "team_rule_id": "r-6f00ee182c42db88",
+          "jurisdiction": "San Francisco, CA",
+          "level": "city",
+          "category": "algorithmic_rent_setting",
+          "status": "in_force",
+          "title": "Prohibition on sale or use of algorithmic devices to set rents or manage occupancy",
+          "requirement": "The sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco is prohibited. An algorithmic device is a device, such as a software program, that uses algorithms to analyze nonpublic competitor rental data to give a landlord recommendations on what rent to charge for a vacant unit.",
+          "citation": "San Francisco Rent Ordinance, Section 37.10C",
+          "source_url": "https://www.sf.gov/news/new-law-prohibits-algorithmic-devices-used-set-rents-san-francisco",
+          "quoted_span": "The law prohibits the sale or use of algorithmic devices to set rents or manage occupancy levels for residential units in San Francisco.",
+          "key_value": null,
+          "coverage_conditions": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "exemptions": null,
+          "overrides": [],
+          "interaction": "Source says a tenant or the City Attorney may bring a civil action over a suspected violation. No interaction with state or other local law is stated.",
+          "effective_date": "2024-10-14",
+          "source_doc_id": "D081",
+          "conflict_flag": false,
+          "conflict_note": null
+        }
+      ],
+      "ruleLogic": {
+        "r-6f00ee182c42db88": {
+          "coverage": {
+            "all": [
+              {
+                "field": "state",
+                "op": "eq",
+                "value": "CA"
+              },
+              {
+                "field": "legal_city",
+                "op": "eq",
+                "value": "San Francisco"
+              },
+              {
+                "field": "residential_use",
+                "op": "eq",
+                "value": true
+              }
+            ]
+          },
+          "lifecycle": {
+            "enacted_on": null,
+            "effective_on": "2024-10-14",
+            "failed_on": null,
+            "repealed_on": null
+          },
+          "supersedes": [],
+          "conflicts_with": [],
+          "fixture_rule_ids": []
+        }
+      }
+    },
+    "doc_id": "D081",
+    "chunk": 0,
+    "total_chunks": 1,
+    "next_chunk": null,
+    "chunk_start": 0,
+    "chunk_end": 1125,
+    "source_sha256": "e3437f99eae3882641b5052fd7006f2a0304abd2033e1b721a8c32324be2afab",
+    "model": "claude-sonnet-5-5",
+    "warnings": [
+      "The source is a Rent Board news notice and does not give the ordinance number or enactment date, so enacted_on is null.",
+      "The source states no exemptions or penalties. Exemptions are null, and coverage assumes residential units in San Francisco only.",
+      "The definition of algorithmic device given here is a summary. The full ordinance text should be checked for the exact definition, including how occupancy-level management is covered.",
+      "The civil action right for tenants and the City Attorney is described but not drafted as a separate rule, because it is an enforcement mechanism and not one of the six supplied categories.",
+      "The source does not support any fixture alias, so fixture_rule_ids is empty. The California AB325/SB763 mapping is not supported by this source.",
+      "Status is in_force as of 2026-10-01, based on the stated effective date of October 14, 2024. The retrieval date was not used as a law date.",
+      "Draft only: an administrator must review legal meaning, exemptions, dates and interactions before import."
+    ],
+    "requires_review": true,
+    "cache_hit": false,
+    "usage": {
+      "input_tokens": 3485,
+      "output_tokens": 1484
+    },
+    "created_at": "2026-10-04T10:09:57.972Z",
+    "prompt_version": "lexrent-extraction-v3"
+  }
+}
